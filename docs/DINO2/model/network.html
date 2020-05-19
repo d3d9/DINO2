@@ -1,0 +1,2010 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.1" />
+<title>DINO2.model.network API documentation</title>
+<meta name="description" content="DINO 2.1 network data" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>DINO2.model.network</code></h1>
+</header>
+<section id="section-intro">
+<p>DINO 2.1 network data</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: utf-8 -*-
+&#34;&#34;&#34;DINO 2.1 network data&#34;&#34;&#34;
+
+from __future__ import annotations
+
+from datetime import timedelta, date
+from enum import Enum
+from sqlalchemy import Column, String, Integer, Boolean, ForeignKey, ForeignKeyConstraint, CheckConstraint, and_, case, select, func
+from sqlalchemy.ext.hybrid import hybrid_method, hybrid_property
+from sqlalchemy.orm import relationship, RelationshipProperty, joinedload
+from sqlalchemy.sql import ClauseElement
+from time import mktime
+from typing import Optional, Sequence, TYPE_CHECKING
+
+from ..types import DinoDate, DinoTimeDelta, IntEnum
+from . import Base, Version
+
+if TYPE_CHECKING:
+    from .location import Stop, StopPoint
+    from .operational import Branch, Operator, OperatorBranchOffice, MeansOfTransportDesc, VehicleDestinationText
+    from .schedule import Trip, TripVDT
+
+
+class BikeRule(Enum):
+    no_bicycle = -1
+    vvs_rail = 0
+    vvs_cityrail = 1
+    mvv = 2
+    db = 3
+    gvh = 4
+    ivb = 5
+    tfl = 6
+    vvs_end = 7
+    always_allowed = 8
+    regulated_per_journey = 9
+
+
+class Course(Base):
+    &#34;&#34;&#34;
+    Course (&#34;line variant&#34;)
+
+    A course is a specific combination of `CourseStop`s of a whole line.  
+    There is no model class for a whole &#34;line&#34; (collection of `Course`s with the same `Course.line`).
+
+    Primary key: `version_id` &amp; `line` &amp; `id` &amp; `line_dir`
+    &#34;&#34;&#34;
+    _din_file = &#34;line.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    branch_id: Column[int] = Column(&#34;BRANCH_NR&#34;, Integer(), primary_key=False, nullable=False)
+    &#34;&#34;&#34;Branch id&#34;&#34;&#34;
+
+    line: Column[int] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Line id&#34;&#34;&#34;
+
+    # nullable=True weggelassen.
+    id: Column[str] = Column(&#34;STR_LINE_VAR&#34;, String(length=4), primary_key=True)
+    &#34;&#34;&#34;Course id&#34;&#34;&#34;
+
+    name: Column[Optional[str]] = Column(&#34;LINE_NAME&#34;, String(length=40))
+    &#34;&#34;&#34;
+    Published line name / number  
+    (has to be equal for all `Course`s with the same `Course.line`)
+    &#34;&#34;&#34;
+
+    # nullable=True weggelassen.
+    line_dir: Column[int] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;), primary_key=True)
+    &#34;&#34;&#34;Line direction (1 or 2)&#34;&#34;&#34;
+
+    last_mod: Column[Optional[str]] = Column(&#34;LAST_MODIFIED&#34;, String(length=20))
+    &#34;&#34;&#34;Last modified timestamp&#34;&#34;&#34;
+
+    mot_id: Column[Optional[int]] = Column(&#34;MOT_NR&#34;, Integer())
+    &#34;&#34;&#34;
+    Means of transport description id  
+    (has to be equal for all `Course`s with the same `Course.line`)
+    &#34;&#34;&#34;
+
+    valid_from: Column[Optional[date]] = Column(&#34;VALID_FROM&#34;, DinoDate)
+    &#34;&#34;&#34;Valid from date&#34;&#34;&#34;
+    valid_to: Column[Optional[date]] = Column(&#34;VALID_TO&#34;, DinoDate)
+    &#34;&#34;&#34;Valid until date&#34;&#34;&#34;
+
+    operator_id: Column[Optional[str]] = Column(&#34;OP_CODE&#34;, String(length=10))
+    &#34;&#34;&#34;Operator id&#34;&#34;&#34;
+    operator_branch_office_id: Column[Optional[str]] = Column(&#34;OBO_SHORT_NAME&#34;, String(length=10))
+    &#34;&#34;&#34;Operator branch office id&#34;&#34;&#34;
+
+    type: Column[Optional[int]] = Column(&#34;ROUTE_TYPE&#34;, Integer())
+    &#34;&#34;&#34;Route type (used with export of round trips)&#34;&#34;&#34;
+
+    global_id: Column[Optional[str]] = Column(&#34;GLOBAL_ID&#34;, String(length=100))
+    &#34;&#34;&#34;DLID / global unique identifier of the line&#34;&#34;&#34;
+
+    bike_rule: Column[Optional[BikeRule]] = Column(&#34;BIKE_RULE&#34;, IntEnum(BikeRule), info={&#39;keep_minus_1&#39;: True})
+    &#34;&#34;&#34;Bicycle transport rules&#34;&#34;&#34;
+
+    branch: RelationshipProperty[Branch] = relationship(&#34;Branch&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.Branch`&#34;&#34;&#34;
+    mot: RelationshipProperty[Optional[MeansOfTransportDesc]] = relationship(&#34;MeansOfTransportDesc&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.MeansOfTransportDesc`&#34;&#34;&#34;
+    operator: RelationshipProperty[Optional[Operator]] = relationship(&#34;Operator&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.Operator`&#34;&#34;&#34;
+    operator_branch_office: RelationshipProperty[Optional[OperatorBranchOffice]] = relationship(&#34;OperatorBranchOffice&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.OperatorBranchOffice`&#34;&#34;&#34;
+    stops: RelationshipProperty[Sequence[CourseStop]] = relationship(&#34;CourseStop&#34;, order_by=&#34;asc(CourseStop.consec_stop_nr)&#34;, back_populates=&#34;course&#34;)
+    &#34;&#34;&#34;`CourseStop`s of this course&#34;&#34;&#34;
+    stop_timings: RelationshipProperty[Sequence[CourseStopTiming]] = relationship(&#34;CourseStopTiming&#34;, order_by=&#34;asc(CourseStopTiming.consec_stop_nr)&#34;, viewonly=True)
+    &#34;&#34;&#34;`CourseStopTiming`s of this course&#34;&#34;&#34;
+    trips: RelationshipProperty[Sequence[Trip]] = relationship(&#34;Trip&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.schedule.Trip`s of this course&#34;&#34;&#34;
+    trip_vdt_changes: RelationshipProperty[Sequence[TripVDT]] = relationship(&#34;TripVDT&#34;, order_by=&#34;asc(TripVDT.consec_stop_nr)&#34;, viewonly=True)
+    &#34;&#34;&#34;Trip vehicle destination text changes (`DINO2.model.schedule.TripVDT`) of this course&#34;&#34;&#34;
+    vdts: RelationshipProperty[Sequence[VehicleDestinationText]] = relationship(&#34;VehicleDestinationText&#34;, order_by=&#34;asc(TripVDT.consec_stop_nr)&#34;, secondary=&#34;trip_vdt&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.VehicleDestinationText`s used on this course&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;courses&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    @hybrid_property
+    def length(self) -&gt; int:
+        &#34;&#34;&#34;Get route length in m&#34;&#34;&#34;
+        return sum(s.length for s in self.stops if s.length is not None)
+
+    @length.expression
+    def length(cls) -&gt; ClauseElement:
+        return select([func.sum(CourseStop.length)]).where(CourseStop.course.expression &amp; (CourseStop.length != None)).label(&#34;length&#34;)
+
+    @property
+    def wkt(self) -&gt; str:
+        &#34;&#34;&#34;Get WKT (well known text) representation of course&#34;&#34;&#34;
+        text = &#34;MULTILINESTRING (&#34;
+        from .location import Link
+        for (s_f, s_t) in zip(self.stops, self.stops[1:]):
+            link = self._session.query(Link).options(joinedload(&#39;geometry&#39;)).filter(and_(Link.from_point == s_f.stop_point, Link.to_point == s_t.stop_point)).one()
+            # ...? falls link nicht gefunden.
+            text += f&#34;{link.wkt[11:]}, &#34;
+        return text[:-2] + &#34;)&#34;
+
+    def wkt_m(self, timing_group: int, start_timedelta: Optional[timedelta] = None, start_day: Optional[date] = None) -&gt; str:
+        &#34;&#34;&#34;Get WKT (well known text) representation with time measures for a timing group, optionally with specific start time&amp;day&#34;&#34;&#34;
+        text = &#34;MULTILINESTRING M (&#34;
+        timings = tuple(filter(lambda t: t.timing_group == timing_group, self.stop_timings))
+        assert len(timings) == len(self.stops)
+        currenttime = start_timedelta or timedelta()
+
+        def ts(td: timedelta) -&gt; int:
+            return (int(mktime(start_day.timetuple())) if start_day is not None else 0) + int(td.total_seconds())
+
+        from .location import Link
+        for from_timing, to_timing, s_f, s_t in zip(timings, timings[1:], self.stops, self.stops[1:]):
+            # todo: time_to_stop None..
+            currenttime += from_timing.time_to_stop + from_timing.stopping_time
+            link = self._session.query(Link).options(joinedload(&#39;geometry&#39;)).filter(and_(Link.from_point == s_f.stop_point, Link.to_point == s_t.stop_point)).one()
+            # ...? falls link nicht gefunden.
+            text += f&#34;{link.wkt_m(ts(currenttime), ts(currenttime + to_timing.time_to_stop))[13:]}, &#34;
+        return text[:-2] + &#34;)&#34;
+
+    @hybrid_method
+    def duration(self, timing_group: int) -&gt; timedelta:
+        &#34;&#34;&#34;Get duration of whole course for a specific timing group&#34;&#34;&#34;
+        return sum(
+            (
+                (s.time_to_stop + s.stopping_time)
+                for s in self.stop_timings
+                if s.timing_group == timing_group and s.time_to_stop is not None
+            ), timedelta())
+
+    @duration.expression
+    def duration(cls, timing_group: int) -&gt; ClauseElement:
+        return select([func.sum(CourseStopTiming.time_to_stop + CourseStopTiming.stopping_time)]) \
+            .where(
+                CourseStopTiming.course.expression
+                &amp; (CourseStopTiming.timing_group == timing_group)
+                &amp; (CourseStopTiming.time_to_stop != None)
+            ).label(&#34;duration&#34;)
+
+    @hybrid_method
+    def date_valid(self, date_obj: date) -&gt; bool:
+        &#34;&#34;&#34;Whether a `datetime.date` is in the validity period of this line (alternatively: of its `DINO2.model.Version`)&#34;&#34;&#34;
+        d_from = self.valid_from or self.version.date_from
+        d_to = self.valid_to or self.version.date_to
+        return (date_obj &gt;= d_from if d_from is not None else True) and (date_obj &lt;= d_to if d_to is not None else True)
+
+    @date_valid.expression
+    def date_valid(cls, date_obj: date) -&gt; ClauseElement:
+        d_from = case(
+            [(cls.valid_from == None, select([Version.date_from]).where(Version.id == cls.version_id).as_scalar())],
+            else_=cls.valid_from)
+        d_to = case(
+            [(cls.valid_to == None, select([Version.date_to]).where(Version.id == cls.version_id).as_scalar())],
+            else_=cls.valid_to)
+        return and_(
+            case([(d_from == None, True)], else_=date_obj &gt;= d_from),
+            case([(d_to == None, True)], else_=date_obj &lt;= d_to))
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, branch_id], [&#34;branch.VERSION&#34;, &#34;branch.BRANCH_NR&#34;]),
+        ForeignKeyConstraint([version_id, mot_id], [&#34;means_of_transport_desc.VERSION&#34;, &#34;means_of_transport_desc.MOT_NR&#34;]),
+        ForeignKeyConstraint([version_id, operator_id], [&#34;operator.VERSION&#34;, &#34;operator.OP_CODE&#34;]),
+        ForeignKeyConstraint([version_id, operator_id, operator_branch_office_id], [&#34;operator_branch_office.VERSION&#34;, &#34;operator_branch_office.OP_CODE&#34;, &#34;operator_branch_office.OBO_SHORT_NAME&#34;])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Course(version_id={self.version_id}, branch_id={self.branch_id}, id={self.id}, name={self.name})&gt;&#34;
+
+
+class StopPointType(Enum):
+    no_stopping = -1
+    standard = 0
+    on_request = 1
+    no_boarding = 2
+    no_alighting = 3
+    no_place_internal = 4
+    no_passengers = 5
+
+
+class CourseStop(Base):
+    &#34;&#34;&#34;
+    Course stop
+
+    A single stop on a `Course`.
+
+    Primary key: `version_id` &amp; `line` &amp; `course_id` &amp; `line_dir` &amp; `consec_stop_nr`
+    &#34;&#34;&#34;
+    _din_file = &#34;route.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    line: Column[int] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Line id&#34;&#34;&#34;
+
+    course_id: Column[str] = Column(&#34;STR_LINE_VAR&#34;, String(length=4), primary_key=True)
+    &#34;&#34;&#34;Course id&#34;&#34;&#34;
+
+    line_dir: Column[int] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;), primary_key=True)
+    &#34;&#34;&#34;Line direction (1 or 2)&#34;&#34;&#34;
+
+    consec_stop_nr: Column[int] = Column(&#34;LINE_CONSEC_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Consecutive stop number in route&#34;&#34;&#34;
+
+    stop_id: Column[int] = Column(&#34;STOP_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+    stop_point_id: Column[int] = Column(&#34;STOPPING_POINT_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Stopping point id&#34;&#34;&#34;
+
+    stop_point_type: Column[StopPointType] = Column(&#34;STOPPING_POINT_TYPE&#34;, IntEnum(StopPointType), nullable=False, info={&#39;keep_minus_1&#39;: True})
+    &#34;&#34;&#34;Stopping point type&#34;&#34;&#34;
+
+    length: Column[Optional[int]] = Column(&#34;LENGTH&#34;, Integer())
+    &#34;&#34;&#34;Distance to preceding stop (m)&#34;&#34;&#34;
+
+    stop: RelationshipProperty[Stop] = relationship(&#34;Stop&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.Stop`&#34;&#34;&#34;
+    stop_point: RelationshipProperty[StopPoint] = relationship(&#34;StopPoint&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.StopPoint`&#34;&#34;&#34;
+    course: RelationshipProperty[Course] = relationship(Course, back_populates=&#34;stops&#34;)
+    &#34;&#34;&#34;`Course`&#34;&#34;&#34;
+    timings: RelationshipProperty[Sequence[CourseStopTiming]] = relationship(&#34;CourseStopTiming&#34;, back_populates=&#34;course_stop&#34;)
+    &#34;&#34;&#34;`CourseStopTiming`s&#34;&#34;&#34;
+    trip_vdt_changes: RelationshipProperty[Sequence[TripVDT]] = relationship(&#34;TripVDT&#34;, order_by=&#34;asc(TripVDT.consec_stop_nr)&#34;, viewonly=True)
+    &#34;&#34;&#34;Trip vehicle destination text changes (`DINO2.model.schedule.TripVDT`) at this course stop&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, line, course_id, line_dir], [Course.version_id, Course.line, Course.id, Course.line_dir]),
+        ForeignKeyConstraint([version_id, stop_id], [&#34;stop.VERSION&#34;, &#34;stop.STOP_NR&#34;]),
+        ForeignKeyConstraint([version_id, stop_id, stop_point_id], [&#34;stop_point.VERSION&#34;, &#34;stop_point.STOP_NR&#34;, &#34;stop_point.STOPPING_POINT_NR&#34;])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;CourseStop(version_id={self.version_id}, course={self.course}, consec_stop_nr={self.consec_stop_nr}, stop_point={self.stop_point})&gt;&#34;
+
+
+class CourseStopTiming(Base):
+    &#34;&#34;&#34;
+    Course stop timing
+
+    A `Course` can have multiple &#34;timing groups&#34; depicting a specific combination of travel times between its `CourseStop`s.  
+    For example the same `Course` can have a different travel time depending on time or day (rush hour, night, weekend, ..).
+
+    Primary key: `version_id` &amp; `line` &amp; `course_id` &amp; `line_dir` &amp; `consec_stop_nr` &amp; `timing_group`
+    &#34;&#34;&#34;
+    _din_file = &#34;timing_pattern.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    line: Column[int] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Line id&#34;&#34;&#34;
+
+    course_id: Column[str] = Column(&#34;STR_LINE_VAR&#34;, String(length=4), primary_key=True)
+    &#34;&#34;&#34;Course id&#34;&#34;&#34;
+
+    line_dir: Column[int] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;), primary_key=True)
+    &#34;&#34;&#34;Line direction (1 or 2)&#34;&#34;&#34;
+
+    consec_stop_nr: Column[int] = Column(&#34;LINE_CONSEC_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Consecutive stop number in route&#34;&#34;&#34;
+
+    timing_group: Column[int] = Column(&#34;TIMING_GROUP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Timing group id&#34;&#34;&#34;
+
+    time_to_stop: Column[Optional[timedelta]] = Column(&#34;TT_REL&#34;, DinoTimeDelta(minus_1_none=True), nullable=False, info={&#39;keep_minus_1&#39;: True})
+    &#34;&#34;&#34;Travel time from previous course stop (None = passes through stop)&#34;&#34;&#34;
+    stopping_time: Column[timedelta] = Column(&#34;STOPPING_TIME&#34;, DinoTimeDelta(), nullable=False)
+    &#34;&#34;&#34;Stopping/waiting time at this course stop&#34;&#34;&#34;
+
+    course_stop: RelationshipProperty[CourseStop] = relationship(CourseStop, back_populates=&#34;timings&#34;)
+    &#34;&#34;&#34;`CourseStop`&#34;&#34;&#34;
+    course: RelationshipProperty[Course] = relationship(Course, viewonly=True)
+    &#34;&#34;&#34;`Course`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, line, course_id, line_dir], [Course.version_id, Course.line, Course.id, Course.line_dir]),
+        ForeignKeyConstraint([version_id, line, course_id, line_dir, consec_stop_nr], [CourseStop.version_id, CourseStop.line, CourseStop.course_id, CourseStop.line_dir, CourseStop.consec_stop_nr])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;CourseStopTiming(version_id={self.version_id}, course_stop={self.course_stop}, time_to_stop={self.time_to_stop}, stopping_time={self.stopping_time})&gt;&#34;</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="DINO2.model.network.BikeRule"><code class="flex name class">
+<span>class <span class="ident">BikeRule</span></span>
+<span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>An enumeration.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class BikeRule(Enum):
+    no_bicycle = -1
+    vvs_rail = 0
+    vvs_cityrail = 1
+    mvv = 2
+    db = 3
+    gvh = 4
+    ivb = 5
+    tfl = 6
+    vvs_end = 7
+    always_allowed = 8
+    regulated_per_journey = 9</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>enum.Enum</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.model.network.BikeRule.no_bicycle"><code class="name">var <span class="ident">no_bicycle</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.BikeRule.vvs_rail"><code class="name">var <span class="ident">vvs_rail</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.BikeRule.vvs_cityrail"><code class="name">var <span class="ident">vvs_cityrail</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.BikeRule.mvv"><code class="name">var <span class="ident">mvv</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.BikeRule.db"><code class="name">var <span class="ident">db</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.BikeRule.gvh"><code class="name">var <span class="ident">gvh</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.BikeRule.ivb"><code class="name">var <span class="ident">ivb</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.BikeRule.tfl"><code class="name">var <span class="ident">tfl</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.BikeRule.vvs_end"><code class="name">var <span class="ident">vvs_end</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.BikeRule.always_allowed"><code class="name">var <span class="ident">always_allowed</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.BikeRule.regulated_per_journey"><code class="name">var <span class="ident">regulated_per_journey</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.network.Course"><code class="flex name class">
+<span>class <span class="ident">Course</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Course ("line variant")</p>
+<p>A course is a specific combination of <code><a title="DINO2.model.network.CourseStop" href="#DINO2.model.network.CourseStop">CourseStop</a></code>s of a whole line.<br>
+There is no model class for a whole "line" (collection of <code><a title="DINO2.model.network.Course" href="#DINO2.model.network.Course">Course</a></code>s with the same <code><a title="DINO2.model.network.Course.line" href="#DINO2.model.network.Course.line">Course.line</a></code>).</p>
+<p>Primary key: <code>version_id</code> &amp; <code>line</code> &amp; <code>id</code> &amp; <code>line_dir</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Course(Base):
+    &#34;&#34;&#34;
+    Course (&#34;line variant&#34;)
+
+    A course is a specific combination of `CourseStop`s of a whole line.  
+    There is no model class for a whole &#34;line&#34; (collection of `Course`s with the same `Course.line`).
+
+    Primary key: `version_id` &amp; `line` &amp; `id` &amp; `line_dir`
+    &#34;&#34;&#34;
+    _din_file = &#34;line.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    branch_id: Column[int] = Column(&#34;BRANCH_NR&#34;, Integer(), primary_key=False, nullable=False)
+    &#34;&#34;&#34;Branch id&#34;&#34;&#34;
+
+    line: Column[int] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Line id&#34;&#34;&#34;
+
+    # nullable=True weggelassen.
+    id: Column[str] = Column(&#34;STR_LINE_VAR&#34;, String(length=4), primary_key=True)
+    &#34;&#34;&#34;Course id&#34;&#34;&#34;
+
+    name: Column[Optional[str]] = Column(&#34;LINE_NAME&#34;, String(length=40))
+    &#34;&#34;&#34;
+    Published line name / number  
+    (has to be equal for all `Course`s with the same `Course.line`)
+    &#34;&#34;&#34;
+
+    # nullable=True weggelassen.
+    line_dir: Column[int] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;), primary_key=True)
+    &#34;&#34;&#34;Line direction (1 or 2)&#34;&#34;&#34;
+
+    last_mod: Column[Optional[str]] = Column(&#34;LAST_MODIFIED&#34;, String(length=20))
+    &#34;&#34;&#34;Last modified timestamp&#34;&#34;&#34;
+
+    mot_id: Column[Optional[int]] = Column(&#34;MOT_NR&#34;, Integer())
+    &#34;&#34;&#34;
+    Means of transport description id  
+    (has to be equal for all `Course`s with the same `Course.line`)
+    &#34;&#34;&#34;
+
+    valid_from: Column[Optional[date]] = Column(&#34;VALID_FROM&#34;, DinoDate)
+    &#34;&#34;&#34;Valid from date&#34;&#34;&#34;
+    valid_to: Column[Optional[date]] = Column(&#34;VALID_TO&#34;, DinoDate)
+    &#34;&#34;&#34;Valid until date&#34;&#34;&#34;
+
+    operator_id: Column[Optional[str]] = Column(&#34;OP_CODE&#34;, String(length=10))
+    &#34;&#34;&#34;Operator id&#34;&#34;&#34;
+    operator_branch_office_id: Column[Optional[str]] = Column(&#34;OBO_SHORT_NAME&#34;, String(length=10))
+    &#34;&#34;&#34;Operator branch office id&#34;&#34;&#34;
+
+    type: Column[Optional[int]] = Column(&#34;ROUTE_TYPE&#34;, Integer())
+    &#34;&#34;&#34;Route type (used with export of round trips)&#34;&#34;&#34;
+
+    global_id: Column[Optional[str]] = Column(&#34;GLOBAL_ID&#34;, String(length=100))
+    &#34;&#34;&#34;DLID / global unique identifier of the line&#34;&#34;&#34;
+
+    bike_rule: Column[Optional[BikeRule]] = Column(&#34;BIKE_RULE&#34;, IntEnum(BikeRule), info={&#39;keep_minus_1&#39;: True})
+    &#34;&#34;&#34;Bicycle transport rules&#34;&#34;&#34;
+
+    branch: RelationshipProperty[Branch] = relationship(&#34;Branch&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.Branch`&#34;&#34;&#34;
+    mot: RelationshipProperty[Optional[MeansOfTransportDesc]] = relationship(&#34;MeansOfTransportDesc&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.MeansOfTransportDesc`&#34;&#34;&#34;
+    operator: RelationshipProperty[Optional[Operator]] = relationship(&#34;Operator&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.Operator`&#34;&#34;&#34;
+    operator_branch_office: RelationshipProperty[Optional[OperatorBranchOffice]] = relationship(&#34;OperatorBranchOffice&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.OperatorBranchOffice`&#34;&#34;&#34;
+    stops: RelationshipProperty[Sequence[CourseStop]] = relationship(&#34;CourseStop&#34;, order_by=&#34;asc(CourseStop.consec_stop_nr)&#34;, back_populates=&#34;course&#34;)
+    &#34;&#34;&#34;`CourseStop`s of this course&#34;&#34;&#34;
+    stop_timings: RelationshipProperty[Sequence[CourseStopTiming]] = relationship(&#34;CourseStopTiming&#34;, order_by=&#34;asc(CourseStopTiming.consec_stop_nr)&#34;, viewonly=True)
+    &#34;&#34;&#34;`CourseStopTiming`s of this course&#34;&#34;&#34;
+    trips: RelationshipProperty[Sequence[Trip]] = relationship(&#34;Trip&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.schedule.Trip`s of this course&#34;&#34;&#34;
+    trip_vdt_changes: RelationshipProperty[Sequence[TripVDT]] = relationship(&#34;TripVDT&#34;, order_by=&#34;asc(TripVDT.consec_stop_nr)&#34;, viewonly=True)
+    &#34;&#34;&#34;Trip vehicle destination text changes (`DINO2.model.schedule.TripVDT`) of this course&#34;&#34;&#34;
+    vdts: RelationshipProperty[Sequence[VehicleDestinationText]] = relationship(&#34;VehicleDestinationText&#34;, order_by=&#34;asc(TripVDT.consec_stop_nr)&#34;, secondary=&#34;trip_vdt&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.VehicleDestinationText`s used on this course&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;courses&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    @hybrid_property
+    def length(self) -&gt; int:
+        &#34;&#34;&#34;Get route length in m&#34;&#34;&#34;
+        return sum(s.length for s in self.stops if s.length is not None)
+
+    @length.expression
+    def length(cls) -&gt; ClauseElement:
+        return select([func.sum(CourseStop.length)]).where(CourseStop.course.expression &amp; (CourseStop.length != None)).label(&#34;length&#34;)
+
+    @property
+    def wkt(self) -&gt; str:
+        &#34;&#34;&#34;Get WKT (well known text) representation of course&#34;&#34;&#34;
+        text = &#34;MULTILINESTRING (&#34;
+        from .location import Link
+        for (s_f, s_t) in zip(self.stops, self.stops[1:]):
+            link = self._session.query(Link).options(joinedload(&#39;geometry&#39;)).filter(and_(Link.from_point == s_f.stop_point, Link.to_point == s_t.stop_point)).one()
+            # ...? falls link nicht gefunden.
+            text += f&#34;{link.wkt[11:]}, &#34;
+        return text[:-2] + &#34;)&#34;
+
+    def wkt_m(self, timing_group: int, start_timedelta: Optional[timedelta] = None, start_day: Optional[date] = None) -&gt; str:
+        &#34;&#34;&#34;Get WKT (well known text) representation with time measures for a timing group, optionally with specific start time&amp;day&#34;&#34;&#34;
+        text = &#34;MULTILINESTRING M (&#34;
+        timings = tuple(filter(lambda t: t.timing_group == timing_group, self.stop_timings))
+        assert len(timings) == len(self.stops)
+        currenttime = start_timedelta or timedelta()
+
+        def ts(td: timedelta) -&gt; int:
+            return (int(mktime(start_day.timetuple())) if start_day is not None else 0) + int(td.total_seconds())
+
+        from .location import Link
+        for from_timing, to_timing, s_f, s_t in zip(timings, timings[1:], self.stops, self.stops[1:]):
+            # todo: time_to_stop None..
+            currenttime += from_timing.time_to_stop + from_timing.stopping_time
+            link = self._session.query(Link).options(joinedload(&#39;geometry&#39;)).filter(and_(Link.from_point == s_f.stop_point, Link.to_point == s_t.stop_point)).one()
+            # ...? falls link nicht gefunden.
+            text += f&#34;{link.wkt_m(ts(currenttime), ts(currenttime + to_timing.time_to_stop))[13:]}, &#34;
+        return text[:-2] + &#34;)&#34;
+
+    @hybrid_method
+    def duration(self, timing_group: int) -&gt; timedelta:
+        &#34;&#34;&#34;Get duration of whole course for a specific timing group&#34;&#34;&#34;
+        return sum(
+            (
+                (s.time_to_stop + s.stopping_time)
+                for s in self.stop_timings
+                if s.timing_group == timing_group and s.time_to_stop is not None
+            ), timedelta())
+
+    @duration.expression
+    def duration(cls, timing_group: int) -&gt; ClauseElement:
+        return select([func.sum(CourseStopTiming.time_to_stop + CourseStopTiming.stopping_time)]) \
+            .where(
+                CourseStopTiming.course.expression
+                &amp; (CourseStopTiming.timing_group == timing_group)
+                &amp; (CourseStopTiming.time_to_stop != None)
+            ).label(&#34;duration&#34;)
+
+    @hybrid_method
+    def date_valid(self, date_obj: date) -&gt; bool:
+        &#34;&#34;&#34;Whether a `datetime.date` is in the validity period of this line (alternatively: of its `DINO2.model.Version`)&#34;&#34;&#34;
+        d_from = self.valid_from or self.version.date_from
+        d_to = self.valid_to or self.version.date_to
+        return (date_obj &gt;= d_from if d_from is not None else True) and (date_obj &lt;= d_to if d_to is not None else True)
+
+    @date_valid.expression
+    def date_valid(cls, date_obj: date) -&gt; ClauseElement:
+        d_from = case(
+            [(cls.valid_from == None, select([Version.date_from]).where(Version.id == cls.version_id).as_scalar())],
+            else_=cls.valid_from)
+        d_to = case(
+            [(cls.valid_to == None, select([Version.date_to]).where(Version.id == cls.version_id).as_scalar())],
+            else_=cls.valid_to)
+        return and_(
+            case([(d_from == None, True)], else_=date_obj &gt;= d_from),
+            case([(d_to == None, True)], else_=date_obj &lt;= d_to))
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, branch_id], [&#34;branch.VERSION&#34;, &#34;branch.BRANCH_NR&#34;]),
+        ForeignKeyConstraint([version_id, mot_id], [&#34;means_of_transport_desc.VERSION&#34;, &#34;means_of_transport_desc.MOT_NR&#34;]),
+        ForeignKeyConstraint([version_id, operator_id], [&#34;operator.VERSION&#34;, &#34;operator.OP_CODE&#34;]),
+        ForeignKeyConstraint([version_id, operator_id, operator_branch_office_id], [&#34;operator_branch_office.VERSION&#34;, &#34;operator_branch_office.OP_CODE&#34;, &#34;operator_branch_office.OBO_SHORT_NAME&#34;])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Course(version_id={self.version_id}, branch_id={self.branch_id}, id={self.id}, name={self.name})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Static methods</h3>
+<dl>
+<dt id="DINO2.model.network.Course.duration"><code class="name flex">
+<span>def <span class="ident">duration</span></span>(<span>timing_group: int) -> sqlalchemy.sql.elements.ClauseElement</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Get duration of whole course for a specific timing group</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@duration.expression
+def duration(cls, timing_group: int) -&gt; ClauseElement:
+    return select([func.sum(CourseStopTiming.time_to_stop + CourseStopTiming.stopping_time)]) \
+        .where(
+            CourseStopTiming.course.expression
+            &amp; (CourseStopTiming.timing_group == timing_group)
+            &amp; (CourseStopTiming.time_to_stop != None)
+        ).label(&#34;duration&#34;)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.date_valid"><code class="name flex">
+<span>def <span class="ident">date_valid</span></span>(<span>date_obj: date) -> sqlalchemy.sql.elements.ClauseElement</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Whether a <code>datetime.date</code> is in the validity period of this line (alternatively: of its <code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code>)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@date_valid.expression
+def date_valid(cls, date_obj: date) -&gt; ClauseElement:
+    d_from = case(
+        [(cls.valid_from == None, select([Version.date_from]).where(Version.id == cls.version_id).as_scalar())],
+        else_=cls.valid_from)
+    d_to = case(
+        [(cls.valid_to == None, select([Version.date_to]).where(Version.id == cls.version_id).as_scalar())],
+        else_=cls.valid_to)
+    return and_(
+        case([(d_from == None, True)], else_=date_obj &gt;= d_from),
+        case([(d_to == None, True)], else_=date_obj &lt;= d_to))</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.network.Course.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.branch_id"><code class="name">var <span class="ident">branch_id</span></code></dt>
+<dd>
+<div class="desc"><p>Branch id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.line"><code class="name">var <span class="ident">line</span></code></dt>
+<dd>
+<div class="desc"><p>Line id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Course id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.name"><code class="name">var <span class="ident">name</span></code></dt>
+<dd>
+<div class="desc"><p>Published line name / number<br>
+(has to be equal for all <code><a title="DINO2.model.network.Course" href="#DINO2.model.network.Course">Course</a></code>s with the same <code><a title="DINO2.model.network.Course.line" href="#DINO2.model.network.Course.line">Course.line</a></code>)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.line_dir"><code class="name">var <span class="ident">line_dir</span></code></dt>
+<dd>
+<div class="desc"><p>Line direction (1 or 2)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.last_mod"><code class="name">var <span class="ident">last_mod</span></code></dt>
+<dd>
+<div class="desc"><p>Last modified timestamp</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.mot_id"><code class="name">var <span class="ident">mot_id</span></code></dt>
+<dd>
+<div class="desc"><p>Means of transport description id<br>
+(has to be equal for all <code><a title="DINO2.model.network.Course" href="#DINO2.model.network.Course">Course</a></code>s with the same <code><a title="DINO2.model.network.Course.line" href="#DINO2.model.network.Course.line">Course.line</a></code>)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.valid_from"><code class="name">var <span class="ident">valid_from</span></code></dt>
+<dd>
+<div class="desc"><p>Valid from date</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.valid_to"><code class="name">var <span class="ident">valid_to</span></code></dt>
+<dd>
+<div class="desc"><p>Valid until date</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.operator_id"><code class="name">var <span class="ident">operator_id</span></code></dt>
+<dd>
+<div class="desc"><p>Operator id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.operator_branch_office_id"><code class="name">var <span class="ident">operator_branch_office_id</span></code></dt>
+<dd>
+<div class="desc"><p>Operator branch office id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.type"><code class="name">var <span class="ident">type</span></code></dt>
+<dd>
+<div class="desc"><p>Route type (used with export of round trips)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.global_id"><code class="name">var <span class="ident">global_id</span></code></dt>
+<dd>
+<div class="desc"><p>DLID / global unique identifier of the line</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.bike_rule"><code class="name">var <span class="ident">bike_rule</span></code></dt>
+<dd>
+<div class="desc"><p>Bicycle transport rules</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.branch"><code class="name">var <span class="ident">branch</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.Branch" href="operational.html#DINO2.model.operational.Branch">Branch</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.mot"><code class="name">var <span class="ident">mot</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.MeansOfTransportDesc" href="operational.html#DINO2.model.operational.MeansOfTransportDesc">MeansOfTransportDesc</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.operator"><code class="name">var <span class="ident">operator</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.Operator" href="operational.html#DINO2.model.operational.Operator">Operator</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.operator_branch_office"><code class="name">var <span class="ident">operator_branch_office</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.OperatorBranchOffice" href="operational.html#DINO2.model.operational.OperatorBranchOffice">OperatorBranchOffice</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.stops"><code class="name">var <span class="ident">stops</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.CourseStop" href="#DINO2.model.network.CourseStop">CourseStop</a></code>s of this course</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.stop_timings"><code class="name">var <span class="ident">stop_timings</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.CourseStopTiming" href="#DINO2.model.network.CourseStopTiming">CourseStopTiming</a></code>s of this course</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.trips"><code class="name">var <span class="ident">trips</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.schedule.Trip" href="schedule.html#DINO2.model.schedule.Trip">Trip</a></code>s of this course</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.trip_vdt_changes"><code class="name">var <span class="ident">trip_vdt_changes</span></code></dt>
+<dd>
+<div class="desc"><p>Trip vehicle destination text changes (<code><a title="DINO2.model.schedule.TripVDT" href="schedule.html#DINO2.model.schedule.TripVDT">TripVDT</a></code>) of this course</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.vdts"><code class="name">var <span class="ident">vdts</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.VehicleDestinationText" href="operational.html#DINO2.model.operational.VehicleDestinationText">VehicleDestinationText</a></code>s used on this course</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.wkt"><code class="name">var <span class="ident">wkt</span> : str</code></dt>
+<dd>
+<div class="desc"><p>Get WKT (well known text) representation of course</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def wkt(self) -&gt; str:
+    &#34;&#34;&#34;Get WKT (well known text) representation of course&#34;&#34;&#34;
+    text = &#34;MULTILINESTRING (&#34;
+    from .location import Link
+    for (s_f, s_t) in zip(self.stops, self.stops[1:]):
+        link = self._session.query(Link).options(joinedload(&#39;geometry&#39;)).filter(and_(Link.from_point == s_f.stop_point, Link.to_point == s_t.stop_point)).one()
+        # ...? falls link nicht gefunden.
+        text += f&#34;{link.wkt[11:]}, &#34;
+    return text[:-2] + &#34;)&#34;</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="DINO2.model.network.Course.length"><code class="name flex">
+<span>def <span class="ident">length</span></span>(<span>self) -> int</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Get route length in m</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@hybrid_property
+def length(self) -&gt; int:
+    &#34;&#34;&#34;Get route length in m&#34;&#34;&#34;
+    return sum(s.length for s in self.stops if s.length is not None)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.Course.wkt_m"><code class="name flex">
+<span>def <span class="ident">wkt_m</span></span>(<span>self, timing_group: int, start_timedelta: Optional[timedelta] = None, start_day: Optional[date] = None) -> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Get WKT (well known text) representation with time measures for a timing group, optionally with specific start time&amp;day</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def wkt_m(self, timing_group: int, start_timedelta: Optional[timedelta] = None, start_day: Optional[date] = None) -&gt; str:
+    &#34;&#34;&#34;Get WKT (well known text) representation with time measures for a timing group, optionally with specific start time&amp;day&#34;&#34;&#34;
+    text = &#34;MULTILINESTRING M (&#34;
+    timings = tuple(filter(lambda t: t.timing_group == timing_group, self.stop_timings))
+    assert len(timings) == len(self.stops)
+    currenttime = start_timedelta or timedelta()
+
+    def ts(td: timedelta) -&gt; int:
+        return (int(mktime(start_day.timetuple())) if start_day is not None else 0) + int(td.total_seconds())
+
+    from .location import Link
+    for from_timing, to_timing, s_f, s_t in zip(timings, timings[1:], self.stops, self.stops[1:]):
+        # todo: time_to_stop None..
+        currenttime += from_timing.time_to_stop + from_timing.stopping_time
+        link = self._session.query(Link).options(joinedload(&#39;geometry&#39;)).filter(and_(Link.from_point == s_f.stop_point, Link.to_point == s_t.stop_point)).one()
+        # ...? falls link nicht gefunden.
+        text += f&#34;{link.wkt_m(ts(currenttime), ts(currenttime + to_timing.time_to_stop))[13:]}, &#34;
+    return text[:-2] + &#34;)&#34;</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.network.StopPointType"><code class="flex name class">
+<span>class <span class="ident">StopPointType</span></span>
+<span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>An enumeration.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class StopPointType(Enum):
+    no_stopping = -1
+    standard = 0
+    on_request = 1
+    no_boarding = 2
+    no_alighting = 3
+    no_place_internal = 4
+    no_passengers = 5</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>enum.Enum</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.model.network.StopPointType.no_stopping"><code class="name">var <span class="ident">no_stopping</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.StopPointType.standard"><code class="name">var <span class="ident">standard</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.StopPointType.on_request"><code class="name">var <span class="ident">on_request</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.StopPointType.no_boarding"><code class="name">var <span class="ident">no_boarding</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.StopPointType.no_alighting"><code class="name">var <span class="ident">no_alighting</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.StopPointType.no_place_internal"><code class="name">var <span class="ident">no_place_internal</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.network.StopPointType.no_passengers"><code class="name">var <span class="ident">no_passengers</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.network.CourseStop"><code class="flex name class">
+<span>class <span class="ident">CourseStop</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Course stop</p>
+<p>A single stop on a <code><a title="DINO2.model.network.Course" href="#DINO2.model.network.Course">Course</a></code>.</p>
+<p>Primary key: <code>version_id</code> &amp; <code>line</code> &amp; <code>course_id</code> &amp; <code>line_dir</code> &amp; <code>consec_stop_nr</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class CourseStop(Base):
+    &#34;&#34;&#34;
+    Course stop
+
+    A single stop on a `Course`.
+
+    Primary key: `version_id` &amp; `line` &amp; `course_id` &amp; `line_dir` &amp; `consec_stop_nr`
+    &#34;&#34;&#34;
+    _din_file = &#34;route.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    line: Column[int] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Line id&#34;&#34;&#34;
+
+    course_id: Column[str] = Column(&#34;STR_LINE_VAR&#34;, String(length=4), primary_key=True)
+    &#34;&#34;&#34;Course id&#34;&#34;&#34;
+
+    line_dir: Column[int] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;), primary_key=True)
+    &#34;&#34;&#34;Line direction (1 or 2)&#34;&#34;&#34;
+
+    consec_stop_nr: Column[int] = Column(&#34;LINE_CONSEC_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Consecutive stop number in route&#34;&#34;&#34;
+
+    stop_id: Column[int] = Column(&#34;STOP_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+    stop_point_id: Column[int] = Column(&#34;STOPPING_POINT_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Stopping point id&#34;&#34;&#34;
+
+    stop_point_type: Column[StopPointType] = Column(&#34;STOPPING_POINT_TYPE&#34;, IntEnum(StopPointType), nullable=False, info={&#39;keep_minus_1&#39;: True})
+    &#34;&#34;&#34;Stopping point type&#34;&#34;&#34;
+
+    length: Column[Optional[int]] = Column(&#34;LENGTH&#34;, Integer())
+    &#34;&#34;&#34;Distance to preceding stop (m)&#34;&#34;&#34;
+
+    stop: RelationshipProperty[Stop] = relationship(&#34;Stop&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.Stop`&#34;&#34;&#34;
+    stop_point: RelationshipProperty[StopPoint] = relationship(&#34;StopPoint&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.StopPoint`&#34;&#34;&#34;
+    course: RelationshipProperty[Course] = relationship(Course, back_populates=&#34;stops&#34;)
+    &#34;&#34;&#34;`Course`&#34;&#34;&#34;
+    timings: RelationshipProperty[Sequence[CourseStopTiming]] = relationship(&#34;CourseStopTiming&#34;, back_populates=&#34;course_stop&#34;)
+    &#34;&#34;&#34;`CourseStopTiming`s&#34;&#34;&#34;
+    trip_vdt_changes: RelationshipProperty[Sequence[TripVDT]] = relationship(&#34;TripVDT&#34;, order_by=&#34;asc(TripVDT.consec_stop_nr)&#34;, viewonly=True)
+    &#34;&#34;&#34;Trip vehicle destination text changes (`DINO2.model.schedule.TripVDT`) at this course stop&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, line, course_id, line_dir], [Course.version_id, Course.line, Course.id, Course.line_dir]),
+        ForeignKeyConstraint([version_id, stop_id], [&#34;stop.VERSION&#34;, &#34;stop.STOP_NR&#34;]),
+        ForeignKeyConstraint([version_id, stop_id, stop_point_id], [&#34;stop_point.VERSION&#34;, &#34;stop_point.STOP_NR&#34;, &#34;stop_point.STOPPING_POINT_NR&#34;])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;CourseStop(version_id={self.version_id}, course={self.course}, consec_stop_nr={self.consec_stop_nr}, stop_point={self.stop_point})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.network.CourseStop.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.line"><code class="name">var <span class="ident">line</span></code></dt>
+<dd>
+<div class="desc"><p>Line id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.course_id"><code class="name">var <span class="ident">course_id</span></code></dt>
+<dd>
+<div class="desc"><p>Course id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.line_dir"><code class="name">var <span class="ident">line_dir</span></code></dt>
+<dd>
+<div class="desc"><p>Line direction (1 or 2)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.consec_stop_nr"><code class="name">var <span class="ident">consec_stop_nr</span></code></dt>
+<dd>
+<div class="desc"><p>Consecutive stop number in route</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.stop_id"><code class="name">var <span class="ident">stop_id</span></code></dt>
+<dd>
+<div class="desc"><p>Stop id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.stop_point_id"><code class="name">var <span class="ident">stop_point_id</span></code></dt>
+<dd>
+<div class="desc"><p>Stopping point id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.stop_point_type"><code class="name">var <span class="ident">stop_point_type</span></code></dt>
+<dd>
+<div class="desc"><p>Stopping point type</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.length"><code class="name">var <span class="ident">length</span></code></dt>
+<dd>
+<div class="desc"><p>Distance to preceding stop (m)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.stop"><code class="name">var <span class="ident">stop</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Stop" href="location.html#DINO2.model.location.Stop">Stop</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.stop_point"><code class="name">var <span class="ident">stop_point</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.StopPoint" href="location.html#DINO2.model.location.StopPoint">StopPoint</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.course"><code class="name">var <span class="ident">course</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.Course" href="#DINO2.model.network.Course">Course</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.timings"><code class="name">var <span class="ident">timings</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.CourseStopTiming" href="#DINO2.model.network.CourseStopTiming">CourseStopTiming</a></code>s</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.trip_vdt_changes"><code class="name">var <span class="ident">trip_vdt_changes</span></code></dt>
+<dd>
+<div class="desc"><p>Trip vehicle destination text changes (<code><a title="DINO2.model.schedule.TripVDT" href="schedule.html#DINO2.model.schedule.TripVDT">TripVDT</a></code>) at this course stop</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStop.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.network.CourseStopTiming"><code class="flex name class">
+<span>class <span class="ident">CourseStopTiming</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Course stop timing</p>
+<p>A <code><a title="DINO2.model.network.Course" href="#DINO2.model.network.Course">Course</a></code> can have multiple "timing groups" depicting a specific combination of travel times between its <code><a title="DINO2.model.network.CourseStop" href="#DINO2.model.network.CourseStop">CourseStop</a></code>s.<br>
+For example the same <code><a title="DINO2.model.network.Course" href="#DINO2.model.network.Course">Course</a></code> can have a different travel time depending on time or day (rush hour, night, weekend, ..).</p>
+<p>Primary key: <code>version_id</code> &amp; <code>line</code> &amp; <code>course_id</code> &amp; <code>line_dir</code> &amp; <code>consec_stop_nr</code> &amp; <code>timing_group</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class CourseStopTiming(Base):
+    &#34;&#34;&#34;
+    Course stop timing
+
+    A `Course` can have multiple &#34;timing groups&#34; depicting a specific combination of travel times between its `CourseStop`s.  
+    For example the same `Course` can have a different travel time depending on time or day (rush hour, night, weekend, ..).
+
+    Primary key: `version_id` &amp; `line` &amp; `course_id` &amp; `line_dir` &amp; `consec_stop_nr` &amp; `timing_group`
+    &#34;&#34;&#34;
+    _din_file = &#34;timing_pattern.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    line: Column[int] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Line id&#34;&#34;&#34;
+
+    course_id: Column[str] = Column(&#34;STR_LINE_VAR&#34;, String(length=4), primary_key=True)
+    &#34;&#34;&#34;Course id&#34;&#34;&#34;
+
+    line_dir: Column[int] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;), primary_key=True)
+    &#34;&#34;&#34;Line direction (1 or 2)&#34;&#34;&#34;
+
+    consec_stop_nr: Column[int] = Column(&#34;LINE_CONSEC_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Consecutive stop number in route&#34;&#34;&#34;
+
+    timing_group: Column[int] = Column(&#34;TIMING_GROUP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Timing group id&#34;&#34;&#34;
+
+    time_to_stop: Column[Optional[timedelta]] = Column(&#34;TT_REL&#34;, DinoTimeDelta(minus_1_none=True), nullable=False, info={&#39;keep_minus_1&#39;: True})
+    &#34;&#34;&#34;Travel time from previous course stop (None = passes through stop)&#34;&#34;&#34;
+    stopping_time: Column[timedelta] = Column(&#34;STOPPING_TIME&#34;, DinoTimeDelta(), nullable=False)
+    &#34;&#34;&#34;Stopping/waiting time at this course stop&#34;&#34;&#34;
+
+    course_stop: RelationshipProperty[CourseStop] = relationship(CourseStop, back_populates=&#34;timings&#34;)
+    &#34;&#34;&#34;`CourseStop`&#34;&#34;&#34;
+    course: RelationshipProperty[Course] = relationship(Course, viewonly=True)
+    &#34;&#34;&#34;`Course`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, line, course_id, line_dir], [Course.version_id, Course.line, Course.id, Course.line_dir]),
+        ForeignKeyConstraint([version_id, line, course_id, line_dir, consec_stop_nr], [CourseStop.version_id, CourseStop.line, CourseStop.course_id, CourseStop.line_dir, CourseStop.consec_stop_nr])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;CourseStopTiming(version_id={self.version_id}, course_stop={self.course_stop}, time_to_stop={self.time_to_stop}, stopping_time={self.stopping_time})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.network.CourseStopTiming.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStopTiming.line"><code class="name">var <span class="ident">line</span></code></dt>
+<dd>
+<div class="desc"><p>Line id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStopTiming.course_id"><code class="name">var <span class="ident">course_id</span></code></dt>
+<dd>
+<div class="desc"><p>Course id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStopTiming.line_dir"><code class="name">var <span class="ident">line_dir</span></code></dt>
+<dd>
+<div class="desc"><p>Line direction (1 or 2)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStopTiming.consec_stop_nr"><code class="name">var <span class="ident">consec_stop_nr</span></code></dt>
+<dd>
+<div class="desc"><p>Consecutive stop number in route</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStopTiming.timing_group"><code class="name">var <span class="ident">timing_group</span></code></dt>
+<dd>
+<div class="desc"><p>Timing group id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStopTiming.time_to_stop"><code class="name">var <span class="ident">time_to_stop</span></code></dt>
+<dd>
+<div class="desc"><p>Travel time from previous course stop (None = passes through stop)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStopTiming.stopping_time"><code class="name">var <span class="ident">stopping_time</span></code></dt>
+<dd>
+<div class="desc"><p>Stopping/waiting time at this course stop</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStopTiming.course_stop"><code class="name">var <span class="ident">course_stop</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.CourseStop" href="#DINO2.model.network.CourseStop">CourseStop</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStopTiming.course"><code class="name">var <span class="ident">course</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.Course" href="#DINO2.model.network.Course">Course</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.network.CourseStopTiming.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="DINO2.model" href="index.html">DINO2.model</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="DINO2.model.network.BikeRule" href="#DINO2.model.network.BikeRule">BikeRule</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.network.BikeRule.no_bicycle" href="#DINO2.model.network.BikeRule.no_bicycle">no_bicycle</a></code></li>
+<li><code><a title="DINO2.model.network.BikeRule.vvs_rail" href="#DINO2.model.network.BikeRule.vvs_rail">vvs_rail</a></code></li>
+<li><code><a title="DINO2.model.network.BikeRule.vvs_cityrail" href="#DINO2.model.network.BikeRule.vvs_cityrail">vvs_cityrail</a></code></li>
+<li><code><a title="DINO2.model.network.BikeRule.mvv" href="#DINO2.model.network.BikeRule.mvv">mvv</a></code></li>
+<li><code><a title="DINO2.model.network.BikeRule.db" href="#DINO2.model.network.BikeRule.db">db</a></code></li>
+<li><code><a title="DINO2.model.network.BikeRule.gvh" href="#DINO2.model.network.BikeRule.gvh">gvh</a></code></li>
+<li><code><a title="DINO2.model.network.BikeRule.ivb" href="#DINO2.model.network.BikeRule.ivb">ivb</a></code></li>
+<li><code><a title="DINO2.model.network.BikeRule.tfl" href="#DINO2.model.network.BikeRule.tfl">tfl</a></code></li>
+<li><code><a title="DINO2.model.network.BikeRule.vvs_end" href="#DINO2.model.network.BikeRule.vvs_end">vvs_end</a></code></li>
+<li><code><a title="DINO2.model.network.BikeRule.always_allowed" href="#DINO2.model.network.BikeRule.always_allowed">always_allowed</a></code></li>
+<li><code><a title="DINO2.model.network.BikeRule.regulated_per_journey" href="#DINO2.model.network.BikeRule.regulated_per_journey">regulated_per_journey</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.network.Course" href="#DINO2.model.network.Course">Course</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.network.Course.duration" href="#DINO2.model.network.Course.duration">duration</a></code></li>
+<li><code><a title="DINO2.model.network.Course.date_valid" href="#DINO2.model.network.Course.date_valid">date_valid</a></code></li>
+<li><code><a title="DINO2.model.network.Course.length" href="#DINO2.model.network.Course.length">length</a></code></li>
+<li><code><a title="DINO2.model.network.Course.wkt_m" href="#DINO2.model.network.Course.wkt_m">wkt_m</a></code></li>
+<li><code><a title="DINO2.model.network.Course.version_id" href="#DINO2.model.network.Course.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.network.Course.branch_id" href="#DINO2.model.network.Course.branch_id">branch_id</a></code></li>
+<li><code><a title="DINO2.model.network.Course.line" href="#DINO2.model.network.Course.line">line</a></code></li>
+<li><code><a title="DINO2.model.network.Course.id" href="#DINO2.model.network.Course.id">id</a></code></li>
+<li><code><a title="DINO2.model.network.Course.name" href="#DINO2.model.network.Course.name">name</a></code></li>
+<li><code><a title="DINO2.model.network.Course.line_dir" href="#DINO2.model.network.Course.line_dir">line_dir</a></code></li>
+<li><code><a title="DINO2.model.network.Course.last_mod" href="#DINO2.model.network.Course.last_mod">last_mod</a></code></li>
+<li><code><a title="DINO2.model.network.Course.mot_id" href="#DINO2.model.network.Course.mot_id">mot_id</a></code></li>
+<li><code><a title="DINO2.model.network.Course.valid_from" href="#DINO2.model.network.Course.valid_from">valid_from</a></code></li>
+<li><code><a title="DINO2.model.network.Course.valid_to" href="#DINO2.model.network.Course.valid_to">valid_to</a></code></li>
+<li><code><a title="DINO2.model.network.Course.operator_id" href="#DINO2.model.network.Course.operator_id">operator_id</a></code></li>
+<li><code><a title="DINO2.model.network.Course.operator_branch_office_id" href="#DINO2.model.network.Course.operator_branch_office_id">operator_branch_office_id</a></code></li>
+<li><code><a title="DINO2.model.network.Course.type" href="#DINO2.model.network.Course.type">type</a></code></li>
+<li><code><a title="DINO2.model.network.Course.global_id" href="#DINO2.model.network.Course.global_id">global_id</a></code></li>
+<li><code><a title="DINO2.model.network.Course.bike_rule" href="#DINO2.model.network.Course.bike_rule">bike_rule</a></code></li>
+<li><code><a title="DINO2.model.network.Course.branch" href="#DINO2.model.network.Course.branch">branch</a></code></li>
+<li><code><a title="DINO2.model.network.Course.mot" href="#DINO2.model.network.Course.mot">mot</a></code></li>
+<li><code><a title="DINO2.model.network.Course.operator" href="#DINO2.model.network.Course.operator">operator</a></code></li>
+<li><code><a title="DINO2.model.network.Course.operator_branch_office" href="#DINO2.model.network.Course.operator_branch_office">operator_branch_office</a></code></li>
+<li><code><a title="DINO2.model.network.Course.stops" href="#DINO2.model.network.Course.stops">stops</a></code></li>
+<li><code><a title="DINO2.model.network.Course.stop_timings" href="#DINO2.model.network.Course.stop_timings">stop_timings</a></code></li>
+<li><code><a title="DINO2.model.network.Course.trips" href="#DINO2.model.network.Course.trips">trips</a></code></li>
+<li><code><a title="DINO2.model.network.Course.trip_vdt_changes" href="#DINO2.model.network.Course.trip_vdt_changes">trip_vdt_changes</a></code></li>
+<li><code><a title="DINO2.model.network.Course.vdts" href="#DINO2.model.network.Course.vdts">vdts</a></code></li>
+<li><code><a title="DINO2.model.network.Course.version" href="#DINO2.model.network.Course.version">version</a></code></li>
+<li><code><a title="DINO2.model.network.Course.wkt" href="#DINO2.model.network.Course.wkt">wkt</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.network.StopPointType" href="#DINO2.model.network.StopPointType">StopPointType</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.network.StopPointType.no_stopping" href="#DINO2.model.network.StopPointType.no_stopping">no_stopping</a></code></li>
+<li><code><a title="DINO2.model.network.StopPointType.standard" href="#DINO2.model.network.StopPointType.standard">standard</a></code></li>
+<li><code><a title="DINO2.model.network.StopPointType.on_request" href="#DINO2.model.network.StopPointType.on_request">on_request</a></code></li>
+<li><code><a title="DINO2.model.network.StopPointType.no_boarding" href="#DINO2.model.network.StopPointType.no_boarding">no_boarding</a></code></li>
+<li><code><a title="DINO2.model.network.StopPointType.no_alighting" href="#DINO2.model.network.StopPointType.no_alighting">no_alighting</a></code></li>
+<li><code><a title="DINO2.model.network.StopPointType.no_place_internal" href="#DINO2.model.network.StopPointType.no_place_internal">no_place_internal</a></code></li>
+<li><code><a title="DINO2.model.network.StopPointType.no_passengers" href="#DINO2.model.network.StopPointType.no_passengers">no_passengers</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.network.CourseStop" href="#DINO2.model.network.CourseStop">CourseStop</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.network.CourseStop.version_id" href="#DINO2.model.network.CourseStop.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.line" href="#DINO2.model.network.CourseStop.line">line</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.course_id" href="#DINO2.model.network.CourseStop.course_id">course_id</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.line_dir" href="#DINO2.model.network.CourseStop.line_dir">line_dir</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.consec_stop_nr" href="#DINO2.model.network.CourseStop.consec_stop_nr">consec_stop_nr</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.stop_id" href="#DINO2.model.network.CourseStop.stop_id">stop_id</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.stop_point_id" href="#DINO2.model.network.CourseStop.stop_point_id">stop_point_id</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.stop_point_type" href="#DINO2.model.network.CourseStop.stop_point_type">stop_point_type</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.length" href="#DINO2.model.network.CourseStop.length">length</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.stop" href="#DINO2.model.network.CourseStop.stop">stop</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.stop_point" href="#DINO2.model.network.CourseStop.stop_point">stop_point</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.course" href="#DINO2.model.network.CourseStop.course">course</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.timings" href="#DINO2.model.network.CourseStop.timings">timings</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.trip_vdt_changes" href="#DINO2.model.network.CourseStop.trip_vdt_changes">trip_vdt_changes</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStop.version" href="#DINO2.model.network.CourseStop.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.network.CourseStopTiming" href="#DINO2.model.network.CourseStopTiming">CourseStopTiming</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.network.CourseStopTiming.version_id" href="#DINO2.model.network.CourseStopTiming.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStopTiming.line" href="#DINO2.model.network.CourseStopTiming.line">line</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStopTiming.course_id" href="#DINO2.model.network.CourseStopTiming.course_id">course_id</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStopTiming.line_dir" href="#DINO2.model.network.CourseStopTiming.line_dir">line_dir</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStopTiming.consec_stop_nr" href="#DINO2.model.network.CourseStopTiming.consec_stop_nr">consec_stop_nr</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStopTiming.timing_group" href="#DINO2.model.network.CourseStopTiming.timing_group">timing_group</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStopTiming.time_to_stop" href="#DINO2.model.network.CourseStopTiming.time_to_stop">time_to_stop</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStopTiming.stopping_time" href="#DINO2.model.network.CourseStopTiming.stopping_time">stopping_time</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStopTiming.course_stop" href="#DINO2.model.network.CourseStopTiming.course_stop">course_stop</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStopTiming.course" href="#DINO2.model.network.CourseStopTiming.course">course</a></code></li>
+<li><code><a title="DINO2.model.network.CourseStopTiming.version" href="#DINO2.model.network.CourseStopTiming.version">version</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

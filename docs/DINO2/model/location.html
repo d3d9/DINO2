@@ -1,0 +1,4093 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.1" />
+<title>DINO2.model.location API documentation</title>
+<meta name="description" content="DINO 2.1 location data" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>DINO2.model.location</code></h1>
+</header>
+<section id="section-intro">
+<p>DINO 2.1 location data</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: utf-8 -*-
+&#34;&#34;&#34;DINO 2.1 location data&#34;&#34;&#34;
+
+from __future__ import annotations
+
+from collections import UserList
+from datetime import date
+import decimal
+from enum import Enum
+from sqlalchemy import Column, String, Integer, Boolean, ForeignKey, ForeignKeyConstraint, PrimaryKeyConstraint
+from sqlalchemy.ext.declarative import declared_attr
+from sqlalchemy.types import DECIMAL
+from sqlalchemy.orm import relationship, RelationshipProperty
+from typing import Optional, FrozenSet, TYPE_CHECKING, Sequence, Union
+
+from ..types import DinoDate, IntEnum
+from . import Base, Version
+
+if TYPE_CHECKING:
+    from .fares import FareZone
+    from .operational import Branch
+    from .network import Course
+
+
+class StopType(Enum):
+    standard = 0
+    on_request = 1
+    alighting_only = 2
+    hail_and_ride = 3
+    on_request_outside_net = 4
+    transition_tarif = 7
+    ein_aus_bringer = 8
+    outside_net = 9
+    time_pos = 10
+    school = 12
+    undocumented_type_19 = 19
+
+
+class Stop(Base):
+    &#34;&#34;&#34;
+    Stop
+
+    Main model class for stops.  
+    `Stop.valid_from` is supposed to be used to select a single `Stop` object from an importable DINO dataset,
+    because of possible ambiguous objects in case of e. g. a name change during a period.
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;stop.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+
+    type: Column[Optional[StopType]] = Column(&#34;STOP_TYPE&#34;, IntEnum(StopType))
+    &#34;&#34;&#34;Stop type&#34;&#34;&#34;
+    name: Column[str] = Column(&#34;STOP_NAME&#34;, String(length=50), nullable=False)
+    &#34;&#34;&#34;Stop name (including place name)&#34;&#34;&#34;
+    name_noloc: Column[Optional[str]] = Column(&#34;STOP_NAME_WITHOUT_LOCALITY&#34;, String(length=50))
+    &#34;&#34;&#34;Stop name without place name&#34;&#34;&#34;
+    abbr: Column[Optional[str]] = Column(&#34;STOP_SHORTNAME&#34;, String(length=8))
+    &#34;&#34;&#34;Short name / abbreviation of stop&#34;&#34;&#34;
+
+    pos_x: Column[Optional[str]] = Column(&#34;STOP_POS_X&#34;, String(length=12), info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Stop X coordinate (WGS84)&#34;&#34;&#34;
+    pos_y: Column[Optional[str]] = Column(&#34;STOP_POS_Y&#34;, String(length=12), info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Stop Y coordinate (WGS84)&#34;&#34;&#34;
+
+    place: Column[Optional[str]] = Column(&#34;PLACE&#34;, String(length=20))
+    &#34;&#34;&#34;Place name (deprecated)&#34;&#34;&#34;
+
+    occ: Column[Optional[int]] = Column(&#34;OCC&#34;, Integer())
+    &#34;&#34;&#34;Official community code / Amtliche Gemeindekennziffer&#34;&#34;&#34;
+
+    fz1id: Column[Optional[int]] = Column(&#34;FARE_ZONE1_NR&#34;, Integer())
+    &#34;&#34;&#34;Fare zone id 1&#34;&#34;&#34;
+    fz2id: Column[Optional[int]] = Column(&#34;FARE_ZONE2_NR&#34;, Integer())
+    fz3id: Column[Optional[int]] = Column(&#34;FARE_ZONE3_NR&#34;, Integer())
+    fz4id: Column[Optional[int]] = Column(&#34;FARE_ZONE4_NR&#34;, Integer())
+    fz5id: Column[Optional[int]] = Column(&#34;FARE_ZONE5_NR&#34;, Integer())
+    fz6id: Column[Optional[int]] = Column(&#34;FARE_ZONE6_NR&#34;, Integer())
+
+    ifopt: Column[Optional[str]] = Column(&#34;GLOBAL_ID&#34;, String(length=100))
+    &#34;&#34;&#34;IFOPT / global id&#34;&#34;&#34;
+
+    valid_from: Column[Optional[date]] = Column(&#34;VALID_FROM&#34;, DinoDate)
+    &#34;&#34;&#34;Valid from date (used in import, primary keys may occur multiple times with different validity periods)&#34;&#34;&#34;
+    valid_to: Column[Optional[date]] = Column(&#34;VALID_TO&#34;, DinoDate)
+    &#34;&#34;&#34;Valid until date&#34;&#34;&#34;
+
+    place_id: Column[Optional[str]] = Column(&#34;PLACE_ID&#34;, String(length=50))
+    &#34;&#34;&#34;unique place ID&#34;&#34;&#34;
+    gis_mot_flag: Column[Optional[int]] = Column(&#34;GIS_MOT_FLAG&#34;, Integer())
+    &#34;&#34;&#34;GIS MOT bit flags&#34;&#34;&#34;
+    is_central_stop: Column[Optional[bool]] = Column(&#34;IS_CENTRAL_STOP&#34;, Boolean())
+    &#34;&#34;&#34;Whether stop is central stop&#34;&#34;&#34;
+    is_responsible_stop: Column[Optional[bool]] = Column(&#34;IS_RESPONSIBLE_STOP&#34;, Boolean())
+    &#34;&#34;&#34;Whether this stop object is the main/&#39;responsible&#39; one between multiple subnets&#34;&#34;&#34;
+    interchange_quality: Column[Optional[int]] = Column(&#34;INTERCHANGE_QUALITY&#34;, Integer())
+    &#34;&#34;&#34;Interchange quality (higher is better)&#34;&#34;&#34;
+
+    fz1: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=&#34;[Stop.version_id, Stop.fz1id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.fares.FareZone` 1&#34;&#34;&#34;
+    fz2: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=&#34;[Stop.version_id, Stop.fz2id]&#34;, viewonly=True)
+    fz3: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=&#34;[Stop.version_id, Stop.fz3id]&#34;, viewonly=True)
+    fz4: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=&#34;[Stop.version_id, Stop.fz4id]&#34;, viewonly=True)
+    fz5: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=&#34;[Stop.version_id, Stop.fz5id]&#34;, viewonly=True)
+    fz6: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=&#34;[Stop.version_id, Stop.fz6id]&#34;, viewonly=True)
+    stop_alias_placenames: RelationshipProperty[Sequence[StopAliasPlacename]] = relationship(&#34;StopAliasPlacename&#34;, back_populates=&#34;stop&#34;)
+    &#34;&#34;&#34;`DINO2.model.location.StopAliasPlacename`s of this stop&#34;&#34;&#34;
+    stop_additional_names: RelationshipProperty[Sequence[StopAdditionalName]] = relationship(&#34;StopAdditionalName&#34;, back_populates=&#34;stop&#34;)
+    &#34;&#34;&#34;`DINO2.model.location.StopAdditionalName`s of this stop&#34;&#34;&#34;
+    areas: RelationshipProperty[Sequence[StopArea]] = relationship(&#34;StopArea&#34;, back_populates=&#34;stop&#34;)
+    &#34;&#34;&#34;`DINO2.model.location.StopArea`s of this stop&#34;&#34;&#34;
+    points: RelationshipProperty[Sequence[StopPoint]] = relationship(&#34;StopPoint&#34;, back_populates=&#34;stop&#34;)
+    &#34;&#34;&#34;`DINO2.model.location.StopPoint`s of this stop&#34;&#34;&#34;
+    links_from: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, foreign_keys=&#34;[Link.version_id, Link.from_stop_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.Link`s from this stop&#34;&#34;&#34;
+    links_to: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, foreign_keys=&#34;[Link.version_id, Link.to_stop_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.Link`s to this stop&#34;&#34;&#34;
+    courses: RelationshipProperty[Sequence[Course]] = relationship(&#34;Course&#34;, secondary=&#34;route&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.Course`s with this stop on route&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;stops&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    @property
+    def fare_zone_ids(self) -&gt; FrozenSet[int]:
+        &#34;&#34;&#34;Set of ids of `DINO2.model.fares.FareZone`s of this stop&#34;&#34;&#34;
+        return frozenset(filter(None, (self.fz1id, self.fz2id, self.fz3id, self.fz4id, self.fz5id, self.fz6id)))
+
+    @property
+    def fare_zones(self) -&gt; FrozenSet[FareZone]:
+        &#34;&#34;&#34;Set of `DINO2.model.fares.FareZone`s this stop is in&#34;&#34;&#34;
+        return frozenset(filter(None, (self.fz1, self.fz2, self.fz3, self.fz4, self.fz5, self.fz6)))
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, fz1id], [&#34;fare_zone.VERSION&#34;, &#34;fare_zone.FARE_ZONE_NR&#34;]),
+        ForeignKeyConstraint([version_id, fz2id], [&#34;fare_zone.VERSION&#34;, &#34;fare_zone.FARE_ZONE_NR&#34;]),
+        ForeignKeyConstraint([version_id, fz3id], [&#34;fare_zone.VERSION&#34;, &#34;fare_zone.FARE_ZONE_NR&#34;]),
+        ForeignKeyConstraint([version_id, fz4id], [&#34;fare_zone.VERSION&#34;, &#34;fare_zone.FARE_ZONE_NR&#34;]),
+        ForeignKeyConstraint([version_id, fz5id], [&#34;fare_zone.VERSION&#34;, &#34;fare_zone.FARE_ZONE_NR&#34;]),
+        ForeignKeyConstraint([version_id, fz6id], [&#34;fare_zone.VERSION&#34;, &#34;fare_zone.FARE_ZONE_NR&#34;])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Stop(version_id={self.version_id}, id={self.id}, name={self.name}, type={self.type}, ifopt={self.ifopt})&gt;&#34;
+
+
+class StopAliasPlacename(Base):
+    &#34;&#34;&#34;
+    Stop alias place name
+
+    Primary key: `version_id` &amp; `stop_id` &amp; `alias_place` &amp; `alias_occ`
+    &#34;&#34;&#34;
+    _din_file = &#34;stop_alias_placename.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    stop_id: Column[int] = Column(&#34;STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+
+    alias_place: Column[str] = Column(&#34;ALIAS_PLACE&#34;, String(length=20), primary_key=True)
+    &#34;&#34;&#34;Name of place&#34;&#34;&#34;
+
+    alias_occ: Column[int] = Column(&#34;ALIAS_OCC&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;OCC of place&#34;&#34;&#34;
+
+    stop: RelationshipProperty[Stop] = relationship(Stop, back_populates=&#34;stop_alias_placenames&#34;)
+    &#34;&#34;&#34;`Stop`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, stop_id], [Stop.version_id, Stop.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;StopAliasPlacename(version_id={self.version_id}, stop={self.stop}, alias_place={self.alias_place}, alias_occ={self.alias_occ})&gt;&#34;
+
+
+class StopAdditionalName(Base):
+    &#34;&#34;&#34;
+    Stop additional name
+
+    Primary key: `version_id` &amp; `stop_id` &amp; `name` &amp; `name_noloc`
+    &#34;&#34;&#34;
+    _din_file = &#34;stop_additional_name.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    stop_id: Column[int] = Column(&#34;STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+
+    name: Column[str] = Column(&#34;ADD_STOP_NAME_WITH_LOCALITY&#34;, String(length=255), primary_key=True)
+    &#34;&#34;&#34;Additional stop name with place name&#34;&#34;&#34;
+
+    name_noloc: Column[str] = Column(&#34;ADD_STOP_NAME_WITHOUT_LOCALITY&#34;, String(length=255), primary_key=True, info={&#39;keep_empty_str&#39;: True})
+    &#34;&#34;&#34;Additional stop name without place name&#34;&#34;&#34;
+
+    stop: RelationshipProperty[Stop] = relationship(Stop, back_populates=&#34;stop_additional_names&#34;)
+    &#34;&#34;&#34;`Stop`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, stop_id], [Stop.version_id, Stop.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;StopAdditionalName(version_id={self.version_id}, stop={self.stop}, name={self.name}, name_noloc={self.name_noloc})&gt;&#34;
+
+
+class StopAreaType(Enum):
+    entrance_and_pt = 0
+    pt = 1
+    p_r = 2
+    b_r = 3
+    taxi = 4
+    entrance = 5
+    airport_terminal = 6
+    entrance_and_b_r = 7
+    entrance_pt_and_b_r = 8
+    entrance_and_taxi = 9
+    entrance_pt_and_taxi = 10
+    mezzanine = 11
+    hail_and_ride = 12
+
+
+class StopArea(Base):
+    &#34;&#34;&#34;
+    Stop area
+
+    Used to group `StopPoint`s, especially for working with transfer data.
+
+    Primary key: `version_id` &amp; `stop_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;stop_area.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    stop_id: Column[int] = Column(&#34;STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;STOP_AREA_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop area id&#34;&#34;&#34;
+
+    pos_x: Column[Optional[str]] = Column(&#34;STOP_AREA_POS_X&#34;, String(length=12), info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Stop area X coordinate (WGS84)&#34;&#34;&#34;
+    pos_y: Column[Optional[str]] = Column(&#34;STOP_AREA_POS_Y&#34;, String(length=12), info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Stop area Y coordinate (WGS84)&#34;&#34;&#34;
+
+    abbr: Column[Optional[str]] = Column(&#34;STOP_AREA_SHORT_NAME&#34;, String(length=5))
+    &#34;&#34;&#34;Stop area abbreviation&#34;&#34;&#34;
+    name: Column[str] = Column(&#34;STOP_AREA_LONG_NAME&#34;, String(length=20), nullable=False, info={&#39;keep_empty_str&#39;: True})
+    &#34;&#34;&#34;Stop area name&#34;&#34;&#34;
+    level: Column[Optional[int]] = Column(&#34;STOP_AREA_LEVEL&#34;, Integer())
+    &#34;&#34;&#34;Stop area level information&#34;&#34;&#34;
+
+    type: Column[Optional[StopAreaType]] = Column(&#34;STOP_AREA_TYPE&#34;, IntEnum(StopAreaType))
+    &#34;&#34;&#34;Stop area type&#34;&#34;&#34;
+
+    ifopt: Column[Optional[str]] = Column(&#34;GLOBAL_ID&#34;, String(length=100))
+    &#34;&#34;&#34;IFOPT / global id&#34;&#34;&#34;
+
+    gis_mot_flag: Column[Optional[int]] = Column(&#34;GIS_MOT_FLAG&#34;, Integer())
+    &#34;&#34;&#34;GIS MOT bit flags&#34;&#34;&#34;
+
+    valid_from: Column[Optional[date]] = Column(&#34;VALID_FROM&#34;, DinoDate)
+    &#34;&#34;&#34;Valid from date&#34;&#34;&#34;
+    valid_to: Column[Optional[date]] = Column(&#34;VALID_TO&#34;, DinoDate)
+    &#34;&#34;&#34;Valid until date&#34;&#34;&#34;
+
+    stop: RelationshipProperty[Stop] = relationship(Stop, back_populates=&#34;areas&#34;)
+    &#34;&#34;&#34;`Stop`&#34;&#34;&#34;
+    points: RelationshipProperty[Sequence[StopPoint]] = relationship(&#34;StopPoint&#34;, viewonly=True)
+    &#34;&#34;&#34;`StopPoint`s of this stop area&#34;&#34;&#34;
+    links_from: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, foreign_keys=&#34;[Link.version_id, Link.from_stop_id, Link.from_area_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`Link`s from this stop area&#34;&#34;&#34;
+    links_to: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, foreign_keys=&#34;[Link.version_id, Link.to_stop_id, Link.to_area_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`Link`s to this stop area&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, stop_id], [Stop.version_id, Stop.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;StopArea(version_id={self.version_id}, stop_id={self.stop_id} ({self.stop.name}), id={self.id}, name={self.name}, type={self.type}, ifopt={self.ifopt})&gt;&#34;
+
+
+class StreetAccess(Enum):
+    unknown = 0
+    level = 1
+    small_step = 2
+    large_step = 3
+
+
+class StopPoint(Base):
+    &#34;&#34;&#34;
+    Stopping point
+
+    Depicts a platform of a `Stop` a vehicle can stop at.
+
+    Primary key: `version_id` &amp; `stop_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;stop_point.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    stop_id: Column[int] = Column(&#34;STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+
+    area_id: Column[int] = Column(&#34;STOP_AREA_NR&#34;, Integer(), primary_key=False, nullable=False)
+    &#34;&#34;&#34;Stop area id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;STOPPING_POINT_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop point id&#34;&#34;&#34;
+
+    pos_x: Column[Optional[str]] = Column(&#34;STOPPING_POINT_POS_X&#34;, String(length=12), info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Stop point X coordinate (WGS84)&#34;&#34;&#34;
+    pos_y: Column[Optional[str]] = Column(&#34;STOPPING_POINT_POS_Y&#34;, String(length=12), info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Stop point Y coordinate (WGS84)&#34;&#34;&#34;
+
+    gis_segment_id: Column[Optional[int]] = Column(&#34;SEGMENT_ID&#34;, Integer())
+    &#34;&#34;&#34;ID of GIS segment&#34;&#34;&#34;
+    gis_segment_dist: Column[Optional[int]] = Column(&#34;SEGMENT_DIST&#34;, Integer())
+    &#34;&#34;&#34;Distance from first segment node (m)&#34;&#34;&#34;
+
+    stop_rbl_nr: Column[Optional[int]] = Column(&#34;STOP_RBL_NR&#34;, Integer())
+    &#34;&#34;&#34;VDV 454 RBL stopping point number&#34;&#34;&#34;
+
+    name: Column[Optional[str]] = Column(&#34;STOPPING_POINT_SHORTNAME&#34;, String(length=255))
+    &#34;&#34;&#34;Stop point name&#34;&#34;&#34;
+
+    purpose_ttb: Column[Optional[bool]] = Column(&#34;PURPOSE_TTB&#34;, Boolean())
+    &#34;&#34;&#34;Purpose: timetable book&#34;&#34;&#34;
+    purpose_stt: Column[Optional[bool]] = Column(&#34;PURPOSE_STT&#34;, Boolean())
+    &#34;&#34;&#34;Purpose: stop time table&#34;&#34;&#34;
+    purpose_jp: Column[Optional[bool]] = Column(&#34;PURPOSE_JP&#34;, Boolean())
+    &#34;&#34;&#34;Purpose: journey planner&#34;&#34;&#34;
+    purpose_cbs: Column[Optional[bool]] = Column(&#34;PURPOSE_CBS&#34;, Boolean())
+    &#34;&#34;&#34;Purpose: central station&#34;&#34;&#34;
+
+    ifopt: Column[Optional[str]] = Column(&#34;GLOBAL_ID&#34;, String(length=100))
+    &#34;&#34;&#34;IFOPT / global id&#34;&#34;&#34;
+
+    gis_mot_flag: Column[Optional[int]] = Column(&#34;GIS_MOT_FLAG&#34;, Integer())
+    &#34;&#34;&#34;GIS MOT bit flags&#34;&#34;&#34;
+
+    valid_from: Column[Optional[date]] = Column(&#34;VALID_FROM&#34;, DinoDate)
+    &#34;&#34;&#34;Valid from date&#34;&#34;&#34;
+    valid_to: Column[Optional[date]] = Column(&#34;VALID_TO&#34;, DinoDate)
+    &#34;&#34;&#34;Valid until date&#34;&#34;&#34;
+
+    platform_height: Column[Optional[int]] = Column(&#34;PLATFORM_HEIGHT&#34;, Integer())
+    &#34;&#34;&#34;Platform height in mm above rail/street surface&#34;&#34;&#34;
+    rail_centre_dist: Column[Optional[int]] = Column(&#34;DISTANCE_TO_RAIL_CENTRE&#34;, Integer())
+    &#34;&#34;&#34;Horizontal distance of platform edge to rail centre&#34;&#34;&#34;
+    has_mobile_ramp: Column[Optional[bool]] = Column(&#34;HAS_MOBILE_RAMP&#34;, Boolean())
+    &#34;&#34;&#34;Whether the platform has a mobile ramp&#34;&#34;&#34;
+    boarding_space: Column[Optional[int]] = Column(&#34;BOARDING_SPACE&#34;, Integer())
+    &#34;&#34;&#34;Space in mm provided on pavement for operating the equipment&#34;&#34;&#34;
+
+    street_access: Column[Optional[StreetAccess]] = Column(&#34;STREET_ACCESS&#34;, IntEnum(StreetAccess))
+    &#34;&#34;&#34;Accessibility of platform from street (unknown/level/small/large step)&#34;&#34;&#34;
+
+    stop: RelationshipProperty[Stop] = relationship(Stop, back_populates=&#34;points&#34;)
+    &#34;&#34;&#34;`Stop`&#34;&#34;&#34;
+    area: RelationshipProperty[StopArea] = relationship(StopArea, viewonly=True)
+    &#34;&#34;&#34;`StopArea` this stop point is in&#34;&#34;&#34;
+    links_from: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, foreign_keys=&#34;[Link.version_id, Link.from_stop_id, Link.from_point_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`Link`s from this stop point&#34;&#34;&#34;
+    links_to: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, foreign_keys=&#34;[Link.version_id, Link.to_stop_id, Link.to_point_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`Link`s to this stop point&#34;&#34;&#34;
+    courses: RelationshipProperty[Sequence[Course]] = relationship(&#34;Course&#34;, secondary=&#34;route&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.Course`s with this stop point on route&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, stop_id], [Stop.version_id, Stop.id]),
+        ForeignKeyConstraint([version_id, stop_id, area_id], [StopArea.version_id, StopArea.stop_id, StopArea.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;StopPoint(version_id={self.version_id}, stop={self.stop}, area={self.area}, id={self.id}, name={self.name}, ifopt={self.ifopt})&gt;&#34;
+
+
+class Link(Base):
+    &#34;&#34;&#34;
+    Link -- for way geometry between `Stop`/`StopArea`/`StopPoint` objects
+
+    Only one link per branch is allowed between two specific elements.
+
+    Primary key: `version_id` &amp; `id` &amp; `branch_id` &amp; `from_stop_id` &amp; _`from_area_id`_ &amp; `to_stop_id` &amp; _`to_area_id`_ &amp; _`to_point_id`_
+    &#34;&#34;&#34;
+    _din_file = &#34;link.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;LINK_ID&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Link id&#34;&#34;&#34;
+
+    branch_id: Column[int] = Column(&#34;BRANCH_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Branch id&#34;&#34;&#34;
+
+    from_stop_id: Column[int] = Column(&#34;ORIG_STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;From stop id&#34;&#34;&#34;
+    from_area_id: Column[Optional[int]] = Column(&#34;ORIG_STOP_AREA_NR&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;From stop area id&#34;&#34;&#34;
+    from_point_id: Column[Optional[int]] = Column(&#34;STOPPING_POINT_NR&#34;, Integer(), primary_key=False, nullable=True)
+    &#34;&#34;&#34;From stop point id&#34;&#34;&#34;
+
+    to_stop_id: Column[int] = Column(&#34;DEST_STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;To stop id&#34;&#34;&#34;
+    to_area_id: Column[Optional[int]] = Column(&#34;DEST_STOP_AREA_NR&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;To stop area id&#34;&#34;&#34;
+    to_point_id: Column[Optional[int]] = Column(&#34;DEST_STOPPING_POINT_NR&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;To stop point id&#34;&#34;&#34;
+
+    length: Column[Optional[int]] = Column(&#34;LENGTH&#34;, Integer())
+    &#34;&#34;&#34;Length (m)&#34;&#34;&#34;
+    gis_length: Column[Optional[int]] = Column(&#34;GIS_LENGTH&#34;, Integer())
+    &#34;&#34;&#34;GIS Length (m)&#34;&#34;&#34;
+
+    from_stop: RelationshipProperty[Stop] = relationship(Stop, foreign_keys=&#34;[Link.version_id, Link.from_stop_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;From `Stop`&#34;&#34;&#34;
+    from_area: RelationshipProperty[Optional[StopArea]] = relationship(StopArea, foreign_keys=&#34;[Link.version_id, Link.from_stop_id, Link.from_area_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;From `StopArea`&#34;&#34;&#34;
+    from_point: RelationshipProperty[Optional[StopPoint]] = relationship(StopPoint, foreign_keys=&#34;[Link.version_id, Link.from_stop_id, Link.from_point_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;From `StopPoint`&#34;&#34;&#34;
+    to_stop: RelationshipProperty[Stop] = relationship(Stop, foreign_keys=&#34;[Link.version_id, Link.to_stop_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;To `Stop`&#34;&#34;&#34;
+    to_area: RelationshipProperty[Optional[StopArea]] = relationship(StopArea, foreign_keys=&#34;[Link.version_id, Link.to_stop_id, Link.to_area_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;To `StopArea`&#34;&#34;&#34;
+    to_point: RelationshipProperty[Optional[StopPoint]] = relationship(StopPoint, foreign_keys=&#34;[Link.version_id, Link.to_stop_id, Link.to_point_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;To `StopPoint`&#34;&#34;&#34;
+    geometry: RelationshipProperty[Sequence[LinkGeometryPoint]] = relationship(&#34;LinkGeometryPoint&#34;, order_by=&#34;asc(LinkGeometryPoint.consec_pt_nr)&#34;, back_populates=&#34;link&#34;)
+    &#34;&#34;&#34;`LinkGeometryPoint`s of this link&#34;&#34;&#34;
+    force_points: RelationshipProperty[Sequence[LinkForcePoint]] = relationship(&#34;LinkForcePoint&#34;, order_by=&#34;asc(LinkForcePoint.consec_pt_nr)&#34;, back_populates=&#34;link&#34;)
+    &#34;&#34;&#34;`LinkForcePoint`s of this link&#34;&#34;&#34;
+    branch: RelationshipProperty[Branch] = relationship(&#34;Branch&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.Branch`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;links&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    @property
+    def wkt(self) -&gt; str:
+        &#34;&#34;&#34;Get WKT (well known text) representation of link geometry&#34;&#34;&#34;
+        text = &#34;LINESTRING (&#34;
+        geomlist: Sequence[LinkPoint] = self.geometry or self.force_points
+        for p in geomlist:
+            text += f&#34;{p.pos_x} {p.pos_y}, &#34;
+        return text[:-2] + &#34;)&#34;
+
+    def wkt_m(self, ts_start: int, ts_end: int) -&gt; str:
+        &#34;&#34;&#34;Get WKT representation with time measures for specific start and end timestamp&#34;&#34;&#34;
+        text = &#34;LINESTRING M (&#34;
+        geomlist: Sequence[LinkPoint] = self.geometry or self.force_points
+        # todo: distance statt index..
+        for i, p in enumerate(geomlist):
+            m = int(ts_start + i * (ts_end - ts_start) / (len(geomlist) - 1))
+            text += f&#34;{p.pos_x} {p.pos_y} {m}, &#34;
+        return text[:-2] + &#34;)&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, branch_id], [&#34;branch.VERSION&#34;, &#34;branch.BRANCH_NR&#34;]),
+        ForeignKeyConstraint([version_id, from_stop_id], [Stop.version_id, Stop.id]),
+        ForeignKeyConstraint([version_id, from_stop_id, from_area_id], [StopArea.version_id, StopArea.stop_id, StopArea.id]),
+        ForeignKeyConstraint([version_id, from_stop_id, from_point_id], [StopPoint.version_id, StopPoint.stop_id, StopPoint.id]),
+        ForeignKeyConstraint([version_id, to_stop_id], [Stop.version_id, Stop.id]),
+        ForeignKeyConstraint([version_id, to_stop_id, to_area_id], [StopArea.version_id, StopArea.stop_id, StopArea.id]),
+        ForeignKeyConstraint([version_id, to_stop_id, to_point_id], [StopPoint.version_id, StopPoint.stop_id, StopPoint.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Link(version_id={self.version_id}, id={self.id}, from_stop_id={self.from_stop_id}, from_area_id={self.from_area_id}, from_point_id={self.from_point_id}, to_stop_id={self.to_stop_id}, to_area_id={self.to_area_id}, to_point_id={self.to_point_id})&gt;&#34;
+
+
+class LinkPoint(Base):
+    &#34;&#34;&#34;
+    Abstract base class for points of `Link`s.
+    &#34;&#34;&#34;
+    __abstract__ = True
+
+    @declared_attr
+    def version_id(cls) -&gt; Column[int]:
+        &#34;&#34;&#34;Version id&#34;&#34;&#34;
+        return Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), nullable=False)
+
+    link_id: Column[int] = Column(&#34;LINK_ID&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Link id&#34;&#34;&#34;
+
+    consec_pt_nr: Column[int] = Column(&#34;LINK_CONSEC_PT_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Consecutive point number&#34;&#34;&#34;
+
+    pos_x: Column[str] = Column(&#34;LINK_PT_X&#34;, String(length=11), nullable=False, info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Point X coordinate (WGS84)&#34;&#34;&#34;
+    pos_y: Column[str] = Column(&#34;LINK_PT_Y&#34;, String(length=11), nullable=False, info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Point Y coordinate (WGS84)&#34;&#34;&#34;
+
+    _link_bp_name: str
+    @declared_attr
+    def link(cls) -&gt; RelationshipProperty[Link]:
+        &#34;&#34;&#34;`Link`&#34;&#34;&#34;
+        return relationship(Link, back_populates=cls._link_bp_name)
+
+    @declared_attr
+    def version(cls) -&gt; RelationshipProperty[Version]:
+        &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+        return relationship(&#34;Version&#34;, viewonly=True)
+
+    @declared_attr
+    def __table_args__(cls):
+        return (
+            PrimaryKeyConstraint(cls.version_id, cls.link_id, cls.consec_pt_nr),
+            ForeignKeyConstraint([cls.version_id, cls.link_id], [Link.version_id, Link.id])
+        )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;{self.__class__.__name__}(version_id={self.version_id}, link_id={self.link_id}, consec_pt_nr={self.consec_pt_nr}, pos_x={self.pos_x}, pos_y={self.pos_y})&gt;&#34;
+
+
+class LinkGeometryPoint(LinkPoint):
+    &#34;&#34;&#34;
+    Coordinates of a point on a `Link` geometry.
+
+    Primary key: `version_id` &amp; `link_id` &amp; `consec_pt_nr`
+    &#34;&#34;&#34;
+    __abstract__ = False
+    _din_file = &#34;link_geometry.din&#34;
+    _link_bp_name = &#34;geometry&#34;
+
+
+class LinkForcePoint(LinkPoint):
+    &#34;&#34;&#34;
+    Coordinates of a force point of a `Link` geometry.
+
+    Primary key: `version_id` &amp; `link_id` &amp; `consec_pt_nr`
+    &#34;&#34;&#34;
+    __abstract__ = False
+    _din_file = &#34;link_force_point.din&#34;
+    _link_bp_name = &#34;force_points&#34;</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="DINO2.model.location.StopType"><code class="flex name class">
+<span>class <span class="ident">StopType</span></span>
+<span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>An enumeration.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class StopType(Enum):
+    standard = 0
+    on_request = 1
+    alighting_only = 2
+    hail_and_ride = 3
+    on_request_outside_net = 4
+    transition_tarif = 7
+    ein_aus_bringer = 8
+    outside_net = 9
+    time_pos = 10
+    school = 12
+    undocumented_type_19 = 19</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>enum.Enum</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.model.location.StopType.standard"><code class="name">var <span class="ident">standard</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopType.on_request"><code class="name">var <span class="ident">on_request</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopType.alighting_only"><code class="name">var <span class="ident">alighting_only</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopType.hail_and_ride"><code class="name">var <span class="ident">hail_and_ride</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopType.on_request_outside_net"><code class="name">var <span class="ident">on_request_outside_net</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopType.transition_tarif"><code class="name">var <span class="ident">transition_tarif</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopType.ein_aus_bringer"><code class="name">var <span class="ident">ein_aus_bringer</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopType.outside_net"><code class="name">var <span class="ident">outside_net</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopType.time_pos"><code class="name">var <span class="ident">time_pos</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopType.school"><code class="name">var <span class="ident">school</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopType.undocumented_type_19"><code class="name">var <span class="ident">undocumented_type_19</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.location.Stop"><code class="flex name class">
+<span>class <span class="ident">Stop</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Stop</p>
+<p>Main model class for stops.<br>
+<code><a title="DINO2.model.location.Stop.valid_from" href="#DINO2.model.location.Stop.valid_from">Stop.valid_from</a></code> is supposed to be used to select a single <code><a title="DINO2.model.location.Stop" href="#DINO2.model.location.Stop">Stop</a></code> object from an importable DINO dataset,
+because of possible ambiguous objects in case of e. g. a name change during a period.</p>
+<p>Primary key: <code>version_id</code> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Stop(Base):
+    &#34;&#34;&#34;
+    Stop
+
+    Main model class for stops.  
+    `Stop.valid_from` is supposed to be used to select a single `Stop` object from an importable DINO dataset,
+    because of possible ambiguous objects in case of e. g. a name change during a period.
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;stop.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+
+    type: Column[Optional[StopType]] = Column(&#34;STOP_TYPE&#34;, IntEnum(StopType))
+    &#34;&#34;&#34;Stop type&#34;&#34;&#34;
+    name: Column[str] = Column(&#34;STOP_NAME&#34;, String(length=50), nullable=False)
+    &#34;&#34;&#34;Stop name (including place name)&#34;&#34;&#34;
+    name_noloc: Column[Optional[str]] = Column(&#34;STOP_NAME_WITHOUT_LOCALITY&#34;, String(length=50))
+    &#34;&#34;&#34;Stop name without place name&#34;&#34;&#34;
+    abbr: Column[Optional[str]] = Column(&#34;STOP_SHORTNAME&#34;, String(length=8))
+    &#34;&#34;&#34;Short name / abbreviation of stop&#34;&#34;&#34;
+
+    pos_x: Column[Optional[str]] = Column(&#34;STOP_POS_X&#34;, String(length=12), info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Stop X coordinate (WGS84)&#34;&#34;&#34;
+    pos_y: Column[Optional[str]] = Column(&#34;STOP_POS_Y&#34;, String(length=12), info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Stop Y coordinate (WGS84)&#34;&#34;&#34;
+
+    place: Column[Optional[str]] = Column(&#34;PLACE&#34;, String(length=20))
+    &#34;&#34;&#34;Place name (deprecated)&#34;&#34;&#34;
+
+    occ: Column[Optional[int]] = Column(&#34;OCC&#34;, Integer())
+    &#34;&#34;&#34;Official community code / Amtliche Gemeindekennziffer&#34;&#34;&#34;
+
+    fz1id: Column[Optional[int]] = Column(&#34;FARE_ZONE1_NR&#34;, Integer())
+    &#34;&#34;&#34;Fare zone id 1&#34;&#34;&#34;
+    fz2id: Column[Optional[int]] = Column(&#34;FARE_ZONE2_NR&#34;, Integer())
+    fz3id: Column[Optional[int]] = Column(&#34;FARE_ZONE3_NR&#34;, Integer())
+    fz4id: Column[Optional[int]] = Column(&#34;FARE_ZONE4_NR&#34;, Integer())
+    fz5id: Column[Optional[int]] = Column(&#34;FARE_ZONE5_NR&#34;, Integer())
+    fz6id: Column[Optional[int]] = Column(&#34;FARE_ZONE6_NR&#34;, Integer())
+
+    ifopt: Column[Optional[str]] = Column(&#34;GLOBAL_ID&#34;, String(length=100))
+    &#34;&#34;&#34;IFOPT / global id&#34;&#34;&#34;
+
+    valid_from: Column[Optional[date]] = Column(&#34;VALID_FROM&#34;, DinoDate)
+    &#34;&#34;&#34;Valid from date (used in import, primary keys may occur multiple times with different validity periods)&#34;&#34;&#34;
+    valid_to: Column[Optional[date]] = Column(&#34;VALID_TO&#34;, DinoDate)
+    &#34;&#34;&#34;Valid until date&#34;&#34;&#34;
+
+    place_id: Column[Optional[str]] = Column(&#34;PLACE_ID&#34;, String(length=50))
+    &#34;&#34;&#34;unique place ID&#34;&#34;&#34;
+    gis_mot_flag: Column[Optional[int]] = Column(&#34;GIS_MOT_FLAG&#34;, Integer())
+    &#34;&#34;&#34;GIS MOT bit flags&#34;&#34;&#34;
+    is_central_stop: Column[Optional[bool]] = Column(&#34;IS_CENTRAL_STOP&#34;, Boolean())
+    &#34;&#34;&#34;Whether stop is central stop&#34;&#34;&#34;
+    is_responsible_stop: Column[Optional[bool]] = Column(&#34;IS_RESPONSIBLE_STOP&#34;, Boolean())
+    &#34;&#34;&#34;Whether this stop object is the main/&#39;responsible&#39; one between multiple subnets&#34;&#34;&#34;
+    interchange_quality: Column[Optional[int]] = Column(&#34;INTERCHANGE_QUALITY&#34;, Integer())
+    &#34;&#34;&#34;Interchange quality (higher is better)&#34;&#34;&#34;
+
+    fz1: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=&#34;[Stop.version_id, Stop.fz1id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.fares.FareZone` 1&#34;&#34;&#34;
+    fz2: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=&#34;[Stop.version_id, Stop.fz2id]&#34;, viewonly=True)
+    fz3: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=&#34;[Stop.version_id, Stop.fz3id]&#34;, viewonly=True)
+    fz4: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=&#34;[Stop.version_id, Stop.fz4id]&#34;, viewonly=True)
+    fz5: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=&#34;[Stop.version_id, Stop.fz5id]&#34;, viewonly=True)
+    fz6: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=&#34;[Stop.version_id, Stop.fz6id]&#34;, viewonly=True)
+    stop_alias_placenames: RelationshipProperty[Sequence[StopAliasPlacename]] = relationship(&#34;StopAliasPlacename&#34;, back_populates=&#34;stop&#34;)
+    &#34;&#34;&#34;`DINO2.model.location.StopAliasPlacename`s of this stop&#34;&#34;&#34;
+    stop_additional_names: RelationshipProperty[Sequence[StopAdditionalName]] = relationship(&#34;StopAdditionalName&#34;, back_populates=&#34;stop&#34;)
+    &#34;&#34;&#34;`DINO2.model.location.StopAdditionalName`s of this stop&#34;&#34;&#34;
+    areas: RelationshipProperty[Sequence[StopArea]] = relationship(&#34;StopArea&#34;, back_populates=&#34;stop&#34;)
+    &#34;&#34;&#34;`DINO2.model.location.StopArea`s of this stop&#34;&#34;&#34;
+    points: RelationshipProperty[Sequence[StopPoint]] = relationship(&#34;StopPoint&#34;, back_populates=&#34;stop&#34;)
+    &#34;&#34;&#34;`DINO2.model.location.StopPoint`s of this stop&#34;&#34;&#34;
+    links_from: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, foreign_keys=&#34;[Link.version_id, Link.from_stop_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.Link`s from this stop&#34;&#34;&#34;
+    links_to: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, foreign_keys=&#34;[Link.version_id, Link.to_stop_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.Link`s to this stop&#34;&#34;&#34;
+    courses: RelationshipProperty[Sequence[Course]] = relationship(&#34;Course&#34;, secondary=&#34;route&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.Course`s with this stop on route&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;stops&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    @property
+    def fare_zone_ids(self) -&gt; FrozenSet[int]:
+        &#34;&#34;&#34;Set of ids of `DINO2.model.fares.FareZone`s of this stop&#34;&#34;&#34;
+        return frozenset(filter(None, (self.fz1id, self.fz2id, self.fz3id, self.fz4id, self.fz5id, self.fz6id)))
+
+    @property
+    def fare_zones(self) -&gt; FrozenSet[FareZone]:
+        &#34;&#34;&#34;Set of `DINO2.model.fares.FareZone`s this stop is in&#34;&#34;&#34;
+        return frozenset(filter(None, (self.fz1, self.fz2, self.fz3, self.fz4, self.fz5, self.fz6)))
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, fz1id], [&#34;fare_zone.VERSION&#34;, &#34;fare_zone.FARE_ZONE_NR&#34;]),
+        ForeignKeyConstraint([version_id, fz2id], [&#34;fare_zone.VERSION&#34;, &#34;fare_zone.FARE_ZONE_NR&#34;]),
+        ForeignKeyConstraint([version_id, fz3id], [&#34;fare_zone.VERSION&#34;, &#34;fare_zone.FARE_ZONE_NR&#34;]),
+        ForeignKeyConstraint([version_id, fz4id], [&#34;fare_zone.VERSION&#34;, &#34;fare_zone.FARE_ZONE_NR&#34;]),
+        ForeignKeyConstraint([version_id, fz5id], [&#34;fare_zone.VERSION&#34;, &#34;fare_zone.FARE_ZONE_NR&#34;]),
+        ForeignKeyConstraint([version_id, fz6id], [&#34;fare_zone.VERSION&#34;, &#34;fare_zone.FARE_ZONE_NR&#34;])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Stop(version_id={self.version_id}, id={self.id}, name={self.name}, type={self.type}, ifopt={self.ifopt})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.location.Stop.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Stop id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.type"><code class="name">var <span class="ident">type</span></code></dt>
+<dd>
+<div class="desc"><p>Stop type</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.name"><code class="name">var <span class="ident">name</span></code></dt>
+<dd>
+<div class="desc"><p>Stop name (including place name)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.name_noloc"><code class="name">var <span class="ident">name_noloc</span></code></dt>
+<dd>
+<div class="desc"><p>Stop name without place name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.abbr"><code class="name">var <span class="ident">abbr</span></code></dt>
+<dd>
+<div class="desc"><p>Short name / abbreviation of stop</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.pos_x"><code class="name">var <span class="ident">pos_x</span></code></dt>
+<dd>
+<div class="desc"><p>Stop X coordinate (WGS84)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.pos_y"><code class="name">var <span class="ident">pos_y</span></code></dt>
+<dd>
+<div class="desc"><p>Stop Y coordinate (WGS84)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.place"><code class="name">var <span class="ident">place</span></code></dt>
+<dd>
+<div class="desc"><p>Place name (deprecated)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.occ"><code class="name">var <span class="ident">occ</span></code></dt>
+<dd>
+<div class="desc"><p>Official community code / Amtliche Gemeindekennziffer</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fz1id"><code class="name">var <span class="ident">fz1id</span></code></dt>
+<dd>
+<div class="desc"><p>Fare zone id 1</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fz2id"><code class="name">var <span class="ident">fz2id</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fz3id"><code class="name">var <span class="ident">fz3id</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fz4id"><code class="name">var <span class="ident">fz4id</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fz5id"><code class="name">var <span class="ident">fz5id</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fz6id"><code class="name">var <span class="ident">fz6id</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.ifopt"><code class="name">var <span class="ident">ifopt</span></code></dt>
+<dd>
+<div class="desc"><p>IFOPT / global id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.valid_from"><code class="name">var <span class="ident">valid_from</span></code></dt>
+<dd>
+<div class="desc"><p>Valid from date (used in import, primary keys may occur multiple times with different validity periods)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.valid_to"><code class="name">var <span class="ident">valid_to</span></code></dt>
+<dd>
+<div class="desc"><p>Valid until date</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.place_id"><code class="name">var <span class="ident">place_id</span></code></dt>
+<dd>
+<div class="desc"><p>unique place ID</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.gis_mot_flag"><code class="name">var <span class="ident">gis_mot_flag</span></code></dt>
+<dd>
+<div class="desc"><p>GIS MOT bit flags</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.is_central_stop"><code class="name">var <span class="ident">is_central_stop</span></code></dt>
+<dd>
+<div class="desc"><p>Whether stop is central stop</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.is_responsible_stop"><code class="name">var <span class="ident">is_responsible_stop</span></code></dt>
+<dd>
+<div class="desc"><p>Whether this stop object is the main/'responsible' one between multiple subnets</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.interchange_quality"><code class="name">var <span class="ident">interchange_quality</span></code></dt>
+<dd>
+<div class="desc"><p>Interchange quality (higher is better)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fz1"><code class="name">var <span class="ident">fz1</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.fares.FareZone" href="fares.html#DINO2.model.fares.FareZone">FareZone</a></code> 1</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fz2"><code class="name">var <span class="ident">fz2</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fz3"><code class="name">var <span class="ident">fz3</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fz4"><code class="name">var <span class="ident">fz4</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fz5"><code class="name">var <span class="ident">fz5</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fz6"><code class="name">var <span class="ident">fz6</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.stop_alias_placenames"><code class="name">var <span class="ident">stop_alias_placenames</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.StopAliasPlacename" href="#DINO2.model.location.StopAliasPlacename">StopAliasPlacename</a></code>s of this stop</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.stop_additional_names"><code class="name">var <span class="ident">stop_additional_names</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.StopAdditionalName" href="#DINO2.model.location.StopAdditionalName">StopAdditionalName</a></code>s of this stop</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.areas"><code class="name">var <span class="ident">areas</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.StopArea" href="#DINO2.model.location.StopArea">StopArea</a></code>s of this stop</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.points"><code class="name">var <span class="ident">points</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.StopPoint" href="#DINO2.model.location.StopPoint">StopPoint</a></code>s of this stop</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.links_from"><code class="name">var <span class="ident">links_from</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Link" href="#DINO2.model.location.Link">Link</a></code>s from this stop</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.links_to"><code class="name">var <span class="ident">links_to</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Link" href="#DINO2.model.location.Link">Link</a></code>s to this stop</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.courses"><code class="name">var <span class="ident">courses</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.Course" href="network.html#DINO2.model.network.Course">Course</a></code>s with this stop on route</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fare_zone_ids"><code class="name">var <span class="ident">fare_zone_ids</span> : FrozenSet[int]</code></dt>
+<dd>
+<div class="desc"><p>Set of ids of <code><a title="DINO2.model.fares.FareZone" href="fares.html#DINO2.model.fares.FareZone">FareZone</a></code>s of this stop</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def fare_zone_ids(self) -&gt; FrozenSet[int]:
+    &#34;&#34;&#34;Set of ids of `DINO2.model.fares.FareZone`s of this stop&#34;&#34;&#34;
+    return frozenset(filter(None, (self.fz1id, self.fz2id, self.fz3id, self.fz4id, self.fz5id, self.fz6id)))</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Stop.fare_zones"><code class="name">var <span class="ident">fare_zones</span> : 'FrozenSet[FareZone]'</code></dt>
+<dd>
+<div class="desc"><p>Set of <code><a title="DINO2.model.fares.FareZone" href="fares.html#DINO2.model.fares.FareZone">FareZone</a></code>s this stop is in</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def fare_zones(self) -&gt; FrozenSet[FareZone]:
+    &#34;&#34;&#34;Set of `DINO2.model.fares.FareZone`s this stop is in&#34;&#34;&#34;
+    return frozenset(filter(None, (self.fz1, self.fz2, self.fz3, self.fz4, self.fz5, self.fz6)))</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.location.StopAliasPlacename"><code class="flex name class">
+<span>class <span class="ident">StopAliasPlacename</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Stop alias place name</p>
+<p>Primary key: <code>version_id</code> &amp; <code>stop_id</code> &amp; <code>alias_place</code> &amp; <code>alias_occ</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class StopAliasPlacename(Base):
+    &#34;&#34;&#34;
+    Stop alias place name
+
+    Primary key: `version_id` &amp; `stop_id` &amp; `alias_place` &amp; `alias_occ`
+    &#34;&#34;&#34;
+    _din_file = &#34;stop_alias_placename.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    stop_id: Column[int] = Column(&#34;STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+
+    alias_place: Column[str] = Column(&#34;ALIAS_PLACE&#34;, String(length=20), primary_key=True)
+    &#34;&#34;&#34;Name of place&#34;&#34;&#34;
+
+    alias_occ: Column[int] = Column(&#34;ALIAS_OCC&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;OCC of place&#34;&#34;&#34;
+
+    stop: RelationshipProperty[Stop] = relationship(Stop, back_populates=&#34;stop_alias_placenames&#34;)
+    &#34;&#34;&#34;`Stop`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, stop_id], [Stop.version_id, Stop.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;StopAliasPlacename(version_id={self.version_id}, stop={self.stop}, alias_place={self.alias_place}, alias_occ={self.alias_occ})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.location.StopAliasPlacename.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopAliasPlacename.stop_id"><code class="name">var <span class="ident">stop_id</span></code></dt>
+<dd>
+<div class="desc"><p>Stop id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopAliasPlacename.alias_place"><code class="name">var <span class="ident">alias_place</span></code></dt>
+<dd>
+<div class="desc"><p>Name of place</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopAliasPlacename.alias_occ"><code class="name">var <span class="ident">alias_occ</span></code></dt>
+<dd>
+<div class="desc"><p>OCC of place</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopAliasPlacename.stop"><code class="name">var <span class="ident">stop</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Stop" href="#DINO2.model.location.Stop">Stop</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopAliasPlacename.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.location.StopAdditionalName"><code class="flex name class">
+<span>class <span class="ident">StopAdditionalName</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Stop additional name</p>
+<p>Primary key: <code>version_id</code> &amp; <code>stop_id</code> &amp; <code>name</code> &amp; <code>name_noloc</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class StopAdditionalName(Base):
+    &#34;&#34;&#34;
+    Stop additional name
+
+    Primary key: `version_id` &amp; `stop_id` &amp; `name` &amp; `name_noloc`
+    &#34;&#34;&#34;
+    _din_file = &#34;stop_additional_name.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    stop_id: Column[int] = Column(&#34;STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+
+    name: Column[str] = Column(&#34;ADD_STOP_NAME_WITH_LOCALITY&#34;, String(length=255), primary_key=True)
+    &#34;&#34;&#34;Additional stop name with place name&#34;&#34;&#34;
+
+    name_noloc: Column[str] = Column(&#34;ADD_STOP_NAME_WITHOUT_LOCALITY&#34;, String(length=255), primary_key=True, info={&#39;keep_empty_str&#39;: True})
+    &#34;&#34;&#34;Additional stop name without place name&#34;&#34;&#34;
+
+    stop: RelationshipProperty[Stop] = relationship(Stop, back_populates=&#34;stop_additional_names&#34;)
+    &#34;&#34;&#34;`Stop`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, stop_id], [Stop.version_id, Stop.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;StopAdditionalName(version_id={self.version_id}, stop={self.stop}, name={self.name}, name_noloc={self.name_noloc})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.location.StopAdditionalName.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopAdditionalName.stop_id"><code class="name">var <span class="ident">stop_id</span></code></dt>
+<dd>
+<div class="desc"><p>Stop id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopAdditionalName.name"><code class="name">var <span class="ident">name</span></code></dt>
+<dd>
+<div class="desc"><p>Additional stop name with place name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopAdditionalName.name_noloc"><code class="name">var <span class="ident">name_noloc</span></code></dt>
+<dd>
+<div class="desc"><p>Additional stop name without place name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopAdditionalName.stop"><code class="name">var <span class="ident">stop</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Stop" href="#DINO2.model.location.Stop">Stop</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopAdditionalName.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.location.StopAreaType"><code class="flex name class">
+<span>class <span class="ident">StopAreaType</span></span>
+<span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>An enumeration.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class StopAreaType(Enum):
+    entrance_and_pt = 0
+    pt = 1
+    p_r = 2
+    b_r = 3
+    taxi = 4
+    entrance = 5
+    airport_terminal = 6
+    entrance_and_b_r = 7
+    entrance_pt_and_b_r = 8
+    entrance_and_taxi = 9
+    entrance_pt_and_taxi = 10
+    mezzanine = 11
+    hail_and_ride = 12</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>enum.Enum</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.model.location.StopAreaType.entrance_and_pt"><code class="name">var <span class="ident">entrance_and_pt</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopAreaType.pt"><code class="name">var <span class="ident">pt</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopAreaType.p_r"><code class="name">var <span class="ident">p_r</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopAreaType.b_r"><code class="name">var <span class="ident">b_r</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopAreaType.taxi"><code class="name">var <span class="ident">taxi</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopAreaType.entrance"><code class="name">var <span class="ident">entrance</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopAreaType.airport_terminal"><code class="name">var <span class="ident">airport_terminal</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopAreaType.entrance_and_b_r"><code class="name">var <span class="ident">entrance_and_b_r</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopAreaType.entrance_pt_and_b_r"><code class="name">var <span class="ident">entrance_pt_and_b_r</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopAreaType.entrance_and_taxi"><code class="name">var <span class="ident">entrance_and_taxi</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopAreaType.entrance_pt_and_taxi"><code class="name">var <span class="ident">entrance_pt_and_taxi</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopAreaType.mezzanine"><code class="name">var <span class="ident">mezzanine</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StopAreaType.hail_and_ride"><code class="name">var <span class="ident">hail_and_ride</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.location.StopArea"><code class="flex name class">
+<span>class <span class="ident">StopArea</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Stop area</p>
+<p>Used to group <code><a title="DINO2.model.location.StopPoint" href="#DINO2.model.location.StopPoint">StopPoint</a></code>s, especially for working with transfer data.</p>
+<p>Primary key: <code>version_id</code> &amp; <code>stop_id</code> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class StopArea(Base):
+    &#34;&#34;&#34;
+    Stop area
+
+    Used to group `StopPoint`s, especially for working with transfer data.
+
+    Primary key: `version_id` &amp; `stop_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;stop_area.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    stop_id: Column[int] = Column(&#34;STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;STOP_AREA_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop area id&#34;&#34;&#34;
+
+    pos_x: Column[Optional[str]] = Column(&#34;STOP_AREA_POS_X&#34;, String(length=12), info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Stop area X coordinate (WGS84)&#34;&#34;&#34;
+    pos_y: Column[Optional[str]] = Column(&#34;STOP_AREA_POS_Y&#34;, String(length=12), info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Stop area Y coordinate (WGS84)&#34;&#34;&#34;
+
+    abbr: Column[Optional[str]] = Column(&#34;STOP_AREA_SHORT_NAME&#34;, String(length=5))
+    &#34;&#34;&#34;Stop area abbreviation&#34;&#34;&#34;
+    name: Column[str] = Column(&#34;STOP_AREA_LONG_NAME&#34;, String(length=20), nullable=False, info={&#39;keep_empty_str&#39;: True})
+    &#34;&#34;&#34;Stop area name&#34;&#34;&#34;
+    level: Column[Optional[int]] = Column(&#34;STOP_AREA_LEVEL&#34;, Integer())
+    &#34;&#34;&#34;Stop area level information&#34;&#34;&#34;
+
+    type: Column[Optional[StopAreaType]] = Column(&#34;STOP_AREA_TYPE&#34;, IntEnum(StopAreaType))
+    &#34;&#34;&#34;Stop area type&#34;&#34;&#34;
+
+    ifopt: Column[Optional[str]] = Column(&#34;GLOBAL_ID&#34;, String(length=100))
+    &#34;&#34;&#34;IFOPT / global id&#34;&#34;&#34;
+
+    gis_mot_flag: Column[Optional[int]] = Column(&#34;GIS_MOT_FLAG&#34;, Integer())
+    &#34;&#34;&#34;GIS MOT bit flags&#34;&#34;&#34;
+
+    valid_from: Column[Optional[date]] = Column(&#34;VALID_FROM&#34;, DinoDate)
+    &#34;&#34;&#34;Valid from date&#34;&#34;&#34;
+    valid_to: Column[Optional[date]] = Column(&#34;VALID_TO&#34;, DinoDate)
+    &#34;&#34;&#34;Valid until date&#34;&#34;&#34;
+
+    stop: RelationshipProperty[Stop] = relationship(Stop, back_populates=&#34;areas&#34;)
+    &#34;&#34;&#34;`Stop`&#34;&#34;&#34;
+    points: RelationshipProperty[Sequence[StopPoint]] = relationship(&#34;StopPoint&#34;, viewonly=True)
+    &#34;&#34;&#34;`StopPoint`s of this stop area&#34;&#34;&#34;
+    links_from: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, foreign_keys=&#34;[Link.version_id, Link.from_stop_id, Link.from_area_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`Link`s from this stop area&#34;&#34;&#34;
+    links_to: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, foreign_keys=&#34;[Link.version_id, Link.to_stop_id, Link.to_area_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`Link`s to this stop area&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, stop_id], [Stop.version_id, Stop.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;StopArea(version_id={self.version_id}, stop_id={self.stop_id} ({self.stop.name}), id={self.id}, name={self.name}, type={self.type}, ifopt={self.ifopt})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.location.StopArea.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.stop_id"><code class="name">var <span class="ident">stop_id</span></code></dt>
+<dd>
+<div class="desc"><p>Stop id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Stop area id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.pos_x"><code class="name">var <span class="ident">pos_x</span></code></dt>
+<dd>
+<div class="desc"><p>Stop area X coordinate (WGS84)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.pos_y"><code class="name">var <span class="ident">pos_y</span></code></dt>
+<dd>
+<div class="desc"><p>Stop area Y coordinate (WGS84)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.abbr"><code class="name">var <span class="ident">abbr</span></code></dt>
+<dd>
+<div class="desc"><p>Stop area abbreviation</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.name"><code class="name">var <span class="ident">name</span></code></dt>
+<dd>
+<div class="desc"><p>Stop area name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.level"><code class="name">var <span class="ident">level</span></code></dt>
+<dd>
+<div class="desc"><p>Stop area level information</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.type"><code class="name">var <span class="ident">type</span></code></dt>
+<dd>
+<div class="desc"><p>Stop area type</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.ifopt"><code class="name">var <span class="ident">ifopt</span></code></dt>
+<dd>
+<div class="desc"><p>IFOPT / global id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.gis_mot_flag"><code class="name">var <span class="ident">gis_mot_flag</span></code></dt>
+<dd>
+<div class="desc"><p>GIS MOT bit flags</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.valid_from"><code class="name">var <span class="ident">valid_from</span></code></dt>
+<dd>
+<div class="desc"><p>Valid from date</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.valid_to"><code class="name">var <span class="ident">valid_to</span></code></dt>
+<dd>
+<div class="desc"><p>Valid until date</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.stop"><code class="name">var <span class="ident">stop</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Stop" href="#DINO2.model.location.Stop">Stop</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.points"><code class="name">var <span class="ident">points</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.StopPoint" href="#DINO2.model.location.StopPoint">StopPoint</a></code>s of this stop area</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.links_from"><code class="name">var <span class="ident">links_from</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Link" href="#DINO2.model.location.Link">Link</a></code>s from this stop area</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.links_to"><code class="name">var <span class="ident">links_to</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Link" href="#DINO2.model.location.Link">Link</a></code>s to this stop area</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopArea.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.location.StreetAccess"><code class="flex name class">
+<span>class <span class="ident">StreetAccess</span></span>
+<span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>An enumeration.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class StreetAccess(Enum):
+    unknown = 0
+    level = 1
+    small_step = 2
+    large_step = 3</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>enum.Enum</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.model.location.StreetAccess.unknown"><code class="name">var <span class="ident">unknown</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StreetAccess.level"><code class="name">var <span class="ident">level</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StreetAccess.small_step"><code class="name">var <span class="ident">small_step</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.StreetAccess.large_step"><code class="name">var <span class="ident">large_step</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.location.StopPoint"><code class="flex name class">
+<span>class <span class="ident">StopPoint</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Stopping point</p>
+<p>Depicts a platform of a <code><a title="DINO2.model.location.Stop" href="#DINO2.model.location.Stop">Stop</a></code> a vehicle can stop at.</p>
+<p>Primary key: <code>version_id</code> &amp; <code>stop_id</code> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class StopPoint(Base):
+    &#34;&#34;&#34;
+    Stopping point
+
+    Depicts a platform of a `Stop` a vehicle can stop at.
+
+    Primary key: `version_id` &amp; `stop_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;stop_point.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    stop_id: Column[int] = Column(&#34;STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+
+    area_id: Column[int] = Column(&#34;STOP_AREA_NR&#34;, Integer(), primary_key=False, nullable=False)
+    &#34;&#34;&#34;Stop area id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;STOPPING_POINT_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Stop point id&#34;&#34;&#34;
+
+    pos_x: Column[Optional[str]] = Column(&#34;STOPPING_POINT_POS_X&#34;, String(length=12), info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Stop point X coordinate (WGS84)&#34;&#34;&#34;
+    pos_y: Column[Optional[str]] = Column(&#34;STOPPING_POINT_POS_Y&#34;, String(length=12), info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Stop point Y coordinate (WGS84)&#34;&#34;&#34;
+
+    gis_segment_id: Column[Optional[int]] = Column(&#34;SEGMENT_ID&#34;, Integer())
+    &#34;&#34;&#34;ID of GIS segment&#34;&#34;&#34;
+    gis_segment_dist: Column[Optional[int]] = Column(&#34;SEGMENT_DIST&#34;, Integer())
+    &#34;&#34;&#34;Distance from first segment node (m)&#34;&#34;&#34;
+
+    stop_rbl_nr: Column[Optional[int]] = Column(&#34;STOP_RBL_NR&#34;, Integer())
+    &#34;&#34;&#34;VDV 454 RBL stopping point number&#34;&#34;&#34;
+
+    name: Column[Optional[str]] = Column(&#34;STOPPING_POINT_SHORTNAME&#34;, String(length=255))
+    &#34;&#34;&#34;Stop point name&#34;&#34;&#34;
+
+    purpose_ttb: Column[Optional[bool]] = Column(&#34;PURPOSE_TTB&#34;, Boolean())
+    &#34;&#34;&#34;Purpose: timetable book&#34;&#34;&#34;
+    purpose_stt: Column[Optional[bool]] = Column(&#34;PURPOSE_STT&#34;, Boolean())
+    &#34;&#34;&#34;Purpose: stop time table&#34;&#34;&#34;
+    purpose_jp: Column[Optional[bool]] = Column(&#34;PURPOSE_JP&#34;, Boolean())
+    &#34;&#34;&#34;Purpose: journey planner&#34;&#34;&#34;
+    purpose_cbs: Column[Optional[bool]] = Column(&#34;PURPOSE_CBS&#34;, Boolean())
+    &#34;&#34;&#34;Purpose: central station&#34;&#34;&#34;
+
+    ifopt: Column[Optional[str]] = Column(&#34;GLOBAL_ID&#34;, String(length=100))
+    &#34;&#34;&#34;IFOPT / global id&#34;&#34;&#34;
+
+    gis_mot_flag: Column[Optional[int]] = Column(&#34;GIS_MOT_FLAG&#34;, Integer())
+    &#34;&#34;&#34;GIS MOT bit flags&#34;&#34;&#34;
+
+    valid_from: Column[Optional[date]] = Column(&#34;VALID_FROM&#34;, DinoDate)
+    &#34;&#34;&#34;Valid from date&#34;&#34;&#34;
+    valid_to: Column[Optional[date]] = Column(&#34;VALID_TO&#34;, DinoDate)
+    &#34;&#34;&#34;Valid until date&#34;&#34;&#34;
+
+    platform_height: Column[Optional[int]] = Column(&#34;PLATFORM_HEIGHT&#34;, Integer())
+    &#34;&#34;&#34;Platform height in mm above rail/street surface&#34;&#34;&#34;
+    rail_centre_dist: Column[Optional[int]] = Column(&#34;DISTANCE_TO_RAIL_CENTRE&#34;, Integer())
+    &#34;&#34;&#34;Horizontal distance of platform edge to rail centre&#34;&#34;&#34;
+    has_mobile_ramp: Column[Optional[bool]] = Column(&#34;HAS_MOBILE_RAMP&#34;, Boolean())
+    &#34;&#34;&#34;Whether the platform has a mobile ramp&#34;&#34;&#34;
+    boarding_space: Column[Optional[int]] = Column(&#34;BOARDING_SPACE&#34;, Integer())
+    &#34;&#34;&#34;Space in mm provided on pavement for operating the equipment&#34;&#34;&#34;
+
+    street_access: Column[Optional[StreetAccess]] = Column(&#34;STREET_ACCESS&#34;, IntEnum(StreetAccess))
+    &#34;&#34;&#34;Accessibility of platform from street (unknown/level/small/large step)&#34;&#34;&#34;
+
+    stop: RelationshipProperty[Stop] = relationship(Stop, back_populates=&#34;points&#34;)
+    &#34;&#34;&#34;`Stop`&#34;&#34;&#34;
+    area: RelationshipProperty[StopArea] = relationship(StopArea, viewonly=True)
+    &#34;&#34;&#34;`StopArea` this stop point is in&#34;&#34;&#34;
+    links_from: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, foreign_keys=&#34;[Link.version_id, Link.from_stop_id, Link.from_point_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`Link`s from this stop point&#34;&#34;&#34;
+    links_to: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, foreign_keys=&#34;[Link.version_id, Link.to_stop_id, Link.to_point_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;`Link`s to this stop point&#34;&#34;&#34;
+    courses: RelationshipProperty[Sequence[Course]] = relationship(&#34;Course&#34;, secondary=&#34;route&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.Course`s with this stop point on route&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, stop_id], [Stop.version_id, Stop.id]),
+        ForeignKeyConstraint([version_id, stop_id, area_id], [StopArea.version_id, StopArea.stop_id, StopArea.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;StopPoint(version_id={self.version_id}, stop={self.stop}, area={self.area}, id={self.id}, name={self.name}, ifopt={self.ifopt})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.location.StopPoint.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.stop_id"><code class="name">var <span class="ident">stop_id</span></code></dt>
+<dd>
+<div class="desc"><p>Stop id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.area_id"><code class="name">var <span class="ident">area_id</span></code></dt>
+<dd>
+<div class="desc"><p>Stop area id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Stop point id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.pos_x"><code class="name">var <span class="ident">pos_x</span></code></dt>
+<dd>
+<div class="desc"><p>Stop point X coordinate (WGS84)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.pos_y"><code class="name">var <span class="ident">pos_y</span></code></dt>
+<dd>
+<div class="desc"><p>Stop point Y coordinate (WGS84)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.gis_segment_id"><code class="name">var <span class="ident">gis_segment_id</span></code></dt>
+<dd>
+<div class="desc"><p>ID of GIS segment</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.gis_segment_dist"><code class="name">var <span class="ident">gis_segment_dist</span></code></dt>
+<dd>
+<div class="desc"><p>Distance from first segment node (m)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.stop_rbl_nr"><code class="name">var <span class="ident">stop_rbl_nr</span></code></dt>
+<dd>
+<div class="desc"><p>VDV 454 RBL stopping point number</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.name"><code class="name">var <span class="ident">name</span></code></dt>
+<dd>
+<div class="desc"><p>Stop point name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.purpose_ttb"><code class="name">var <span class="ident">purpose_ttb</span></code></dt>
+<dd>
+<div class="desc"><p>Purpose: timetable book</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.purpose_stt"><code class="name">var <span class="ident">purpose_stt</span></code></dt>
+<dd>
+<div class="desc"><p>Purpose: stop time table</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.purpose_jp"><code class="name">var <span class="ident">purpose_jp</span></code></dt>
+<dd>
+<div class="desc"><p>Purpose: journey planner</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.purpose_cbs"><code class="name">var <span class="ident">purpose_cbs</span></code></dt>
+<dd>
+<div class="desc"><p>Purpose: central station</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.ifopt"><code class="name">var <span class="ident">ifopt</span></code></dt>
+<dd>
+<div class="desc"><p>IFOPT / global id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.gis_mot_flag"><code class="name">var <span class="ident">gis_mot_flag</span></code></dt>
+<dd>
+<div class="desc"><p>GIS MOT bit flags</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.valid_from"><code class="name">var <span class="ident">valid_from</span></code></dt>
+<dd>
+<div class="desc"><p>Valid from date</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.valid_to"><code class="name">var <span class="ident">valid_to</span></code></dt>
+<dd>
+<div class="desc"><p>Valid until date</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.platform_height"><code class="name">var <span class="ident">platform_height</span></code></dt>
+<dd>
+<div class="desc"><p>Platform height in mm above rail/street surface</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.rail_centre_dist"><code class="name">var <span class="ident">rail_centre_dist</span></code></dt>
+<dd>
+<div class="desc"><p>Horizontal distance of platform edge to rail centre</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.has_mobile_ramp"><code class="name">var <span class="ident">has_mobile_ramp</span></code></dt>
+<dd>
+<div class="desc"><p>Whether the platform has a mobile ramp</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.boarding_space"><code class="name">var <span class="ident">boarding_space</span></code></dt>
+<dd>
+<div class="desc"><p>Space in mm provided on pavement for operating the equipment</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.street_access"><code class="name">var <span class="ident">street_access</span></code></dt>
+<dd>
+<div class="desc"><p>Accessibility of platform from street (unknown/level/small/large step)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.stop"><code class="name">var <span class="ident">stop</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Stop" href="#DINO2.model.location.Stop">Stop</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.area"><code class="name">var <span class="ident">area</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.StopArea" href="#DINO2.model.location.StopArea">StopArea</a></code> this stop point is in</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.links_from"><code class="name">var <span class="ident">links_from</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Link" href="#DINO2.model.location.Link">Link</a></code>s from this stop point</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.links_to"><code class="name">var <span class="ident">links_to</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Link" href="#DINO2.model.location.Link">Link</a></code>s to this stop point</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.courses"><code class="name">var <span class="ident">courses</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.Course" href="network.html#DINO2.model.network.Course">Course</a></code>s with this stop point on route</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.StopPoint.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.location.Link"><code class="flex name class">
+<span>class <span class="ident">Link</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Link &ndash; for way geometry between <code><a title="DINO2.model.location.Stop" href="#DINO2.model.location.Stop">Stop</a></code>/<code><a title="DINO2.model.location.StopArea" href="#DINO2.model.location.StopArea">StopArea</a></code>/<code><a title="DINO2.model.location.StopPoint" href="#DINO2.model.location.StopPoint">StopPoint</a></code> objects</p>
+<p>Only one link per branch is allowed between two specific elements.</p>
+<p>Primary key: <code>version_id</code> &amp; <code>id</code> &amp; <code>branch_id</code> &amp; <code>from_stop_id</code> &amp; <em><code>from_area_id</code></em> &amp; <code>to_stop_id</code> &amp; <em><code>to_area_id</code></em> &amp; <em><code>to_point_id</code></em></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Link(Base):
+    &#34;&#34;&#34;
+    Link -- for way geometry between `Stop`/`StopArea`/`StopPoint` objects
+
+    Only one link per branch is allowed between two specific elements.
+
+    Primary key: `version_id` &amp; `id` &amp; `branch_id` &amp; `from_stop_id` &amp; _`from_area_id`_ &amp; `to_stop_id` &amp; _`to_area_id`_ &amp; _`to_point_id`_
+    &#34;&#34;&#34;
+    _din_file = &#34;link.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;LINK_ID&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Link id&#34;&#34;&#34;
+
+    branch_id: Column[int] = Column(&#34;BRANCH_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Branch id&#34;&#34;&#34;
+
+    from_stop_id: Column[int] = Column(&#34;ORIG_STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;From stop id&#34;&#34;&#34;
+    from_area_id: Column[Optional[int]] = Column(&#34;ORIG_STOP_AREA_NR&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;From stop area id&#34;&#34;&#34;
+    from_point_id: Column[Optional[int]] = Column(&#34;STOPPING_POINT_NR&#34;, Integer(), primary_key=False, nullable=True)
+    &#34;&#34;&#34;From stop point id&#34;&#34;&#34;
+
+    to_stop_id: Column[int] = Column(&#34;DEST_STOP_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;To stop id&#34;&#34;&#34;
+    to_area_id: Column[Optional[int]] = Column(&#34;DEST_STOP_AREA_NR&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;To stop area id&#34;&#34;&#34;
+    to_point_id: Column[Optional[int]] = Column(&#34;DEST_STOPPING_POINT_NR&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;To stop point id&#34;&#34;&#34;
+
+    length: Column[Optional[int]] = Column(&#34;LENGTH&#34;, Integer())
+    &#34;&#34;&#34;Length (m)&#34;&#34;&#34;
+    gis_length: Column[Optional[int]] = Column(&#34;GIS_LENGTH&#34;, Integer())
+    &#34;&#34;&#34;GIS Length (m)&#34;&#34;&#34;
+
+    from_stop: RelationshipProperty[Stop] = relationship(Stop, foreign_keys=&#34;[Link.version_id, Link.from_stop_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;From `Stop`&#34;&#34;&#34;
+    from_area: RelationshipProperty[Optional[StopArea]] = relationship(StopArea, foreign_keys=&#34;[Link.version_id, Link.from_stop_id, Link.from_area_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;From `StopArea`&#34;&#34;&#34;
+    from_point: RelationshipProperty[Optional[StopPoint]] = relationship(StopPoint, foreign_keys=&#34;[Link.version_id, Link.from_stop_id, Link.from_point_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;From `StopPoint`&#34;&#34;&#34;
+    to_stop: RelationshipProperty[Stop] = relationship(Stop, foreign_keys=&#34;[Link.version_id, Link.to_stop_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;To `Stop`&#34;&#34;&#34;
+    to_area: RelationshipProperty[Optional[StopArea]] = relationship(StopArea, foreign_keys=&#34;[Link.version_id, Link.to_stop_id, Link.to_area_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;To `StopArea`&#34;&#34;&#34;
+    to_point: RelationshipProperty[Optional[StopPoint]] = relationship(StopPoint, foreign_keys=&#34;[Link.version_id, Link.to_stop_id, Link.to_point_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;To `StopPoint`&#34;&#34;&#34;
+    geometry: RelationshipProperty[Sequence[LinkGeometryPoint]] = relationship(&#34;LinkGeometryPoint&#34;, order_by=&#34;asc(LinkGeometryPoint.consec_pt_nr)&#34;, back_populates=&#34;link&#34;)
+    &#34;&#34;&#34;`LinkGeometryPoint`s of this link&#34;&#34;&#34;
+    force_points: RelationshipProperty[Sequence[LinkForcePoint]] = relationship(&#34;LinkForcePoint&#34;, order_by=&#34;asc(LinkForcePoint.consec_pt_nr)&#34;, back_populates=&#34;link&#34;)
+    &#34;&#34;&#34;`LinkForcePoint`s of this link&#34;&#34;&#34;
+    branch: RelationshipProperty[Branch] = relationship(&#34;Branch&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.Branch`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;links&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    @property
+    def wkt(self) -&gt; str:
+        &#34;&#34;&#34;Get WKT (well known text) representation of link geometry&#34;&#34;&#34;
+        text = &#34;LINESTRING (&#34;
+        geomlist: Sequence[LinkPoint] = self.geometry or self.force_points
+        for p in geomlist:
+            text += f&#34;{p.pos_x} {p.pos_y}, &#34;
+        return text[:-2] + &#34;)&#34;
+
+    def wkt_m(self, ts_start: int, ts_end: int) -&gt; str:
+        &#34;&#34;&#34;Get WKT representation with time measures for specific start and end timestamp&#34;&#34;&#34;
+        text = &#34;LINESTRING M (&#34;
+        geomlist: Sequence[LinkPoint] = self.geometry or self.force_points
+        # todo: distance statt index..
+        for i, p in enumerate(geomlist):
+            m = int(ts_start + i * (ts_end - ts_start) / (len(geomlist) - 1))
+            text += f&#34;{p.pos_x} {p.pos_y} {m}, &#34;
+        return text[:-2] + &#34;)&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, branch_id], [&#34;branch.VERSION&#34;, &#34;branch.BRANCH_NR&#34;]),
+        ForeignKeyConstraint([version_id, from_stop_id], [Stop.version_id, Stop.id]),
+        ForeignKeyConstraint([version_id, from_stop_id, from_area_id], [StopArea.version_id, StopArea.stop_id, StopArea.id]),
+        ForeignKeyConstraint([version_id, from_stop_id, from_point_id], [StopPoint.version_id, StopPoint.stop_id, StopPoint.id]),
+        ForeignKeyConstraint([version_id, to_stop_id], [Stop.version_id, Stop.id]),
+        ForeignKeyConstraint([version_id, to_stop_id, to_area_id], [StopArea.version_id, StopArea.stop_id, StopArea.id]),
+        ForeignKeyConstraint([version_id, to_stop_id, to_point_id], [StopPoint.version_id, StopPoint.stop_id, StopPoint.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Link(version_id={self.version_id}, id={self.id}, from_stop_id={self.from_stop_id}, from_area_id={self.from_area_id}, from_point_id={self.from_point_id}, to_stop_id={self.to_stop_id}, to_area_id={self.to_area_id}, to_point_id={self.to_point_id})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.location.Link.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Link id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.branch_id"><code class="name">var <span class="ident">branch_id</span></code></dt>
+<dd>
+<div class="desc"><p>Branch id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.from_stop_id"><code class="name">var <span class="ident">from_stop_id</span></code></dt>
+<dd>
+<div class="desc"><p>From stop id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.from_area_id"><code class="name">var <span class="ident">from_area_id</span></code></dt>
+<dd>
+<div class="desc"><p>From stop area id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.from_point_id"><code class="name">var <span class="ident">from_point_id</span></code></dt>
+<dd>
+<div class="desc"><p>From stop point id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.to_stop_id"><code class="name">var <span class="ident">to_stop_id</span></code></dt>
+<dd>
+<div class="desc"><p>To stop id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.to_area_id"><code class="name">var <span class="ident">to_area_id</span></code></dt>
+<dd>
+<div class="desc"><p>To stop area id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.to_point_id"><code class="name">var <span class="ident">to_point_id</span></code></dt>
+<dd>
+<div class="desc"><p>To stop point id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.length"><code class="name">var <span class="ident">length</span></code></dt>
+<dd>
+<div class="desc"><p>Length (m)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.gis_length"><code class="name">var <span class="ident">gis_length</span></code></dt>
+<dd>
+<div class="desc"><p>GIS Length (m)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.from_stop"><code class="name">var <span class="ident">from_stop</span></code></dt>
+<dd>
+<div class="desc"><p>From <code><a title="DINO2.model.location.Stop" href="#DINO2.model.location.Stop">Stop</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.from_area"><code class="name">var <span class="ident">from_area</span></code></dt>
+<dd>
+<div class="desc"><p>From <code><a title="DINO2.model.location.StopArea" href="#DINO2.model.location.StopArea">StopArea</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.from_point"><code class="name">var <span class="ident">from_point</span></code></dt>
+<dd>
+<div class="desc"><p>From <code><a title="DINO2.model.location.StopPoint" href="#DINO2.model.location.StopPoint">StopPoint</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.to_stop"><code class="name">var <span class="ident">to_stop</span></code></dt>
+<dd>
+<div class="desc"><p>To <code><a title="DINO2.model.location.Stop" href="#DINO2.model.location.Stop">Stop</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.to_area"><code class="name">var <span class="ident">to_area</span></code></dt>
+<dd>
+<div class="desc"><p>To <code><a title="DINO2.model.location.StopArea" href="#DINO2.model.location.StopArea">StopArea</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.to_point"><code class="name">var <span class="ident">to_point</span></code></dt>
+<dd>
+<div class="desc"><p>To <code><a title="DINO2.model.location.StopPoint" href="#DINO2.model.location.StopPoint">StopPoint</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.geometry"><code class="name">var <span class="ident">geometry</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.LinkGeometryPoint" href="#DINO2.model.location.LinkGeometryPoint">LinkGeometryPoint</a></code>s of this link</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.force_points"><code class="name">var <span class="ident">force_points</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.LinkForcePoint" href="#DINO2.model.location.LinkForcePoint">LinkForcePoint</a></code>s of this link</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.branch"><code class="name">var <span class="ident">branch</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.Branch" href="operational.html#DINO2.model.operational.Branch">Branch</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.Link.wkt"><code class="name">var <span class="ident">wkt</span> : str</code></dt>
+<dd>
+<div class="desc"><p>Get WKT (well known text) representation of link geometry</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def wkt(self) -&gt; str:
+    &#34;&#34;&#34;Get WKT (well known text) representation of link geometry&#34;&#34;&#34;
+    text = &#34;LINESTRING (&#34;
+    geomlist: Sequence[LinkPoint] = self.geometry or self.force_points
+    for p in geomlist:
+        text += f&#34;{p.pos_x} {p.pos_y}, &#34;
+    return text[:-2] + &#34;)&#34;</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="DINO2.model.location.Link.wkt_m"><code class="name flex">
+<span>def <span class="ident">wkt_m</span></span>(<span>self, ts_start: int, ts_end: int) -> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Get WKT representation with time measures for specific start and end timestamp</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def wkt_m(self, ts_start: int, ts_end: int) -&gt; str:
+    &#34;&#34;&#34;Get WKT representation with time measures for specific start and end timestamp&#34;&#34;&#34;
+    text = &#34;LINESTRING M (&#34;
+    geomlist: Sequence[LinkPoint] = self.geometry or self.force_points
+    # todo: distance statt index..
+    for i, p in enumerate(geomlist):
+        m = int(ts_start + i * (ts_end - ts_start) / (len(geomlist) - 1))
+        text += f&#34;{p.pos_x} {p.pos_y} {m}, &#34;
+    return text[:-2] + &#34;)&#34;</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.location.LinkPoint"><code class="flex name class">
+<span>class <span class="ident">LinkPoint</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Abstract base class for points of <code><a title="DINO2.model.location.Link" href="#DINO2.model.location.Link">Link</a></code>s.</p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class LinkPoint(Base):
+    &#34;&#34;&#34;
+    Abstract base class for points of `Link`s.
+    &#34;&#34;&#34;
+    __abstract__ = True
+
+    @declared_attr
+    def version_id(cls) -&gt; Column[int]:
+        &#34;&#34;&#34;Version id&#34;&#34;&#34;
+        return Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), nullable=False)
+
+    link_id: Column[int] = Column(&#34;LINK_ID&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Link id&#34;&#34;&#34;
+
+    consec_pt_nr: Column[int] = Column(&#34;LINK_CONSEC_PT_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Consecutive point number&#34;&#34;&#34;
+
+    pos_x: Column[str] = Column(&#34;LINK_PT_X&#34;, String(length=11), nullable=False, info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Point X coordinate (WGS84)&#34;&#34;&#34;
+    pos_y: Column[str] = Column(&#34;LINK_PT_Y&#34;, String(length=11), nullable=False, info={&#39;str_minus_1_to_null&#39;: True})
+    &#34;&#34;&#34;Point Y coordinate (WGS84)&#34;&#34;&#34;
+
+    _link_bp_name: str
+    @declared_attr
+    def link(cls) -&gt; RelationshipProperty[Link]:
+        &#34;&#34;&#34;`Link`&#34;&#34;&#34;
+        return relationship(Link, back_populates=cls._link_bp_name)
+
+    @declared_attr
+    def version(cls) -&gt; RelationshipProperty[Version]:
+        &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+        return relationship(&#34;Version&#34;, viewonly=True)
+
+    @declared_attr
+    def __table_args__(cls):
+        return (
+            PrimaryKeyConstraint(cls.version_id, cls.link_id, cls.consec_pt_nr),
+            ForeignKeyConstraint([cls.version_id, cls.link_id], [Link.version_id, Link.id])
+        )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;{self.__class__.__name__}(version_id={self.version_id}, link_id={self.link_id}, consec_pt_nr={self.consec_pt_nr}, pos_x={self.pos_x}, pos_y={self.pos_y})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Subclasses</h3>
+<ul class="hlist">
+<li><a title="DINO2.model.location.LinkForcePoint" href="#DINO2.model.location.LinkForcePoint">LinkForcePoint</a></li>
+<li><a title="DINO2.model.location.LinkGeometryPoint" href="#DINO2.model.location.LinkGeometryPoint">LinkGeometryPoint</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.model.location.LinkPoint.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.location.LinkPoint.link_id"><code class="name">var <span class="ident">link_id</span></code></dt>
+<dd>
+<div class="desc"><p>Link id</p></div>
+</dd>
+<dt id="DINO2.model.location.LinkPoint.consec_pt_nr"><code class="name">var <span class="ident">consec_pt_nr</span></code></dt>
+<dd>
+<div class="desc"><p>Consecutive point number</p></div>
+</dd>
+<dt id="DINO2.model.location.LinkPoint.pos_x"><code class="name">var <span class="ident">pos_x</span></code></dt>
+<dd>
+<div class="desc"><p>Point X coordinate (WGS84)</p></div>
+</dd>
+<dt id="DINO2.model.location.LinkPoint.pos_y"><code class="name">var <span class="ident">pos_y</span></code></dt>
+<dd>
+<div class="desc"><p>Point Y coordinate (WGS84)</p></div>
+</dd>
+<dt id="DINO2.model.location.LinkPoint.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.location.LinkPoint.link"><code class="name">var <span class="ident">link</span> : 'RelationshipProperty[<a title="DINO2.model.location.Link" href="#DINO2.model.location.Link">Link</a>]'</code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Link" href="#DINO2.model.location.Link">Link</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@declared_attr
+def link(cls) -&gt; RelationshipProperty[Link]:
+    &#34;&#34;&#34;`Link`&#34;&#34;&#34;
+    return relationship(Link, back_populates=cls._link_bp_name)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.location.LinkGeometryPoint"><code class="flex name class">
+<span>class <span class="ident">LinkGeometryPoint</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Coordinates of a point on a <code><a title="DINO2.model.location.Link" href="#DINO2.model.location.Link">Link</a></code> geometry.</p>
+<p>Primary key: <code>version_id</code> &amp; <code>link_id</code> &amp; <code>consec_pt_nr</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class LinkGeometryPoint(LinkPoint):
+    &#34;&#34;&#34;
+    Coordinates of a point on a `Link` geometry.
+
+    Primary key: `version_id` &amp; `link_id` &amp; `consec_pt_nr`
+    &#34;&#34;&#34;
+    __abstract__ = False
+    _din_file = &#34;link_geometry.din&#34;
+    _link_bp_name = &#34;geometry&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="DINO2.model.location.LinkPoint" href="#DINO2.model.location.LinkPoint">LinkPoint</a></li>
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.location.LinkGeometryPoint.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.LinkGeometryPoint.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="DINO2.model.location.LinkPoint" href="#DINO2.model.location.LinkPoint">LinkPoint</a></b></code>:
+<ul class="hlist">
+<li><code><a title="DINO2.model.location.LinkPoint.consec_pt_nr" href="#DINO2.model.location.LinkPoint.consec_pt_nr">consec_pt_nr</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.link" href="#DINO2.model.location.LinkPoint.link">link</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.link_id" href="#DINO2.model.location.LinkPoint.link_id">link_id</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.pos_x" href="#DINO2.model.location.LinkPoint.pos_x">pos_x</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.pos_y" href="#DINO2.model.location.LinkPoint.pos_y">pos_y</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt id="DINO2.model.location.LinkForcePoint"><code class="flex name class">
+<span>class <span class="ident">LinkForcePoint</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Coordinates of a force point of a <code><a title="DINO2.model.location.Link" href="#DINO2.model.location.Link">Link</a></code> geometry.</p>
+<p>Primary key: <code>version_id</code> &amp; <code>link_id</code> &amp; <code>consec_pt_nr</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class LinkForcePoint(LinkPoint):
+    &#34;&#34;&#34;
+    Coordinates of a force point of a `Link` geometry.
+
+    Primary key: `version_id` &amp; `link_id` &amp; `consec_pt_nr`
+    &#34;&#34;&#34;
+    __abstract__ = False
+    _din_file = &#34;link_force_point.din&#34;
+    _link_bp_name = &#34;force_points&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="DINO2.model.location.LinkPoint" href="#DINO2.model.location.LinkPoint">LinkPoint</a></li>
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.location.LinkForcePoint.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.location.LinkForcePoint.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="DINO2.model.location.LinkPoint" href="#DINO2.model.location.LinkPoint">LinkPoint</a></b></code>:
+<ul class="hlist">
+<li><code><a title="DINO2.model.location.LinkPoint.consec_pt_nr" href="#DINO2.model.location.LinkPoint.consec_pt_nr">consec_pt_nr</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.link" href="#DINO2.model.location.LinkPoint.link">link</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.link_id" href="#DINO2.model.location.LinkPoint.link_id">link_id</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.pos_x" href="#DINO2.model.location.LinkPoint.pos_x">pos_x</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.pos_y" href="#DINO2.model.location.LinkPoint.pos_y">pos_y</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="DINO2.model" href="index.html">DINO2.model</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="DINO2.model.location.StopType" href="#DINO2.model.location.StopType">StopType</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.location.StopType.standard" href="#DINO2.model.location.StopType.standard">standard</a></code></li>
+<li><code><a title="DINO2.model.location.StopType.on_request" href="#DINO2.model.location.StopType.on_request">on_request</a></code></li>
+<li><code><a title="DINO2.model.location.StopType.alighting_only" href="#DINO2.model.location.StopType.alighting_only">alighting_only</a></code></li>
+<li><code><a title="DINO2.model.location.StopType.hail_and_ride" href="#DINO2.model.location.StopType.hail_and_ride">hail_and_ride</a></code></li>
+<li><code><a title="DINO2.model.location.StopType.on_request_outside_net" href="#DINO2.model.location.StopType.on_request_outside_net">on_request_outside_net</a></code></li>
+<li><code><a title="DINO2.model.location.StopType.transition_tarif" href="#DINO2.model.location.StopType.transition_tarif">transition_tarif</a></code></li>
+<li><code><a title="DINO2.model.location.StopType.ein_aus_bringer" href="#DINO2.model.location.StopType.ein_aus_bringer">ein_aus_bringer</a></code></li>
+<li><code><a title="DINO2.model.location.StopType.outside_net" href="#DINO2.model.location.StopType.outside_net">outside_net</a></code></li>
+<li><code><a title="DINO2.model.location.StopType.time_pos" href="#DINO2.model.location.StopType.time_pos">time_pos</a></code></li>
+<li><code><a title="DINO2.model.location.StopType.school" href="#DINO2.model.location.StopType.school">school</a></code></li>
+<li><code><a title="DINO2.model.location.StopType.undocumented_type_19" href="#DINO2.model.location.StopType.undocumented_type_19">undocumented_type_19</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.location.Stop" href="#DINO2.model.location.Stop">Stop</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.location.Stop.version_id" href="#DINO2.model.location.Stop.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.id" href="#DINO2.model.location.Stop.id">id</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.type" href="#DINO2.model.location.Stop.type">type</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.name" href="#DINO2.model.location.Stop.name">name</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.name_noloc" href="#DINO2.model.location.Stop.name_noloc">name_noloc</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.abbr" href="#DINO2.model.location.Stop.abbr">abbr</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.pos_x" href="#DINO2.model.location.Stop.pos_x">pos_x</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.pos_y" href="#DINO2.model.location.Stop.pos_y">pos_y</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.place" href="#DINO2.model.location.Stop.place">place</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.occ" href="#DINO2.model.location.Stop.occ">occ</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fz1id" href="#DINO2.model.location.Stop.fz1id">fz1id</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fz2id" href="#DINO2.model.location.Stop.fz2id">fz2id</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fz3id" href="#DINO2.model.location.Stop.fz3id">fz3id</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fz4id" href="#DINO2.model.location.Stop.fz4id">fz4id</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fz5id" href="#DINO2.model.location.Stop.fz5id">fz5id</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fz6id" href="#DINO2.model.location.Stop.fz6id">fz6id</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.ifopt" href="#DINO2.model.location.Stop.ifopt">ifopt</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.valid_from" href="#DINO2.model.location.Stop.valid_from">valid_from</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.valid_to" href="#DINO2.model.location.Stop.valid_to">valid_to</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.place_id" href="#DINO2.model.location.Stop.place_id">place_id</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.gis_mot_flag" href="#DINO2.model.location.Stop.gis_mot_flag">gis_mot_flag</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.is_central_stop" href="#DINO2.model.location.Stop.is_central_stop">is_central_stop</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.is_responsible_stop" href="#DINO2.model.location.Stop.is_responsible_stop">is_responsible_stop</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.interchange_quality" href="#DINO2.model.location.Stop.interchange_quality">interchange_quality</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fz1" href="#DINO2.model.location.Stop.fz1">fz1</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fz2" href="#DINO2.model.location.Stop.fz2">fz2</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fz3" href="#DINO2.model.location.Stop.fz3">fz3</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fz4" href="#DINO2.model.location.Stop.fz4">fz4</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fz5" href="#DINO2.model.location.Stop.fz5">fz5</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fz6" href="#DINO2.model.location.Stop.fz6">fz6</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.stop_alias_placenames" href="#DINO2.model.location.Stop.stop_alias_placenames">stop_alias_placenames</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.stop_additional_names" href="#DINO2.model.location.Stop.stop_additional_names">stop_additional_names</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.areas" href="#DINO2.model.location.Stop.areas">areas</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.points" href="#DINO2.model.location.Stop.points">points</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.links_from" href="#DINO2.model.location.Stop.links_from">links_from</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.links_to" href="#DINO2.model.location.Stop.links_to">links_to</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.courses" href="#DINO2.model.location.Stop.courses">courses</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.version" href="#DINO2.model.location.Stop.version">version</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fare_zone_ids" href="#DINO2.model.location.Stop.fare_zone_ids">fare_zone_ids</a></code></li>
+<li><code><a title="DINO2.model.location.Stop.fare_zones" href="#DINO2.model.location.Stop.fare_zones">fare_zones</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.location.StopAliasPlacename" href="#DINO2.model.location.StopAliasPlacename">StopAliasPlacename</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.location.StopAliasPlacename.version_id" href="#DINO2.model.location.StopAliasPlacename.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.location.StopAliasPlacename.stop_id" href="#DINO2.model.location.StopAliasPlacename.stop_id">stop_id</a></code></li>
+<li><code><a title="DINO2.model.location.StopAliasPlacename.alias_place" href="#DINO2.model.location.StopAliasPlacename.alias_place">alias_place</a></code></li>
+<li><code><a title="DINO2.model.location.StopAliasPlacename.alias_occ" href="#DINO2.model.location.StopAliasPlacename.alias_occ">alias_occ</a></code></li>
+<li><code><a title="DINO2.model.location.StopAliasPlacename.stop" href="#DINO2.model.location.StopAliasPlacename.stop">stop</a></code></li>
+<li><code><a title="DINO2.model.location.StopAliasPlacename.version" href="#DINO2.model.location.StopAliasPlacename.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.location.StopAdditionalName" href="#DINO2.model.location.StopAdditionalName">StopAdditionalName</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.location.StopAdditionalName.version_id" href="#DINO2.model.location.StopAdditionalName.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.location.StopAdditionalName.stop_id" href="#DINO2.model.location.StopAdditionalName.stop_id">stop_id</a></code></li>
+<li><code><a title="DINO2.model.location.StopAdditionalName.name" href="#DINO2.model.location.StopAdditionalName.name">name</a></code></li>
+<li><code><a title="DINO2.model.location.StopAdditionalName.name_noloc" href="#DINO2.model.location.StopAdditionalName.name_noloc">name_noloc</a></code></li>
+<li><code><a title="DINO2.model.location.StopAdditionalName.stop" href="#DINO2.model.location.StopAdditionalName.stop">stop</a></code></li>
+<li><code><a title="DINO2.model.location.StopAdditionalName.version" href="#DINO2.model.location.StopAdditionalName.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.location.StopAreaType" href="#DINO2.model.location.StopAreaType">StopAreaType</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.location.StopAreaType.entrance_and_pt" href="#DINO2.model.location.StopAreaType.entrance_and_pt">entrance_and_pt</a></code></li>
+<li><code><a title="DINO2.model.location.StopAreaType.pt" href="#DINO2.model.location.StopAreaType.pt">pt</a></code></li>
+<li><code><a title="DINO2.model.location.StopAreaType.p_r" href="#DINO2.model.location.StopAreaType.p_r">p_r</a></code></li>
+<li><code><a title="DINO2.model.location.StopAreaType.b_r" href="#DINO2.model.location.StopAreaType.b_r">b_r</a></code></li>
+<li><code><a title="DINO2.model.location.StopAreaType.taxi" href="#DINO2.model.location.StopAreaType.taxi">taxi</a></code></li>
+<li><code><a title="DINO2.model.location.StopAreaType.entrance" href="#DINO2.model.location.StopAreaType.entrance">entrance</a></code></li>
+<li><code><a title="DINO2.model.location.StopAreaType.airport_terminal" href="#DINO2.model.location.StopAreaType.airport_terminal">airport_terminal</a></code></li>
+<li><code><a title="DINO2.model.location.StopAreaType.entrance_and_b_r" href="#DINO2.model.location.StopAreaType.entrance_and_b_r">entrance_and_b_r</a></code></li>
+<li><code><a title="DINO2.model.location.StopAreaType.entrance_pt_and_b_r" href="#DINO2.model.location.StopAreaType.entrance_pt_and_b_r">entrance_pt_and_b_r</a></code></li>
+<li><code><a title="DINO2.model.location.StopAreaType.entrance_and_taxi" href="#DINO2.model.location.StopAreaType.entrance_and_taxi">entrance_and_taxi</a></code></li>
+<li><code><a title="DINO2.model.location.StopAreaType.entrance_pt_and_taxi" href="#DINO2.model.location.StopAreaType.entrance_pt_and_taxi">entrance_pt_and_taxi</a></code></li>
+<li><code><a title="DINO2.model.location.StopAreaType.mezzanine" href="#DINO2.model.location.StopAreaType.mezzanine">mezzanine</a></code></li>
+<li><code><a title="DINO2.model.location.StopAreaType.hail_and_ride" href="#DINO2.model.location.StopAreaType.hail_and_ride">hail_and_ride</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.location.StopArea" href="#DINO2.model.location.StopArea">StopArea</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.location.StopArea.version_id" href="#DINO2.model.location.StopArea.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.stop_id" href="#DINO2.model.location.StopArea.stop_id">stop_id</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.id" href="#DINO2.model.location.StopArea.id">id</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.pos_x" href="#DINO2.model.location.StopArea.pos_x">pos_x</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.pos_y" href="#DINO2.model.location.StopArea.pos_y">pos_y</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.abbr" href="#DINO2.model.location.StopArea.abbr">abbr</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.name" href="#DINO2.model.location.StopArea.name">name</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.level" href="#DINO2.model.location.StopArea.level">level</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.type" href="#DINO2.model.location.StopArea.type">type</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.ifopt" href="#DINO2.model.location.StopArea.ifopt">ifopt</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.gis_mot_flag" href="#DINO2.model.location.StopArea.gis_mot_flag">gis_mot_flag</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.valid_from" href="#DINO2.model.location.StopArea.valid_from">valid_from</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.valid_to" href="#DINO2.model.location.StopArea.valid_to">valid_to</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.stop" href="#DINO2.model.location.StopArea.stop">stop</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.points" href="#DINO2.model.location.StopArea.points">points</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.links_from" href="#DINO2.model.location.StopArea.links_from">links_from</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.links_to" href="#DINO2.model.location.StopArea.links_to">links_to</a></code></li>
+<li><code><a title="DINO2.model.location.StopArea.version" href="#DINO2.model.location.StopArea.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.location.StreetAccess" href="#DINO2.model.location.StreetAccess">StreetAccess</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.location.StreetAccess.unknown" href="#DINO2.model.location.StreetAccess.unknown">unknown</a></code></li>
+<li><code><a title="DINO2.model.location.StreetAccess.level" href="#DINO2.model.location.StreetAccess.level">level</a></code></li>
+<li><code><a title="DINO2.model.location.StreetAccess.small_step" href="#DINO2.model.location.StreetAccess.small_step">small_step</a></code></li>
+<li><code><a title="DINO2.model.location.StreetAccess.large_step" href="#DINO2.model.location.StreetAccess.large_step">large_step</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.location.StopPoint" href="#DINO2.model.location.StopPoint">StopPoint</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.location.StopPoint.version_id" href="#DINO2.model.location.StopPoint.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.stop_id" href="#DINO2.model.location.StopPoint.stop_id">stop_id</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.area_id" href="#DINO2.model.location.StopPoint.area_id">area_id</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.id" href="#DINO2.model.location.StopPoint.id">id</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.pos_x" href="#DINO2.model.location.StopPoint.pos_x">pos_x</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.pos_y" href="#DINO2.model.location.StopPoint.pos_y">pos_y</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.gis_segment_id" href="#DINO2.model.location.StopPoint.gis_segment_id">gis_segment_id</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.gis_segment_dist" href="#DINO2.model.location.StopPoint.gis_segment_dist">gis_segment_dist</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.stop_rbl_nr" href="#DINO2.model.location.StopPoint.stop_rbl_nr">stop_rbl_nr</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.name" href="#DINO2.model.location.StopPoint.name">name</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.purpose_ttb" href="#DINO2.model.location.StopPoint.purpose_ttb">purpose_ttb</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.purpose_stt" href="#DINO2.model.location.StopPoint.purpose_stt">purpose_stt</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.purpose_jp" href="#DINO2.model.location.StopPoint.purpose_jp">purpose_jp</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.purpose_cbs" href="#DINO2.model.location.StopPoint.purpose_cbs">purpose_cbs</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.ifopt" href="#DINO2.model.location.StopPoint.ifopt">ifopt</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.gis_mot_flag" href="#DINO2.model.location.StopPoint.gis_mot_flag">gis_mot_flag</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.valid_from" href="#DINO2.model.location.StopPoint.valid_from">valid_from</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.valid_to" href="#DINO2.model.location.StopPoint.valid_to">valid_to</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.platform_height" href="#DINO2.model.location.StopPoint.platform_height">platform_height</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.rail_centre_dist" href="#DINO2.model.location.StopPoint.rail_centre_dist">rail_centre_dist</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.has_mobile_ramp" href="#DINO2.model.location.StopPoint.has_mobile_ramp">has_mobile_ramp</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.boarding_space" href="#DINO2.model.location.StopPoint.boarding_space">boarding_space</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.street_access" href="#DINO2.model.location.StopPoint.street_access">street_access</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.stop" href="#DINO2.model.location.StopPoint.stop">stop</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.area" href="#DINO2.model.location.StopPoint.area">area</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.links_from" href="#DINO2.model.location.StopPoint.links_from">links_from</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.links_to" href="#DINO2.model.location.StopPoint.links_to">links_to</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.courses" href="#DINO2.model.location.StopPoint.courses">courses</a></code></li>
+<li><code><a title="DINO2.model.location.StopPoint.version" href="#DINO2.model.location.StopPoint.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.location.Link" href="#DINO2.model.location.Link">Link</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.location.Link.wkt_m" href="#DINO2.model.location.Link.wkt_m">wkt_m</a></code></li>
+<li><code><a title="DINO2.model.location.Link.version_id" href="#DINO2.model.location.Link.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.location.Link.id" href="#DINO2.model.location.Link.id">id</a></code></li>
+<li><code><a title="DINO2.model.location.Link.branch_id" href="#DINO2.model.location.Link.branch_id">branch_id</a></code></li>
+<li><code><a title="DINO2.model.location.Link.from_stop_id" href="#DINO2.model.location.Link.from_stop_id">from_stop_id</a></code></li>
+<li><code><a title="DINO2.model.location.Link.from_area_id" href="#DINO2.model.location.Link.from_area_id">from_area_id</a></code></li>
+<li><code><a title="DINO2.model.location.Link.from_point_id" href="#DINO2.model.location.Link.from_point_id">from_point_id</a></code></li>
+<li><code><a title="DINO2.model.location.Link.to_stop_id" href="#DINO2.model.location.Link.to_stop_id">to_stop_id</a></code></li>
+<li><code><a title="DINO2.model.location.Link.to_area_id" href="#DINO2.model.location.Link.to_area_id">to_area_id</a></code></li>
+<li><code><a title="DINO2.model.location.Link.to_point_id" href="#DINO2.model.location.Link.to_point_id">to_point_id</a></code></li>
+<li><code><a title="DINO2.model.location.Link.length" href="#DINO2.model.location.Link.length">length</a></code></li>
+<li><code><a title="DINO2.model.location.Link.gis_length" href="#DINO2.model.location.Link.gis_length">gis_length</a></code></li>
+<li><code><a title="DINO2.model.location.Link.from_stop" href="#DINO2.model.location.Link.from_stop">from_stop</a></code></li>
+<li><code><a title="DINO2.model.location.Link.from_area" href="#DINO2.model.location.Link.from_area">from_area</a></code></li>
+<li><code><a title="DINO2.model.location.Link.from_point" href="#DINO2.model.location.Link.from_point">from_point</a></code></li>
+<li><code><a title="DINO2.model.location.Link.to_stop" href="#DINO2.model.location.Link.to_stop">to_stop</a></code></li>
+<li><code><a title="DINO2.model.location.Link.to_area" href="#DINO2.model.location.Link.to_area">to_area</a></code></li>
+<li><code><a title="DINO2.model.location.Link.to_point" href="#DINO2.model.location.Link.to_point">to_point</a></code></li>
+<li><code><a title="DINO2.model.location.Link.geometry" href="#DINO2.model.location.Link.geometry">geometry</a></code></li>
+<li><code><a title="DINO2.model.location.Link.force_points" href="#DINO2.model.location.Link.force_points">force_points</a></code></li>
+<li><code><a title="DINO2.model.location.Link.branch" href="#DINO2.model.location.Link.branch">branch</a></code></li>
+<li><code><a title="DINO2.model.location.Link.version" href="#DINO2.model.location.Link.version">version</a></code></li>
+<li><code><a title="DINO2.model.location.Link.wkt" href="#DINO2.model.location.Link.wkt">wkt</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.location.LinkPoint" href="#DINO2.model.location.LinkPoint">LinkPoint</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.location.LinkPoint.link" href="#DINO2.model.location.LinkPoint.link">link</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.version_id" href="#DINO2.model.location.LinkPoint.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.link_id" href="#DINO2.model.location.LinkPoint.link_id">link_id</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.consec_pt_nr" href="#DINO2.model.location.LinkPoint.consec_pt_nr">consec_pt_nr</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.pos_x" href="#DINO2.model.location.LinkPoint.pos_x">pos_x</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.pos_y" href="#DINO2.model.location.LinkPoint.pos_y">pos_y</a></code></li>
+<li><code><a title="DINO2.model.location.LinkPoint.version" href="#DINO2.model.location.LinkPoint.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.location.LinkGeometryPoint" href="#DINO2.model.location.LinkGeometryPoint">LinkGeometryPoint</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.location.LinkGeometryPoint.version_id" href="#DINO2.model.location.LinkGeometryPoint.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.location.LinkGeometryPoint.version" href="#DINO2.model.location.LinkGeometryPoint.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.location.LinkForcePoint" href="#DINO2.model.location.LinkForcePoint">LinkForcePoint</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.location.LinkForcePoint.version_id" href="#DINO2.model.location.LinkForcePoint.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.location.LinkForcePoint.version" href="#DINO2.model.location.LinkForcePoint.version">version</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

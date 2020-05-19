@@ -1,0 +1,17 @@
+VERSION;PURPOSE_NR;PURPOSE_TEXT;STR_PURPOSE;
+ 9; 1;IntermodalJourneyPlanner                ;BIT1 ;
+ 9; 3;StopTimetable                           ;BIT3 ;
+ 9; 4;LineTimetable                           ;BIT4 ;
+ 9; 5;MultiStopTimetable                      ;BIT5 ;
+ 9; 6;RouteMap                                ;BIT6 ;
+ 9; 7;StopSurroundMap                         ;BIT7 ;
+ 9; 8;RouteNetworkMap                         ;BIT8 ;
+ 9; 9;OperationalStatistics                   ;BIT9 ;
+ 9;10;StopIndex                               ;BIT10;
+ 9;11;LineIndex                               ;BIT11;
+ 9;15;TimetablePresentationWithIJP            ;BIT15;
+ 9;20;DutySchedule                            ;BIT20;
+ 9;25;Spider                                  ;BIT25;
+ 9;26;RouteMapDIVA                            ;BIT26;
+ 9;27;DepartureIndex                          ;BIT27;
+ 9;31;InterchangeCalculation                  ;BIT31;

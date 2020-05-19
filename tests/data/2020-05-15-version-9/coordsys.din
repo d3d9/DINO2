@@ -1,0 +1,2 @@
+VERSION;SHORT_NAME;LONG_NAME;EPSG_CODE;TRANS_X;TRANS_Y;SCALE_X;SCALE_Y;
+ 9;WGS84;WGS84 Longitude/Latitude, international                     ;      4326;         0;         0;    1.00000;    1.00000;

@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.1" />
+<title>DINO2.tools.export.wikitable API documentation</title>
+<meta name="description" content="Export data to a wikitable" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>DINO2.tools.export.wikitable</code></h1>
+</header>
+<section id="section-intro">
+<p>Export data to a wikitable</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: utf-8 -*-
+&#34;&#34;&#34;Export data to a wikitable&#34;&#34;&#34;
+
+from __future__ import annotations
+
+from datetime import timedelta
+import itertools
+from sqlalchemy.orm import joinedload, load_only, contains_eager
+from sqlalchemy.orm.session import Session
+from typing import Optional, Set, Collection
+
+from ...model import Base, Version, calendar, fares, location, operational, network, schedule
+
+
+# todo: ersetzen, es sollte kontext verstehen
+def stopclean(name, placelist, ignoreif=[&#34;Hauptbahnhof&#34;, &#34;Hbf&#34;, &#34;Bahnhof&#34;, &#34;Bf&#34;]):
+    for s in ignoreif:
+        if s in name:
+            return name
+    for place in placelist:
+        name = name.replace(place, &#34;&#34;, 1)
+    return name
+
+
+def timestr(secs):
+    return (str(secs//3600).zfill(2)+&#34;:&#34;+str((secs//60) % 60).zfill(2)+&#34;:&#34;+str(secs % 60).zfill(2)).rstrip(&#34;00&#34;).rstrip(&#34;:&#34;)
+
+
+def mins(td):
+    return (&#34;%f&#34; % (td.total_seconds()/60)).rstrip(&#34;0&#34;).rstrip(&#34;.&#34;)
+
+
+def rowspan(e):
+    return (1 if not e else sum(rowspan(x[1]) for x in e))
+
+
+def takt(a, min_alle=3):
+    r = []
+    nexttime = timedelta(seconds=-9999)
+    nexttd = timedelta(seconds=-9999)
+    takt = timedelta(seconds=0)
+    taktc = 0
+
+    for i, s in enumerate(a):
+        td = s if type(s) == timedelta else timedelta(seconds=s)
+        if i &lt; len(a) - 1:
+            n = a[i+1]
+            nexttime = n if type(n) == timedelta else timedelta(seconds=n)
+        else:
+            nexttime = timedelta(seconds=-9999)
+        tdiff = nexttime - td
+
+        if tdiff == nexttd:
+            takt = tdiff
+            taktc += 1
+        else:
+            if taktc:
+                if not takt:
+                    for _ in range(taktc):
+                        r.append(timestr(int(td.total_seconds())))
+                elif taktc &lt; min_alle:
+                    for t in range(taktc, 0, -1):
+                        r.append(timestr(int((td-t*takt).total_seconds())))
+                else:
+                    r.append(&#34;alle &#34; + mins(takt) + &#34; min&#34;)
+            takt = timedelta(0)
+            taktc = 0
+            r.append(timestr(int(td.total_seconds())))
+        nexttd = tdiff
+        nexttime = td
+
+    rtext = &#34;&#34;
+    for ri, re in enumerate(r):
+        rtext += re
+        if re.startswith(&#34;alle&#34;):
+            sep = &#34; --&#34;
+        elif ri &lt; len(r) - 1 and r[ri+1].startswith(&#34;alle&#34;):
+            sep = &#34;-- &#34;
+        else:
+            sep = &#34;, &#34;
+        if ri &lt; len(r) - 1:
+            rtext += sep
+
+    return rtext
+
+
+def fahrplanarray(session: Session, courses: Collection[network.Course]):
+    a = []
+    # todo: network.Course.duration &amp; length benutzen..
+    # tmp
+    placelist = [&#34;Hagen &#34;, &#34;HA-&#34;, &#34;Hagen, &#34;]
+    for lineid, line_courses_grouper in itertools.groupby(courses, lambda c: c.line):
+        line_courses = list(line_courses_grouper)
+        assert all(lc.name == line_courses[0].name for lc in line_courses)
+        a_l = [[f&#34;&#39;&#39;&#39;{line_courses[0].name}&#39;&#39;&#39;&#34;], []]
+        for lc in sorted(line_courses, key=lambda _lc: (_lc.line_dir, stopclean(_lc.stops[0].stop.name, placelist), -len(_lc.stops), -_lc.length)):
+            a_c = [[f&#34;&#39;&#39;&#39;{stopclean(lc.stops[0].stop.name, placelist)}&#39;&#39;&#39;&amp;nbsp;→ &#39;&#39;&#39;{stopclean(lc.stops[-1].stop.name, placelist)}&#39;&#39;&#39;&#34;, len(lc.stops), str(round(lc.length/1000, 1)).replace(&#34;.&#34;, &#34;,&#34;).rstrip(&#34;0&#34;).rstrip(&#34;,&#34;) + &#34; km&#34;], []]
+            fahrzeiten = {}
+            for timing_group_nr in set(_st.timing_group for _st in lc.stop_timings):
+                fahrzeit = f&#34;{mins(lc.duration(timing_group_nr))} min&#34;
+                if fahrzeit not in fahrzeiten:
+                    fahrzeiten[fahrzeit] = [timing_group_nr]
+                else:
+                    # zeiten, die insgesamt gleich sind werden zusammengetan
+                    fahrzeiten[fahrzeit].append(timing_group_nr)
+            for fahrzeit in fahrzeiten:
+                a_fz = [[fahrzeit], []]
+                restrictions = {}
+                for trip in session.query(schedule.Trip) \
+                        .options(
+                            load_only(&#39;day_attribute_id&#39;, &#39;restriction_id&#39;, &#39;departure_time&#39;),
+                            joinedload(&#39;day_attribute&#39;),
+                            joinedload(&#39;restriction&#39;)
+                        ).filter(schedule.Trip.course==lc) \
+                        .filter(schedule.Trip.timing_group.in_(fahrzeiten[fahrzeit])) \
+                        .all():
+                    restrictiontext = &#34;keine&#34; if trip.restriction_id is None else str(trip.restriction.text)
+                    day_attr = trip.day_attribute
+                    starttime = int(trip.departure_time.total_seconds())
+                    # todo: auch schauen ob die kalender an sich gleich sind, nicht nur der text!
+                    if restrictiontext not in restrictions:
+                        restrictions[restrictiontext] = {day_attr: [starttime]}
+                    elif day_attr not in restrictions[restrictiontext]:
+                        restrictions[restrictiontext][day_attr] = [starttime]
+                    elif starttime not in restrictions[restrictiontext][day_attr]:
+                        restrictions[restrictiontext][day_attr].append(starttime)
+                    else:
+                        restrictions[restrictiontext][day_attr].append(starttime)
+                        print(&#34;Warnung, gleichzeitige gleiche Abfahrt:&#34;, lc, fahrzeit, restrictiontext, day_attr, timestr(starttime))
+                for restrictiontext in restrictions:
+                    a_r = [[restrictiontext], []]
+                    for day_attr in restrictions[restrictiontext]:
+                        dttext = day_attr.text
+                        takttext = takt(sorted(restrictions[restrictiontext][day_attr]))
+                        a_r[1].append([[dttext, takttext], []])
+                    a_r[1].sort(key=lambda dt: dt[0][0])
+                    a_fz[1].append(a_r)
+                a_fz[1].sort(key=lambda r: r[0][0])
+                a_c[1].append(a_fz)
+            a_c[1].sort(reverse=True, key=lambda fz: fz[0][0])
+            a_l[1].append(a_c)
+        a.append(a_l)
+    return a
+
+
+def stoparray(stops: Collection[location.Stop]):
+    a = []
+    vocoords = lambda x, y, name, dim: f&#34;{{{{Coordinate|NS={y.rstrip(&#39;0&#39;)}|EW={x.rstrip(&#39;0&#39;)}|dim={dim}|type=landmark|region=DE-NW|simple=y|name={name}}}}}&#34; if (x and y) else &#34;&#34;
+    sortf = lambda s: ((s.name or &#34;&#34;), (s.ifopt or &#34;&#34;))
+    for stop in sorted(stops, key=sortf):
+        a_s = [[f&#34;&#39;&#39;&#39;{stop.name}&#39;&#39;&#39;&#34;, stop.ifopt or &#34;&#34;, vocoords(stop.pos_x, stop.pos_y, stop.name, &#34;120&#34;), &#34;, &#34;.join(str(fzid) for fzid in sorted(stop.fare_zone_ids)), stop.abbr], []]
+        # 0-areas?
+        for area in sorted(stop.areas, key=sortf):
+            a_a = [[area.name, area.ifopt or &#34;&#34;], []]
+            for pos in sorted(area.points, key=sortf):
+                a_p = [[pos.name or &#34;&#34;, pos.ifopt or &#34;&#34;, vocoords(pos.pos_x, pos.pos_y, stop.name+&#34; &#34;+(pos.name or &#34;&#34;), &#34;20&#34;)], []]
+                a_a[1].append(a_p)
+            if not a_a[1]:
+                a_a[1].append([[&#34;&#34;, &#34;&#34;, &#34;&#34;], []])
+            a_s[1].append(a_a)
+        if not a_s[1]:
+            a_s[1].append([[&#34;&#34;, &#34;&#34;], [[[&#34;&#34;, &#34;&#34;, &#34;&#34;], []]]])
+        a.append(a_s)
+    return a
+
+
+def tableatext(a, i, labels):
+    text = &#34;&#34;
+    for x, y in a:
+        text += str(rowspan(y)) + &#34; &#34;
+        text += &#34;-&#34;*i
+        for ei, ex in enumerate(x):
+            text += &#34;\&#34;&#34;+labels[i][ei]+&#34;\&#34;: &#34; + str(ex)
+            if ei &lt; len(x) - 1:
+                text += &#34; | &#34;
+            else:
+                text += &#34;\n&#34;
+
+        if y:
+            text += tableatext(y, i+1, labels)
+    return text
+
+
+def tablerows(a, tfirstpre=&#34;&#34;):
+    text = &#34;&#34;
+    for x in a:
+        rs = rowspan(x[1])
+        # ändern!
+        if tfirstpre:
+            prerowspan = (f&#34; rowspan=\&#34;{rs}\&#34;&#34; if rs &gt; 1 else &#34;&#34;)
+            pre = ((tfirstpre + prerowspan + &#34; | &#34;) if tfirstpre or prerowspan else &#34;&#34;)
+            for i, y in enumerate(x[0]):
+                text += &#34;| &#34; + (pre if not i else &#34;&#34;) + str(y) + &#34;\n&#34;
+        else:
+            for y in x[0]:
+                text += &#34;| &#34; + (f&#34; rowspan=\&#34;{rs}\&#34; | &#34; if rs &gt; 1 else &#34;&#34;) + str(y) + &#34;\n&#34;
+        if x[1]:
+            text += tablerows(x[1])
+        else:
+            text += &#34;|-\n&#34;
+    return text
+
+
+def to_table(a, ttitle, tref, tcols,
+              tfirstpre=&#34;&#34;,
+              tclass=&#34;wikitable sortable mw-collapsible mw-collapsed&#34;,
+              tstyle=&#34;width:100%; text-align:left; font-size:90%;&#34;,
+              theadclass=&#34;hintergrundfarbe6&#34;):
+    wikitext = &#34;{| class=\&#34;&#34; + tclass + &#34;\&#34; style=\&#34;&#34; + tstyle + &#34;\&#34;\n|-\n&#34;
+    wikitext += &#34;|+ &#34; + ttitle + tref + &#34;\n|- class=\&#34;&#34; + theadclass + &#34;\&#34;\n&#34;
+    for colname, colsort in tcols:
+        wikitext += &#34;! &#34;
+        if colsort:
+            if colsort == &#34;unsortable&#34;:
+                wikitext += &#34;class=\&#34;unsortable\&#34; | &#34;
+            else:
+                wikitext += &#34;data-sort-type=\&#34;&#34; + colsort + &#34;\&#34; | &#34;
+        wikitext += colname + &#34;\n&#34;
+    wikitext += &#34;\n|-\n&#34;
+    wikitext += tablerows(a, tfirstpre)
+    wikitext += &#34;\n|}\n&#34;
+    return wikitext
+
+
+def wikitable(session: Session, fname: str, line_ids: Optional[Set[int]] = None, export_stops: bool = True, version_id: Optional[int] = None) -&gt; None:
+    cq = session.query(network.Course).join(network.Course.stops).join(network.Course.stop_timings).options(contains_eager(&#39;stops&#39;), contains_eager(&#39;stop_timings&#39;))
+    if version_id is not None:
+        cq = cq.filter_by(version_id=version_id)
+    if line_ids:
+        cq = cq.filter(network.Course.line.in_(line_ids))
+    a = fahrplanarray(session, cq.all())
+
+    tref = &#34;&lt;ref name=\&#34;VRR\&#34;&gt;Basierend auf Fahrplandaten vom [[Verkehrsverbund Rhein-Ruhr]] ([https://www.openvrr.de/ OpenVRR]): &#34;
+    vq = session.query(Version)
+    if version_id is not None:
+        vq = vq.filter_by(id=version_id)
+    for version in vq.all():
+        tref += f&#34;{version.net} {version.period_name} ({{{{FormatDate|{version.date_from.strftime(&#39;%Y-%m-%d&#39;)}|M}}}}–{{{{FormatDate|{version.date_to.strftime(&#39;%Y-%m-%d&#39;)}|M}}}})&#34;
+    tref += &#34;&lt;/ref&gt;&#34;
+    # name, sort type/unsortable
+    linientcols = ((&#34;Linie&#34;, &#34;text&#34;),
+                   (&#34;Linienverlauf&#34;, &#34;text&#34;),
+                   (&#34;Haltestellen&#34;, &#34;number&#34;),
+                   (&#34;Strecke&#34;, &#34;number&#34;),
+                   (&#34;Fahrzeit&#34;, &#34;number&#34;),
+                   (&#34;Einschränkung&#34;, &#34;text&#34;),
+                   (&#34;Wochentage&#34;, &#34;text&#34;),
+                   (&#34;Abfahrtszeiten&#34;, &#34;number&#34;),
+                   )
+    linienfirstpre = &#34;align=\&#34;center\&#34; style=\&#34;background-color:#B404AE; color:white;\&#34;&#34;
+
+    wikitext = &#34;Diese Seite wurde komplett aus DINO-Fahrplandaten vom [[Verkehrsverbund Rhein-Ruhr|VRR]] generiert&lt;ref&gt;https://github.com/d3d9/DINO2/&lt;/ref&gt; und ist sehr experimentell.\n\n&#34;
+    if export_stops:
+        wikitext += &#34;{{All Coordinates|pos=inline|section=Haltestellenliste}}\n\n&#34;
+    wikitext += &#34;== Busverkehr ==\n=== Liniennetz ===\n==== Alles ====\n&#34;
+    wikitext += to_table(a, &#34;Linien&#34;, tref, linientcols, linienfirstpre)
+    wikitext += &#34;\n==== Anmerkungen zu den Linien ====\n&lt;references group=\&#34;AnmL\&#34;/&gt;\n\n&#34;
+
+    if export_stops:
+        sq = session.query(location.Stop).options(joinedload(&#39;areas&#39;).joinedload(&#39;points&#39;))  # ggf. anpassen, 0-areas undso
+        if version_id is not None:
+            sq = sq.filter_by(version_id=version_id)
+        stopa = stoparray(sq.all())
+        stoptcols = ((&#34;Haltestelle&#34;, &#34;text&#34;),
+                     (&#34;IFOPT&#34;, &#34;text&#34;),
+                     (&#34;Koordinaten&#34;, &#34;unsortable&#34;),
+                     (&#34;Waben&#34;, &#34;number&#34;),
+                     (&#34;Kürzel&#34;, &#34;text&#34;),
+                     (&#34;Bereich&#34;, &#34;text&#34;),
+                     (&#34;IFOPT&#34;, &#34;text&#34;),
+                     (&#34;Steig&#34;, &#34;number&#34;),
+                     (&#34;IFOPT&#34;, &#34;text&#34;),
+                     (&#34;Koordinaten&#34;, &#34;unsortable&#34;),
+                     )
+        wikitext += &#34;== Haltestellen ==\n=== Haltestellenliste ===\n&#34;
+        wikitext += to_table(stopa, &#34;Haltestellen&#34;, &#34;&lt;ref name=\&#34;VRR\&#34; /&gt;&#34;, stoptcols)
+        wikitext += &#34;\n==== Anmerkungen zu den Haltestellen ====\n&lt;references group=\&#34;AnmH\&#34;/&gt;\n\n&#34;
+
+    wikitext += &#34;== Einzelnachweise ==\n&lt;references /&gt;\n&#34;
+
+    with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+        f.write(wikitext)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="DINO2.tools.export.wikitable.stopclean"><code class="name flex">
+<span>def <span class="ident">stopclean</span></span>(<span>name, placelist, ignoreif=['Hauptbahnhof', 'Hbf', 'Bahnhof', 'Bf'])</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def stopclean(name, placelist, ignoreif=[&#34;Hauptbahnhof&#34;, &#34;Hbf&#34;, &#34;Bahnhof&#34;, &#34;Bf&#34;]):
+    for s in ignoreif:
+        if s in name:
+            return name
+    for place in placelist:
+        name = name.replace(place, &#34;&#34;, 1)
+    return name</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.wikitable.timestr"><code class="name flex">
+<span>def <span class="ident">timestr</span></span>(<span>secs)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def timestr(secs):
+    return (str(secs//3600).zfill(2)+&#34;:&#34;+str((secs//60) % 60).zfill(2)+&#34;:&#34;+str(secs % 60).zfill(2)).rstrip(&#34;00&#34;).rstrip(&#34;:&#34;)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.wikitable.mins"><code class="name flex">
+<span>def <span class="ident">mins</span></span>(<span>td)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def mins(td):
+    return (&#34;%f&#34; % (td.total_seconds()/60)).rstrip(&#34;0&#34;).rstrip(&#34;.&#34;)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.wikitable.rowspan"><code class="name flex">
+<span>def <span class="ident">rowspan</span></span>(<span>e)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def rowspan(e):
+    return (1 if not e else sum(rowspan(x[1]) for x in e))</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.wikitable.takt"><code class="name flex">
+<span>def <span class="ident">takt</span></span>(<span>a, min_alle=3)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def takt(a, min_alle=3):
+    r = []
+    nexttime = timedelta(seconds=-9999)
+    nexttd = timedelta(seconds=-9999)
+    takt = timedelta(seconds=0)
+    taktc = 0
+
+    for i, s in enumerate(a):
+        td = s if type(s) == timedelta else timedelta(seconds=s)
+        if i &lt; len(a) - 1:
+            n = a[i+1]
+            nexttime = n if type(n) == timedelta else timedelta(seconds=n)
+        else:
+            nexttime = timedelta(seconds=-9999)
+        tdiff = nexttime - td
+
+        if tdiff == nexttd:
+            takt = tdiff
+            taktc += 1
+        else:
+            if taktc:
+                if not takt:
+                    for _ in range(taktc):
+                        r.append(timestr(int(td.total_seconds())))
+                elif taktc &lt; min_alle:
+                    for t in range(taktc, 0, -1):
+                        r.append(timestr(int((td-t*takt).total_seconds())))
+                else:
+                    r.append(&#34;alle &#34; + mins(takt) + &#34; min&#34;)
+            takt = timedelta(0)
+            taktc = 0
+            r.append(timestr(int(td.total_seconds())))
+        nexttd = tdiff
+        nexttime = td
+
+    rtext = &#34;&#34;
+    for ri, re in enumerate(r):
+        rtext += re
+        if re.startswith(&#34;alle&#34;):
+            sep = &#34; --&#34;
+        elif ri &lt; len(r) - 1 and r[ri+1].startswith(&#34;alle&#34;):
+            sep = &#34;-- &#34;
+        else:
+            sep = &#34;, &#34;
+        if ri &lt; len(r) - 1:
+            rtext += sep
+
+    return rtext</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.wikitable.fahrplanarray"><code class="name flex">
+<span>def <span class="ident">fahrplanarray</span></span>(<span>session: Session, courses: Collection[network.Course])</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def fahrplanarray(session: Session, courses: Collection[network.Course]):
+    a = []
+    # todo: network.Course.duration &amp; length benutzen..
+    # tmp
+    placelist = [&#34;Hagen &#34;, &#34;HA-&#34;, &#34;Hagen, &#34;]
+    for lineid, line_courses_grouper in itertools.groupby(courses, lambda c: c.line):
+        line_courses = list(line_courses_grouper)
+        assert all(lc.name == line_courses[0].name for lc in line_courses)
+        a_l = [[f&#34;&#39;&#39;&#39;{line_courses[0].name}&#39;&#39;&#39;&#34;], []]
+        for lc in sorted(line_courses, key=lambda _lc: (_lc.line_dir, stopclean(_lc.stops[0].stop.name, placelist), -len(_lc.stops), -_lc.length)):
+            a_c = [[f&#34;&#39;&#39;&#39;{stopclean(lc.stops[0].stop.name, placelist)}&#39;&#39;&#39;&amp;nbsp;→ &#39;&#39;&#39;{stopclean(lc.stops[-1].stop.name, placelist)}&#39;&#39;&#39;&#34;, len(lc.stops), str(round(lc.length/1000, 1)).replace(&#34;.&#34;, &#34;,&#34;).rstrip(&#34;0&#34;).rstrip(&#34;,&#34;) + &#34; km&#34;], []]
+            fahrzeiten = {}
+            for timing_group_nr in set(_st.timing_group for _st in lc.stop_timings):
+                fahrzeit = f&#34;{mins(lc.duration(timing_group_nr))} min&#34;
+                if fahrzeit not in fahrzeiten:
+                    fahrzeiten[fahrzeit] = [timing_group_nr]
+                else:
+                    # zeiten, die insgesamt gleich sind werden zusammengetan
+                    fahrzeiten[fahrzeit].append(timing_group_nr)
+            for fahrzeit in fahrzeiten:
+                a_fz = [[fahrzeit], []]
+                restrictions = {}
+                for trip in session.query(schedule.Trip) \
+                        .options(
+                            load_only(&#39;day_attribute_id&#39;, &#39;restriction_id&#39;, &#39;departure_time&#39;),
+                            joinedload(&#39;day_attribute&#39;),
+                            joinedload(&#39;restriction&#39;)
+                        ).filter(schedule.Trip.course==lc) \
+                        .filter(schedule.Trip.timing_group.in_(fahrzeiten[fahrzeit])) \
+                        .all():
+                    restrictiontext = &#34;keine&#34; if trip.restriction_id is None else str(trip.restriction.text)
+                    day_attr = trip.day_attribute
+                    starttime = int(trip.departure_time.total_seconds())
+                    # todo: auch schauen ob die kalender an sich gleich sind, nicht nur der text!
+                    if restrictiontext not in restrictions:
+                        restrictions[restrictiontext] = {day_attr: [starttime]}
+                    elif day_attr not in restrictions[restrictiontext]:
+                        restrictions[restrictiontext][day_attr] = [starttime]
+                    elif starttime not in restrictions[restrictiontext][day_attr]:
+                        restrictions[restrictiontext][day_attr].append(starttime)
+                    else:
+                        restrictions[restrictiontext][day_attr].append(starttime)
+                        print(&#34;Warnung, gleichzeitige gleiche Abfahrt:&#34;, lc, fahrzeit, restrictiontext, day_attr, timestr(starttime))
+                for restrictiontext in restrictions:
+                    a_r = [[restrictiontext], []]
+                    for day_attr in restrictions[restrictiontext]:
+                        dttext = day_attr.text
+                        takttext = takt(sorted(restrictions[restrictiontext][day_attr]))
+                        a_r[1].append([[dttext, takttext], []])
+                    a_r[1].sort(key=lambda dt: dt[0][0])
+                    a_fz[1].append(a_r)
+                a_fz[1].sort(key=lambda r: r[0][0])
+                a_c[1].append(a_fz)
+            a_c[1].sort(reverse=True, key=lambda fz: fz[0][0])
+            a_l[1].append(a_c)
+        a.append(a_l)
+    return a</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.wikitable.stoparray"><code class="name flex">
+<span>def <span class="ident">stoparray</span></span>(<span>stops: Collection[location.Stop])</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def stoparray(stops: Collection[location.Stop]):
+    a = []
+    vocoords = lambda x, y, name, dim: f&#34;{{{{Coordinate|NS={y.rstrip(&#39;0&#39;)}|EW={x.rstrip(&#39;0&#39;)}|dim={dim}|type=landmark|region=DE-NW|simple=y|name={name}}}}}&#34; if (x and y) else &#34;&#34;
+    sortf = lambda s: ((s.name or &#34;&#34;), (s.ifopt or &#34;&#34;))
+    for stop in sorted(stops, key=sortf):
+        a_s = [[f&#34;&#39;&#39;&#39;{stop.name}&#39;&#39;&#39;&#34;, stop.ifopt or &#34;&#34;, vocoords(stop.pos_x, stop.pos_y, stop.name, &#34;120&#34;), &#34;, &#34;.join(str(fzid) for fzid in sorted(stop.fare_zone_ids)), stop.abbr], []]
+        # 0-areas?
+        for area in sorted(stop.areas, key=sortf):
+            a_a = [[area.name, area.ifopt or &#34;&#34;], []]
+            for pos in sorted(area.points, key=sortf):
+                a_p = [[pos.name or &#34;&#34;, pos.ifopt or &#34;&#34;, vocoords(pos.pos_x, pos.pos_y, stop.name+&#34; &#34;+(pos.name or &#34;&#34;), &#34;20&#34;)], []]
+                a_a[1].append(a_p)
+            if not a_a[1]:
+                a_a[1].append([[&#34;&#34;, &#34;&#34;, &#34;&#34;], []])
+            a_s[1].append(a_a)
+        if not a_s[1]:
+            a_s[1].append([[&#34;&#34;, &#34;&#34;], [[[&#34;&#34;, &#34;&#34;, &#34;&#34;], []]]])
+        a.append(a_s)
+    return a</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.wikitable.tableatext"><code class="name flex">
+<span>def <span class="ident">tableatext</span></span>(<span>a, i, labels)</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def tableatext(a, i, labels):
+    text = &#34;&#34;
+    for x, y in a:
+        text += str(rowspan(y)) + &#34; &#34;
+        text += &#34;-&#34;*i
+        for ei, ex in enumerate(x):
+            text += &#34;\&#34;&#34;+labels[i][ei]+&#34;\&#34;: &#34; + str(ex)
+            if ei &lt; len(x) - 1:
+                text += &#34; | &#34;
+            else:
+                text += &#34;\n&#34;
+
+        if y:
+            text += tableatext(y, i+1, labels)
+    return text</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.wikitable.tablerows"><code class="name flex">
+<span>def <span class="ident">tablerows</span></span>(<span>a, tfirstpre='')</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def tablerows(a, tfirstpre=&#34;&#34;):
+    text = &#34;&#34;
+    for x in a:
+        rs = rowspan(x[1])
+        # ändern!
+        if tfirstpre:
+            prerowspan = (f&#34; rowspan=\&#34;{rs}\&#34;&#34; if rs &gt; 1 else &#34;&#34;)
+            pre = ((tfirstpre + prerowspan + &#34; | &#34;) if tfirstpre or prerowspan else &#34;&#34;)
+            for i, y in enumerate(x[0]):
+                text += &#34;| &#34; + (pre if not i else &#34;&#34;) + str(y) + &#34;\n&#34;
+        else:
+            for y in x[0]:
+                text += &#34;| &#34; + (f&#34; rowspan=\&#34;{rs}\&#34; | &#34; if rs &gt; 1 else &#34;&#34;) + str(y) + &#34;\n&#34;
+        if x[1]:
+            text += tablerows(x[1])
+        else:
+            text += &#34;|-\n&#34;
+    return text</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.wikitable.to_table"><code class="name flex">
+<span>def <span class="ident">to_table</span></span>(<span>a, ttitle, tref, tcols, tfirstpre='', tclass='wikitable sortable mw-collapsible mw-collapsed', tstyle='width:100%; text-align:left; font-size:90%;', theadclass='hintergrundfarbe6')</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def to_table(a, ttitle, tref, tcols,
+              tfirstpre=&#34;&#34;,
+              tclass=&#34;wikitable sortable mw-collapsible mw-collapsed&#34;,
+              tstyle=&#34;width:100%; text-align:left; font-size:90%;&#34;,
+              theadclass=&#34;hintergrundfarbe6&#34;):
+    wikitext = &#34;{| class=\&#34;&#34; + tclass + &#34;\&#34; style=\&#34;&#34; + tstyle + &#34;\&#34;\n|-\n&#34;
+    wikitext += &#34;|+ &#34; + ttitle + tref + &#34;\n|- class=\&#34;&#34; + theadclass + &#34;\&#34;\n&#34;
+    for colname, colsort in tcols:
+        wikitext += &#34;! &#34;
+        if colsort:
+            if colsort == &#34;unsortable&#34;:
+                wikitext += &#34;class=\&#34;unsortable\&#34; | &#34;
+            else:
+                wikitext += &#34;data-sort-type=\&#34;&#34; + colsort + &#34;\&#34; | &#34;
+        wikitext += colname + &#34;\n&#34;
+    wikitext += &#34;\n|-\n&#34;
+    wikitext += tablerows(a, tfirstpre)
+    wikitext += &#34;\n|}\n&#34;
+    return wikitext</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.wikitable.wikitable"><code class="name flex">
+<span>def <span class="ident">wikitable</span></span>(<span>session: Session, fname: str, line_ids: Optional[Set[int]] = None, export_stops: bool = True, version_id: Optional[int] = None) -> NoneType</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def wikitable(session: Session, fname: str, line_ids: Optional[Set[int]] = None, export_stops: bool = True, version_id: Optional[int] = None) -&gt; None:
+    cq = session.query(network.Course).join(network.Course.stops).join(network.Course.stop_timings).options(contains_eager(&#39;stops&#39;), contains_eager(&#39;stop_timings&#39;))
+    if version_id is not None:
+        cq = cq.filter_by(version_id=version_id)
+    if line_ids:
+        cq = cq.filter(network.Course.line.in_(line_ids))
+    a = fahrplanarray(session, cq.all())
+
+    tref = &#34;&lt;ref name=\&#34;VRR\&#34;&gt;Basierend auf Fahrplandaten vom [[Verkehrsverbund Rhein-Ruhr]] ([https://www.openvrr.de/ OpenVRR]): &#34;
+    vq = session.query(Version)
+    if version_id is not None:
+        vq = vq.filter_by(id=version_id)
+    for version in vq.all():
+        tref += f&#34;{version.net} {version.period_name} ({{{{FormatDate|{version.date_from.strftime(&#39;%Y-%m-%d&#39;)}|M}}}}–{{{{FormatDate|{version.date_to.strftime(&#39;%Y-%m-%d&#39;)}|M}}}})&#34;
+    tref += &#34;&lt;/ref&gt;&#34;
+    # name, sort type/unsortable
+    linientcols = ((&#34;Linie&#34;, &#34;text&#34;),
+                   (&#34;Linienverlauf&#34;, &#34;text&#34;),
+                   (&#34;Haltestellen&#34;, &#34;number&#34;),
+                   (&#34;Strecke&#34;, &#34;number&#34;),
+                   (&#34;Fahrzeit&#34;, &#34;number&#34;),
+                   (&#34;Einschränkung&#34;, &#34;text&#34;),
+                   (&#34;Wochentage&#34;, &#34;text&#34;),
+                   (&#34;Abfahrtszeiten&#34;, &#34;number&#34;),
+                   )
+    linienfirstpre = &#34;align=\&#34;center\&#34; style=\&#34;background-color:#B404AE; color:white;\&#34;&#34;
+
+    wikitext = &#34;Diese Seite wurde komplett aus DINO-Fahrplandaten vom [[Verkehrsverbund Rhein-Ruhr|VRR]] generiert&lt;ref&gt;https://github.com/d3d9/DINO2/&lt;/ref&gt; und ist sehr experimentell.\n\n&#34;
+    if export_stops:
+        wikitext += &#34;{{All Coordinates|pos=inline|section=Haltestellenliste}}\n\n&#34;
+    wikitext += &#34;== Busverkehr ==\n=== Liniennetz ===\n==== Alles ====\n&#34;
+    wikitext += to_table(a, &#34;Linien&#34;, tref, linientcols, linienfirstpre)
+    wikitext += &#34;\n==== Anmerkungen zu den Linien ====\n&lt;references group=\&#34;AnmL\&#34;/&gt;\n\n&#34;
+
+    if export_stops:
+        sq = session.query(location.Stop).options(joinedload(&#39;areas&#39;).joinedload(&#39;points&#39;))  # ggf. anpassen, 0-areas undso
+        if version_id is not None:
+            sq = sq.filter_by(version_id=version_id)
+        stopa = stoparray(sq.all())
+        stoptcols = ((&#34;Haltestelle&#34;, &#34;text&#34;),
+                     (&#34;IFOPT&#34;, &#34;text&#34;),
+                     (&#34;Koordinaten&#34;, &#34;unsortable&#34;),
+                     (&#34;Waben&#34;, &#34;number&#34;),
+                     (&#34;Kürzel&#34;, &#34;text&#34;),
+                     (&#34;Bereich&#34;, &#34;text&#34;),
+                     (&#34;IFOPT&#34;, &#34;text&#34;),
+                     (&#34;Steig&#34;, &#34;number&#34;),
+                     (&#34;IFOPT&#34;, &#34;text&#34;),
+                     (&#34;Koordinaten&#34;, &#34;unsortable&#34;),
+                     )
+        wikitext += &#34;== Haltestellen ==\n=== Haltestellenliste ===\n&#34;
+        wikitext += to_table(stopa, &#34;Haltestellen&#34;, &#34;&lt;ref name=\&#34;VRR\&#34; /&gt;&#34;, stoptcols)
+        wikitext += &#34;\n==== Anmerkungen zu den Haltestellen ====\n&lt;references group=\&#34;AnmH\&#34;/&gt;\n\n&#34;
+
+    wikitext += &#34;== Einzelnachweise ==\n&lt;references /&gt;\n&#34;
+
+    with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+        f.write(wikitext)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="DINO2.tools.export" href="index.html">DINO2.tools.export</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="two-column">
+<li><code><a title="DINO2.tools.export.wikitable.stopclean" href="#DINO2.tools.export.wikitable.stopclean">stopclean</a></code></li>
+<li><code><a title="DINO2.tools.export.wikitable.timestr" href="#DINO2.tools.export.wikitable.timestr">timestr</a></code></li>
+<li><code><a title="DINO2.tools.export.wikitable.mins" href="#DINO2.tools.export.wikitable.mins">mins</a></code></li>
+<li><code><a title="DINO2.tools.export.wikitable.rowspan" href="#DINO2.tools.export.wikitable.rowspan">rowspan</a></code></li>
+<li><code><a title="DINO2.tools.export.wikitable.takt" href="#DINO2.tools.export.wikitable.takt">takt</a></code></li>
+<li><code><a title="DINO2.tools.export.wikitable.fahrplanarray" href="#DINO2.tools.export.wikitable.fahrplanarray">fahrplanarray</a></code></li>
+<li><code><a title="DINO2.tools.export.wikitable.stoparray" href="#DINO2.tools.export.wikitable.stoparray">stoparray</a></code></li>
+<li><code><a title="DINO2.tools.export.wikitable.tableatext" href="#DINO2.tools.export.wikitable.tableatext">tableatext</a></code></li>
+<li><code><a title="DINO2.tools.export.wikitable.tablerows" href="#DINO2.tools.export.wikitable.tablerows">tablerows</a></code></li>
+<li><code><a title="DINO2.tools.export.wikitable.to_table" href="#DINO2.tools.export.wikitable.to_table">to_table</a></code></li>
+<li><code><a title="DINO2.tools.export.wikitable.wikitable" href="#DINO2.tools.export.wikitable.wikitable">wikitable</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

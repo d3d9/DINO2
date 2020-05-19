@@ -1,0 +1,2255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.1" />
+<title>DINO2.model.operational API documentation</title>
+<meta name="description" content="DINO 2.1 operational data" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>DINO2.model.operational</code></h1>
+</header>
+<section id="section-intro">
+<p>DINO 2.1 operational data</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: utf-8 -*-
+&#34;&#34;&#34;DINO 2.1 operational data&#34;&#34;&#34;
+
+from __future__ import annotations
+
+from enum import Enum
+from sqlalchemy import Column, String, Integer, Boolean, ForeignKey, ForeignKeyConstraint, CheckConstraint
+from sqlalchemy.orm import relationship, RelationshipProperty
+from typing import Optional, Sequence, TYPE_CHECKING
+
+from ..types import IntEnum
+from . import Base, Version
+
+if TYPE_CHECKING:
+    from .location import Link
+    from .network import Course, CourseStop
+    from .schedule import Trip
+
+
+class Branch(Base):
+    &#34;&#34;&#34;
+    Operational branch
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;branch.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;BRANCH_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Branch id&#34;&#34;&#34;
+
+    abbr: Column[Optional[str]] = Column(&#34;STR_BRANCH_NAME&#34;, String(length=6))
+    &#34;&#34;&#34;Short branch name&#34;&#34;&#34;
+    name: Column[str] = Column(&#34;BRANCH_NAME&#34;, String(length=40), nullable=False)
+    &#34;&#34;&#34;Branch name&#34;&#34;&#34;
+
+    links: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.Link`s of this branch&#34;&#34;&#34;
+    vehicle_destination_texts: RelationshipProperty[Sequence[VehicleDestinationText]] = relationship(&#34;VehicleDestinationText&#34;, viewonly=True)
+    &#34;&#34;&#34;`VehicleDestinationText`s of this branch&#34;&#34;&#34;
+    default_branch_operators: RelationshipProperty[Sequence[Operator]] = relationship(&#34;Operator&#34;, viewonly=True)
+    &#34;&#34;&#34;`Operator`s that have this branch as default branch&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;branches&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Branch(version_id={self.version_id}, id={self.id}, abbr={self.abbr}, name={self.name})&gt;&#34;
+
+
+class Operator(Base):
+    &#34;&#34;&#34;
+    Operator
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;operator.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[str] = Column(&#34;OP_CODE&#34;, String(length=10), primary_key=True)
+    &#34;&#34;&#34;Operator number&#34;&#34;&#34;
+
+    default_branch_id: Column[Optional[int]] = Column(&#34;OP_BRANCH_NR&#34;, Integer())
+    &#34;&#34;&#34;Default branch id&#34;&#34;&#34;
+
+    abbr: Column[Optional[str]] = Column(&#34;OP_SHORT_NAME&#34;, String(length=7))
+    &#34;&#34;&#34;Short operator name&#34;&#34;&#34;
+    name: Column[str] = Column(&#34;OP_LONG_NAME&#34;, String(length=255), nullable=False)
+    &#34;&#34;&#34;Operator name&#34;&#34;&#34;
+    pub_abbr: Column[Optional[str]] = Column(&#34;OP_PUBLIC_SHORT_NAME&#34;, String(length=7))
+    &#34;&#34;&#34;Public operator abbreviation&#34;&#34;&#34;
+    full_name: Column[Optional[str]] = Column(&#34;OP_LICENCE_NAME&#34;, String(length=255))
+    &#34;&#34;&#34;Operator full/licensed name&#34;&#34;&#34;
+    trading_name: Column[Optional[str]] = Column(&#34;OP_TRADING_NAME&#34;, String(length=255))
+    &#34;&#34;&#34;Operator trading name&#34;&#34;&#34;
+    vat_registered: Column[Optional[bool]] = Column(&#34;OP_VAT_REGISTERED_FLAG&#34;, Boolean())
+    &#34;&#34;&#34;Whether operator is VAT registered&#34;&#34;&#34;
+
+    default_branch: RelationshipProperty[Optional[Branch]] = relationship(Branch, viewonly=True)
+    &#34;&#34;&#34;Default `Branch`&#34;&#34;&#34;
+    branch_offices: RelationshipProperty[Sequence[OperatorBranchOffice]] = relationship(&#34;OperatorBranchOffice&#34;, back_populates=&#34;operator&#34;)
+    &#34;&#34;&#34;`OperatorBranchOffice`s of this operator&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;operators&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, default_branch_id], [Branch.version_id, Branch.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Operator(version_id={self.version_id}, id={self.id}, abbr={self.abbr}, name={self.name})&gt;&#34;
+
+
+class OperatorBranchOffice(Base):
+    &#34;&#34;&#34;
+    Operator branch office.
+
+    At least one per operator is required.
+
+    Primary key: `version_id` &amp; `operator_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;operator_branch_office.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    operator_id: Column[str] = Column(&#34;OP_CODE&#34;, String(length=10), primary_key=True)
+    &#34;&#34;&#34;Operator number&#34;&#34;&#34;
+
+    id: Column[str] = Column(&#34;OBO_SHORT_NAME&#34;, String(length=10), primary_key=True)
+    &#34;&#34;&#34;Operator branch office id / short name&#34;&#34;&#34;
+
+    internal_phone: Column[Optional[str]] = Column(&#34;OBO_INTERNAL_PHONE&#34;, String(length=50))
+    &#34;&#34;&#34;Internal phone number&#34;&#34;&#34;
+    public_phone: Column[Optional[str]] = Column(&#34;OBO_PUBLIC_PHONE&#34;, String(length=50))
+    &#34;&#34;&#34;Public phone number&#34;&#34;&#34;
+    fax: Column[Optional[str]] = Column(&#34;OBO_FAX_NR&#34;, String(length=50))
+    &#34;&#34;&#34;Internal phone number&#34;&#34;&#34;
+    address: Column[Optional[str]] = Column(&#34;OBO_ADDRESS&#34;, String(length=500))
+    &#34;&#34;&#34;Street address of office&#34;&#34;&#34;
+    contact_address: Column[Optional[str]] = Column(&#34;OBO_CONTAC_ADDRESS&#34;, String(length=500))
+    &#34;&#34;&#34;Contact address of office&#34;&#34;&#34;
+    url: Column[Optional[str]] = Column(&#34;OBO_URL&#34;, String(length=255))
+    &#34;&#34;&#34;URL of office&#34;&#34;&#34;
+
+    operator: RelationshipProperty[Operator] = relationship(Operator, back_populates=&#34;branch_offices&#34;)
+    &#34;&#34;&#34;`Operator`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, operator_id], [Operator.version_id, Operator.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;OperatorBranchOffice(version_id={self.version_id}, id={self.id})&gt;&#34;
+
+
+class TransferMOT(Enum):
+    &#34;&#34;&#34;
+    &#34;Transfer&#34; means of transport
+
+    Used to group `MeansOfTransportDesc` to more general MOT descriptions for usage for transfer times
+    &#34;&#34;&#34;
+    train = 0
+    commuter_rail = 1
+    underground = 2
+    suburban_rail = 3
+    tram = 4
+    city_bus = 5
+    regional_bus = 6
+    express_bus = 7
+    cable_or_cog_wheel = 8
+    ship = 9
+    shared_taxi = 10
+    other = 11
+    aircraft = 12
+
+
+class MeansOfTransportDesc(Base):
+    &#34;&#34;&#34;
+    Means of transport (_MOT_)
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;means_of_transport_desc.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;MOT_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;MOT id&#34;&#34;&#34;
+
+    name: Column[str] = Column(&#34;MOT_NAME&#34;, String(length=20), nullable=False)
+    &#34;&#34;&#34;MOT name&#34;&#34;&#34;
+
+    tmot: Column[TransferMOT] = Column(&#34;TMOT_NR&#34;, IntEnum(TransferMOT), nullable=False)
+    &#34;&#34;&#34;Transfer MOT number&#34;&#34;&#34;
+
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;means_of_transport&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;MeansOfTransportDesc(version_id={self.version_id}, id={self.id}, name={self.name}, tmot={self.tmot})&gt;&#34;
+
+
+class AccessibilityEquipment(Enum):
+    no_lift = 0
+    lift = 1
+    lift_or_ramp = 2
+
+
+class VehicleType(Base):
+    &#34;&#34;&#34;
+    Vehicle type
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;vehicle_type.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;VEH_TYPE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Vehicle type id&#34;&#34;&#34;
+
+    seats: Column[Optional[int]] = Column(&#34;VEH_TYPE_SEATS&#34;, Integer())
+    &#34;&#34;&#34;Number of seats&#34;&#34;&#34;
+    straps: Column[Optional[int]] = Column(&#34;VEH_TYPE_STRAPS&#34;, Integer())
+    &#34;&#34;&#34;Number of straps&#34;&#34;&#34;
+    places_for_disabled: Column[Optional[int]] = Column(&#34;PLACES_FOR_DISABLED_PERSONS&#34;, Integer())
+    &#34;&#34;&#34;Number of places for disabled persons&#34;&#34;&#34;
+
+    desc: Column[Optional[str]] = Column(&#34;VEH_TYPE_TEXT&#34;, String(length=40))
+    &#34;&#34;&#34;Vehicle type description&#34;&#34;&#34;
+    abbr: Column[Optional[str]] = Column(&#34;STR_VEH_TYPE&#34;, String(length=4))
+    &#34;&#34;&#34;Vehicle type abbreviation&#34;&#34;&#34;
+
+    door_width: Column[Optional[int]] = Column(&#34;VEH_TYPE_DOOR_WIDTH&#34;, Integer())
+    &#34;&#34;&#34;Width of vehicle doors (mm)&#34;&#34;&#34;
+    width: Column[Optional[int]] = Column(&#34;VEH_TYPE_WIDTH&#34;, Integer())
+    &#34;&#34;&#34;Width of vehicle(mm)&#34;&#34;&#34;
+    height: Column[Optional[int]] = Column(&#34;VEH_TYPE_HEIGHT&#34;, Integer())
+    &#34;&#34;&#34;Height of floor above rail/street surface (mm)&#34;&#34;&#34;
+
+    accessibility_equipment: Column[Optional[AccessibilityEquipment]] = Column(&#34;VEH_TYPE_ACCESS_EQUIP&#34;, IntEnum(AccessibilityEquipment))
+    &#34;&#34;&#34;Accessibility equipment&#34;&#34;&#34;
+
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;vehicle_types&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;VehicleType(version_id={self.version_id}, id={self.id}, desc={self.desc}, abbr={self.abbr})&gt;&#34;
+
+
+class VehicleDestinationText(Base):
+    &#34;&#34;&#34;
+    Vehicle destination text (_VDT_)
+
+    Primary key: `version_id` &amp; _`branch_id`_ &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;vehicle_destination_text.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    branch_id: Column[Optional[int]] = Column(&#34;BRANCH_NR&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;Branch id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;VDT_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;VDT id&#34;&#34;&#34;
+
+    driver_text1: Column[Optional[str]] = Column(&#34;VDT_TEXT_DRIVER1&#34;, String(length=160))
+    &#34;&#34;&#34;First row of text shown to driver&#34;&#34;&#34;
+    driver_text2: Column[Optional[str]] = Column(&#34;VDT_TEXT_DRIVER2&#34;, String(length=160))
+    &#34;&#34;&#34;Second row of text shown to driver&#34;&#34;&#34;
+
+    front_text1: Column[Optional[str]] = Column(&#34;VDT_TEXT_FRONT1&#34;, String(length=160))
+    &#34;&#34;&#34;First row of vehicle front text&#34;&#34;&#34;
+    front_text2: Column[Optional[str]] = Column(&#34;VDT_TEXT_FRONT2&#34;, String(length=160))
+    &#34;&#34;&#34;Second row of vehicle front text&#34;&#34;&#34;
+    front_text3: Column[Optional[str]] = Column(&#34;VDT_TEXT_FRONT3&#34;, String(length=160))
+    &#34;&#34;&#34;
+    First row of alternative vehicle front text (displays usually switch between `front_text1`+`front_text2` and `front_text3`+`front_text4`)
+    &#34;&#34;&#34;
+    front_text4: Column[Optional[str]] = Column(&#34;VDT_TEXT_FRONT4&#34;, String(length=160))
+    &#34;&#34;&#34;Second row of alternative vehicle front text&#34;&#34;&#34;
+
+    side_text1: Column[Optional[str]] = Column(&#34;VDT_TEXT_SIDE1&#34;, String(length=160))
+    &#34;&#34;&#34;First row of vehicle side text&#34;&#34;&#34;
+    side_text2: Column[Optional[str]] = Column(&#34;VDT_TEXT_SIDE2&#34;, String(length=160))
+    &#34;&#34;&#34;Second row of vehicle side text&#34;&#34;&#34;
+    side_text3: Column[Optional[str]] = Column(&#34;VDT_TEXT_SIDE3&#34;, String(length=160))
+    &#34;&#34;&#34;
+    First row of alternative vehicle side text (displays usually switch between `side_text1`+`side_text2` and `side_text3`+`side_text4`)
+    &#34;&#34;&#34;
+    side_text4: Column[Optional[str]] = Column(&#34;VDT_TEXT_SIDE4&#34;, String(length=160))
+    &#34;&#34;&#34;Second row of alternative vehicle side text&#34;&#34;&#34;
+
+    name: Column[Optional[str]] = Column(&#34;VDT_LONG_NAME&#34;, String(length=160))
+    &#34;&#34;&#34;VDT name&#34;&#34;&#34;
+    short_name: Column[Optional[str]] = Column(&#34;VDT_SHORT_NAME&#34;, String(length=68))
+    &#34;&#34;&#34;VDT short name&#34;&#34;&#34;
+
+    branch: RelationshipProperty[Optional[Branch]] = relationship(Branch, viewonly=True)
+    &#34;&#34;&#34;`Branch`&#34;&#34;&#34;
+    trips: RelationshipProperty[Sequence[Trip]] = relationship(&#34;Trip&#34;, secondary=&#34;trip_vdt&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.schedule.Trip`s this vehicle destination text is used on&#34;&#34;&#34;
+    courses: RelationshipProperty[Sequence[Course]] = relationship(&#34;Course&#34;, secondary=&#34;trip_vdt&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.Course`s this vehicle destination text is used on&#34;&#34;&#34;
+    course_stops: RelationshipProperty[Sequence[CourseStop]] = relationship(&#34;CourseStop&#34;, secondary=&#34;trip_vdt&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.CourseStop`s this vehicle destination text is changed to at&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;vehicle_destination_texts&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, branch_id], [Branch.version_id, Branch.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;VehicleDestinationText(version_id={self.version_id}, branch_id={self.branch_id}, id={self.id}, name={self.name}, short_name={self.short_name})&gt;&#34;</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="DINO2.model.operational.Branch"><code class="flex name class">
+<span>class <span class="ident">Branch</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Operational branch</p>
+<p>Primary key: <code>version_id</code> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Branch(Base):
+    &#34;&#34;&#34;
+    Operational branch
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;branch.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;BRANCH_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Branch id&#34;&#34;&#34;
+
+    abbr: Column[Optional[str]] = Column(&#34;STR_BRANCH_NAME&#34;, String(length=6))
+    &#34;&#34;&#34;Short branch name&#34;&#34;&#34;
+    name: Column[str] = Column(&#34;BRANCH_NAME&#34;, String(length=40), nullable=False)
+    &#34;&#34;&#34;Branch name&#34;&#34;&#34;
+
+    links: RelationshipProperty[Sequence[Link]] = relationship(&#34;Link&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.Link`s of this branch&#34;&#34;&#34;
+    vehicle_destination_texts: RelationshipProperty[Sequence[VehicleDestinationText]] = relationship(&#34;VehicleDestinationText&#34;, viewonly=True)
+    &#34;&#34;&#34;`VehicleDestinationText`s of this branch&#34;&#34;&#34;
+    default_branch_operators: RelationshipProperty[Sequence[Operator]] = relationship(&#34;Operator&#34;, viewonly=True)
+    &#34;&#34;&#34;`Operator`s that have this branch as default branch&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;branches&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Branch(version_id={self.version_id}, id={self.id}, abbr={self.abbr}, name={self.name})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.operational.Branch.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Branch.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Branch id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Branch.abbr"><code class="name">var <span class="ident">abbr</span></code></dt>
+<dd>
+<div class="desc"><p>Short branch name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Branch.name"><code class="name">var <span class="ident">name</span></code></dt>
+<dd>
+<div class="desc"><p>Branch name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Branch.links"><code class="name">var <span class="ident">links</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Link" href="location.html#DINO2.model.location.Link">Link</a></code>s of this branch</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Branch.vehicle_destination_texts"><code class="name">var <span class="ident">vehicle_destination_texts</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.VehicleDestinationText" href="#DINO2.model.operational.VehicleDestinationText">VehicleDestinationText</a></code>s of this branch</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Branch.default_branch_operators"><code class="name">var <span class="ident">default_branch_operators</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.Operator" href="#DINO2.model.operational.Operator">Operator</a></code>s that have this branch as default branch</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Branch.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.operational.Operator"><code class="flex name class">
+<span>class <span class="ident">Operator</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Operator</p>
+<p>Primary key: <code>version_id</code> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Operator(Base):
+    &#34;&#34;&#34;
+    Operator
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;operator.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[str] = Column(&#34;OP_CODE&#34;, String(length=10), primary_key=True)
+    &#34;&#34;&#34;Operator number&#34;&#34;&#34;
+
+    default_branch_id: Column[Optional[int]] = Column(&#34;OP_BRANCH_NR&#34;, Integer())
+    &#34;&#34;&#34;Default branch id&#34;&#34;&#34;
+
+    abbr: Column[Optional[str]] = Column(&#34;OP_SHORT_NAME&#34;, String(length=7))
+    &#34;&#34;&#34;Short operator name&#34;&#34;&#34;
+    name: Column[str] = Column(&#34;OP_LONG_NAME&#34;, String(length=255), nullable=False)
+    &#34;&#34;&#34;Operator name&#34;&#34;&#34;
+    pub_abbr: Column[Optional[str]] = Column(&#34;OP_PUBLIC_SHORT_NAME&#34;, String(length=7))
+    &#34;&#34;&#34;Public operator abbreviation&#34;&#34;&#34;
+    full_name: Column[Optional[str]] = Column(&#34;OP_LICENCE_NAME&#34;, String(length=255))
+    &#34;&#34;&#34;Operator full/licensed name&#34;&#34;&#34;
+    trading_name: Column[Optional[str]] = Column(&#34;OP_TRADING_NAME&#34;, String(length=255))
+    &#34;&#34;&#34;Operator trading name&#34;&#34;&#34;
+    vat_registered: Column[Optional[bool]] = Column(&#34;OP_VAT_REGISTERED_FLAG&#34;, Boolean())
+    &#34;&#34;&#34;Whether operator is VAT registered&#34;&#34;&#34;
+
+    default_branch: RelationshipProperty[Optional[Branch]] = relationship(Branch, viewonly=True)
+    &#34;&#34;&#34;Default `Branch`&#34;&#34;&#34;
+    branch_offices: RelationshipProperty[Sequence[OperatorBranchOffice]] = relationship(&#34;OperatorBranchOffice&#34;, back_populates=&#34;operator&#34;)
+    &#34;&#34;&#34;`OperatorBranchOffice`s of this operator&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;operators&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, default_branch_id], [Branch.version_id, Branch.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Operator(version_id={self.version_id}, id={self.id}, abbr={self.abbr}, name={self.name})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.operational.Operator.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Operator.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Operator number</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Operator.default_branch_id"><code class="name">var <span class="ident">default_branch_id</span></code></dt>
+<dd>
+<div class="desc"><p>Default branch id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Operator.abbr"><code class="name">var <span class="ident">abbr</span></code></dt>
+<dd>
+<div class="desc"><p>Short operator name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Operator.name"><code class="name">var <span class="ident">name</span></code></dt>
+<dd>
+<div class="desc"><p>Operator name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Operator.pub_abbr"><code class="name">var <span class="ident">pub_abbr</span></code></dt>
+<dd>
+<div class="desc"><p>Public operator abbreviation</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Operator.full_name"><code class="name">var <span class="ident">full_name</span></code></dt>
+<dd>
+<div class="desc"><p>Operator full/licensed name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Operator.trading_name"><code class="name">var <span class="ident">trading_name</span></code></dt>
+<dd>
+<div class="desc"><p>Operator trading name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Operator.vat_registered"><code class="name">var <span class="ident">vat_registered</span></code></dt>
+<dd>
+<div class="desc"><p>Whether operator is VAT registered</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Operator.default_branch"><code class="name">var <span class="ident">default_branch</span></code></dt>
+<dd>
+<div class="desc"><p>Default <code><a title="DINO2.model.operational.Branch" href="#DINO2.model.operational.Branch">Branch</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Operator.branch_offices"><code class="name">var <span class="ident">branch_offices</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.OperatorBranchOffice" href="#DINO2.model.operational.OperatorBranchOffice">OperatorBranchOffice</a></code>s of this operator</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.Operator.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.operational.OperatorBranchOffice"><code class="flex name class">
+<span>class <span class="ident">OperatorBranchOffice</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Operator branch office.</p>
+<p>At least one per operator is required.</p>
+<p>Primary key: <code>version_id</code> &amp; <code>operator_id</code> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class OperatorBranchOffice(Base):
+    &#34;&#34;&#34;
+    Operator branch office.
+
+    At least one per operator is required.
+
+    Primary key: `version_id` &amp; `operator_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;operator_branch_office.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    operator_id: Column[str] = Column(&#34;OP_CODE&#34;, String(length=10), primary_key=True)
+    &#34;&#34;&#34;Operator number&#34;&#34;&#34;
+
+    id: Column[str] = Column(&#34;OBO_SHORT_NAME&#34;, String(length=10), primary_key=True)
+    &#34;&#34;&#34;Operator branch office id / short name&#34;&#34;&#34;
+
+    internal_phone: Column[Optional[str]] = Column(&#34;OBO_INTERNAL_PHONE&#34;, String(length=50))
+    &#34;&#34;&#34;Internal phone number&#34;&#34;&#34;
+    public_phone: Column[Optional[str]] = Column(&#34;OBO_PUBLIC_PHONE&#34;, String(length=50))
+    &#34;&#34;&#34;Public phone number&#34;&#34;&#34;
+    fax: Column[Optional[str]] = Column(&#34;OBO_FAX_NR&#34;, String(length=50))
+    &#34;&#34;&#34;Internal phone number&#34;&#34;&#34;
+    address: Column[Optional[str]] = Column(&#34;OBO_ADDRESS&#34;, String(length=500))
+    &#34;&#34;&#34;Street address of office&#34;&#34;&#34;
+    contact_address: Column[Optional[str]] = Column(&#34;OBO_CONTAC_ADDRESS&#34;, String(length=500))
+    &#34;&#34;&#34;Contact address of office&#34;&#34;&#34;
+    url: Column[Optional[str]] = Column(&#34;OBO_URL&#34;, String(length=255))
+    &#34;&#34;&#34;URL of office&#34;&#34;&#34;
+
+    operator: RelationshipProperty[Operator] = relationship(Operator, back_populates=&#34;branch_offices&#34;)
+    &#34;&#34;&#34;`Operator`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, operator_id], [Operator.version_id, Operator.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;OperatorBranchOffice(version_id={self.version_id}, id={self.id})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.operational.OperatorBranchOffice.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.OperatorBranchOffice.operator_id"><code class="name">var <span class="ident">operator_id</span></code></dt>
+<dd>
+<div class="desc"><p>Operator number</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.OperatorBranchOffice.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Operator branch office id / short name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.OperatorBranchOffice.internal_phone"><code class="name">var <span class="ident">internal_phone</span></code></dt>
+<dd>
+<div class="desc"><p>Internal phone number</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.OperatorBranchOffice.public_phone"><code class="name">var <span class="ident">public_phone</span></code></dt>
+<dd>
+<div class="desc"><p>Public phone number</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.OperatorBranchOffice.fax"><code class="name">var <span class="ident">fax</span></code></dt>
+<dd>
+<div class="desc"><p>Internal phone number</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.OperatorBranchOffice.address"><code class="name">var <span class="ident">address</span></code></dt>
+<dd>
+<div class="desc"><p>Street address of office</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.OperatorBranchOffice.contact_address"><code class="name">var <span class="ident">contact_address</span></code></dt>
+<dd>
+<div class="desc"><p>Contact address of office</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.OperatorBranchOffice.url"><code class="name">var <span class="ident">url</span></code></dt>
+<dd>
+<div class="desc"><p>URL of office</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.OperatorBranchOffice.operator"><code class="name">var <span class="ident">operator</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.Operator" href="#DINO2.model.operational.Operator">Operator</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.OperatorBranchOffice.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.operational.TransferMOT"><code class="flex name class">
+<span>class <span class="ident">TransferMOT</span></span>
+<span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>"Transfer" means of transport</p>
+<p>Used to group <code><a title="DINO2.model.operational.MeansOfTransportDesc" href="#DINO2.model.operational.MeansOfTransportDesc">MeansOfTransportDesc</a></code> to more general MOT descriptions for usage for transfer times</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class TransferMOT(Enum):
+    &#34;&#34;&#34;
+    &#34;Transfer&#34; means of transport
+
+    Used to group `MeansOfTransportDesc` to more general MOT descriptions for usage for transfer times
+    &#34;&#34;&#34;
+    train = 0
+    commuter_rail = 1
+    underground = 2
+    suburban_rail = 3
+    tram = 4
+    city_bus = 5
+    regional_bus = 6
+    express_bus = 7
+    cable_or_cog_wheel = 8
+    ship = 9
+    shared_taxi = 10
+    other = 11
+    aircraft = 12</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>enum.Enum</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.model.operational.TransferMOT.train"><code class="name">var <span class="ident">train</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.TransferMOT.commuter_rail"><code class="name">var <span class="ident">commuter_rail</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.TransferMOT.underground"><code class="name">var <span class="ident">underground</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.TransferMOT.suburban_rail"><code class="name">var <span class="ident">suburban_rail</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.TransferMOT.tram"><code class="name">var <span class="ident">tram</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.TransferMOT.city_bus"><code class="name">var <span class="ident">city_bus</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.TransferMOT.regional_bus"><code class="name">var <span class="ident">regional_bus</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.TransferMOT.express_bus"><code class="name">var <span class="ident">express_bus</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.TransferMOT.cable_or_cog_wheel"><code class="name">var <span class="ident">cable_or_cog_wheel</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.TransferMOT.ship"><code class="name">var <span class="ident">ship</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.TransferMOT.shared_taxi"><code class="name">var <span class="ident">shared_taxi</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.TransferMOT.other"><code class="name">var <span class="ident">other</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.TransferMOT.aircraft"><code class="name">var <span class="ident">aircraft</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.operational.MeansOfTransportDesc"><code class="flex name class">
+<span>class <span class="ident">MeansOfTransportDesc</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Means of transport (<em>MOT</em>)</p>
+<p>Primary key: <code>version_id</code> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class MeansOfTransportDesc(Base):
+    &#34;&#34;&#34;
+    Means of transport (_MOT_)
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;means_of_transport_desc.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;MOT_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;MOT id&#34;&#34;&#34;
+
+    name: Column[str] = Column(&#34;MOT_NAME&#34;, String(length=20), nullable=False)
+    &#34;&#34;&#34;MOT name&#34;&#34;&#34;
+
+    tmot: Column[TransferMOT] = Column(&#34;TMOT_NR&#34;, IntEnum(TransferMOT), nullable=False)
+    &#34;&#34;&#34;Transfer MOT number&#34;&#34;&#34;
+
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;means_of_transport&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;MeansOfTransportDesc(version_id={self.version_id}, id={self.id}, name={self.name}, tmot={self.tmot})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.operational.MeansOfTransportDesc.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.MeansOfTransportDesc.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>MOT id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.MeansOfTransportDesc.name"><code class="name">var <span class="ident">name</span></code></dt>
+<dd>
+<div class="desc"><p>MOT name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.MeansOfTransportDesc.tmot"><code class="name">var <span class="ident">tmot</span></code></dt>
+<dd>
+<div class="desc"><p>Transfer MOT number</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.MeansOfTransportDesc.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.operational.AccessibilityEquipment"><code class="flex name class">
+<span>class <span class="ident">AccessibilityEquipment</span></span>
+<span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>An enumeration.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class AccessibilityEquipment(Enum):
+    no_lift = 0
+    lift = 1
+    lift_or_ramp = 2</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>enum.Enum</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.model.operational.AccessibilityEquipment.no_lift"><code class="name">var <span class="ident">no_lift</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.AccessibilityEquipment.lift"><code class="name">var <span class="ident">lift</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.operational.AccessibilityEquipment.lift_or_ramp"><code class="name">var <span class="ident">lift_or_ramp</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.operational.VehicleType"><code class="flex name class">
+<span>class <span class="ident">VehicleType</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Vehicle type</p>
+<p>Primary key: <code>version_id</code> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class VehicleType(Base):
+    &#34;&#34;&#34;
+    Vehicle type
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;vehicle_type.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;VEH_TYPE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Vehicle type id&#34;&#34;&#34;
+
+    seats: Column[Optional[int]] = Column(&#34;VEH_TYPE_SEATS&#34;, Integer())
+    &#34;&#34;&#34;Number of seats&#34;&#34;&#34;
+    straps: Column[Optional[int]] = Column(&#34;VEH_TYPE_STRAPS&#34;, Integer())
+    &#34;&#34;&#34;Number of straps&#34;&#34;&#34;
+    places_for_disabled: Column[Optional[int]] = Column(&#34;PLACES_FOR_DISABLED_PERSONS&#34;, Integer())
+    &#34;&#34;&#34;Number of places for disabled persons&#34;&#34;&#34;
+
+    desc: Column[Optional[str]] = Column(&#34;VEH_TYPE_TEXT&#34;, String(length=40))
+    &#34;&#34;&#34;Vehicle type description&#34;&#34;&#34;
+    abbr: Column[Optional[str]] = Column(&#34;STR_VEH_TYPE&#34;, String(length=4))
+    &#34;&#34;&#34;Vehicle type abbreviation&#34;&#34;&#34;
+
+    door_width: Column[Optional[int]] = Column(&#34;VEH_TYPE_DOOR_WIDTH&#34;, Integer())
+    &#34;&#34;&#34;Width of vehicle doors (mm)&#34;&#34;&#34;
+    width: Column[Optional[int]] = Column(&#34;VEH_TYPE_WIDTH&#34;, Integer())
+    &#34;&#34;&#34;Width of vehicle(mm)&#34;&#34;&#34;
+    height: Column[Optional[int]] = Column(&#34;VEH_TYPE_HEIGHT&#34;, Integer())
+    &#34;&#34;&#34;Height of floor above rail/street surface (mm)&#34;&#34;&#34;
+
+    accessibility_equipment: Column[Optional[AccessibilityEquipment]] = Column(&#34;VEH_TYPE_ACCESS_EQUIP&#34;, IntEnum(AccessibilityEquipment))
+    &#34;&#34;&#34;Accessibility equipment&#34;&#34;&#34;
+
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;vehicle_types&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;VehicleType(version_id={self.version_id}, id={self.id}, desc={self.desc}, abbr={self.abbr})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.operational.VehicleType.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleType.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Vehicle type id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleType.seats"><code class="name">var <span class="ident">seats</span></code></dt>
+<dd>
+<div class="desc"><p>Number of seats</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleType.straps"><code class="name">var <span class="ident">straps</span></code></dt>
+<dd>
+<div class="desc"><p>Number of straps</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleType.places_for_disabled"><code class="name">var <span class="ident">places_for_disabled</span></code></dt>
+<dd>
+<div class="desc"><p>Number of places for disabled persons</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleType.desc"><code class="name">var <span class="ident">desc</span></code></dt>
+<dd>
+<div class="desc"><p>Vehicle type description</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleType.abbr"><code class="name">var <span class="ident">abbr</span></code></dt>
+<dd>
+<div class="desc"><p>Vehicle type abbreviation</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleType.door_width"><code class="name">var <span class="ident">door_width</span></code></dt>
+<dd>
+<div class="desc"><p>Width of vehicle doors (mm)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleType.width"><code class="name">var <span class="ident">width</span></code></dt>
+<dd>
+<div class="desc"><p>Width of vehicle(mm)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleType.height"><code class="name">var <span class="ident">height</span></code></dt>
+<dd>
+<div class="desc"><p>Height of floor above rail/street surface (mm)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleType.accessibility_equipment"><code class="name">var <span class="ident">accessibility_equipment</span></code></dt>
+<dd>
+<div class="desc"><p>Accessibility equipment</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleType.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText"><code class="flex name class">
+<span>class <span class="ident">VehicleDestinationText</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Vehicle destination text (<em>VDT</em>)</p>
+<p>Primary key: <code>version_id</code> &amp; <em><code>branch_id</code></em> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class VehicleDestinationText(Base):
+    &#34;&#34;&#34;
+    Vehicle destination text (_VDT_)
+
+    Primary key: `version_id` &amp; _`branch_id`_ &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;vehicle_destination_text.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    branch_id: Column[Optional[int]] = Column(&#34;BRANCH_NR&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;Branch id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;VDT_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;VDT id&#34;&#34;&#34;
+
+    driver_text1: Column[Optional[str]] = Column(&#34;VDT_TEXT_DRIVER1&#34;, String(length=160))
+    &#34;&#34;&#34;First row of text shown to driver&#34;&#34;&#34;
+    driver_text2: Column[Optional[str]] = Column(&#34;VDT_TEXT_DRIVER2&#34;, String(length=160))
+    &#34;&#34;&#34;Second row of text shown to driver&#34;&#34;&#34;
+
+    front_text1: Column[Optional[str]] = Column(&#34;VDT_TEXT_FRONT1&#34;, String(length=160))
+    &#34;&#34;&#34;First row of vehicle front text&#34;&#34;&#34;
+    front_text2: Column[Optional[str]] = Column(&#34;VDT_TEXT_FRONT2&#34;, String(length=160))
+    &#34;&#34;&#34;Second row of vehicle front text&#34;&#34;&#34;
+    front_text3: Column[Optional[str]] = Column(&#34;VDT_TEXT_FRONT3&#34;, String(length=160))
+    &#34;&#34;&#34;
+    First row of alternative vehicle front text (displays usually switch between `front_text1`+`front_text2` and `front_text3`+`front_text4`)
+    &#34;&#34;&#34;
+    front_text4: Column[Optional[str]] = Column(&#34;VDT_TEXT_FRONT4&#34;, String(length=160))
+    &#34;&#34;&#34;Second row of alternative vehicle front text&#34;&#34;&#34;
+
+    side_text1: Column[Optional[str]] = Column(&#34;VDT_TEXT_SIDE1&#34;, String(length=160))
+    &#34;&#34;&#34;First row of vehicle side text&#34;&#34;&#34;
+    side_text2: Column[Optional[str]] = Column(&#34;VDT_TEXT_SIDE2&#34;, String(length=160))
+    &#34;&#34;&#34;Second row of vehicle side text&#34;&#34;&#34;
+    side_text3: Column[Optional[str]] = Column(&#34;VDT_TEXT_SIDE3&#34;, String(length=160))
+    &#34;&#34;&#34;
+    First row of alternative vehicle side text (displays usually switch between `side_text1`+`side_text2` and `side_text3`+`side_text4`)
+    &#34;&#34;&#34;
+    side_text4: Column[Optional[str]] = Column(&#34;VDT_TEXT_SIDE4&#34;, String(length=160))
+    &#34;&#34;&#34;Second row of alternative vehicle side text&#34;&#34;&#34;
+
+    name: Column[Optional[str]] = Column(&#34;VDT_LONG_NAME&#34;, String(length=160))
+    &#34;&#34;&#34;VDT name&#34;&#34;&#34;
+    short_name: Column[Optional[str]] = Column(&#34;VDT_SHORT_NAME&#34;, String(length=68))
+    &#34;&#34;&#34;VDT short name&#34;&#34;&#34;
+
+    branch: RelationshipProperty[Optional[Branch]] = relationship(Branch, viewonly=True)
+    &#34;&#34;&#34;`Branch`&#34;&#34;&#34;
+    trips: RelationshipProperty[Sequence[Trip]] = relationship(&#34;Trip&#34;, secondary=&#34;trip_vdt&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.schedule.Trip`s this vehicle destination text is used on&#34;&#34;&#34;
+    courses: RelationshipProperty[Sequence[Course]] = relationship(&#34;Course&#34;, secondary=&#34;trip_vdt&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.Course`s this vehicle destination text is used on&#34;&#34;&#34;
+    course_stops: RelationshipProperty[Sequence[CourseStop]] = relationship(&#34;CourseStop&#34;, secondary=&#34;trip_vdt&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.CourseStop`s this vehicle destination text is changed to at&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;vehicle_destination_texts&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, branch_id], [Branch.version_id, Branch.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;VehicleDestinationText(version_id={self.version_id}, branch_id={self.branch_id}, id={self.id}, name={self.name}, short_name={self.short_name})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.operational.VehicleDestinationText.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.branch_id"><code class="name">var <span class="ident">branch_id</span></code></dt>
+<dd>
+<div class="desc"><p>Branch id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>VDT id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.driver_text1"><code class="name">var <span class="ident">driver_text1</span></code></dt>
+<dd>
+<div class="desc"><p>First row of text shown to driver</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.driver_text2"><code class="name">var <span class="ident">driver_text2</span></code></dt>
+<dd>
+<div class="desc"><p>Second row of text shown to driver</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.front_text1"><code class="name">var <span class="ident">front_text1</span></code></dt>
+<dd>
+<div class="desc"><p>First row of vehicle front text</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.front_text2"><code class="name">var <span class="ident">front_text2</span></code></dt>
+<dd>
+<div class="desc"><p>Second row of vehicle front text</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.front_text3"><code class="name">var <span class="ident">front_text3</span></code></dt>
+<dd>
+<div class="desc"><p>First row of alternative vehicle front text (displays usually switch between <code>front_text1</code>+<code>front_text2</code> and <code>front_text3</code>+<code>front_text4</code>)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.front_text4"><code class="name">var <span class="ident">front_text4</span></code></dt>
+<dd>
+<div class="desc"><p>Second row of alternative vehicle front text</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.side_text1"><code class="name">var <span class="ident">side_text1</span></code></dt>
+<dd>
+<div class="desc"><p>First row of vehicle side text</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.side_text2"><code class="name">var <span class="ident">side_text2</span></code></dt>
+<dd>
+<div class="desc"><p>Second row of vehicle side text</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.side_text3"><code class="name">var <span class="ident">side_text3</span></code></dt>
+<dd>
+<div class="desc"><p>First row of alternative vehicle side text (displays usually switch between <code>side_text1</code>+<code>side_text2</code> and <code>side_text3</code>+<code>side_text4</code>)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.side_text4"><code class="name">var <span class="ident">side_text4</span></code></dt>
+<dd>
+<div class="desc"><p>Second row of alternative vehicle side text</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.name"><code class="name">var <span class="ident">name</span></code></dt>
+<dd>
+<div class="desc"><p>VDT name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.short_name"><code class="name">var <span class="ident">short_name</span></code></dt>
+<dd>
+<div class="desc"><p>VDT short name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.branch"><code class="name">var <span class="ident">branch</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.Branch" href="#DINO2.model.operational.Branch">Branch</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.trips"><code class="name">var <span class="ident">trips</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.schedule.Trip" href="schedule.html#DINO2.model.schedule.Trip">Trip</a></code>s this vehicle destination text is used on</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.courses"><code class="name">var <span class="ident">courses</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.Course" href="network.html#DINO2.model.network.Course">Course</a></code>s this vehicle destination text is used on</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.course_stops"><code class="name">var <span class="ident">course_stops</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.CourseStop" href="network.html#DINO2.model.network.CourseStop">CourseStop</a></code>s this vehicle destination text is changed to at</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.operational.VehicleDestinationText.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="DINO2.model" href="index.html">DINO2.model</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="DINO2.model.operational.Branch" href="#DINO2.model.operational.Branch">Branch</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.operational.Branch.version_id" href="#DINO2.model.operational.Branch.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.operational.Branch.id" href="#DINO2.model.operational.Branch.id">id</a></code></li>
+<li><code><a title="DINO2.model.operational.Branch.abbr" href="#DINO2.model.operational.Branch.abbr">abbr</a></code></li>
+<li><code><a title="DINO2.model.operational.Branch.name" href="#DINO2.model.operational.Branch.name">name</a></code></li>
+<li><code><a title="DINO2.model.operational.Branch.links" href="#DINO2.model.operational.Branch.links">links</a></code></li>
+<li><code><a title="DINO2.model.operational.Branch.vehicle_destination_texts" href="#DINO2.model.operational.Branch.vehicle_destination_texts">vehicle_destination_texts</a></code></li>
+<li><code><a title="DINO2.model.operational.Branch.default_branch_operators" href="#DINO2.model.operational.Branch.default_branch_operators">default_branch_operators</a></code></li>
+<li><code><a title="DINO2.model.operational.Branch.version" href="#DINO2.model.operational.Branch.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.operational.Operator" href="#DINO2.model.operational.Operator">Operator</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.operational.Operator.version_id" href="#DINO2.model.operational.Operator.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.operational.Operator.id" href="#DINO2.model.operational.Operator.id">id</a></code></li>
+<li><code><a title="DINO2.model.operational.Operator.default_branch_id" href="#DINO2.model.operational.Operator.default_branch_id">default_branch_id</a></code></li>
+<li><code><a title="DINO2.model.operational.Operator.abbr" href="#DINO2.model.operational.Operator.abbr">abbr</a></code></li>
+<li><code><a title="DINO2.model.operational.Operator.name" href="#DINO2.model.operational.Operator.name">name</a></code></li>
+<li><code><a title="DINO2.model.operational.Operator.pub_abbr" href="#DINO2.model.operational.Operator.pub_abbr">pub_abbr</a></code></li>
+<li><code><a title="DINO2.model.operational.Operator.full_name" href="#DINO2.model.operational.Operator.full_name">full_name</a></code></li>
+<li><code><a title="DINO2.model.operational.Operator.trading_name" href="#DINO2.model.operational.Operator.trading_name">trading_name</a></code></li>
+<li><code><a title="DINO2.model.operational.Operator.vat_registered" href="#DINO2.model.operational.Operator.vat_registered">vat_registered</a></code></li>
+<li><code><a title="DINO2.model.operational.Operator.default_branch" href="#DINO2.model.operational.Operator.default_branch">default_branch</a></code></li>
+<li><code><a title="DINO2.model.operational.Operator.branch_offices" href="#DINO2.model.operational.Operator.branch_offices">branch_offices</a></code></li>
+<li><code><a title="DINO2.model.operational.Operator.version" href="#DINO2.model.operational.Operator.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.operational.OperatorBranchOffice" href="#DINO2.model.operational.OperatorBranchOffice">OperatorBranchOffice</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.operational.OperatorBranchOffice.version_id" href="#DINO2.model.operational.OperatorBranchOffice.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.operational.OperatorBranchOffice.operator_id" href="#DINO2.model.operational.OperatorBranchOffice.operator_id">operator_id</a></code></li>
+<li><code><a title="DINO2.model.operational.OperatorBranchOffice.id" href="#DINO2.model.operational.OperatorBranchOffice.id">id</a></code></li>
+<li><code><a title="DINO2.model.operational.OperatorBranchOffice.internal_phone" href="#DINO2.model.operational.OperatorBranchOffice.internal_phone">internal_phone</a></code></li>
+<li><code><a title="DINO2.model.operational.OperatorBranchOffice.public_phone" href="#DINO2.model.operational.OperatorBranchOffice.public_phone">public_phone</a></code></li>
+<li><code><a title="DINO2.model.operational.OperatorBranchOffice.fax" href="#DINO2.model.operational.OperatorBranchOffice.fax">fax</a></code></li>
+<li><code><a title="DINO2.model.operational.OperatorBranchOffice.address" href="#DINO2.model.operational.OperatorBranchOffice.address">address</a></code></li>
+<li><code><a title="DINO2.model.operational.OperatorBranchOffice.contact_address" href="#DINO2.model.operational.OperatorBranchOffice.contact_address">contact_address</a></code></li>
+<li><code><a title="DINO2.model.operational.OperatorBranchOffice.url" href="#DINO2.model.operational.OperatorBranchOffice.url">url</a></code></li>
+<li><code><a title="DINO2.model.operational.OperatorBranchOffice.operator" href="#DINO2.model.operational.OperatorBranchOffice.operator">operator</a></code></li>
+<li><code><a title="DINO2.model.operational.OperatorBranchOffice.version" href="#DINO2.model.operational.OperatorBranchOffice.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.operational.TransferMOT" href="#DINO2.model.operational.TransferMOT">TransferMOT</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.operational.TransferMOT.train" href="#DINO2.model.operational.TransferMOT.train">train</a></code></li>
+<li><code><a title="DINO2.model.operational.TransferMOT.commuter_rail" href="#DINO2.model.operational.TransferMOT.commuter_rail">commuter_rail</a></code></li>
+<li><code><a title="DINO2.model.operational.TransferMOT.underground" href="#DINO2.model.operational.TransferMOT.underground">underground</a></code></li>
+<li><code><a title="DINO2.model.operational.TransferMOT.suburban_rail" href="#DINO2.model.operational.TransferMOT.suburban_rail">suburban_rail</a></code></li>
+<li><code><a title="DINO2.model.operational.TransferMOT.tram" href="#DINO2.model.operational.TransferMOT.tram">tram</a></code></li>
+<li><code><a title="DINO2.model.operational.TransferMOT.city_bus" href="#DINO2.model.operational.TransferMOT.city_bus">city_bus</a></code></li>
+<li><code><a title="DINO2.model.operational.TransferMOT.regional_bus" href="#DINO2.model.operational.TransferMOT.regional_bus">regional_bus</a></code></li>
+<li><code><a title="DINO2.model.operational.TransferMOT.express_bus" href="#DINO2.model.operational.TransferMOT.express_bus">express_bus</a></code></li>
+<li><code><a title="DINO2.model.operational.TransferMOT.cable_or_cog_wheel" href="#DINO2.model.operational.TransferMOT.cable_or_cog_wheel">cable_or_cog_wheel</a></code></li>
+<li><code><a title="DINO2.model.operational.TransferMOT.ship" href="#DINO2.model.operational.TransferMOT.ship">ship</a></code></li>
+<li><code><a title="DINO2.model.operational.TransferMOT.shared_taxi" href="#DINO2.model.operational.TransferMOT.shared_taxi">shared_taxi</a></code></li>
+<li><code><a title="DINO2.model.operational.TransferMOT.other" href="#DINO2.model.operational.TransferMOT.other">other</a></code></li>
+<li><code><a title="DINO2.model.operational.TransferMOT.aircraft" href="#DINO2.model.operational.TransferMOT.aircraft">aircraft</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.operational.MeansOfTransportDesc" href="#DINO2.model.operational.MeansOfTransportDesc">MeansOfTransportDesc</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.operational.MeansOfTransportDesc.version_id" href="#DINO2.model.operational.MeansOfTransportDesc.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.operational.MeansOfTransportDesc.id" href="#DINO2.model.operational.MeansOfTransportDesc.id">id</a></code></li>
+<li><code><a title="DINO2.model.operational.MeansOfTransportDesc.name" href="#DINO2.model.operational.MeansOfTransportDesc.name">name</a></code></li>
+<li><code><a title="DINO2.model.operational.MeansOfTransportDesc.tmot" href="#DINO2.model.operational.MeansOfTransportDesc.tmot">tmot</a></code></li>
+<li><code><a title="DINO2.model.operational.MeansOfTransportDesc.version" href="#DINO2.model.operational.MeansOfTransportDesc.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.operational.AccessibilityEquipment" href="#DINO2.model.operational.AccessibilityEquipment">AccessibilityEquipment</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.operational.AccessibilityEquipment.no_lift" href="#DINO2.model.operational.AccessibilityEquipment.no_lift">no_lift</a></code></li>
+<li><code><a title="DINO2.model.operational.AccessibilityEquipment.lift" href="#DINO2.model.operational.AccessibilityEquipment.lift">lift</a></code></li>
+<li><code><a title="DINO2.model.operational.AccessibilityEquipment.lift_or_ramp" href="#DINO2.model.operational.AccessibilityEquipment.lift_or_ramp">lift_or_ramp</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.operational.VehicleType" href="#DINO2.model.operational.VehicleType">VehicleType</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.operational.VehicleType.version_id" href="#DINO2.model.operational.VehicleType.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleType.id" href="#DINO2.model.operational.VehicleType.id">id</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleType.seats" href="#DINO2.model.operational.VehicleType.seats">seats</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleType.straps" href="#DINO2.model.operational.VehicleType.straps">straps</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleType.places_for_disabled" href="#DINO2.model.operational.VehicleType.places_for_disabled">places_for_disabled</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleType.desc" href="#DINO2.model.operational.VehicleType.desc">desc</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleType.abbr" href="#DINO2.model.operational.VehicleType.abbr">abbr</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleType.door_width" href="#DINO2.model.operational.VehicleType.door_width">door_width</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleType.width" href="#DINO2.model.operational.VehicleType.width">width</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleType.height" href="#DINO2.model.operational.VehicleType.height">height</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleType.accessibility_equipment" href="#DINO2.model.operational.VehicleType.accessibility_equipment">accessibility_equipment</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleType.version" href="#DINO2.model.operational.VehicleType.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.operational.VehicleDestinationText" href="#DINO2.model.operational.VehicleDestinationText">VehicleDestinationText</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.version_id" href="#DINO2.model.operational.VehicleDestinationText.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.branch_id" href="#DINO2.model.operational.VehicleDestinationText.branch_id">branch_id</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.id" href="#DINO2.model.operational.VehicleDestinationText.id">id</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.driver_text1" href="#DINO2.model.operational.VehicleDestinationText.driver_text1">driver_text1</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.driver_text2" href="#DINO2.model.operational.VehicleDestinationText.driver_text2">driver_text2</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.front_text1" href="#DINO2.model.operational.VehicleDestinationText.front_text1">front_text1</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.front_text2" href="#DINO2.model.operational.VehicleDestinationText.front_text2">front_text2</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.front_text3" href="#DINO2.model.operational.VehicleDestinationText.front_text3">front_text3</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.front_text4" href="#DINO2.model.operational.VehicleDestinationText.front_text4">front_text4</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.side_text1" href="#DINO2.model.operational.VehicleDestinationText.side_text1">side_text1</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.side_text2" href="#DINO2.model.operational.VehicleDestinationText.side_text2">side_text2</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.side_text3" href="#DINO2.model.operational.VehicleDestinationText.side_text3">side_text3</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.side_text4" href="#DINO2.model.operational.VehicleDestinationText.side_text4">side_text4</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.name" href="#DINO2.model.operational.VehicleDestinationText.name">name</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.short_name" href="#DINO2.model.operational.VehicleDestinationText.short_name">short_name</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.branch" href="#DINO2.model.operational.VehicleDestinationText.branch">branch</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.trips" href="#DINO2.model.operational.VehicleDestinationText.trips">trips</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.courses" href="#DINO2.model.operational.VehicleDestinationText.courses">courses</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.course_stops" href="#DINO2.model.operational.VehicleDestinationText.course_stops">course_stops</a></code></li>
+<li><code><a title="DINO2.model.operational.VehicleDestinationText.version" href="#DINO2.model.operational.VehicleDestinationText.version">version</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

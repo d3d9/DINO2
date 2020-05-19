@@ -1,0 +1,1207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.1" />
+<title>DINO2.model API documentation</title>
+<meta name="description" content="Data model for DINO 2.1 data …" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>DINO2.model</code></h1>
+</header>
+<section id="section-intro">
+<p>Data model for DINO 2.1 data</p>
+<h3 id="structure">Structure</h3>
+<ul>
+<li><code><a title="DINO2.model" href="#DINO2.model">DINO2.model</a></code> &ndash;&gt; <code><a title="DINO2.model.DinoBase" href="#DINO2.model.DinoBase">DinoBase</a></code>, <strong><code><a title="DINO2.model.Version" href="#DINO2.model.Version">Version</a></code></strong><ul>
+<li><code><a title="DINO2.model.calendar" href="calendar.html">DINO2.model.calendar</a></code> &ndash;&gt; Day types/attributes, days, restrictions ..</li>
+<li><code><a title="DINO2.model.fares" href="fares.html">DINO2.model.fares</a></code> &ndash;&gt; Fare zones</li>
+<li><code><a title="DINO2.model.location" href="location.html">DINO2.model.location</a></code> &ndash;&gt; Stops, links ..</li>
+<li><code><a title="DINO2.model.operational" href="operational.html">DINO2.model.operational</a></code> &ndash;&gt; Operational objects/descriptions ..</li>
+<li><code><a title="DINO2.model.network" href="network.html">DINO2.model.network</a></code> &ndash;&gt; Courses, timings ..</li>
+<li><code><a title="DINO2.model.schedule" href="schedule.html">DINO2.model.schedule</a></code> &ndash;&gt; Trips ..</li>
+</ul>
+</li>
+</ul>
+<h3 id="graphs">Graphs</h3>
+<h4 id="table-graph-created-using-database-metadata-including-version-here">Table graph created using database metadata (including <code><a title="DINO2.model.Version" href="#DINO2.model.Version">Version</a></code>: <a href="./schema_db_withversion.png">here</a>)</h4>
+<p><a href="./schema_db.png"><img src="./schema_db.png" width="400px"/></a></p>
+<h4 id="model-graph-created-using-dino2model-including-version-here">Model graph created using <code><a title="DINO2.model" href="#DINO2.model">DINO2.model</a></code> (including <code><a title="DINO2.model.Version" href="#DINO2.model.Version">Version</a></code>: <a href="./schema_model_withversion.png">here</a>)</h4>
+<p><a href="./schema_model.png"><img src="./schema_model.png" width="400px"/></a></p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: utf-8 -*-
+&#34;&#34;&#34;
+Data model for DINO 2.1 data
+
+### Structure
+- `DINO2.model` --&gt; `DinoBase`, **`Version`**
+    - `DINO2.model.calendar` --&gt; Day types/attributes, days, restrictions ..
+    - `DINO2.model.fares` --&gt; Fare zones
+    - `DINO2.model.location` --&gt; Stops, links ..
+    - `DINO2.model.operational` --&gt; Operational objects/descriptions ..
+    - `DINO2.model.network` --&gt; Courses, timings ..
+    - `DINO2.model.schedule` --&gt; Trips ..
+
+### Graphs
+
+#### Table graph created using database metadata (including `Version`: [here](./schema_db_withversion.png))
+[&lt;img src=&#34;./schema_db.png&#34; width=&#34;400px&#34;/&gt;](./schema_db.png)
+
+#### Model graph created using `DINO2.model` (including `Version`: [here](./schema_model_withversion.png))
+[&lt;img src=&#34;./schema_model.png&#34; width=&#34;400px&#34;/&gt;](./schema_model.png)
+
+&#34;&#34;&#34;
+
+from __future__ import annotations
+
+from datetime import date
+from sqlalchemy import Column, String, Integer, Boolean, inspect
+from sqlalchemy.ext.declarative import declarative_base, declared_attr
+from sqlalchemy.types import TypeEngine
+from sqlalchemy.orm import relationship, RelationshipProperty
+from sqlalchemy.orm.session import Session
+from typing import Optional, Collection, Tuple, TYPE_CHECKING, Any, Dict
+
+from ..types import DinoDate
+
+if TYPE_CHECKING:
+    from .calendar import DayType, DayAttribute, DayGrouping, CalendarDay, Restriction
+    from .fares import FareZone, NeighbourFareZone
+    from .location import Stop, StopAliasPlacename, StopAdditionalName, StopArea, StopPoint, Link, LinkGeometryPoint, LinkForcePoint
+    from .operational import Branch, Operator, OperatorBranchOffice, MeansOfTransportDesc, VehicleType, VehicleDestinationText
+    from .network import Course, CourseStop, CourseStopTiming
+    from .schedule import Notice, Trip, StopConstraint, TripVDT
+
+
+class DinoBase:
+    &#34;&#34;&#34;
+    Used for declarative base class for DINO models.
+
+    Sets `__tablename__` using class variable `_din_file: str`.
+
+    Provides some helpers for easier access to column info for data import.
+    &#34;&#34;&#34;
+    _din_file: str
+
+    @declared_attr
+    def __tablename__(cls):
+        name = cls._din_file[:-4] if cls._din_file.endswith(&#39;.din&#39;) else cls._din_file
+        if not name:
+            raise ValueError(f&#34;{cls}: _din_file required&#34;)
+        return name
+
+    @property
+    def _session(self) -&gt; Session:
+        return Session.object_session(self)
+
+    @classmethod
+    def _column_names(cls) -&gt; Tuple[str, ...]:
+        return tuple(c.name for c in inspect(cls).columns.values())
+
+    @classmethod
+    def _dtypes(cls) -&gt; Dict[str, Any]:
+        def pandas_dtype(t: TypeEngine) -&gt; str:
+            if hasattr(t, &#39;impl&#39;):
+                t = t.impl
+            if isinstance(t, (Integer, Boolean)):
+                return &#39;Int64&#39;
+            if isinstance(t, String):
+                return &#39;object&#39;
+            raise ValueError(f&#34;Can&#39;t suggest a pandas dtype for {t}&#34;)
+        return {c.name: pandas_dtype(c.type) for c in inspect(cls).columns.values()}
+
+    @classmethod
+    def _parameters(cls) -&gt; Dict[str, str]:
+        return {c.name: par for par, c in inspect(cls).columns.items()}
+
+    @classmethod
+    def _col_info(cls, col: str) -&gt; Dict[Any, Any]:
+        return inspect(cls).columns[col].info
+
+
+Base = declarative_base(cls=DinoBase)
+
+
+class Version(Base):
+    &#34;&#34;&#34;
+    Central class for timetable base versions.
+    All other model classes refer to this class.
+
+    `Version`s are usually seperate and usable on their own,
+    e. g. one `Version` for one whole timetable period of one transport operator.  
+    In some cases, multiple `Version`s have to be processed by applications,
+    for example a `Version` with a higher `Version.priority` than another of the same operator,
+    having overlapping validity periods, which may be the case for a special event, vacation time, or a pandemic.
+
+    Primary key: `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;version.din&#34;
+
+    id: Column[int] = Column(&#34;VERSION&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    desc: Column[Optional[str]] = Column(&#34;VERSION_TEXT&#34;, String(length=70))
+    &#34;&#34;&#34;Description&#34;&#34;&#34;
+    period: Column[Optional[str]] = Column(&#34;TIMETABLE_PERIOD&#34;, String(length=4))
+    &#34;&#34;&#34;Timetable period abbreviation&#34;&#34;&#34;
+    period_name: Column[Optional[str]] = Column(&#34;TT_PERIOD_NAME&#34;, String(length=40))
+    &#34;&#34;&#34;Timetable period name&#34;&#34;&#34;
+
+    date_from: Column[Optional[date]] = Column(&#34;PERIOD_DATE_FROM&#34;, DinoDate)
+    &#34;&#34;&#34;Date of the beginning of the period&#34;&#34;&#34;
+    date_to: Column[Optional[date]] = Column(&#34;PERIOD_DATE_TO&#34;, DinoDate)
+    &#34;&#34;&#34;Date of the last day of the period&#34;&#34;&#34;
+
+    net: Column[Optional[str]] = Column(&#34;NET_ID&#34;, String(length=3))
+    &#34;&#34;&#34;Network abbreviation&#34;&#34;&#34;
+    priority: Column[Optional[int]] = Column(&#34;PERIOD_PRIORITY&#34;, Integer())
+    &#34;&#34;&#34;Priority of timetable, if there are overlapping timetable versions (for example a timetable limited to the time of a large event in the city)&#34;&#34;&#34;
+
+    daytypes: RelationshipProperty[Collection[DayType]] = relationship(&#34;DayType&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `calendar.DayType`s of this version&#34;&#34;&#34;
+    dayattrs: RelationshipProperty[Collection[DayAttribute]] = relationship(&#34;DayAttribute&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `calendar.DayAttribute`s of this version&#34;&#34;&#34;
+    daygroupings: RelationshipProperty[Collection[DayGrouping]] = relationship(&#34;DayGrouping&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `calendar.DayGrouping`s of this version&#34;&#34;&#34;
+    day_type_calendar: RelationshipProperty[Collection[CalendarDay]] = relationship(&#34;CalendarDay&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `calendar.CalendarDay`s of this version&#34;&#34;&#34;
+    restrictions: RelationshipProperty[Collection[Restriction]] = relationship(&#34;Restriction&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `calendar.Restriction`s of this version&#34;&#34;&#34;
+
+    farezones: RelationshipProperty[Collection[FareZone]] = relationship(&#34;FareZone&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `fares.FareZone`s of this version&#34;&#34;&#34;
+    farezonegroupings: RelationshipProperty[Collection[NeighbourFareZone]] = relationship(&#34;NeighbourFareZone&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `fares.NeighbourFareZone`s of this version&#34;&#34;&#34;
+
+    stops: RelationshipProperty[Collection[Stop]] = relationship(&#34;Stop&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `location.Stop`s of this version&#34;&#34;&#34;
+    stop_alias_placenames: RelationshipProperty[Collection[StopAliasPlacename]] = relationship(&#34;StopAliasPlacename&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `location.StopAliasPlacename`s of this version&#34;&#34;&#34;
+    stop_additional_names: RelationshipProperty[Collection[StopAdditionalName]] = relationship(&#34;StopAdditionalName&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `location.StopAdditionalName`s of this version&#34;&#34;&#34;
+    stop_areas: RelationshipProperty[Collection[StopArea]] = relationship(&#34;StopArea&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `location.StopArea`s of this version&#34;&#34;&#34;
+    stop_points: RelationshipProperty[Collection[StopPoint]] = relationship(&#34;StopPoint&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `location.StopPoint`s of this version&#34;&#34;&#34;
+    links: RelationshipProperty[Collection[Link]] = relationship(&#34;Link&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `location.Link`s of this version&#34;&#34;&#34;
+    link_geometry_points: RelationshipProperty[Collection[LinkGeometryPoint]] = relationship(&#34;LinkGeometryPoint&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `location.LinkGeometryPoint`s of this version&#34;&#34;&#34;
+    link_force_points: RelationshipProperty[Collection[LinkForcePoint]] = relationship(&#34;LinkForcePoint&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `location.LinkForcePoint`s of this version&#34;&#34;&#34;
+
+    branches: RelationshipProperty[Collection[Branch]] = relationship(&#34;Branch&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `operational.Branch`es of this version&#34;&#34;&#34;
+    operators: RelationshipProperty[Collection[Operator]] = relationship(&#34;Operator&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `operational.Operator`s of this version&#34;&#34;&#34;
+    operator_branch_offices: RelationshipProperty[Collection[OperatorBranchOffice]] = relationship(&#34;OperatorBranchOffice&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `operational.OperatorBranchOffice`s of this version&#34;&#34;&#34;
+    means_of_transport: RelationshipProperty[Collection[MeansOfTransportDesc]] = relationship(&#34;MeansOfTransportDesc&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `operational.MeansOfTransportDesc`s of this version&#34;&#34;&#34;
+    vehicle_types: RelationshipProperty[Collection[VehicleType]] = relationship(&#34;VehicleType&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `operational.VehicleType`s of this version&#34;&#34;&#34;
+    vehicle_destination_texts: RelationshipProperty[Collection[VehicleDestinationText]] = relationship(&#34;VehicleDestinationText&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `operational.VehicleDestinationText`s of this version&#34;&#34;&#34;
+
+    courses: RelationshipProperty[Collection[Course]] = relationship(&#34;Course&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `network.Course`s of this version&#34;&#34;&#34;
+    course_stops: RelationshipProperty[Collection[CourseStop]] = relationship(&#34;CourseStop&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `network.CourseStop`s of this version&#34;&#34;&#34;
+    stop_timings: RelationshipProperty[Collection[CourseStopTiming]] = relationship(&#34;CourseStopTiming&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `network.CourseStopTiming`s of this version&#34;&#34;&#34;
+
+    notices: RelationshipProperty[Collection[Notice]] = relationship(&#34;Notice&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `schedule.Notice`s of this version&#34;&#34;&#34;
+    trips: RelationshipProperty[Collection[Trip]] = relationship(&#34;Trip&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `schedule.Trip`s of this version&#34;&#34;&#34;
+    constraints: RelationshipProperty[Collection[StopConstraint]] = relationship(&#34;StopConstraint&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `schedule.StopConstraint`s of this version&#34;&#34;&#34;
+    trip_vdts: RelationshipProperty[Collection[TripVDT]] = relationship(&#34;TripVDT&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `schedule.TripVDT`s of this version&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Version(id={self.id}, desc={self.desc}, period={self.period}, period_name={self.period_name}, date_from={self.date_from}, date_to={self.date_to}, net={self.net}, priority={self.priority})&gt;&#34;
+
+
+from . import calendar, fares, location, operational, network, schedule</code></pre>
+</details>
+</section>
+<section>
+<h2 class="section-title" id="header-submodules">Sub-modules</h2>
+<dl>
+<dt><code class="name"><a title="DINO2.model.calendar" href="calendar.html">DINO2.model.calendar</a></code></dt>
+<dd>
+<div class="desc"><p>DINO 2.1 calendar data</p></div>
+</dd>
+<dt><code class="name"><a title="DINO2.model.fares" href="fares.html">DINO2.model.fares</a></code></dt>
+<dd>
+<div class="desc"><p>DINO 2.1 fare zone data</p></div>
+</dd>
+<dt><code class="name"><a title="DINO2.model.location" href="location.html">DINO2.model.location</a></code></dt>
+<dd>
+<div class="desc"><p>DINO 2.1 location data</p></div>
+</dd>
+<dt><code class="name"><a title="DINO2.model.network" href="network.html">DINO2.model.network</a></code></dt>
+<dd>
+<div class="desc"><p>DINO 2.1 network data</p></div>
+</dd>
+<dt><code class="name"><a title="DINO2.model.operational" href="operational.html">DINO2.model.operational</a></code></dt>
+<dd>
+<div class="desc"><p>DINO 2.1 operational data</p></div>
+</dd>
+<dt><code class="name"><a title="DINO2.model.schedule" href="schedule.html">DINO2.model.schedule</a></code></dt>
+<dd>
+<div class="desc"><p>DINO 2.1 schedule data</p></div>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="DINO2.model.DinoBase"><code class="flex name class">
+<span>class <span class="ident">DinoBase</span></span>
+</code></dt>
+<dd>
+<div class="desc"><p>Used for declarative base class for DINO models.</p>
+<p>Sets <code>__tablename__</code> using class variable <code>_din_file: str</code>.</p>
+<p>Provides some helpers for easier access to column info for data import.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class DinoBase:
+    &#34;&#34;&#34;
+    Used for declarative base class for DINO models.
+
+    Sets `__tablename__` using class variable `_din_file: str`.
+
+    Provides some helpers for easier access to column info for data import.
+    &#34;&#34;&#34;
+    _din_file: str
+
+    @declared_attr
+    def __tablename__(cls):
+        name = cls._din_file[:-4] if cls._din_file.endswith(&#39;.din&#39;) else cls._din_file
+        if not name:
+            raise ValueError(f&#34;{cls}: _din_file required&#34;)
+        return name
+
+    @property
+    def _session(self) -&gt; Session:
+        return Session.object_session(self)
+
+    @classmethod
+    def _column_names(cls) -&gt; Tuple[str, ...]:
+        return tuple(c.name for c in inspect(cls).columns.values())
+
+    @classmethod
+    def _dtypes(cls) -&gt; Dict[str, Any]:
+        def pandas_dtype(t: TypeEngine) -&gt; str:
+            if hasattr(t, &#39;impl&#39;):
+                t = t.impl
+            if isinstance(t, (Integer, Boolean)):
+                return &#39;Int64&#39;
+            if isinstance(t, String):
+                return &#39;object&#39;
+            raise ValueError(f&#34;Can&#39;t suggest a pandas dtype for {t}&#34;)
+        return {c.name: pandas_dtype(c.type) for c in inspect(cls).columns.values()}
+
+    @classmethod
+    def _parameters(cls) -&gt; Dict[str, str]:
+        return {c.name: par for par, c in inspect(cls).columns.items()}
+
+    @classmethod
+    def _col_info(cls, col: str) -&gt; Dict[Any, Any]:
+        return inspect(cls).columns[col].info</code></pre>
+</details>
+<h3>Subclasses</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+</ul>
+</dd>
+<dt id="DINO2.model.Version"><code class="flex name class">
+<span>class <span class="ident">Version</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Central class for timetable base versions.
+All other model classes refer to this class.</p>
+<p><code><a title="DINO2.model.Version" href="#DINO2.model.Version">Version</a></code>s are usually seperate and usable on their own,
+e. g. one <code><a title="DINO2.model.Version" href="#DINO2.model.Version">Version</a></code> for one whole timetable period of one transport operator.<br>
+In some cases, multiple <code><a title="DINO2.model.Version" href="#DINO2.model.Version">Version</a></code>s have to be processed by applications,
+for example a <code><a title="DINO2.model.Version" href="#DINO2.model.Version">Version</a></code> with a higher <code><a title="DINO2.model.Version.priority" href="#DINO2.model.Version.priority">Version.priority</a></code> than another of the same operator,
+having overlapping validity periods, which may be the case for a special event, vacation time, or a pandemic.</p>
+<p>Primary key: <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Version(Base):
+    &#34;&#34;&#34;
+    Central class for timetable base versions.
+    All other model classes refer to this class.
+
+    `Version`s are usually seperate and usable on their own,
+    e. g. one `Version` for one whole timetable period of one transport operator.  
+    In some cases, multiple `Version`s have to be processed by applications,
+    for example a `Version` with a higher `Version.priority` than another of the same operator,
+    having overlapping validity periods, which may be the case for a special event, vacation time, or a pandemic.
+
+    Primary key: `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;version.din&#34;
+
+    id: Column[int] = Column(&#34;VERSION&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    desc: Column[Optional[str]] = Column(&#34;VERSION_TEXT&#34;, String(length=70))
+    &#34;&#34;&#34;Description&#34;&#34;&#34;
+    period: Column[Optional[str]] = Column(&#34;TIMETABLE_PERIOD&#34;, String(length=4))
+    &#34;&#34;&#34;Timetable period abbreviation&#34;&#34;&#34;
+    period_name: Column[Optional[str]] = Column(&#34;TT_PERIOD_NAME&#34;, String(length=40))
+    &#34;&#34;&#34;Timetable period name&#34;&#34;&#34;
+
+    date_from: Column[Optional[date]] = Column(&#34;PERIOD_DATE_FROM&#34;, DinoDate)
+    &#34;&#34;&#34;Date of the beginning of the period&#34;&#34;&#34;
+    date_to: Column[Optional[date]] = Column(&#34;PERIOD_DATE_TO&#34;, DinoDate)
+    &#34;&#34;&#34;Date of the last day of the period&#34;&#34;&#34;
+
+    net: Column[Optional[str]] = Column(&#34;NET_ID&#34;, String(length=3))
+    &#34;&#34;&#34;Network abbreviation&#34;&#34;&#34;
+    priority: Column[Optional[int]] = Column(&#34;PERIOD_PRIORITY&#34;, Integer())
+    &#34;&#34;&#34;Priority of timetable, if there are overlapping timetable versions (for example a timetable limited to the time of a large event in the city)&#34;&#34;&#34;
+
+    daytypes: RelationshipProperty[Collection[DayType]] = relationship(&#34;DayType&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `calendar.DayType`s of this version&#34;&#34;&#34;
+    dayattrs: RelationshipProperty[Collection[DayAttribute]] = relationship(&#34;DayAttribute&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `calendar.DayAttribute`s of this version&#34;&#34;&#34;
+    daygroupings: RelationshipProperty[Collection[DayGrouping]] = relationship(&#34;DayGrouping&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `calendar.DayGrouping`s of this version&#34;&#34;&#34;
+    day_type_calendar: RelationshipProperty[Collection[CalendarDay]] = relationship(&#34;CalendarDay&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `calendar.CalendarDay`s of this version&#34;&#34;&#34;
+    restrictions: RelationshipProperty[Collection[Restriction]] = relationship(&#34;Restriction&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `calendar.Restriction`s of this version&#34;&#34;&#34;
+
+    farezones: RelationshipProperty[Collection[FareZone]] = relationship(&#34;FareZone&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `fares.FareZone`s of this version&#34;&#34;&#34;
+    farezonegroupings: RelationshipProperty[Collection[NeighbourFareZone]] = relationship(&#34;NeighbourFareZone&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `fares.NeighbourFareZone`s of this version&#34;&#34;&#34;
+
+    stops: RelationshipProperty[Collection[Stop]] = relationship(&#34;Stop&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `location.Stop`s of this version&#34;&#34;&#34;
+    stop_alias_placenames: RelationshipProperty[Collection[StopAliasPlacename]] = relationship(&#34;StopAliasPlacename&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `location.StopAliasPlacename`s of this version&#34;&#34;&#34;
+    stop_additional_names: RelationshipProperty[Collection[StopAdditionalName]] = relationship(&#34;StopAdditionalName&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `location.StopAdditionalName`s of this version&#34;&#34;&#34;
+    stop_areas: RelationshipProperty[Collection[StopArea]] = relationship(&#34;StopArea&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `location.StopArea`s of this version&#34;&#34;&#34;
+    stop_points: RelationshipProperty[Collection[StopPoint]] = relationship(&#34;StopPoint&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `location.StopPoint`s of this version&#34;&#34;&#34;
+    links: RelationshipProperty[Collection[Link]] = relationship(&#34;Link&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `location.Link`s of this version&#34;&#34;&#34;
+    link_geometry_points: RelationshipProperty[Collection[LinkGeometryPoint]] = relationship(&#34;LinkGeometryPoint&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `location.LinkGeometryPoint`s of this version&#34;&#34;&#34;
+    link_force_points: RelationshipProperty[Collection[LinkForcePoint]] = relationship(&#34;LinkForcePoint&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `location.LinkForcePoint`s of this version&#34;&#34;&#34;
+
+    branches: RelationshipProperty[Collection[Branch]] = relationship(&#34;Branch&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `operational.Branch`es of this version&#34;&#34;&#34;
+    operators: RelationshipProperty[Collection[Operator]] = relationship(&#34;Operator&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `operational.Operator`s of this version&#34;&#34;&#34;
+    operator_branch_offices: RelationshipProperty[Collection[OperatorBranchOffice]] = relationship(&#34;OperatorBranchOffice&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `operational.OperatorBranchOffice`s of this version&#34;&#34;&#34;
+    means_of_transport: RelationshipProperty[Collection[MeansOfTransportDesc]] = relationship(&#34;MeansOfTransportDesc&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `operational.MeansOfTransportDesc`s of this version&#34;&#34;&#34;
+    vehicle_types: RelationshipProperty[Collection[VehicleType]] = relationship(&#34;VehicleType&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `operational.VehicleType`s of this version&#34;&#34;&#34;
+    vehicle_destination_texts: RelationshipProperty[Collection[VehicleDestinationText]] = relationship(&#34;VehicleDestinationText&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `operational.VehicleDestinationText`s of this version&#34;&#34;&#34;
+
+    courses: RelationshipProperty[Collection[Course]] = relationship(&#34;Course&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `network.Course`s of this version&#34;&#34;&#34;
+    course_stops: RelationshipProperty[Collection[CourseStop]] = relationship(&#34;CourseStop&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `network.CourseStop`s of this version&#34;&#34;&#34;
+    stop_timings: RelationshipProperty[Collection[CourseStopTiming]] = relationship(&#34;CourseStopTiming&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `network.CourseStopTiming`s of this version&#34;&#34;&#34;
+
+    notices: RelationshipProperty[Collection[Notice]] = relationship(&#34;Notice&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `schedule.Notice`s of this version&#34;&#34;&#34;
+    trips: RelationshipProperty[Collection[Trip]] = relationship(&#34;Trip&#34;, back_populates=&#34;version&#34;)
+    &#34;&#34;&#34;List of `schedule.Trip`s of this version&#34;&#34;&#34;
+    constraints: RelationshipProperty[Collection[StopConstraint]] = relationship(&#34;StopConstraint&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `schedule.StopConstraint`s of this version&#34;&#34;&#34;
+    trip_vdts: RelationshipProperty[Collection[TripVDT]] = relationship(&#34;TripVDT&#34;, viewonly=True)
+    &#34;&#34;&#34;List of `schedule.TripVDT`s of this version&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Version(id={self.id}, desc={self.desc}, period={self.period}, period_name={self.period_name}, date_from={self.date_from}, date_to={self.date_to}, net={self.net}, priority={self.priority})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.Version.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.desc"><code class="name">var <span class="ident">desc</span></code></dt>
+<dd>
+<div class="desc"><p>Description</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.period"><code class="name">var <span class="ident">period</span></code></dt>
+<dd>
+<div class="desc"><p>Timetable period abbreviation</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.period_name"><code class="name">var <span class="ident">period_name</span></code></dt>
+<dd>
+<div class="desc"><p>Timetable period name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.date_from"><code class="name">var <span class="ident">date_from</span></code></dt>
+<dd>
+<div class="desc"><p>Date of the beginning of the period</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.date_to"><code class="name">var <span class="ident">date_to</span></code></dt>
+<dd>
+<div class="desc"><p>Date of the last day of the period</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.net"><code class="name">var <span class="ident">net</span></code></dt>
+<dd>
+<div class="desc"><p>Network abbreviation</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.priority"><code class="name">var <span class="ident">priority</span></code></dt>
+<dd>
+<div class="desc"><p>Priority of timetable, if there are overlapping timetable versions (for example a timetable limited to the time of a large event in the city)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.daytypes"><code class="name">var <span class="ident">daytypes</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.calendar.DayType" href="calendar.html#DINO2.model.calendar.DayType">DayType</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.dayattrs"><code class="name">var <span class="ident">dayattrs</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.calendar.DayAttribute" href="calendar.html#DINO2.model.calendar.DayAttribute">DayAttribute</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.daygroupings"><code class="name">var <span class="ident">daygroupings</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.calendar.DayGrouping" href="calendar.html#DINO2.model.calendar.DayGrouping">DayGrouping</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.day_type_calendar"><code class="name">var <span class="ident">day_type_calendar</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.calendar.CalendarDay" href="calendar.html#DINO2.model.calendar.CalendarDay">CalendarDay</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.restrictions"><code class="name">var <span class="ident">restrictions</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.calendar.Restriction" href="calendar.html#DINO2.model.calendar.Restriction">Restriction</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.farezones"><code class="name">var <span class="ident">farezones</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.fares.FareZone" href="fares.html#DINO2.model.fares.FareZone">FareZone</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.farezonegroupings"><code class="name">var <span class="ident">farezonegroupings</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.fares.NeighbourFareZone" href="fares.html#DINO2.model.fares.NeighbourFareZone">NeighbourFareZone</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.stops"><code class="name">var <span class="ident">stops</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.location.Stop" href="location.html#DINO2.model.location.Stop">Stop</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.stop_alias_placenames"><code class="name">var <span class="ident">stop_alias_placenames</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.location.StopAliasPlacename" href="location.html#DINO2.model.location.StopAliasPlacename">StopAliasPlacename</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.stop_additional_names"><code class="name">var <span class="ident">stop_additional_names</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.location.StopAdditionalName" href="location.html#DINO2.model.location.StopAdditionalName">StopAdditionalName</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.stop_areas"><code class="name">var <span class="ident">stop_areas</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.location.StopArea" href="location.html#DINO2.model.location.StopArea">StopArea</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.stop_points"><code class="name">var <span class="ident">stop_points</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.location.StopPoint" href="location.html#DINO2.model.location.StopPoint">StopPoint</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.links"><code class="name">var <span class="ident">links</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.location.Link" href="location.html#DINO2.model.location.Link">Link</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.link_geometry_points"><code class="name">var <span class="ident">link_geometry_points</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.location.LinkGeometryPoint" href="location.html#DINO2.model.location.LinkGeometryPoint">LinkGeometryPoint</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.link_force_points"><code class="name">var <span class="ident">link_force_points</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.location.LinkForcePoint" href="location.html#DINO2.model.location.LinkForcePoint">LinkForcePoint</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.branches"><code class="name">var <span class="ident">branches</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.operational.Branch" href="operational.html#DINO2.model.operational.Branch">Branch</a></code>es of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.operators"><code class="name">var <span class="ident">operators</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.operational.Operator" href="operational.html#DINO2.model.operational.Operator">Operator</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.operator_branch_offices"><code class="name">var <span class="ident">operator_branch_offices</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.operational.OperatorBranchOffice" href="operational.html#DINO2.model.operational.OperatorBranchOffice">OperatorBranchOffice</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.means_of_transport"><code class="name">var <span class="ident">means_of_transport</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.operational.MeansOfTransportDesc" href="operational.html#DINO2.model.operational.MeansOfTransportDesc">MeansOfTransportDesc</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.vehicle_types"><code class="name">var <span class="ident">vehicle_types</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.operational.VehicleType" href="operational.html#DINO2.model.operational.VehicleType">VehicleType</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.vehicle_destination_texts"><code class="name">var <span class="ident">vehicle_destination_texts</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.operational.VehicleDestinationText" href="operational.html#DINO2.model.operational.VehicleDestinationText">VehicleDestinationText</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.courses"><code class="name">var <span class="ident">courses</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.network.Course" href="network.html#DINO2.model.network.Course">Course</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.course_stops"><code class="name">var <span class="ident">course_stops</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.network.CourseStop" href="network.html#DINO2.model.network.CourseStop">CourseStop</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.stop_timings"><code class="name">var <span class="ident">stop_timings</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.network.CourseStopTiming" href="network.html#DINO2.model.network.CourseStopTiming">CourseStopTiming</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.notices"><code class="name">var <span class="ident">notices</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.schedule.Notice" href="schedule.html#DINO2.model.schedule.Notice">Notice</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.trips"><code class="name">var <span class="ident">trips</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.schedule.Trip" href="schedule.html#DINO2.model.schedule.Trip">Trip</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.constraints"><code class="name">var <span class="ident">constraints</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.schedule.StopConstraint" href="schedule.html#DINO2.model.schedule.StopConstraint">StopConstraint</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.Version.trip_vdts"><code class="name">var <span class="ident">trip_vdts</span></code></dt>
+<dd>
+<div class="desc"><p>List of <code><a title="DINO2.model.schedule.TripVDT" href="schedule.html#DINO2.model.schedule.TripVDT">TripVDT</a></code>s of this version</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul>
+<li><a href="#structure">Structure</a></li>
+<li><a href="#graphs">Graphs</a><ul>
+<li><a href="#table-graph-created-using-database-metadata-including-version-here">Table graph created using database metadata (including Version: here)</a></li>
+<li><a href="#model-graph-created-using-dino2model-including-version-here">Model graph created using DINO2.model (including Version: here)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="DINO2" href="../index.html">DINO2</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-submodules">Sub-modules</a></h3>
+<ul>
+<li><code><a title="DINO2.model.calendar" href="calendar.html">DINO2.model.calendar</a></code></li>
+<li><code><a title="DINO2.model.fares" href="fares.html">DINO2.model.fares</a></code></li>
+<li><code><a title="DINO2.model.location" href="location.html">DINO2.model.location</a></code></li>
+<li><code><a title="DINO2.model.network" href="network.html">DINO2.model.network</a></code></li>
+<li><code><a title="DINO2.model.operational" href="operational.html">DINO2.model.operational</a></code></li>
+<li><code><a title="DINO2.model.schedule" href="schedule.html">DINO2.model.schedule</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="DINO2.model.DinoBase" href="#DINO2.model.DinoBase">DinoBase</a></code></h4>
+</li>
+<li>
+<h4><code><a title="DINO2.model.Version" href="#DINO2.model.Version">Version</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.Version.id" href="#DINO2.model.Version.id">id</a></code></li>
+<li><code><a title="DINO2.model.Version.desc" href="#DINO2.model.Version.desc">desc</a></code></li>
+<li><code><a title="DINO2.model.Version.period" href="#DINO2.model.Version.period">period</a></code></li>
+<li><code><a title="DINO2.model.Version.period_name" href="#DINO2.model.Version.period_name">period_name</a></code></li>
+<li><code><a title="DINO2.model.Version.date_from" href="#DINO2.model.Version.date_from">date_from</a></code></li>
+<li><code><a title="DINO2.model.Version.date_to" href="#DINO2.model.Version.date_to">date_to</a></code></li>
+<li><code><a title="DINO2.model.Version.net" href="#DINO2.model.Version.net">net</a></code></li>
+<li><code><a title="DINO2.model.Version.priority" href="#DINO2.model.Version.priority">priority</a></code></li>
+<li><code><a title="DINO2.model.Version.daytypes" href="#DINO2.model.Version.daytypes">daytypes</a></code></li>
+<li><code><a title="DINO2.model.Version.dayattrs" href="#DINO2.model.Version.dayattrs">dayattrs</a></code></li>
+<li><code><a title="DINO2.model.Version.daygroupings" href="#DINO2.model.Version.daygroupings">daygroupings</a></code></li>
+<li><code><a title="DINO2.model.Version.day_type_calendar" href="#DINO2.model.Version.day_type_calendar">day_type_calendar</a></code></li>
+<li><code><a title="DINO2.model.Version.restrictions" href="#DINO2.model.Version.restrictions">restrictions</a></code></li>
+<li><code><a title="DINO2.model.Version.farezones" href="#DINO2.model.Version.farezones">farezones</a></code></li>
+<li><code><a title="DINO2.model.Version.farezonegroupings" href="#DINO2.model.Version.farezonegroupings">farezonegroupings</a></code></li>
+<li><code><a title="DINO2.model.Version.stops" href="#DINO2.model.Version.stops">stops</a></code></li>
+<li><code><a title="DINO2.model.Version.stop_alias_placenames" href="#DINO2.model.Version.stop_alias_placenames">stop_alias_placenames</a></code></li>
+<li><code><a title="DINO2.model.Version.stop_additional_names" href="#DINO2.model.Version.stop_additional_names">stop_additional_names</a></code></li>
+<li><code><a title="DINO2.model.Version.stop_areas" href="#DINO2.model.Version.stop_areas">stop_areas</a></code></li>
+<li><code><a title="DINO2.model.Version.stop_points" href="#DINO2.model.Version.stop_points">stop_points</a></code></li>
+<li><code><a title="DINO2.model.Version.links" href="#DINO2.model.Version.links">links</a></code></li>
+<li><code><a title="DINO2.model.Version.link_geometry_points" href="#DINO2.model.Version.link_geometry_points">link_geometry_points</a></code></li>
+<li><code><a title="DINO2.model.Version.link_force_points" href="#DINO2.model.Version.link_force_points">link_force_points</a></code></li>
+<li><code><a title="DINO2.model.Version.branches" href="#DINO2.model.Version.branches">branches</a></code></li>
+<li><code><a title="DINO2.model.Version.operators" href="#DINO2.model.Version.operators">operators</a></code></li>
+<li><code><a title="DINO2.model.Version.operator_branch_offices" href="#DINO2.model.Version.operator_branch_offices">operator_branch_offices</a></code></li>
+<li><code><a title="DINO2.model.Version.means_of_transport" href="#DINO2.model.Version.means_of_transport">means_of_transport</a></code></li>
+<li><code><a title="DINO2.model.Version.vehicle_types" href="#DINO2.model.Version.vehicle_types">vehicle_types</a></code></li>
+<li><code><a title="DINO2.model.Version.vehicle_destination_texts" href="#DINO2.model.Version.vehicle_destination_texts">vehicle_destination_texts</a></code></li>
+<li><code><a title="DINO2.model.Version.courses" href="#DINO2.model.Version.courses">courses</a></code></li>
+<li><code><a title="DINO2.model.Version.course_stops" href="#DINO2.model.Version.course_stops">course_stops</a></code></li>
+<li><code><a title="DINO2.model.Version.stop_timings" href="#DINO2.model.Version.stop_timings">stop_timings</a></code></li>
+<li><code><a title="DINO2.model.Version.notices" href="#DINO2.model.Version.notices">notices</a></code></li>
+<li><code><a title="DINO2.model.Version.trips" href="#DINO2.model.Version.trips">trips</a></code></li>
+<li><code><a title="DINO2.model.Version.constraints" href="#DINO2.model.Version.constraints">constraints</a></code></li>
+<li><code><a title="DINO2.model.Version.trip_vdts" href="#DINO2.model.Version.trip_vdts">trip_vdts</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

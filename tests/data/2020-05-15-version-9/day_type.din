@@ -1,0 +1,8 @@
+VERSION;DAY_TYPE_NR;DAY_TYPE_TEXT;STR_DAY_TYPE;
+ 9;  1;Sonntag und Feiertag                    ;SO;
+ 9;  2;Samstag                                 ;SA;
+ 9;  4;Freitag                                 ;FR;
+ 9;  8;nur donnerstags                         ;DO;
+ 9; 16;nur mittwochs                           ;MI;
+ 9; 32;nur dienstags                           ;DI;
+ 9; 64;nur montags                             ;MO;

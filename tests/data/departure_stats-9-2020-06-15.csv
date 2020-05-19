@@ -1,0 +1,2323 @@
+type;version;from/A;l-ifopt;to/B;r-ifopt;count
+from-to;9;Hagen Hauptbahnhof;de:05914:2007;Hagen Altenhg. Brücke;de:05914:2008;701
+from-to;9;Hagen Altenhg. Brücke;de:05914:2008;Hagen Hauptbahnhof;de:05914:2007;697
+from-to;9;Hagen Schwenke;de:05914:2006;Hagen Hauptbahnhof;de:05914:2007;684
+from-to;9;Hagen Hauptbahnhof;de:05914:2007;Hagen Schwenke;de:05914:2006;683
+from-to;9;Hagen Theater;de:05914:2005;Hagen Schwenke;de:05914:2006;461
+from-to;9;Hagen Schwenke;de:05914:2006;Hagen Theater;de:05914:2005;461
+from-to;9;Hagen Stadtmitte/Volme Galerie;de:05914:2003;Hagen Volkspark;de:05914:2004;460
+from-to;9;Hagen Volkspark;de:05914:2004;Hagen Stadtmitte/Volme Galerie;de:05914:2003;458
+from-to;9;Hagen Emilienplatz;de:05914:2075;Hagen Stadtmitte/Volme Galerie;de:05914:2003;428
+from-to;9;Hagen Volkspark;de:05914:2004;Hagen Theater;de:05914:2005;427
+from-to;9;Hagen Theater;de:05914:2005;Hagen Volkspark;de:05914:2004;423
+from-to;9;Hagen Rathaus an der Volme;de:05914:2410;Hagen Stadtmitte/Volme Galerie;de:05914:2003;392
+from-to;9;Hagen Stadtmitte/Volme Galerie;de:05914:2003;Hagen Rathaus an der Volme;de:05914:2410;391
+from-to;9;Hagen Altenhg. Brücke;de:05914:2008;Hagen Neumarktstr.;de:05914:2030;360
+from-to;9;Hagen Neumarktstr.;de:05914:2030;Hagen Stadtmitte/Volme Galerie;de:05914:2003;360
+from-to;9;Hagen Neumarktstr.;de:05914:2030;Hagen Altenhg. Brücke;de:05914:2008;357
+from-to;9;Hagen Stadtmitte/Volme Galerie;de:05914:2003;Hagen Neumarktstr.;de:05914:2030;350
+from-to;9;Hagen Kapellenstr.;de:05914:2017;Hagen Loxbaum;de:05914:2016;295
+from-to;9;Hagen Hohenlimburg Bf;de:05914:2059;Hagen Hohenlimburg Mitte;de:05914:2060;258
+from-to;9;Hagen Stadtmitte/Volme Galerie;de:05914:2003;Hagen Emilienplatz;de:05914:2075;243
+from-to;9;Hagen Emilienplatz;de:05914:2075;Hagen Landgericht;de:05914:2074;240
+from-to;9;Hagen Landgericht;de:05914:2074;Hagen Emilienplatz;de:05914:2075;238
+from-to;9;Hagen Loxbaum;de:05914:2016;Hagen Kapellenstr.;de:05914:2017;235
+from-to;9;Hagen Altenhg. Brücke;de:05914:2008;Hagen St-Josefs-Kirche;de:05914:2009;209
+from-to;9;Hagen St-Josefs-Kirche;de:05914:2009;Hagen Altenhg. Brücke;de:05914:2008;209
+from-to;9;Hagen Helfer Str.;de:05914:2019;Hagen Boele Markt;de:05914:2020;199
+from-to;9;Hagen Boele Markt;de:05914:2020;Hagen Helfer Str.;de:05914:2019;199
+from-to;9;Hagen Polizeipräsidium;de:05914:2510;Hagen Loxbaum;de:05914:2016;193
+from-to;9;Hagen Stadtmitte/Volme Galerie;de:05914:2003;Hagen Hildegardis-Schule;de:05914:2155;191
+from-to;9;Hagen Hohenlimburg Mitte;de:05914:2060;Hagen Hohenlimburg Bf;de:05914:2059;189
+from-to;9;Hagen Eilpe Physiomed;de:05914:2083;Hagen Kurfürstenstr. Diabetolo;de:05914:2258;178
+from-to;9;Hagen St-Josefs-Kirche;de:05914:2009;Hagen Brüderstr.;de:05914:2010;177
+from-to;9;Hagen Markt;de:05914:2002;Hagen CineStar;de:05914:2772;177
+from-to;9;Hagen CineStar;de:05914:2772;Hagen Oberhagen;de:05914:2087;177
+from-to;9;Hagen Kurfürstenstr. Diabetolo;de:05914:2258;Hagen Eilpe Physiomed;de:05914:2083;177
+from-to;9;Hagen Brüderstr.;de:05914:2010;Hagen St-Josefs-Kirche;de:05914:2009;176
+from-to;9;Hagen Siedlerstr. HVG;de:05914:2014;Hagen Ginsterheide;de:05914:2015;169
+from-to;9;Hagen Ginsterheide;de:05914:2015;Hagen Loxbaum;de:05914:2016;169
+from-to;9;Hagen Loxbaum;de:05914:2016;Hagen Ginsterheide;de:05914:2015;169
+from-to;9;Hagen Ginsterheide;de:05914:2015;Hagen Siedlerstr. HVG;de:05914:2014;169
+from-to;9;Hagen Helfer Str.;de:05914:2019;Hagen Stennesufer;de:05914:2018;167
+from-to;9;Hagen Stennesufer;de:05914:2018;Hagen Kapellenstr.;de:05914:2017;167
+from-to;9;Hagen Oberhagen;de:05914:2087;Hagen CineStar;de:05914:2772;166
+from-to;9;Hagen CineStar;de:05914:2772;Hagen Markt;de:05914:2002;166
+from-to;9;Hagen Markt;de:05914:2002;Hagen Dahlenkampstr.;de:05914:2551;166
+from-to;9;Hagen Dahlenkampstr.;de:05914:2551;Hagen Rathaus an der Volme;de:05914:2410;166
+from-to;9;Hagen Kapellenstr.;de:05914:2017;Hagen Stennesufer;de:05914:2018;166
+from-to;9;Hagen Stennesufer;de:05914:2018;Hagen Helfer Str.;de:05914:2019;166
+from-to;9;Hagen Rathaus an der Volme;de:05914:2410;Hagen Dahlenkampstr.;de:05914:2551;165
+from-to;9;Hagen Dahlenkampstr.;de:05914:2551;Hagen Markt;de:05914:2002;165
+from-to;9;Hagen Westerbauer Schleife;de:05914:2561;Hagen Nordstr.;de:05914:2321;163
+from-to;9;Hagen Nordstr.;de:05914:2321;Hagen Westerbauer Schleife;de:05914:2561;163
+from-to;9;Hagen Schwenke;de:05914:2006;Hagen Volkshochschule;de:05914:2516;158
+from-to;9;Hagen Volkshochschule;de:05914:2516;Hagen Schwenke;de:05914:2006;157
+from-to;9;Hagen Hohenlimburg Mitte;de:05914:2060;Hagen Lennebad;de:05914:2061;136
+from-to;9;Hagen Heubing Bf;de:05914:2432;Hagen Ennepeufer;de:05914:2326;136
+from-to;9;Hagen Ennepeufer;de:05914:2326;Hagen Heubing Bf;de:05914:2432;136
+from-to;9;Hagen Fuhrparkstr.;de:05914:2091;Hagen Eichendorffstr.;de:05914:2092;135
+from-to;9;Hagen Eichendorffstr.;de:05914:2092;Hagen Klopstockstr.;de:05914:2093;135
+from-to;9;Hagen Klopstockstr.;de:05914:2093;Hagen Eichendorffstr.;de:05914:2092;134
+from-to;9;Hagen Eichendorffstr.;de:05914:2092;Hagen Fuhrparkstr.;de:05914:2091;134
+from-to;9;Hagen Hasper Torhaus;de:05914:2194;Hagen Ennepeufer;de:05914:2326;133
+from-to;9;Hagen Altenhg. Brücke;de:05914:2008;Hagen Eckeseyer Brücke;de:05914:2088;132
+from-to;9;Hagen Eckeseyer Brücke;de:05914:2088;Hagen Eicken;de:05914:2089;132
+from-to;9;Hagen Eicken;de:05914:2089;Hagen Bauhaus;de:05914:2172;132
+from-to;9;Hagen Martinstr.;de:05914:2560;Hagen Nordstr.;de:05914:2321;132
+from-to;9;Hagen Bauhaus;de:05914:2172;Hagen Eicken;de:05914:2089;131
+from-to;9;Hagen Eicken;de:05914:2089;Hagen Eckeseyer Brücke;de:05914:2088;131
+from-to;9;Hagen Eckeseyer Brücke;de:05914:2088;Hagen Altenhg. Brücke;de:05914:2008;131
+from-to;9;Hagen Heilig-Geist-Str.;de:05914:2498;Hagen Haspe Zentrum;de:05914:2037;130
+from-to;9;Hagen Hameckestr.;de:05914:2150;Hagen Grimmestr.;de:05914:2149;129
+from-to;9;Hagen Nordstr.;de:05914:2321;Hagen Martinstr.;de:05914:2560;129
+from-to;9;Hagen Grimmestr.;de:05914:2149;Hagen Hameckestr.;de:05914:2150;128
+from-to;9;Hagen Heilig-Geist-Str.;de:05914:2498;Hagen BasseDruck;de:05914:2520;127
+from-to;9;Hagen BasseDruck;de:05914:2520;Hagen Mercedes Jürgens;de:05914:2523;127
+from-to;9;Hagen Mercedes Jürgens;de:05914:2523;Hagen BasseDruck;de:05914:2520;127
+from-to;9;Hagen BasseDruck;de:05914:2520;Hagen Heilig-Geist-Str.;de:05914:2498;127
+from-to;9;Hagen Hildegardis-Schule;de:05914:2155;Hagen Höing;de:05914:2154;126
+from-to;9;Hagen Höing;de:05914:2154;Hagen Sportpark Ischeland;de:05914:2153;126
+from-to;9;Hagen Tondernstr.;de:05914:2280;Hagen FernUniversität;de:05914:2279;125
+from-to;9;Hagen FernUniversität;de:05914:2279;Hagen Polizeipräsidium;de:05914:2510;125
+from-to;9;Hagen Loxbaum;de:05914:2016;Hagen Polizeipräsidium;de:05914:2510;124
+from-to;9;Hagen Polizeipräsidium;de:05914:2510;Hagen FernUniversität;de:05914:2279;124
+from-to;9;Hagen FernUniversität;de:05914:2279;Hagen Tondernstr.;de:05914:2280;124
+from-to;9;Hagen Sportpark Ischeland;de:05914:2153;Hagen Höing;de:05914:2154;124
+from-to;9;Hagen Höing;de:05914:2154;Hagen Hildegardis-Schule;de:05914:2155;124
+from-to;9;Hagen Hildegardis-Schule;de:05914:2155;Hagen Emilienplatz;de:05914:2075;124
+from-to;9;Hagen Geitebrücke;de:05914:2094;Hagen Weststr.;de:05914:2095;119
+from-to;9;Hagen Weststr.;de:05914:2095;Hagen Geitebrücke;de:05914:2094;118
+from-to;9;Hagen Eckeseyer Str.;de:05914:2440;Hagen Niedernhofstr.;de:05914:2289;115
+from-to;9;Hagen Niedernhofstr.;de:05914:2289;Hagen Eckeseyer Str.;de:05914:2440;114
+from-to;9;Hagen Borgenfeldstr.;de:05914:2114;Hagen Külpestr.;de:05914:2113;108
+from-to;9;Hagen Külpestr.;de:05914:2113;Hagen Hammerstein;de:05914:2565;108
+from-to;9;Hagen Hammerstein;de:05914:2565;Hagen Boele Amtshaus;de:05914:2112;108
+from-to;9;Hagen Boele Amtshaus;de:05914:2112;Hagen Boele Markt;de:05914:2020;108
+from-to;9;Hagen Boele Markt;de:05914:2020;Hagen Boele Amtshaus;de:05914:2112;108
+from-to;9;Hagen Boele Amtshaus;de:05914:2112;Hagen Hammerstein;de:05914:2565;108
+from-to;9;Hagen Hammerstein;de:05914:2565;Hagen Külpestr.;de:05914:2113;108
+from-to;9;Hagen Külpestr.;de:05914:2113;Hagen Borgenfeldstr.;de:05914:2114;108
+from-to;9;Hagen Borgenfeldstr.;de:05914:2114;Hagen Kabel;de:05914:2115;107
+from-to;9;Hagen Lennebad;de:05914:2061;Hagen Hohenlimburg Mitte;de:05914:2060;106
+from-to;9;Hagen Kabel;de:05914:2115;Hagen Borgenfeldstr.;de:05914:2114;106
+from-to;9;Hagen Kurfürstenstr. Diabetolo;de:05914:2258;Hagen Jägerstr.;de:05914:2763;102
+from-to;9;Hagen Jägerstr.;de:05914:2763;Hagen Elisabethstr.;de:05914:2111;102
+from-to;9;Hagen Elisabethstr.;de:05914:2111;Hagen Oberhagen;de:05914:2087;102
+from-to;9;Hagen Klopstockstr.;de:05914:2093;Hagen Geitebrücke;de:05914:2094;102
+from-to;9;Hagen Geitebrücke;de:05914:2094;Hagen Klopstockstr.;de:05914:2093;101
+from-to;9;Hagen Ennepeufer;de:05914:2326;Hagen Hasper Torhaus;de:05914:2194;100
+from-to;9;Hagen Lennebad;de:05914:2061;Hagen Elsey Ehrenmal;de:05914:2221;100
+from-to;9;Hagen Oberhagen;de:05914:2087;Hagen Elisabethstr.;de:05914:2111;99
+from-to;9;Hagen Elisabethstr.;de:05914:2111;Hagen Jägerstr.;de:05914:2763;99
+from-to;9;Hagen Jägerstr.;de:05914:2763;Hagen Kurfürstenstr. Diabetolo;de:05914:2258;99
+from-to;9;Hagen Fuhrparkstr.;de:05914:2091;Hagen Bauhaus;de:05914:2172;99
+from-to;9;Hagen Bauhaus;de:05914:2172;Hagen Fuhrparkstr.;de:05914:2091;99
+from-to;9;Hagen Wasserloses Tal;de:05914:2177;Hagen Stadthalle;de:05914:2178;99
+from-to;9;Hagen Stadthalle;de:05914:2178;Hagen Marktbrücke;de:05914:2001;99
+from-to;9;Hagen Marktbrücke;de:05914:2001;Hagen Rathaus an der Volme;de:05914:2410;99
+from-to;9;Hagen Rathaus an der Volme;de:05914:2410;Hagen Eickertstr.;de:05914:2029;99
+from-to;9;Hagen Eickertstr.;de:05914:2029;Hagen Totenhofweg;de:05914:2028;99
+from-to;9;Hagen Totenhofweg;de:05914:2028;Hagen Brunnenstr.;de:05914:2027;99
+from-to;9;Hagen Brunnenstr.;de:05914:2027;Hagen Eppenhauser Brunnen;de:05914:2026;99
+from-to;9;Hagen Eppenhauser Brunnen;de:05914:2026;Hagen Emster Str.;de:05914:2025;99
+from-to;9;Hagen Emster Str.;de:05914:2025;Hagen Eppenhauser Brunnen;de:05914:2026;99
+from-to;9;Hagen Eppenhauser Brunnen;de:05914:2026;Hagen Brunnenstr.;de:05914:2027;99
+from-to;9;Hagen Brunnenstr.;de:05914:2027;Hagen Totenhofweg;de:05914:2028;99
+from-to;9;Hagen Totenhofweg;de:05914:2028;Hagen Eickertstr.;de:05914:2029;99
+from-to;9;Hagen Eickertstr.;de:05914:2029;Hagen Rathaus an der Volme;de:05914:2410;99
+from-to;9;Hagen Houbenstr.;de:05914:2152;Hagen Sportpark Ischeland;de:05914:2153;99
+from-to;9;Hagen Sportpark Ischeland;de:05914:2153;Hagen Houbenstr.;de:05914:2152;99
+from-to;9;Hagen Alexanderstr.;de:05914:2356;Hagen Röntgenstr.;de:05914:2355;98
+from-to;9;Hagen Röntgenstr.;de:05914:2355;Hagen Brüderstr.;de:05914:2010;98
+from-to;9;Hagen Rathaus an der Volme;de:05914:2410;Hagen Märkischer Ring;de:05914:2506;98
+from-to;9;Hagen Märkischer Ring;de:05914:2506;Hagen Marktbrücke;de:05914:2001;98
+from-to;9;Hagen Marktbrücke;de:05914:2001;Hagen Stadthalle;de:05914:2178;98
+from-to;9;Hagen Stadthalle;de:05914:2178;Hagen Wasserloses Tal;de:05914:2177;98
+from-to;9;Hagen Brüderstr.;de:05914:2010;Hagen Röntgenstr.;de:05914:2355;97
+from-to;9;Hagen Röntgenstr.;de:05914:2355;Hagen Alexanderstr.;de:05914:2356;97
+from-to;9;Hagen Stegerwaldstr.;de:05914:2189;Hagen Buschstr.;de:05914:2188;96
+from-to;9;Hagen Buschstr.;de:05914:2188;Hagen Stegerwaldstr.;de:05914:2189;96
+from-to;9;Hagen Volkshochschule;de:05914:2516;Hagen Akku Hawker;de:05914:2032;95
+from-to;9;Hagen Akku Hawker;de:05914:2032;Hagen Wehringhauser Str.;de:05914:2033;95
+from-to;9;Hagen Wehringhauser Str.;de:05914:2033;Hagen Mercedes Jürgens;de:05914:2523;95
+from-to;9;Hagen Martinstr.;de:05914:2560;Hagen Im Mühlenwert;de:05914:2522;95
+from-to;9;Hagen Im Mühlenwert;de:05914:2522;Hagen Grundschötteler Str.;de:05914:2040;95
+from-to;9;Hagen Grundschötteler Str.;de:05914:2040;Hagen Kölner Str.;de:05914:2039;95
+from-to;9;Hagen Kölner Str.;de:05914:2039;Hagen Niederhaspe;de:05914:2038;95
+from-to;9;Hagen Niederhaspe;de:05914:2038;Hagen Haspe Zentrum;de:05914:2037;95
+from-to;9;Hagen Haspe Zentrum;de:05914:2037;Hagen Heilig-Geist-Str.;de:05914:2498;95
+from-to;9;Hagen Mercedes Jürgens;de:05914:2523;Hagen Wehringhauser Str.;de:05914:2033;95
+from-to;9;Hagen Wehringhauser Str.;de:05914:2033;Hagen Akku Hawker;de:05914:2032;95
+from-to;9;Hagen Akku Hawker;de:05914:2032;Hagen Volkshochschule;de:05914:2516;95
+from-to;9;Hagen Haspe Zentrum;de:05914:2037;Hagen Niederhaspe;de:05914:2038;94
+from-to;9;Hagen Niederhaspe;de:05914:2038;Hagen Kölner Str.;de:05914:2039;94
+from-to;9;Hagen Kölner Str.;de:05914:2039;Hagen Grundschötteler Str.;de:05914:2040;94
+from-to;9;Hagen Grundschötteler Str.;de:05914:2040;Hagen Im Mühlenwert;de:05914:2522;94
+from-to;9;Hagen Im Mühlenwert;de:05914:2522;Hagen Martinstr.;de:05914:2560;94
+from-to;9;Hagen Siedlerstr. HVG;de:05914:2014;Hagen Houbenstr.;de:05914:2152;91
+from-to;9;Hagen Houbenstr.;de:05914:2152;Hagen Siedlerstr. HVG;de:05914:2014;91
+from-to;9;Hagen Sauerlandstr.;de:05914:2232;Hagen Im Alten Holz;de:05914:2469;87
+from-to;9;Hagen Im Alten Holz;de:05914:2469;Hagen Rohrstr.;de:05914:2236;87
+from-to;9;Hagen Elsey Kirche;de:05914:2222;Hagen Elsey Ehrenmal;de:05914:2221;87
+from-to;9;Hagen Elsey Ehrenmal;de:05914:2221;Hagen Lennebad;de:05914:2061;87
+from-to;9;Hagen Rohrstr.;de:05914:2236;Hagen Im Alten Holz;de:05914:2469;86
+from-to;9;Hagen Im Alten Holz;de:05914:2469;Hagen Sauerlandstr.;de:05914:2232;86
+from-to;9;Hagen Elsey Ehrenmal;de:05914:2221;Hagen Elsey Kirche;de:05914:2222;86
+from-to;9;Hagen Tondernstr.;de:05914:2280;Hagen Sonderburgstr.;de:05914:2235;86
+from-to;9;Hagen Sonderburgstr.;de:05914:2235;Hagen Spessartstr.;de:05914:2234;86
+from-to;9;Hagen Spessartstr.;de:05914:2234;Hagen Dümpelstr.;de:05914:2233;86
+from-to;9;Hagen Dümpelstr.;de:05914:2233;Hagen Sauerlandstr.;de:05914:2232;86
+from-to;9;Hagen Hohenlimburg Mitte;de:05914:2060;Hagen Hünenpforte;de:05914:2259;85
+from-to;9;Hagen Sauerlandstr.;de:05914:2232;Hagen Dümpelstr.;de:05914:2233;85
+from-to;9;Hagen Dümpelstr.;de:05914:2233;Hagen Spessartstr.;de:05914:2234;85
+from-to;9;Hagen Spessartstr.;de:05914:2234;Hagen Sonderburgstr.;de:05914:2235;85
+from-to;9;Hagen Sonderburgstr.;de:05914:2235;Hagen Tondernstr.;de:05914:2280;85
+from-to;9;Hagen Dortmunder Str.;de:05914:2294;Hagen Boele Markt;de:05914:2020;84
+from-to;9;Hagen Boele Markt;de:05914:2020;Hagen Dortmunder Str.;de:05914:2294;84
+from-to;9;Hagen Tondernstr.;de:05914:2280;Hagen Lortzingstr.;de:05914:2350;84
+from-to;9;Hagen Hünenpforte;de:05914:2259;Hagen Hohenlimburg Mitte;de:05914:2060;83
+from-to;9;Hagen Lortzingstr.;de:05914:2350;Hagen Tondernstr.;de:05914:2280;83
+from-to;9;Hagen Elsey Krankenhaus;de:05914:2062;Hagen Lennebad;de:05914:2061;82
+from-to;9;Hagen J-G-Fichte-Str.;de:05914:2244;Hagen Wortherbruchstr.;de:05914:2243;82
+from-to;9;Hagen Wortherbruchstr.;de:05914:2243;HA-Vorhalle Mitte;de:05914:2098;82
+from-to;9;Hagen Geitebrücke;de:05914:2094;Hagen Eckeseyer Str.;de:05914:2440;82
+from-to;9;Hagen Eckeseyer Str.;de:05914:2440;Hagen Geitebrücke;de:05914:2094;81
+from-to;9;HA-Vorhalle Mitte;de:05914:2098;Hagen Wortherbruchstr.;de:05914:2243;81
+from-to;9;Hagen Wortherbruchstr.;de:05914:2243;Hagen J-G-Fichte-Str.;de:05914:2244;81
+from-to;9;Hagen Boeler Str.;de:05914:2013;Hagen Siedlerstr. HVG;de:05914:2014;78
+from-to;9;Hagen Siedlerstr. HVG;de:05914:2014;Hagen Boeler Str.;de:05914:2013;78
+from-to;9;Hagen Luisenstr.;de:05914:2084;Hagen Kurfürstenstr. Diabetolo;de:05914:2258;78
+from-to;9;Hagen Brüderstr.;de:05914:2010;Hagen Friedensstr.;de:05914:2011;77
+from-to;9;Hagen Friedensstr.;de:05914:2011;Hagen Alleestr.;de:05914:2012;77
+from-to;9;Hagen Alleestr.;de:05914:2012;Hagen Boeler Str.;de:05914:2013;77
+from-to;9;Hagen Boeler Str.;de:05914:2013;Hagen Alleestr.;de:05914:2012;76
+from-to;9;Hagen Alleestr.;de:05914:2012;Hagen Friedensstr.;de:05914:2011;76
+from-to;9;Hagen Friedensstr.;de:05914:2011;Hagen Brüderstr.;de:05914:2010;76
+from-to;9;Hagen Kurfürstenstr. Diabetolo;de:05914:2258;Hagen Luisenstr.;de:05914:2084;76
+from-to;9;Hagen Gewerbepark Kückelhausen;de:05914:2209;Hagen Obere Rehstr.;de:05914:2484;71
+from-to;9;Hagen Obere Rehstr.;de:05914:2484;Hagen Eugen-Richter-Str.;de:05914:2160;71
+from-to;9;Hagen Eugen-Richter-Str.;de:05914:2160;Hagen Gutenbergstr.;de:05914:2159;71
+from-to;9;Hagen Gutenbergstr.;de:05914:2159;Hagen Bachstr.;de:05914:2158;71
+from-to;9;Hagen Bachstr.;de:05914:2158;Hagen Allg. Krankenhaus;de:05914:2157;71
+from-to;9;Hagen Reh/Lenne Arena;de:05914:2069;Hagen Elseyer Str.;de:05914:2508;71
+from-to;9;Hagen Elseyer Str.;de:05914:2508;Hagen Elsey Kirche;de:05914:2222;71
+from-to;9;Hagen Cuno-Berufskolleg;de:05914:2190;Hagen Fichte-Gymnasium;de:05914:2562;71
+from-to;9;Hagen Gewerbepark Kückelhausen;de:05914:2209;Hagen Hördenstr.;de:05914:2162;71
+from-to;9;Hagen Hördenstr.;de:05914:2162;Hagen Sachsenstr.;de:05914:2163;71
+from-to;9;Hagen Sachsenstr.;de:05914:2163;Hagen Hestertstr.;de:05914:2164;71
+from-to;9;Hagen Hestertstr.;de:05914:2164;Hagen Schützenstr.;de:05914:2165;71
+from-to;9;Hagen Schützenstr.;de:05914:2165;Hagen Realschule Haspe;de:05914:2559;71
+from-to;9;Hagen Realschule Haspe;de:05914:2559;Hagen Heilig-Geist-Str.;de:05914:2498;71
+from-to;9;Hagen Haspe Zentrum;de:05914:2037;Hagen Hüttenplatz GWG;de:05914:2743;71
+from-to;9;Hagen Hüttenplatz GWG;de:05914:2743;Hagen Vollbrinkstr.;de:05914:2744;71
+from-to;9;Hagen Elsey Kirche;de:05914:2222;Hagen Elseyer Str.;de:05914:2508;70
+from-to;9;Hagen Elseyer Str.;de:05914:2508;Hagen Reh/Lenne Arena;de:05914:2069;70
+from-to;9;Hagen Fichte-Gymnasium;de:05914:2562;Hagen Cuno-Berufskolleg;de:05914:2190;69
+from-to;9;Hagen Nordstr.;de:05914:2321;Hagen Westerbauer Bf;de:05914:2433;69
+from-to;9;Hagen Kapellenstr.;de:05914:2017;Hagen Auf dem Kuhl;de:05914:2143;69
+from-to;9;Hagen Auf dem Kuhl;de:05914:2143;Hagen Fröbelstr.;de:05914:2142;69
+from-to;9;Hagen Gabelsberger Str.;de:05914:2197;Hagen Kipperstr.;de:05914:2198;68
+from-to;9;Hagen Hasper Torhaus;de:05914:2194;Hagen Realschule Haspe;de:05914:2559;68
+from-to;9;Hagen Realschule Haspe;de:05914:2559;Hagen Schützenstr.;de:05914:2165;68
+from-to;9;Hagen Schützenstr.;de:05914:2165;Hagen Hestertstr.;de:05914:2164;68
+from-to;9;Hagen Hestertstr.;de:05914:2164;Hagen Sachsenstr.;de:05914:2163;68
+from-to;9;Hagen Sachsenstr.;de:05914:2163;Hagen Hördenstr.;de:05914:2162;68
+from-to;9;Hagen Hördenstr.;de:05914:2162;Hagen Gewerbepark Kückelhausen;de:05914:2209;68
+from-to;9;Hagen Aschenbergstr.;de:05914:2214;Hagen Goebenstr./Wohnungsv HA.;de:05914:2213;68
+from-to;9;Hagen Goebenstr./Wohnungsv HA.;de:05914:2213;Hagen Fahrenbecke;de:05914:2212;68
+from-to;9;Hagen Fahrenbecke;de:05914:2212;Hagen Steubenstr.;de:05914:2211;68
+from-to;9;Hagen Steubenstr.;de:05914:2211;Hagen Hoheleye;de:05914:2210;68
+from-to;9;Hagen Hoheleye;de:05914:2210;Hagen Polizeipräsidium;de:05914:2510;68
+from-to;9;Hagen Ev. Krankenhaus;de:05914:2166;Hagen Büdding Friedhof;de:05914:2448;68
+from-to;9;Hagen Büdding Friedhof;de:05914:2448;Hagen Heubing Bf;de:05914:2432;68
+from-to;9;Hagen Heilig-Geist-Str.;de:05914:2498;Hagen Hasper Torhaus;de:05914:2194;68
+from-to;9;Hagen Heubing Bf;de:05914:2432;Hagen Büdding Friedhof;de:05914:2448;68
+from-to;9;Hagen Büdding Friedhof;de:05914:2448;Hagen Ev. Krankenhaus;de:05914:2166;68
+from-to;9;Hagen Heubing Bf;de:05914:2432;Hagen Hasper Hammer;de:05914:2454;68
+from-to;9;Hagen Hasper Hammer;de:05914:2454;Hagen Heubing Bf;de:05914:2432;68
+from-to;9;Hagen Weststr.;de:05914:2095;Herdecke Brüninghausstr.;de:05954:2386;68
+from-to;9;Herdecke Brüninghausstr.;de:05954:2386;Herdecke Hengsteyseestr.;de:05954:2252;68
+from-to;9;Herdecke Hengsteyseestr.;de:05954:2252;Herdecke Mitte;de:05954:2253;68
+from-to;9;Hagen K.-E.-Osthaus-Str.;de:05914:2050;Hagen Walddorfstr.;de:05914:2176;68
+from-to;9;Hagen Walddorfstr.;de:05914:2176;Hagen Wasserloses Tal;de:05914:2177;68
+from-to;9;Hagen Grimmestr.;de:05914:2149;Hagen Vereinsstr.;de:05914:2148;68
+from-to;9;Hagen Vereinsstr.;de:05914:2148;Hagen Boelerheide;de:05914:2147;68
+from-to;9;Hagen Allg. Krankenhaus;de:05914:2157;Hagen Bachstr.;de:05914:2158;68
+from-to;9;Hagen Bachstr.;de:05914:2158;Hagen Gutenbergstr.;de:05914:2159;68
+from-to;9;Hagen Gutenbergstr.;de:05914:2159;Hagen Eugen-Richter-Str.;de:05914:2160;68
+from-to;9;Hagen Eugen-Richter-Str.;de:05914:2160;Hagen Obere Rehstr.;de:05914:2484;68
+from-to;9;Hagen Obere Rehstr.;de:05914:2484;Hagen Gewerbepark Kückelhausen;de:05914:2209;68
+from-to;9;Hagen Emst Kirche;de:05914:2049;Hagen Cunostr.;de:05914:2048;68
+from-to;9;Hagen Cunostr.;de:05914:2048;Hagen Emst Kirche;de:05914:2049;68
+from-to;9;Hagen Vollbrinkstr.;de:05914:2744;Hagen Hüttenplatz GWG;de:05914:2743;67
+from-to;9;Hagen Lennebad;de:05914:2061;Hagen Elsey Krankenhaus;de:05914:2062;67
+from-to;9;Hagen Helfe Mitte;de:05914:2206;Hagen Pieperstr.;de:05914:2205;67
+from-to;9;Hagen Fröbelstr.;de:05914:2142;Hagen Auf dem Kuhl;de:05914:2143;67
+from-to;9;Hagen Auf dem Kuhl;de:05914:2143;Hagen Kapellenstr.;de:05914:2017;67
+from-to;9;Hagen Feuerwache;de:05914:2216;Hagen Wilhelmsplatz;de:05914:2217;67
+from-to;9;Hagen Wilhelmsplatz;de:05914:2217;Hagen Pelmkestr.;de:05914:2218;67
+from-to;9;Hagen Pelmkestr.;de:05914:2218;Hagen Franklinstr.;de:05914:2219;67
+from-to;9;Hagen Franklinstr.;de:05914:2219;Hagen Rehstr.;de:05914:2161;67
+from-to;9;Hagen Rehstr.;de:05914:2161;Hagen Konrad-Adenauer-Ring;de:05914:2423;67
+from-to;9;Hagen Westerbauer Bf;de:05914:2433;Hagen Nordstr.;de:05914:2321;67
+from-to;9;Hagen Landgericht;de:05914:2074;Hagen Bülowstr.;de:05914:2318;67
+from-to;9;Hagen Bülowstr.;de:05914:2318;Hagen Bettermannshof;de:05914:2317;67
+from-to;9;Hagen Bettermannshof;de:05914:2317;Hagen Fachhochschule Südwestf.;de:05914:2316;67
+from-to;9;Hagen Fachhochschule Südwestf.;de:05914:2316;Hagen Tondernstr.;de:05914:2280;67
+from-to;9;Hagen Wasserloses Tal;de:05914:2177;Hagen Willdestr.;de:05914:2175;67
+from-to;9;Hagen Willdestr.;de:05914:2175;Hagen K.-E.-Osthaus-Str.;de:05914:2050;67
+from-to;9;Hagen Loxbaum;de:05914:2016;Hagen Hoheleye;de:05914:2210;66
+from-to;9;Hagen Hoheleye;de:05914:2210;Hagen Steubenstr.;de:05914:2211;66
+from-to;9;Hagen Steubenstr.;de:05914:2211;Hagen Fahrenbecke;de:05914:2212;66
+from-to;9;Hagen Fahrenbecke;de:05914:2212;Hagen Goebenstr./Wohnungsv HA.;de:05914:2213;66
+from-to;9;Hagen Goebenstr./Wohnungsv HA.;de:05914:2213;Hagen Aschenbergstr.;de:05914:2214;66
+from-to;9;Hagen Aschenbergstr.;de:05914:2214;Hagen Ruhrstr.;de:05914:2215;66
+from-to;9;Hagen Ruhrstr.;de:05914:2215;Hagen Emilienplatz;de:05914:2075;66
+from-to;9;Hagen Oberhagen;de:05914:2087;Hagen Buntebachstr.;de:05914:2086;66
+from-to;9;Hagen Buntebachstr.;de:05914:2086;Hagen Franzstr.;de:05914:2085;66
+from-to;9;Hagen Franzstr.;de:05914:2085;Hagen Luisenstr.;de:05914:2084;66
+from-to;9;Hagen Eilpe Physiomed;de:05914:2083;Hagen Hüsteystr.;de:05914:2082;66
+from-to;9;Hagen Hüsteystr.;de:05914:2082;Hagen Mühlhauser Str.;de:05914:2081;66
+from-to;9;Hagen Mühlhauser Str.;de:05914:2081;Hagen Hohle Str.;de:05914:2080;66
+from-to;9;Hagen Hohle Str.;de:05914:2080;Hagen Elsässer Str.;de:05914:2079;66
+from-to;9;Hagen Elsässer Str.;de:05914:2079;Hagen Riegerbusch;de:05914:2078;66
+from-to;9;Hagen Riegerbusch;de:05914:2078;Hagen Metzer Str.;de:05914:2077;66
+from-to;9;Herdecke Hengsteyseestr.;de:05954:2252;Herdecke Brüninghausstr.;de:05954:2386;66
+from-to;9;Herdecke Brüninghausstr.;de:05954:2386;Hagen Weststr.;de:05914:2095;66
+from-to;9;Hagen Haßley;de:05914:2263;Hagen Staplack / Enervie Zentr;de:05914:2262;66
+from-to;9;Hagen Staplack / Enervie Zentr;de:05914:2262;Hagen Alte Dorfschule;de:05914:2261;66
+from-to;9;Hagen Alte Dorfschule;de:05914:2261;Hagen Holthausen;de:05914:2260;66
+from-to;9;Hagen Holthausen;de:05914:2260;Hagen Hünenpforte;de:05914:2259;66
+from-to;9;Hagen Hünenpforte;de:05914:2259;Hagen Weißensteinstr.;de:05914:2481;66
+from-to;9;Hagen Weißensteinstr.;de:05914:2481;Hagen Holthausen;de:05914:2260;66
+from-to;9;Hagen Holthausen;de:05914:2260;Hagen Alte Dorfschule;de:05914:2261;66
+from-to;9;Hagen Alte Dorfschule;de:05914:2261;Hagen Staplack / Enervie Zentr;de:05914:2262;66
+from-to;9;Hagen Staplack / Enervie Zentr;de:05914:2262;Hagen Haßley;de:05914:2263;66
+from-to;9;Hagen Emsterfeld;de:05914:2264;Hagen Am Großen Feld;de:05914:2265;66
+from-to;9;Hagen Am Großen Feld;de:05914:2265;Hagen K.-E.-Osthaus-Str.;de:05914:2050;66
+from-to;9;Hagen Hildegardis-Schule;de:05914:2155;Hagen Aschenbergstr.;de:05914:2214;65
+from-to;9;Hagen Tondernstr.;de:05914:2280;Hagen Fachhochschule Südwestf.;de:05914:2316;65
+from-to;9;Hagen Fachhochschule Südwestf.;de:05914:2316;Hagen Bettermannshof;de:05914:2317;65
+from-to;9;Hagen Bettermannshof;de:05914:2317;Hagen Bülowstr.;de:05914:2318;65
+from-to;9;Hagen Bülowstr.;de:05914:2318;Hagen Landgericht;de:05914:2074;65
+from-to;9;HA-Vorhalle Mitte;de:05914:2098;Hagen In der Imke;de:05914:2099;65
+from-to;9;Hagen In der Imke;de:05914:2099;Hagen Untere Lindenstr.;de:05914:2100;65
+from-to;9;Hagen Untere Lindenstr.;de:05914:2100;Hagen Wolfskuhler Weg;de:05914:2446;65
+from-to;9;Hagen Wolfskuhler Weg;de:05914:2446;Hagen Sporbecker Weg;de:05914:2101;65
+from-to;9;Hagen Sporbecker Weg;de:05914:2101;Hagen Ulmenstr.;de:05914:2103;65
+from-to;9;Hagen Ulmenstr.;de:05914:2103;Hagen Ziegelei;de:05914:2444;65
+from-to;9;Hagen Ziegelei;de:05914:2444;Hagen Zieglerstr.;de:05914:2441;65
+from-to;9;Hagen Zieglerstr.;de:05914:2441;Hagen Geitebrücke;de:05914:2094;65
+from-to;9;Hagen Niedernhofstr.;de:05914:2289;Hagen Sonntagstr.;de:05914:2417;65
+from-to;9;Hagen Sonntagstr.;de:05914:2417;Hagen Grimmestr.;de:05914:2149;65
+from-to;9;Herdecke Mitte;de:05954:2253;Herdecke Hengsteyseestr.;de:05954:2252;65
+from-to;9;Hagen Emster Str.;de:05914:2025;Hagen Haßleyer Str.;de:05914:2024;65
+from-to;9;Hagen Rehstr.;de:05914:2161;Hagen Franklinstr.;de:05914:2219;64
+from-to;9;Hagen Franklinstr.;de:05914:2219;Hagen Pelmkestr.;de:05914:2218;64
+from-to;9;Hagen Pelmkestr.;de:05914:2218;Hagen Wilhelmsplatz;de:05914:2217;64
+from-to;9;Hagen Wilhelmsplatz;de:05914:2217;Hagen Feuerwache;de:05914:2216;64
+from-to;9;Hagen Metzer Str.;de:05914:2077;Hagen Eilperfeld;de:05914:2076;64
+from-to;9;Hagen Metzer Str.;de:05914:2077;Hagen Riegerbusch;de:05914:2078;64
+from-to;9;Hagen Riegerbusch;de:05914:2078;Hagen Elsässer Str.;de:05914:2079;64
+from-to;9;Hagen Elsässer Str.;de:05914:2079;Hagen Hohle Str.;de:05914:2080;64
+from-to;9;Hagen Hohle Str.;de:05914:2080;Hagen Mühlhauser Str.;de:05914:2081;64
+from-to;9;Hagen Mühlhauser Str.;de:05914:2081;Hagen Hüsteystr.;de:05914:2082;64
+from-to;9;Hagen Hüsteystr.;de:05914:2082;Hagen Eilpe Physiomed;de:05914:2083;64
+from-to;9;Hagen Luisenstr.;de:05914:2084;Hagen Franzstr.;de:05914:2085;64
+from-to;9;Hagen Franzstr.;de:05914:2085;Hagen Buntebachstr.;de:05914:2086;64
+from-to;9;Hagen Buntebachstr.;de:05914:2086;Hagen Oberhagen;de:05914:2087;64
+from-to;9;Hagen Sonntagstr.;de:05914:2417;Hagen Niedernhofstr.;de:05914:2289;64
+from-to;9;Hagen Geitebrücke;de:05914:2094;Hagen Zieglerstr.;de:05914:2441;64
+from-to;9;Hagen Zieglerstr.;de:05914:2441;Hagen Ziegelei;de:05914:2444;64
+from-to;9;Hagen Ziegelei;de:05914:2444;Hagen Ulmenstr.;de:05914:2103;64
+from-to;9;Hagen Ulmenstr.;de:05914:2103;Hagen Sporbecker Weg;de:05914:2101;64
+from-to;9;Hagen Sporbecker Weg;de:05914:2101;Hagen Wolfskuhler Weg;de:05914:2446;64
+from-to;9;Hagen Wolfskuhler Weg;de:05914:2446;Hagen Untere Lindenstr.;de:05914:2100;64
+from-to;9;Hagen Untere Lindenstr.;de:05914:2100;Hagen In der Imke;de:05914:2099;64
+from-to;9;Hagen In der Imke;de:05914:2099;HA-Vorhalle Mitte;de:05914:2098;64
+from-to;9;Hagen K.-E.-Osthaus-Str.;de:05914:2050;Hagen Am Großen Feld;de:05914:2265;64
+from-to;9;Hagen Am Großen Feld;de:05914:2265;Hagen Emsterfeld;de:05914:2264;64
+from-to;9;Hagen Haßleyer Str.;de:05914:2024;Hagen Emster Str.;de:05914:2025;64
+from-to;9;Hagen Hüttenplatz GWG;de:05914:2743;Hagen Hasper Torhaus;de:05914:2194;64
+from-to;9;Hagen Frachtzentrum;de:05914:2762;Hagen Profilstr.;de:05914:2464;64
+from-to;9;Hagen Profilstr.;de:05914:2464;Hagen Profilstr. Schleife;de:05914:2480;64
+from-to;9;Hagen Profilstr. Schleife;de:05914:2480;Hagen Profilstr.;de:05914:2464;64
+from-to;9;Hagen Profilstr.;de:05914:2464;Hagen Frachtzentrum;de:05914:2762;64
+from-to;9;Hagen Stegerwaldstr.;de:05914:2189;Hagen Helfe Mitte;de:05914:2206;64
+from-to;9;Hagen Vorhaller Str.;de:05914:2311;HA-Vorhalle Mitte;de:05914:2098;64
+from-to;9;Hagen Delstern;de:05914:2309;Hagen Delsterner Brücke;de:05914:2310;63
+from-to;9;Hagen Delsterner Brücke;de:05914:2310;Hagen Eilpe Physiomed;de:05914:2083;63
+from-to;9;Hagen Eilpe Physiomed;de:05914:2083;Hagen Delsterner Brücke;de:05914:2310;63
+from-to;9;Hagen Delsterner Brücke;de:05914:2310;Hagen Delstern;de:05914:2309;63
+from-to;9;Hagen Bathey;de:05914:2199;Hagen Batheyer Str.;de:05914:2201;63
+from-to;9;Hagen Hameckestr.;de:05914:2150;Hagen Alexanderstr.;de:05914:2356;63
+from-to;9;Hagen Volkshochschule;de:05914:2516;Hagen Heinrichstr.;de:05914:2179;63
+from-to;9;Hagen Georgstr.;de:05914:2181;Hagen Rudolfstr.;de:05914:2182;63
+from-to;9;Hagen Rudolfstr.;de:05914:2182;Hagen Ottostr.;de:05914:2452;63
+from-to;9;Hagen Ottostr.;de:05914:2452;Hagen Kuhlerkamp;de:05914:2183;63
+from-to;9;Hagen Boelerheide;de:05914:2147;Hagen Vereinsstr.;de:05914:2148;63
+from-to;9;Hagen Vereinsstr.;de:05914:2148;Hagen Grimmestr.;de:05914:2149;63
+from-to;9;Hagen Helfe Mitte;de:05914:2206;Hagen Stegerwaldstr.;de:05914:2189;63
+from-to;9;Hagen Lennebad;de:05914:2061;Hagen Mühlenbergstr.;de:05914:2388;63
+from-to;9;Hagen Mühlenbergstr.;de:05914:2388;Hagen Hohenlimburg Bf;de:05914:2059;63
+from-to;9;HA-Vorhalle Mitte;de:05914:2098;Hagen Vorhaller Str.;de:05914:2311;63
+from-to;9;Hagen Batheyer Str.;de:05914:2201;Hagen Auf dem Graskamp;de:05914:2476;62
+from-to;9;Hagen Auf dem Graskamp;de:05914:2476;Hagen Bonsmannstr.;de:05914:2200;62
+from-to;9;Hagen Eilperfeld;de:05914:2076;Hagen Metzer Str.;de:05914:2077;62
+from-to;9;Hagen Kuhlerkamp;de:05914:2183;Hagen Ottostr.;de:05914:2452;62
+from-to;9;Hagen Ottostr.;de:05914:2452;Hagen Rudolfstr.;de:05914:2182;62
+from-to;9;Hagen Rudolfstr.;de:05914:2182;Hagen Georgstr.;de:05914:2181;62
+from-to;9;Hagen Heinrichstr.;de:05914:2179;Hagen Volkshochschule;de:05914:2516;62
+from-to;9;Hagen Alexanderstr.;de:05914:2356;Hagen Hameckestr.;de:05914:2150;61
+from-to;9;Hagen Grimmestr.;de:05914:2149;Hagen Sonntagstr.;de:05914:2417;61
+from-to;9;Hagen Federnstr.;de:05914:2239;Hagen Frachtzentrum;de:05914:2762;61
+from-to;9;Hagen Frachtzentrum;de:05914:2762;Hagen Federnstr.;de:05914:2239;61
+from-to;9;Hagen Stirnband;de:05914:2282;Hagen Haßleyer Str.;de:05914:2024;61
+from-to;9;Hagen Haßleyer Str.;de:05914:2024;Hagen Deutsches Rotes Kreuz;de:05914:2525;61
+from-to;9;Hagen Deutsches Rotes Kreuz;de:05914:2525;Hagen Tondernstr.;de:05914:2280;61
+from-to;9;Hagen Tondernstr.;de:05914:2280;Hagen Deutsches Rotes Kreuz;de:05914:2525;61
+from-to;9;Hagen Deutsches Rotes Kreuz;de:05914:2525;Hagen Haßleyer Str.;de:05914:2024;61
+from-to;9;Hagen Haßleyer Str.;de:05914:2024;Hagen Stirnband;de:05914:2282;61
+from-to;9;Hagen Buschstr.;de:05914:2188;Hagen SeniorenzentrumBuschstr.;de:05914:2207;61
+from-to;9;Hagen SeniorenzentrumBuschstr.;de:05914:2207;Hagen Baurothstr.;de:05914:2208;61
+from-to;9;Hagen Baurothstr.;de:05914:2208;Hagen Kapellenstr.;de:05914:2017;61
+from-to;9;Hagen Loxbaum;de:05914:2016;Hagen Baurothstr.;de:05914:2208;61
+from-to;9;Hagen Baurothstr.;de:05914:2208;Hagen SeniorenzentrumBuschstr.;de:05914:2207;61
+from-to;9;Hagen SeniorenzentrumBuschstr.;de:05914:2207;Hagen Buschstr.;de:05914:2188;61
+from-to;9;Hagen Hünenpforte;de:05914:2259;Hagen Hohenlimburg Bf;de:05914:2059;59
+from-to;9;Hagen Westerbauer Schleife;de:05914:2561;Gevelsberg Talstr.;de:05954:8282;58
+from-to;9;Gevelsberg Talstr.;de:05954:8282;Gevelsberg Am Schultenhof;de:05954:8293;58
+from-to;9;Gevelsberg Am Schultenhof;de:05954:8293;Gevelsberg Poeten;de:05954:8283;58
+from-to;9;Gevelsberg Poeten;de:05954:8283;Gevelsberg Kirchwinkelstr.;de:05954:8284;58
+from-to;9;Gevelsberg Kirchwinkelstr.;de:05954:8284;Gevelsberg Hagebölling;de:05954:8285;58
+from-to;9;Gevelsberg Hagebölling;de:05954:8285;Gevelsberg Hundeicken;de:05954:8286;58
+from-to;9;Gevelsberg Hundeicken;de:05954:8286;Gevelsberg Bergstr.;de:05954:8287;58
+from-to;9;Gevelsberg Bergstr.;de:05954:8287;Gevelsberg Haufe;de:05954:8288;58
+from-to;9;Gevelsberg Haufe;de:05954:8288;Gevelsberg Gesundheitszentrum;de:05954:8289;58
+from-to;9;Gevelsberg Gesundheitszentrum;de:05954:8289;Gevelsberg Rathaus;de:05954:8025;58
+from-to;9;Gevelsberg Rathaus;de:05954:8025;Gevelsberg Hbf.;de:05954:8313;58
+from-to;9;Gevelsberg Hbf.;de:05954:8313;Gevelsberg Commerzbank;de:05954:8026;58
+from-to;9;Gevelsberg Commerzbank;de:05954:8026;Gevelsberg Lusebrink;de:05954:8621;58
+from-to;9;Gevelsberg Lusebrink;de:05954:8621;Gevelsberg Gesundheitszentrum;de:05954:8289;58
+from-to;9;Gevelsberg Gesundheitszentrum;de:05954:8289;Gevelsberg Haufe;de:05954:8288;58
+from-to;9;Gevelsberg Haufe;de:05954:8288;Gevelsberg Bergstr.;de:05954:8287;58
+from-to;9;Gevelsberg Bergstr.;de:05954:8287;Gevelsberg Hundeicken;de:05954:8286;58
+from-to;9;Gevelsberg Hundeicken;de:05954:8286;Gevelsberg Hagebölling;de:05954:8285;58
+from-to;9;Gevelsberg Hagebölling;de:05954:8285;Gevelsberg Kirchwinkelstr.;de:05954:8284;58
+from-to;9;Gevelsberg Kirchwinkelstr.;de:05954:8284;Gevelsberg Poeten;de:05954:8283;58
+from-to;9;Gevelsberg Poeten;de:05954:8283;Gevelsberg Am Schultenhof;de:05954:8293;58
+from-to;9;Gevelsberg Am Schultenhof;de:05954:8293;Gevelsberg Talstr.;de:05954:8282;58
+from-to;9;Gevelsberg Talstr.;de:05954:8282;Hagen Westerbauer Schleife;de:05914:2561;58
+from-to;9;Hagen Hohenlimburg Bf;de:05914:2059;Hagen Hünenpforte;de:05914:2259;57
+from-to;9;Hagen Landgericht;de:05914:2074;Hagen Reh/Lenne Arena;de:05914:2069;54
+from-to;9;Hagen Selbecke;de:05914:2104;Hagen Höhwaldstr.;de:05914:2456;53
+from-to;9;Hagen Höhwaldstr.;de:05914:2456;Hagen Zur Höhe;de:05914:2105;53
+from-to;9;Hagen Zur Höhe;de:05914:2105;Hagen Freilichtmuseum;de:05914:2106;53
+from-to;9;Hagen Freilichtmuseum;de:05914:2106;Hagen Krähnocken;de:05914:2108;53
+from-to;9;Hagen Krähnocken;de:05914:2108;Hagen Felsenstr.;de:05914:2109;53
+from-to;9;Hagen Reh/Lenne Arena;de:05914:2069;Hagen Landgericht;de:05914:2074;53
+from-to;9;Hagen Dortmunder Str.;de:05914:2294;Hagen Posener Str.;de:05914:2295;52
+from-to;9;Hagen Hasselbach;de:05914:2509;Hagen Fasanenweg;de:05914:2068;52
+from-to;9;Hagen Fasanenweg;de:05914:2068;Hagen Dachsweg;de:05914:2067;52
+from-to;9;Hagen Dachsweg;de:05914:2067;Hagen Im Stockhof;de:05914:2066;52
+from-to;9;Hagen Schwalbenweg;de:05914:2065;Hagen Rundturnhalle;de:05914:2064;52
+from-to;9;Hagen Rundturnhalle;de:05914:2064;Hagen Elsey Post;de:05914:2063;52
+from-to;9;Hagen Elsey Post;de:05914:2063;Hagen Rundturnhalle;de:05914:2064;52
+from-to;9;Hagen Rundturnhalle;de:05914:2064;Hagen Schwalbenweg;de:05914:2065;52
+from-to;9;Hagen Im Stockhof;de:05914:2066;Hagen Dachsweg;de:05914:2067;52
+from-to;9;Hagen Dachsweg;de:05914:2067;Hagen Fasanenweg;de:05914:2068;52
+from-to;9;Hagen Fasanenweg;de:05914:2068;Hagen Hasselbach;de:05914:2509;52
+from-to;9;Hagen Rohrstr.;de:05914:2236;Hagen Werkzeugstr.;de:05914:2412;52
+from-to;9;Hagen Zur Feldlage;de:05914:2132;Hagen Grüll;de:05914:2131;52
+from-to;9;Hagen Grüll;de:05914:2131;Hagen Steinberg;de:05914:2130;52
+from-to;9;Hagen Steinberg;de:05914:2130;Hagen Kahlenberg;de:05914:2129;52
+from-to;9;Hagen Kahlenberg;de:05914:2129;Hagen Steinberg;de:05914:2130;52
+from-to;9;Hagen Steinberg;de:05914:2130;Hagen Grüll;de:05914:2131;52
+from-to;9;Hagen Grüll;de:05914:2131;Hagen Zur Feldlage;de:05914:2132;52
+from-to;9;Hagen Linnufer;de:05914:2126;Hagen Kirchplatz;de:05914:2122;52
+from-to;9;Hagen Kirchplatz;de:05914:2122;Hagen Berchum Schule;de:05914:2449;52
+from-to;9;HA-Vorhalle Mitte;de:05914:2098;Hagen Hartmannstr.;de:05914:2096;52
+from-to;9;Hagen Hartmannstr.;de:05914:2096;Hagen Weststr.;de:05914:2095;52
+from-to;9;Hagen Sterbecke;de:05914:2438;Hagen Rummenohl Bf;de:05914:2298;51
+from-to;9;Hagen Rummenohl Bf;de:05914:2298;Hagen Roland;de:05914:2299;51
+from-to;9;Hagen Roland;de:05914:2299;Hagen Priorei;de:05914:2118;51
+from-to;9;Hagen Priorei;de:05914:2118;Hagen Düinghauser Weg;de:05914:2774;51
+from-to;9;Hagen Düinghauser Weg;de:05914:2774;Hagen Kattwinkel;de:05914:2117;51
+from-to;9;Hagen Kattwinkel;de:05914:2117;Hagen Am Stuckenhagen;de:05914:2116;51
+from-to;9;Hagen Am Stuckenhagen;de:05914:2116;Hagen Sommerhagener Weg;de:05914:2384;51
+from-to;9;Hagen Sommerhagener Weg;de:05914:2384;Hagen Grabweg;de:05914:2740;51
+from-to;9;Hagen Grabweg;de:05914:2740;Hagen Dahl;de:05914:2301;51
+from-to;9;Hagen Dahl;de:05914:2301;Hagen Hoffnungstal;de:05914:2302;51
+from-to;9;Hagen Hoffnungstal;de:05914:2302;Hagen Finking;de:05914:2303;51
+from-to;9;Hagen Finking;de:05914:2303;Hagen Ambrock Delsterner Str.;de:05914:2620;51
+from-to;9;Hagen Ambrock Delsterner Str.;de:05914:2620;Hagen Ambrock;de:05914:2304;51
+from-to;9;Hagen Ambrock;de:05914:2304;Hagen Hunsdieker Weg/Marienhof;de:05914:2305;51
+from-to;9;Hagen Hunsdieker Weg/Marienhof;de:05914:2305;Hagen Oberdelstern;de:05914:2306;51
+from-to;9;Hagen Oberdelstern;de:05914:2306;Hagen Kuhweide;de:05914:2307;51
+from-to;9;Hagen Kuhweide;de:05914:2307;Hagen Volmeburg;de:05914:2308;51
+from-to;9;Hagen Volmeburg;de:05914:2308;Hagen Delstern;de:05914:2309;51
+from-to;9;Hagen Delstern;de:05914:2309;Hagen Volmeburg;de:05914:2308;51
+from-to;9;Hagen Volmeburg;de:05914:2308;Hagen Kuhweide;de:05914:2307;51
+from-to;9;Hagen Kuhweide;de:05914:2307;Hagen Oberdelstern;de:05914:2306;51
+from-to;9;Hagen Oberdelstern;de:05914:2306;Hagen Hunsdieker Weg/Marienhof;de:05914:2305;51
+from-to;9;Hagen Hunsdieker Weg/Marienhof;de:05914:2305;Hagen Ambrock;de:05914:2304;51
+from-to;9;Hagen Ambrock;de:05914:2304;Hagen Ambrock Delsterner Str.;de:05914:2620;51
+from-to;9;Hagen Ambrock Delsterner Str.;de:05914:2620;Hagen Finking;de:05914:2303;51
+from-to;9;Hagen Finking;de:05914:2303;Hagen Hoffnungstal;de:05914:2302;51
+from-to;9;Hagen Hoffnungstal;de:05914:2302;Hagen Dahl;de:05914:2301;51
+from-to;9;Hagen Dahl;de:05914:2301;Hagen Grabweg;de:05914:2740;51
+from-to;9;Hagen Grabweg;de:05914:2740;Hagen Sommerhagener Weg;de:05914:2384;51
+from-to;9;Hagen Sommerhagener Weg;de:05914:2384;Hagen Am Stuckenhagen;de:05914:2116;51
+from-to;9;Hagen Am Stuckenhagen;de:05914:2116;Hagen Kattwinkel;de:05914:2117;51
+from-to;9;Hagen Kattwinkel;de:05914:2117;Hagen Düinghauser Weg;de:05914:2774;51
+from-to;9;Hagen Düinghauser Weg;de:05914:2774;Hagen Priorei;de:05914:2118;51
+from-to;9;Hagen Priorei;de:05914:2118;Hagen Roland;de:05914:2299;51
+from-to;9;Hagen Roland;de:05914:2299;Hagen Rummenohl Bf;de:05914:2298;51
+from-to;9;Hagen Rummenohl Bf;de:05914:2298;Hagen Sterbecketal;de:05914:2437;51
+from-to;9;Hagen Sterbecketal;de:05914:2437;Hagen Sterbecke;de:05914:2438;51
+from-to;9;Hagen Posener Str.;de:05914:2295;Hagen Dortmunder Str.;de:05914:2294;51
+from-to;9;Hagen Felsenstr.;de:05914:2109;Hagen Grundschule Eilpe;de:05914:2291;51
+from-to;9;Hagen Grundschule Eilpe;de:05914:2291;Hagen Eilpe Physiomed;de:05914:2083;51
+from-to;9;Hagen Werkzeugstr.;de:05914:2412;Hagen Rohrstr.;de:05914:2236;51
+from-to;9;Hagen Landgericht;de:05914:2074;Hagen Rubensstr.;de:05914:2550;51
+from-to;9;Hagen Rubensstr.;de:05914:2550;Hagen Lützowstr.;de:05914:2540;51
+from-to;9;Hagen Lützowstr.;de:05914:2540;Hagen Lortzingstr.;de:05914:2350;51
+from-to;9;Hagen Lortzingstr.;de:05914:2350;Hagen Lützowstr.;de:05914:2540;51
+from-to;9;Hagen Lützowstr.;de:05914:2540;Hagen Rubensstr.;de:05914:2550;51
+from-to;9;Hagen Rubensstr.;de:05914:2550;Hagen Landgericht;de:05914:2074;51
+from-to;9;Hagen Garenfelder Weg;de:05914:2124;Hagen Linnufer;de:05914:2126;51
+from-to;9;Hagen Weststr.;de:05914:2095;Hagen Hartmannstr.;de:05914:2096;51
+from-to;9;Hagen Hartmannstr.;de:05914:2096;HA-Vorhalle Mitte;de:05914:2098;51
+from-to;9;Hagen Felsenstr.;de:05914:2109;Hagen Krähnocken;de:05914:2108;50
+from-to;9;Hagen Krähnocken;de:05914:2108;Hagen Freilichtmuseum;de:05914:2106;50
+from-to;9;Hagen Freilichtmuseum;de:05914:2106;Hagen Zur Höhe;de:05914:2105;50
+from-to;9;Hagen Zur Höhe;de:05914:2105;Hagen Höhwaldstr.;de:05914:2456;50
+from-to;9;Hagen Höhwaldstr.;de:05914:2456;Hagen Selbecke;de:05914:2104;50
+from-to;9;Hagen Eilpe Physiomed;de:05914:2083;Hagen Grundschule Eilpe;de:05914:2291;48
+from-to;9;Hagen Grundschule Eilpe;de:05914:2291;Hagen Felsenstr.;de:05914:2109;48
+from-to;9;Hagen Vorhalle Bf;de:05914:2435;Hagen J-G-Fichte-Str.;de:05914:2244;48
+from-to;9;Hagen J-G-Fichte-Str.;de:05914:2244;Hagen Vorhalle Bf;de:05914:2435;48
+from-to;9;Hagen Bissingheim;de:05914:2045;Hagen Köhlerweg;de:05914:2046;47
+from-to;9;Hagen Köhlerweg;de:05914:2046;Hagen Max-Planck-Str.;de:05914:2047;47
+from-to;9;Hagen Max-Planck-Str.;de:05914:2047;Hagen Cunostr.;de:05914:2048;47
+from-to;9;Hagen Batheyer Str.;de:05914:2201;Hagen Posener Str.;de:05914:2295;46
+from-to;9;Hagen Cunostr.;de:05914:2048;Hagen Zeppelinweg;de:05914:2283;46
+from-to;9;Hagen Zeppelinweg;de:05914:2283;Hagen Emsterfeld;de:05914:2264;46
+from-to;9;Hagen Cunostr.;de:05914:2048;Hagen Max-Planck-Str.;de:05914:2047;46
+from-to;9;Hagen Max-Planck-Str.;de:05914:2047;Hagen Köhlerweg;de:05914:2046;46
+from-to;9;Hagen Köhlerweg;de:05914:2046;Hagen Bissingheim;de:05914:2045;46
+from-to;9;Hagen Posener Str.;de:05914:2295;Hagen Batheyer Str.;de:05914:2201;45
+from-to;9;Hagen Bonsmannstr.;de:05914:2200;Hagen Bathey;de:05914:2199;45
+from-to;9;Hagen Emsterfeld;de:05914:2264;Hagen Zeppelinweg;de:05914:2283;45
+from-to;9;Hagen Zeppelinweg;de:05914:2283;Hagen Cunostr.;de:05914:2048;45
+from-to;9;Hagen Spielbrink;de:05914:2044;Hagen Spielbrinkstr.;de:05914:2043;39
+from-to;9;Hagen Spielbrinkstr.;de:05914:2043;Hagen Büddingstr.;de:05914:2042;39
+from-to;9;Hagen Theater;de:05914:2005;Hagen Cuno-Berufskolleg;de:05914:2190;38
+from-to;9;Hagen Vollbrinkstr.;de:05914:2744;Hagen Dammstr.;de:05914:2168;38
+from-to;9;Hagen Dammstr.;de:05914:2168;Hagen Intzestr.;de:05914:2193;38
+from-to;9;Hagen Intzestr.;de:05914:2193;Hagen Waldstr.;de:05914:2499;38
+from-to;9;Hagen Waldstr.;de:05914:2499;Hagen Dickenbruchstr.;de:05914:2195;38
+from-to;9;Hagen Dickenbruchstr.;de:05914:2195;Hagen Stolzestr.;de:05914:2196;38
+from-to;9;Hagen Neue Str.;de:05914:2557;Hagen Martinstr.;de:05914:2560;38
+from-to;9;Hagen Sportanlage Hoheleye;de:05914:2566;Hagen Heigarenweg;de:05914:2186;38
+from-to;9;Hagen Heigarenweg;de:05914:2186;Hagen Henrichsiepen;de:05914:2036;38
+from-to;9;Hagen Henrichsiepen;de:05914:2036;Hagen Fley Mitte;de:05914:2185;38
+from-to;9;Hagen Büddingstr.;de:05914:2042;Hagen Spielbrinkstr.;de:05914:2043;38
+from-to;9;Hagen Spielbrinkstr.;de:05914:2043;Hagen Spielbrink;de:05914:2044;38
+from-to;9;Hagen Allg. Krankenhaus;de:05914:2157;Hagen Fichte-Gymnasium;de:05914:2562;37
+from-to;9;Hagen Fley Mitte;de:05914:2185;Hagen Henrichsiepen;de:05914:2036;37
+from-to;9;Hagen Henrichsiepen;de:05914:2036;Hagen Heigarenweg;de:05914:2186;37
+from-to;9;Hagen Kronenburgplatz;de:05914:2364;Hagen Benekestr.;de:05914:2366;37
+from-to;9;Hagen Benekestr.;de:05914:2366;Hagen Stadeweg;de:05914:2367;37
+from-to;9;Hagen Stadeweg;de:05914:2367;Hagen Volkenborn;de:05914:2368;37
+from-to;9;Hagen Volkenborn;de:05914:2368;Hagen Krupp;de:05914:2369;37
+from-to;9;Hagen Krupp;de:05914:2369;Hagen Haardtstr.;de:05914:2370;37
+from-to;9;Hagen Haardtstr.;de:05914:2370;Hagen Giebel;de:05914:2371;37
+from-to;9;Hagen Giebel;de:05914:2371;Hagen Nimmertal;de:05914:2372;37
+from-to;9;Hagen Nimmertal;de:05914:2372;Hagen Nahmerbach;de:05914:2373;37
+from-to;9;Hagen Nahmerbach;de:05914:2373;Hagen Lahmen Hasen;de:05914:2374;37
+from-to;9;Hagen Lahmen Hasen;de:05914:2374;Hagen Obernahmer Land;de:05914:2375;37
+from-to;9;Hagen Obernahmer Land;de:05914:2375;Hagen Obernahmer;de:05914:2379;37
+from-to;9;Hagen K.-E.-Osthaus-Str.;de:05914:2050;Hagen Emst Kirche;de:05914:2049;37
+from-to;9;Hagen Emst Kirche;de:05914:2049;Hagen K.-E.-Osthaus-Str.;de:05914:2050;37
+from-to;9;Hagen Landgericht;de:05914:2074;Hagen Alter Reher Weg;de:05914:2070;36
+from-to;9;Hagen Alter Reher Weg;de:05914:2070;Hagen Hasselbach;de:05914:2509;36
+from-to;9;Hagen Im Stockhof;de:05914:2066;Hagen Im Niederfeld;de:05914:2442;36
+from-to;9;Hagen Im Niederfeld;de:05914:2442;Hagen Schwalbenweg;de:05914:2065;36
+from-to;9;Hagen Elsey Post;de:05914:2063;Hagen Elsey Krankenhaus;de:05914:2062;36
+from-to;9;Hagen Elsey Krankenhaus;de:05914:2062;Hagen Elsey Post;de:05914:2063;36
+from-to;9;Hagen Schwalbenweg;de:05914:2065;Hagen Im Niederfeld;de:05914:2442;36
+from-to;9;Hagen Im Niederfeld;de:05914:2442;Hagen Im Stockhof;de:05914:2066;36
+from-to;9;Hagen Hasselbach;de:05914:2509;Hagen Alter Reher Weg;de:05914:2070;36
+from-to;9;Hagen Alter Reher Weg;de:05914:2070;Hagen Landgericht;de:05914:2074;36
+from-to;9;Hagen Fröbelstr.;de:05914:2142;Hagen Helfe Mitte;de:05914:2206;36
+from-to;9;Hagen Pieperstr.;de:05914:2205;Hagen Schieferstr.;de:05914:2204;36
+from-to;9;Hagen Schieferstr.;de:05914:2204;Hagen Borgenfeldstr.;de:05914:2114;36
+from-to;9;Hagen Sauerlandstr.;de:05914:2232;Hagen ARCADEON;de:05914:2521;36
+from-to;9;Hagen ARCADEON;de:05914:2521;Hagen Dolomitstr.;de:05914:2230;36
+from-to;9;Hagen Dolomitstr.;de:05914:2230;Hagen ARCADEON;de:05914:2521;36
+from-to;9;Hagen ARCADEON;de:05914:2521;Hagen Sauerlandstr.;de:05914:2232;36
+from-to;9;Hagen Alexanderstr.;de:05914:2356;Hagen Hag. Entsorgungsbetr.;de:05914:2511;36
+from-to;9;Hagen Hag. Entsorgungsbetr.;de:05914:2511;Hagen Fuhrparkstr.;de:05914:2091;36
+from-to;9;Hagen Heinrichstr.;de:05914:2179;Hagen Leopoldstr.;de:05914:2482;36
+from-to;9;Hagen Leopoldstr.;de:05914:2482;Hagen Georgstr.;de:05914:2181;36
+from-to;9;Hagen Emsterfeld;de:05914:2264;Hagen Haßley;de:05914:2263;36
+from-to;9;Hagen Haßley;de:05914:2263;Hagen Emsterfeld;de:05914:2264;36
+from-to;9;Hagen Fichte-Gymnasium;de:05914:2562;Hagen Allg. Krankenhaus;de:05914:2157;36
+from-to;9;Hagen Obernahmer;de:05914:2379;Hagen Obernahmer Land;de:05914:2375;36
+from-to;9;Hagen Obernahmer Land;de:05914:2375;Hagen Lahmen Hasen;de:05914:2374;36
+from-to;9;Hagen Lahmen Hasen;de:05914:2374;Hagen Nahmerbach;de:05914:2373;36
+from-to;9;Hagen Nahmerbach;de:05914:2373;Hagen Nimmertal;de:05914:2372;36
+from-to;9;Hagen Nimmertal;de:05914:2372;Hagen Giebel;de:05914:2371;36
+from-to;9;Hagen Giebel;de:05914:2371;Hagen Haardtstr.;de:05914:2370;36
+from-to;9;Hagen Haardtstr.;de:05914:2370;Hagen Krupp;de:05914:2369;36
+from-to;9;Hagen Krupp;de:05914:2369;Hagen Volkenborn;de:05914:2368;36
+from-to;9;Hagen Volkenborn;de:05914:2368;Hagen Stadeweg;de:05914:2367;36
+from-to;9;Hagen Stadeweg;de:05914:2367;Hagen Benekestr.;de:05914:2366;36
+from-to;9;Hagen Benekestr.;de:05914:2366;Hagen Unternahmer;de:05914:2365;36
+from-to;9;Hagen Unternahmer;de:05914:2365;Hagen Lenneufer;de:05914:2363;36
+from-to;9;Hagen Lenneufer;de:05914:2363;Hagen Langenkamp;de:05914:2362;36
+from-to;9;Hagen Langenkamp;de:05914:2362;Hagen Hohenlimburg Bf;de:05914:2059;36
+from-to;9;Hagen Büddingstr.;de:05914:2042;Hagen Ev. Krankenhaus;de:05914:2166;36
+from-to;9;Hagen Ennepeufer;de:05914:2326;Hagen Haspe Zentrum;de:05914:2037;36
+from-to;9;Hagen Ev. Krankenhaus;de:05914:2166;Hagen Büddingstr.;de:05914:2042;36
+from-to;9;Hagen Stolzestr.;de:05914:2196;Hagen Dickenbruchstr.;de:05914:2195;35
+from-to;9;Hagen Dickenbruchstr.;de:05914:2195;Hagen Waldstr.;de:05914:2499;35
+from-to;9;Hagen Waldstr.;de:05914:2499;Hagen Intzestr.;de:05914:2193;35
+from-to;9;Hagen Intzestr.;de:05914:2193;Hagen Dammstr.;de:05914:2168;35
+from-to;9;Hagen Dammstr.;de:05914:2168;Hagen Vollbrinkstr.;de:05914:2744;35
+from-to;9;Hagen Cuno-Berufskolleg;de:05914:2190;Hagen Volkspark;de:05914:2004;35
+from-to;9;Hagen Borgenfeldstr.;de:05914:2114;Hagen Schieferstr.;de:05914:2204;35
+from-to;9;Hagen Schieferstr.;de:05914:2204;Hagen Pieperstr.;de:05914:2205;35
+from-to;9;Hagen Innsbrucker Str.;de:05914:2409;Hagen Oedenburgstr.;de:05914:2041;35
+from-to;9;Hagen Oedenburgstr.;de:05914:2041;Hagen Harkortstr.;de:05914:2052;35
+from-to;9;Hagen Harkortstr.;de:05914:2052;Hagen Jungfernbruch;de:05914:2053;35
+from-to;9;Hagen Jungfernbruch;de:05914:2053;Hagen Twittingstr.;de:05914:2054;35
+from-to;9;Hagen Twittingstr.;de:05914:2054;Hagen Ährenstr.;de:05914:2055;35
+from-to;9;Hagen Ährenstr.;de:05914:2055;Hagen Kornstr.;de:05914:2056;35
+from-to;9;Hagen Kornstr.;de:05914:2056;Hagen Louise-Märcker-Str.;de:05914:2057;35
+from-to;9;Hagen Louise-Märcker-Str.;de:05914:2057;Hagen Quambusch;de:05914:2058;35
+from-to;9;Hagen Quambusch;de:05914:2058;Hagen Westerbauer Bf;de:05914:2433;35
+from-to;9;Hagen Fuhrparkstr.;de:05914:2091;Hagen Hag. Entsorgungsbetr.;de:05914:2511;35
+from-to;9;Hagen Hag. Entsorgungsbetr.;de:05914:2511;Hagen Alexanderstr.;de:05914:2356;35
+from-to;9;Hagen Hasper Hammer;de:05914:2454;Hagen Rodersiepen;de:05914:2495;35
+from-to;9;Hagen Rodersiepen;de:05914:2495;Hagen Pennacker;de:05914:2497;35
+from-to;9;Hagen Pennacker;de:05914:2497;Hagen Höxterstr.;de:05914:2330;35
+from-to;9;Hagen Höxterstr.;de:05914:2330;Hagen Detmolder Str.;de:05914:2494;35
+from-to;9;Hagen Detmolder Str.;de:05914:2494;Hagen Schaumburger Str.;de:05914:2493;35
+from-to;9;Hagen Schaumburger Str.;de:05914:2493;Hagen Tückinger Höhe;de:05914:2491;35
+from-to;9;Hagen Tückinger Höhe;de:05914:2491;Hagen Kuhlerkamp;de:05914:2183;35
+from-to;9;Hagen Georgstr.;de:05914:2181;Hagen Leopoldstr.;de:05914:2482;35
+from-to;9;Hagen Leopoldstr.;de:05914:2482;Hagen Heinrichstr.;de:05914:2179;35
+from-to;9;Hagen Kuhlerkamp;de:05914:2183;Hagen Tückinger Höhe;de:05914:2491;35
+from-to;9;Hagen Tückinger Höhe;de:05914:2491;Hagen Schaumburger Str.;de:05914:2493;35
+from-to;9;Hagen Schaumburger Str.;de:05914:2493;Hagen Detmolder Str.;de:05914:2494;35
+from-to;9;Hagen Detmolder Str.;de:05914:2494;Hagen Höxterstr.;de:05914:2330;35
+from-to;9;Hagen Höxterstr.;de:05914:2330;Hagen Pennacker;de:05914:2497;35
+from-to;9;Hagen Pennacker;de:05914:2497;Hagen Rodersiepen;de:05914:2495;35
+from-to;9;Hagen Rodersiepen;de:05914:2495;Hagen Hasper Hammer;de:05914:2454;35
+from-to;9;Hagen Fichte-Gymnasium;de:05914:2562;Hagen Feuerwache;de:05914:2216;35
+from-to;9;Hagen Konrad-Adenauer-Ring;de:05914:2423;Hagen Gewerbepark Kückelhausen;de:05914:2209;35
+from-to;9;Hagen Stolzestr.;de:05914:2196;Hagen Gabelsberger Str.;de:05914:2197;35
+from-to;9;Hagen Kipperstr.;de:05914:2198;Hagen Neue Str.;de:05914:2557;35
+from-to;9;Hagen Garenfeld Mitte;de:05914:2470;Hagen Zur Feldlage;de:05914:2132;35
+from-to;9;Hagen Kahlenberg;de:05914:2129;Hagen Industriestr.;de:05914:2229;35
+from-to;9;Hagen Industriestr.;de:05914:2229;Hagen Rohrstr.;de:05914:2236;35
+from-to;9;Hagen Buschstr.;de:05914:2188;Hagen Erlhagen;de:05914:2414;35
+from-to;9;Hagen Erlhagen;de:05914:2414;Hagen Weidekampstr.;de:05914:2187;35
+from-to;9;Hagen Weidekampstr.;de:05914:2187;Hagen Sportanlage Hoheleye;de:05914:2566;35
+from-to;9;Hagen Weidekampstr.;de:05914:2187;Hagen Erlhagen;de:05914:2414;35
+from-to;9;Hagen Erlhagen;de:05914:2414;Hagen Buschstr.;de:05914:2188;35
+from-to;9;Hagen Rohrstr.;de:05914:2236;Hagen Industriestr.;de:05914:2229;35
+from-to;9;Hagen Industriestr.;de:05914:2229;Hagen Kahlenberg;de:05914:2129;35
+from-to;9;Hagen Zur Feldlage;de:05914:2132;Hagen Garenfeld Mitte;de:05914:2470;35
+from-to;9;Hagen Gosmann;de:05914:2128;Hagen Gemarkenweg;de:05914:2127;35
+from-to;9;Hagen Gemarkenweg;de:05914:2127;Hagen Linnufer;de:05914:2126;35
+from-to;9;Hagen Houbenstr.;de:05914:2152;Hagen Boeler Str.;de:05914:2013;35
+from-to;9;Hagen Boeler Str.;de:05914:2013;Hagen Pettenkoferstr.;de:05914:2151;35
+from-to;9;Hagen Pettenkoferstr.;de:05914:2151;Hagen Hameckestr.;de:05914:2150;35
+from-to;9;Hagen K.-E.-Osthaus-Str.;de:05914:2050;Hagen In der Luke;de:05914:2051;35
+from-to;9;Hagen In der Luke;de:05914:2051;Hagen Steinruther Str.;de:05914:2619;35
+from-to;9;Hagen Steinruther Str.;de:05914:2619;Hagen Emster Str.;de:05914:2025;35
+from-to;9;Hagen Westerbauer Bf;de:05914:2433;Hagen Quambusch;de:05914:2058;34
+from-to;9;Hagen Quambusch;de:05914:2058;Hagen Louise-Märcker-Str.;de:05914:2057;34
+from-to;9;Hagen Louise-Märcker-Str.;de:05914:2057;Hagen Kornstr.;de:05914:2056;34
+from-to;9;Hagen Kornstr.;de:05914:2056;Hagen Ährenstr.;de:05914:2055;34
+from-to;9;Hagen Ährenstr.;de:05914:2055;Hagen Twittingstr.;de:05914:2054;34
+from-to;9;Hagen Twittingstr.;de:05914:2054;Hagen Jungfernbruch;de:05914:2053;34
+from-to;9;Hagen Jungfernbruch;de:05914:2053;Hagen Harkortstr.;de:05914:2052;34
+from-to;9;Hagen Harkortstr.;de:05914:2052;Hagen Oedenburgstr.;de:05914:2041;34
+from-to;9;Hagen Oedenburgstr.;de:05914:2041;Hagen Innsbrucker Str.;de:05914:2409;34
+from-to;9;Hagen Brockhausen;de:05914:2245;Hagen J-G-Fichte-Str.;de:05914:2244;34
+from-to;9;Herdecke Mitte;de:05954:2253;Herdecke Rathaus;de:05954:2268;34
+from-to;9;Herdecke Rathaus;de:05954:2268;Herdecke Attenbergstr./Bahnhof;de:05954:2281;34
+from-to;9;Herdecke Attenbergstr./Bahnhof;de:05954:2281;Herdecke Mozartweg;de:05954:2270;34
+from-to;9;Herdecke Mozartweg;de:05954:2270;Herdecke Herdecker Bach;de:05954:2271;34
+from-to;9;Herdecke Herdecker Bach;de:05954:2271;Herdecke Gahlenfeldstr.;de:05954:2272;34
+from-to;9;Herdecke Gahlenfeldstr.;de:05954:2272;Herdecke Am Schlagbaum;de:05954:2273;34
+from-to;9;Herdecke Am Schlagbaum;de:05954:2273;Herdecke Nierfeldstr.;de:05954:2274;34
+from-to;9;Herdecke Nierfeldstr.;de:05954:2274;Herdecke Sperlingsweg;de:05954:2275;34
+from-to;9;Herdecke Sperlingsweg;de:05954:2275;Herdecke Am Hegede;de:05954:2276;34
+from-to;9;Herdecke Am Hegede;de:05954:2276;Herdecke Walkenhorst;de:05954:2277;34
+from-to;9;Herdecke Walkenhorst;de:05954:2277;Herdecke Schanze;de:05954:2278;34
+from-to;9;Hagen Martinstr.;de:05914:2560;Hagen Neue Str.;de:05914:2557;34
+from-to;9;Hagen Cuno-Berufskolleg;de:05914:2190;Hagen Theater;de:05914:2005;34
+from-to;9;Hagen Linnufer;de:05914:2126;Hagen Gemarkenweg;de:05914:2127;34
+from-to;9;Hagen Gemarkenweg;de:05914:2127;Hagen Gosmann;de:05914:2128;34
+from-to;9;Hagen Berchum Schule;de:05914:2449;Hagen Dreischengarten;de:05914:2450;34
+from-to;9;Hagen Dreischengarten;de:05914:2450;Hagen Garenfelder Weg;de:05914:2124;34
+from-to;9;Hagen Hohenlimburg Mitte;de:05914:2060;Hagen Cafe Möller;de:05914:2357;34
+from-to;9;Hagen Cafe Möller;de:05914:2357;Hagen Jahnstr.;de:05914:2358;34
+from-to;9;Hagen Jahnstr.;de:05914:2358;Hagen Isenbergstr.;de:05914:2035;34
+from-to;9;Hagen Isenbergstr.;de:05914:2035;Hagen Langenkamp;de:05914:2362;34
+from-to;9;Hagen Langenkamp;de:05914:2362;Hagen Lenneufer;de:05914:2363;34
+from-to;9;Hagen Lenneufer;de:05914:2363;Hagen Kronenburgplatz;de:05914:2364;34
+from-to;9;Wetter Bf.;de:05954:8080;Wetter Friedrichstr.;de:05954:8296;34
+from-to;9;Wetter Friedrichstr.;de:05954:8296;Wetter Ringstr./Harkortsee;de:05954:8295;34
+from-to;9;Wetter Ringstr./Harkortsee;de:05954:8295;Hagen Harkortbrücke;de:05914:2313;34
+from-to;9;Hagen Harkortbrücke;de:05914:2313;Hagen Vorhalle West;de:05914:2312;34
+from-to;9;Hagen Vorhalle West;de:05914:2312;Hagen Vorhaller Str.;de:05914:2311;34
+from-to;9;Hagen Emster Str.;de:05914:2025;Hagen Steinruther Str.;de:05914:2619;34
+from-to;9;Hagen Steinruther Str.;de:05914:2619;Hagen In der Luke;de:05914:2051;34
+from-to;9;Hagen In der Luke;de:05914:2051;Hagen K.-E.-Osthaus-Str.;de:05914:2050;34
+from-to;9;Hagen Allg. Krankenhaus;de:05914:2157;Hagen Schwenke;de:05914:2006;34
+from-to;9;Hagen Kipperstr.;de:05914:2198;Hagen Stolzestr.;de:05914:2196;33
+from-to;9;Hagen Pieperstr.;de:05914:2205;Hagen Fröbelstr.;de:05914:2142;33
+from-to;9;Hagen Familienbad Hengstey;de:05914:2526;Hagen Seestr.;de:05914:2447;33
+from-to;9;Hagen Seestr.;de:05914:2447;Hagen Einhausstr.;de:05914:2461;33
+from-to;9;Hagen Einhausstr.;de:05914:2461;Hagen Pillauer Str.;de:05914:2293;33
+from-to;9;Hagen Pillauer Str.;de:05914:2293;Hagen Dortmunder Str.;de:05914:2294;33
+from-to;9;Hagen Boele Markt;de:05914:2020;Hagen Boele Friedhof;de:05914:2387;33
+from-to;9;Hagen Boele Friedhof;de:05914:2387;Hagen Turmstr.;de:05914:2290;33
+from-to;9;Hagen Turmstr.;de:05914:2290;Hagen Niedernhofstr.;de:05914:2289;33
+from-to;9;Hagen Eckeseyer Str.;de:05914:2440;Hagen Klopstockstr.;de:05914:2093;33
+from-to;9;Hagen Klopstockstr.;de:05914:2093;Hagen Eckeseyer Str.;de:05914:2440;33
+from-to;9;Hagen Niedernhofstr.;de:05914:2289;Hagen Turmstr.;de:05914:2290;33
+from-to;9;Hagen Turmstr.;de:05914:2290;Hagen Boele Friedhof;de:05914:2387;33
+from-to;9;Hagen Boele Friedhof;de:05914:2387;Hagen Boele Markt;de:05914:2020;33
+from-to;9;Hagen J-G-Fichte-Str.;de:05914:2244;Hagen Brockhausen;de:05914:2245;33
+from-to;9;Herdecke Schanze;de:05954:2278;Herdecke Walkenhorst;de:05954:2277;33
+from-to;9;Herdecke Walkenhorst;de:05954:2277;Herdecke Am Hegede;de:05954:2276;33
+from-to;9;Herdecke Am Hegede;de:05954:2276;Herdecke Sperlingsweg;de:05954:2275;33
+from-to;9;Herdecke Sperlingsweg;de:05954:2275;Herdecke Nierfeldstr.;de:05954:2274;33
+from-to;9;Herdecke Nierfeldstr.;de:05954:2274;Herdecke Am Schlagbaum;de:05954:2273;33
+from-to;9;Herdecke Am Schlagbaum;de:05954:2273;Herdecke Gahlenfeldstr.;de:05954:2272;33
+from-to;9;Herdecke Gahlenfeldstr.;de:05954:2272;Herdecke Herdecker Bach;de:05954:2271;33
+from-to;9;Herdecke Herdecker Bach;de:05954:2271;Herdecke Mozartweg;de:05954:2270;33
+from-to;9;Herdecke Mozartweg;de:05954:2270;Herdecke Attenbergstr./Bahnhof;de:05954:2281;33
+from-to;9;Herdecke Attenbergstr./Bahnhof;de:05954:2281;Herdecke Rathaus;de:05954:2268;33
+from-to;9;Herdecke Rathaus;de:05954:2268;Herdecke Mitte;de:05954:2253;33
+from-to;9;Herdecke Mitte;de:05954:2253;Herdecke Kirche;de:05954:2254;33
+from-to;9;Herdecke Kirche;de:05954:2254;Herdecke Goethestr.;de:05954:2284;33
+from-to;9;Herdecke Breddestr.;de:05954:2285;Herdecke Rosenstr.;de:05954:2286;33
+from-to;9;Herdecke Rosenstr.;de:05954:2286;Herdecke Berliner Str.;de:05954:2287;33
+from-to;9;Herdecke Berliner Str.;de:05954:2287;Herdecke Nacken;de:05954:2288;33
+from-to;9;Herdecke Nacken;de:05954:2288;Herdecke Berliner Str.;de:05954:2287;33
+from-to;9;Herdecke Berliner Str.;de:05954:2287;Herdecke Rosenstr.;de:05954:2286;33
+from-to;9;Herdecke Breddestr.;de:05954:2285;Herdecke Goethestr.;de:05954:2284;33
+from-to;9;Herdecke Goethestr.;de:05954:2284;Herdecke Kirche;de:05954:2254;33
+from-to;9;Herdecke Kirche;de:05954:2254;Herdecke Mitte;de:05954:2253;33
+from-to;9;Hagen Boloh;de:05914:2021;Hagen Bolohstr.;de:05914:2022;33
+from-to;9;Hagen Bolohstr.;de:05914:2022;Hagen Haferkamp;de:05914:2023;33
+from-to;9;Hagen Haferkamp;de:05914:2023;Hagen Haßleyer Str.;de:05914:2024;33
+from-to;9;Hagen Werkzeugstr.;de:05914:2412;Hagen Feldmühlenstr.;de:05914:2549;33
+from-to;9;Hagen Feldmühlenstr.;de:05914:2549;Hagen Federnstr.;de:05914:2239;33
+from-to;9;Hagen Federnstr.;de:05914:2239;Hagen Feldmühlenstr.;de:05914:2549;33
+from-to;9;Hagen Feldmühlenstr.;de:05914:2549;Hagen Werkzeugstr.;de:05914:2412;33
+from-to;9;Hagen Lortzingstr.;de:05914:2350;Hagen Hardenbergstr.;de:05914:2351;33
+from-to;9;Hagen Hardenbergstr.;de:05914:2351;Hagen Klosterstr.;de:05914:2352;33
+from-to;9;Hagen Klosterstr.;de:05914:2352;Hagen Gneisenaustr.;de:05914:2353;33
+from-to;9;Hagen Gneisenaustr.;de:05914:2353;Hagen Gerichtsstr.;de:05914:2354;33
+from-to;9;Hagen Gerichtsstr.;de:05914:2354;Hagen Landgericht;de:05914:2074;33
+from-to;9;Hagen Bauhaus;de:05914:2172;Hagen Hag. Entsorgungsbetr.;de:05914:2511;33
+from-to;9;Hagen Hag. Entsorgungsbetr.;de:05914:2511;Hagen Hameckestr.;de:05914:2150;33
+from-to;9;Hagen Boelerheide;de:05914:2147;Hagen Viktor-v.-Scheffel-Str.;de:05914:2398;33
+from-to;9;Hagen Viktor-v.-Scheffel-Str.;de:05914:2398;Hagen Wilhelm-Leuschner-Str.;de:05914:2399;33
+from-to;9;Hagen Wilhelm-Leuschner-Str.;de:05914:2399;Hagen Loxbaum;de:05914:2016;33
+from-to;9;Hagen Fröbelstr.;de:05914:2142;Hagen Stegerwaldstr.;de:05914:2189;33
+from-to;9;Hagen Volkspark;de:05914:2004;Hagen Cuno-Berufskolleg;de:05914:2190;33
+from-to;9;Hagen Hasper Hammer;de:05914:2454;Hagen Im Lindental;de:05914:2328;33
+from-to;9;Hagen Im Lindental;de:05914:2328;Hagen Eisenwerk;de:05914:2329;33
+from-to;9;Hagen Eisenwerk;de:05914:2329;Hagen Geweke;de:05914:2331;33
+from-to;9;Hagen Geweke;de:05914:2331;Hagen Eisenwerk;de:05914:2329;33
+from-to;9;Hagen Eisenwerk;de:05914:2329;Hagen Im Lindental;de:05914:2328;33
+from-to;9;Hagen Im Lindental;de:05914:2328;Hagen Hasper Hammer;de:05914:2454;33
+from-to;9;Hagen Ischeland;de:05914:2322;Hagen Blumenstr.;de:05914:2323;33
+from-to;9;Hagen Blumenstr.;de:05914:2323;Hagen Hermannstr.;de:05914:2324;33
+from-to;9;Hagen Hermannstr.;de:05914:2324;Hagen Lahnstr.;de:05914:2325;33
+from-to;9;Hagen Lahnstr.;de:05914:2325;Hagen Friedensplatz;de:05914:2528;33
+from-to;9;Hagen Friedensplatz;de:05914:2528;Hagen St-Josefs-Kirche;de:05914:2009;33
+from-to;9;Hagen Hameckestr.;de:05914:2150;Hagen Pettenkoferstr.;de:05914:2151;33
+from-to;9;Hagen Pettenkoferstr.;de:05914:2151;Hagen Boeler Str.;de:05914:2013;33
+from-to;9;Hagen Boeler Str.;de:05914:2013;Hagen Houbenstr.;de:05914:2152;33
+from-to;9;Hagen Helfe Mitte;de:05914:2206;Hagen Osthofstr.;de:05914:2141;33
+from-to;9;Hagen Osthofstr.;de:05914:2141;Hagen Helfer Str.;de:05914:2019;33
+from-to;9;Hagen Vorhaller Str.;de:05914:2311;Hagen Vorhalle West;de:05914:2312;33
+from-to;9;Hagen Vorhalle West;de:05914:2312;Hagen Harkortbrücke;de:05914:2313;33
+from-to;9;Hagen Harkortbrücke;de:05914:2313;Wetter Ringstr./Harkortsee;de:05954:8295;33
+from-to;9;Wetter Ringstr./Harkortsee;de:05954:8295;Wetter Friedrichstr.;de:05954:8296;33
+from-to;9;Wetter Friedrichstr.;de:05954:8296;Wetter Kaiserstr.;de:05954:8072;33
+from-to;9;Wetter Kaiserstr.;de:05954:8072;Wetter Bf.;de:05954:8080;33
+from-to;9;Hagen Vollbrinkstr.;de:05914:2744;Hagen Rolandstr.;de:05914:2871;33
+from-to;9;Hagen Rolandstr.;de:05914:2871;Hagen Gewerbepark Kückelhausen;de:05914:2209;33
+from-to;9;Hagen Pieperstr.;de:05914:2205;Hagen Helfe Mitte;de:05914:2206;33
+from-to;9;Hagen Haßleyer Str.;de:05914:2024;Hagen Thorn-Prikker-Str.;de:05914:2439;33
+from-to;9;Hagen Thorn-Prikker-Str.;de:05914:2439;Hagen Donnerkuhle;de:05914:2349;33
+from-to;9;Hagen Innsbrucker Str.;de:05914:2409;Hagen Ev. Krankenhaus;de:05914:2166;32
+from-to;9;Hagen Hasper Torhaus;de:05914:2194;Hagen Heilig-Geist-Str.;de:05914:2498;32
+from-to;9;Hagen Mercedes Jürgens;de:05914:2523;Hagen Rehstr.;de:05914:2161;32
+from-to;9;Hagen Feuerwache;de:05914:2216;Hagen Schwenke;de:05914:2006;32
+from-to;9;Hagen Schwenke;de:05914:2006;Hagen Feuerwache;de:05914:2216;32
+from-to;9;Hagen Konrad-Adenauer-Ring;de:05914:2423;Hagen Mercedes Jürgens;de:05914:2523;32
+from-to;9;Hagen Ev. Krankenhaus;de:05914:2166;Hagen Innsbrucker Str.;de:05914:2409;32
+from-to;9;Hagen Dortmunder Str.;de:05914:2294;Hagen Pillauer Str.;de:05914:2293;32
+from-to;9;Hagen Pillauer Str.;de:05914:2293;Hagen Einhausstr.;de:05914:2461;32
+from-to;9;Hagen Einhausstr.;de:05914:2461;Hagen Familienbad Hengstey;de:05914:2526;32
+from-to;9;Herdecke Bf;de:05954:2269;Herdecke Breddestr.;de:05954:2285;32
+from-to;9;Hagen Haßleyer Str.;de:05914:2024;Hagen Haferkamp;de:05914:2023;32
+from-to;9;Hagen Haferkamp;de:05914:2023;Hagen Bolohstr.;de:05914:2022;32
+from-to;9;Hagen Bolohstr.;de:05914:2022;Hagen Boloh;de:05914:2021;32
+from-to;9;Hagen Neue Str.;de:05914:2557;Hagen Gabelsberger Str.;de:05914:2197;32
+from-to;9;Hagen Gewerbepark Kückelhausen;de:05914:2209;Hagen Konrad-Adenauer-Ring;de:05914:2423;32
+from-to;9;Hagen Konrad-Adenauer-Ring;de:05914:2423;Hagen Rehstr.;de:05914:2161;32
+from-to;9;Hagen Feuerwache;de:05914:2216;Hagen Fichte-Gymnasium;de:05914:2562;32
+from-to;9;Hagen Heigarenweg;de:05914:2186;Hagen Sportanlage Hoheleye;de:05914:2566;32
+from-to;9;Hagen Sportanlage Hoheleye;de:05914:2566;Hagen Weidekampstr.;de:05914:2187;32
+from-to;9;Hagen Stegerwaldstr.;de:05914:2189;Hagen Fröbelstr.;de:05914:2142;32
+from-to;9;Hagen Loxbaum;de:05914:2016;Hagen Wilhelm-Leuschner-Str.;de:05914:2399;32
+from-to;9;Hagen Wilhelm-Leuschner-Str.;de:05914:2399;Hagen Viktor-v.-Scheffel-Str.;de:05914:2398;32
+from-to;9;Hagen Viktor-v.-Scheffel-Str.;de:05914:2398;Hagen Boelerheide;de:05914:2147;32
+from-to;9;Hagen Hameckestr.;de:05914:2150;Hagen Hag. Entsorgungsbetr.;de:05914:2511;32
+from-to;9;Hagen Hag. Entsorgungsbetr.;de:05914:2511;Hagen Bauhaus;de:05914:2172;32
+from-to;9;Hagen Landgericht;de:05914:2074;Hagen Gneisenaustr.;de:05914:2353;32
+from-to;9;Hagen Gneisenaustr.;de:05914:2353;Hagen Klosterstr.;de:05914:2352;32
+from-to;9;Hagen Klosterstr.;de:05914:2352;Hagen Hardenbergstr.;de:05914:2351;32
+from-to;9;Hagen Hardenbergstr.;de:05914:2351;Hagen Lortzingstr.;de:05914:2350;32
+from-to;9;Hagen St-Josefs-Kirche;de:05914:2009;Hagen Friedensplatz;de:05914:2528;32
+from-to;9;Hagen Friedensplatz;de:05914:2528;Hagen Lahnstr.;de:05914:2325;32
+from-to;9;Hagen Lahnstr.;de:05914:2325;Hagen Hermannstr.;de:05914:2324;32
+from-to;9;Hagen Hermannstr.;de:05914:2324;Hagen Blumenstr.;de:05914:2323;32
+from-to;9;Hagen Blumenstr.;de:05914:2323;Hagen Wittekindstr.;de:05914:2097;32
+from-to;9;Hagen Wittekindstr.;de:05914:2097;Hagen Ischeland;de:05914:2322;32
+from-to;9;Hagen Boelerheide;de:05914:2147;Hagen Lönsweg;de:05914:2146;32
+from-to;9;Hagen Lönsweg;de:05914:2146;Hagen Birkenstr.;de:05914:2145;32
+from-to;9;Hagen Birkenstr.;de:05914:2145;Hagen Gellertweg;de:05914:2144;32
+from-to;9;Hagen Gellertweg;de:05914:2144;Hagen Boele Markt;de:05914:2020;32
+from-to;9;Hagen Helfer Str.;de:05914:2019;Hagen Osthofstr.;de:05914:2141;32
+from-to;9;Hagen Schwenke;de:05914:2006;Hagen Allg. Krankenhaus;de:05914:2157;32
+from-to;9;Hagen Gewerbepark Kückelhausen;de:05914:2209;Hagen Rolandstr.;de:05914:2871;32
+from-to;9;Hagen Rolandstr.;de:05914:2871;Hagen Vollbrinkstr.;de:05914:2744;32
+from-to;9;Hagen Wasserloses Tal;de:05914:2177;Hagen Am Waldesrand;de:05914:2569;31
+from-to;9;Hagen Am Waldesrand;de:05914:2569;Hagen Felsental;de:05914:2570;31
+from-to;9;Hagen Felsental;de:05914:2570;Hagen Wasserturm;de:05914:2173;31
+from-to;9;Hagen Wasserturm;de:05914:2173;Hagen Im Erlenbusch;de:05914:2430;31
+from-to;9;Hagen Im Erlenbusch;de:05914:2430;Hagen Emst Kirche;de:05914:2049;31
+from-to;9;Hagen Emsterfeld;de:05914:2264;Hagen Stirnband;de:05914:2282;31
+from-to;9;Hagen Stirnband;de:05914:2282;Hagen Emsterfeld;de:05914:2264;31
+from-to;9;Hagen Emst Kirche;de:05914:2049;Hagen Im Erlenbusch;de:05914:2430;31
+from-to;9;Hagen Im Erlenbusch;de:05914:2430;Hagen Wasserturm;de:05914:2173;31
+from-to;9;Hagen Wasserturm;de:05914:2173;Hagen Felsental;de:05914:2570;31
+from-to;9;Hagen Felsental;de:05914:2570;Hagen Am Waldesrand;de:05914:2569;31
+from-to;9;Hagen Am Waldesrand;de:05914:2569;Hagen Wasserloses Tal;de:05914:2177;31
+from-to;9;Hagen Boele Markt;de:05914:2020;Hagen Stennesufer;de:05914:2018;31
+from-to;9;Hagen Stennesufer;de:05914:2018;Hagen Gellertweg;de:05914:2144;31
+from-to;9;Hagen Gellertweg;de:05914:2144;Hagen Birkenstr.;de:05914:2145;31
+from-to;9;Hagen Birkenstr.;de:05914:2145;Hagen Lönsweg;de:05914:2146;31
+from-to;9;Hagen Lönsweg;de:05914:2146;Hagen Boelerheide;de:05914:2147;31
+from-to;9;Hagen Hohenlimburg Bf;de:05914:2059;Hagen Lennebad;de:05914:2061;31
+from-to;9;Hagen Elsey Krankenhaus;de:05914:2062;Hagen Burgweg;de:05914:2343;31
+from-to;9;Hagen Burgweg;de:05914:2343;Hagen Heidestr.;de:05914:2342;31
+from-to;9;Hagen Heidestr.;de:05914:2342;Hagen Auf dem Dreische;de:05914:2341;31
+from-to;9;Hagen Auf dem Dreische;de:05914:2341;Hagen Krahenbrink;de:05914:2340;31
+from-to;9;Hagen Krahenbrink;de:05914:2340;Hagen Im Sibb;de:05914:2339;31
+from-to;9;Hagen Im Sibb;de:05914:2339;Hagen Krahenbrink;de:05914:2340;31
+from-to;9;Hagen Krahenbrink;de:05914:2340;Hagen Auf dem Dreische;de:05914:2341;31
+from-to;9;Hagen Auf dem Dreische;de:05914:2341;Hagen Heidestr.;de:05914:2342;31
+from-to;9;Hagen Heidestr.;de:05914:2342;Hagen Burgweg;de:05914:2343;31
+from-to;9;Hagen Burgweg;de:05914:2343;Hagen Elsey Krankenhaus;de:05914:2062;31
+from-to;9;Hagen Donnerkuhle;de:05914:2349;Hagen Thorn-Prikker-Str.;de:05914:2439;31
+from-to;9;Hagen Thorn-Prikker-Str.;de:05914:2439;Hagen Haßleyer Str.;de:05914:2024;31
+from-to;9;Hagen Osthofstr.;de:05914:2141;Hagen Helfe Mitte;de:05914:2206;30
+from-to;9;Hagen Stirnband;de:05914:2282;Hagen Fernheizwerk;de:05914:2507;30
+from-to;9;Hagen Fernheizwerk;de:05914:2507;Hagen Haßley;de:05914:2263;30
+from-to;9;Hagen Haßley;de:05914:2263;Hagen Fernheizwerk;de:05914:2507;30
+from-to;9;Hagen Fernheizwerk;de:05914:2507;Hagen Stirnband;de:05914:2282;30
+from-to;9;Hagen Vossacker;de:05914:2479;Hagen Rehdeicke;de:05914:2478;30
+from-to;9;Hagen Rehdeicke;de:05914:2478;Hagen Vorhaller Str.;de:05914:2311;30
+from-to;9;HA-Vorhalle Mitte;de:05914:2098;Hagen Weststr.;de:05914:2095;30
+from-to;9;Hagen Weststr.;de:05914:2095;Hagen Bauhaus;de:05914:2172;30
+from-to;9;Hagen Bauhaus;de:05914:2172;Hagen Hauptbahnhof;de:05914:2007;30
+from-to;9;Hagen Donnerkuhle;de:05914:2349;Hagen Heidnocken;de:05914:2347;30
+from-to;9;Hagen Heidnocken;de:05914:2347;Hagen Hünenpforte;de:05914:2259;30
+from-to;9;Hagen Hauptbahnhof;de:05914:2007;Hagen Bauhaus;de:05914:2172;30
+from-to;9;Hagen Bauhaus;de:05914:2172;Hagen Weststr.;de:05914:2095;30
+from-to;9;Hagen Weststr.;de:05914:2095;HA-Vorhalle Mitte;de:05914:2098;30
+from-to;9;Hagen Vorhaller Str.;de:05914:2311;Hagen Rehdeicke;de:05914:2478;30
+from-to;9;Hagen Rehdeicke;de:05914:2478;Hagen Vossacker;de:05914:2479;30
+from-to;9;Hagen Hauptbahnhof;de:05914:2007;Hagen Stadtmitte/Volme Galerie;de:05914:2003;29
+from-to;9;Hagen Rathaus an der Volme;de:05914:2410;Hagen Markt;de:05914:2002;29
+from-to;9;Hagen Markt;de:05914:2002;Hagen Eilpe Physiomed;de:05914:2083;29
+from-to;9;Hagen Eilpe Physiomed;de:05914:2083;Hagen Staplack / Enervie Zentr;de:05914:2262;29
+from-to;9;Hagen Staplack / Enervie Zentr;de:05914:2262;Hagen Hünenpforte;de:05914:2259;29
+from-to;9;Hagen Hünenpforte;de:05914:2259;Hagen Heidnocken;de:05914:2347;29
+from-to;9;Hagen Heidnocken;de:05914:2347;Hagen Donnerkuhle;de:05914:2349;29
+from-to;9;Hagen Pieperstr.;de:05914:2205;Hagen Im Löhken;de:05914:2466;28
+from-to;9;Hagen Im Löhken;de:05914:2466;Hagen Kampmannshof;de:05914:2242;28
+from-to;9;Hagen Kampmannshof;de:05914:2242;Hagen Haus Busch;de:05914:2241;28
+from-to;9;Hagen Haus Busch;de:05914:2241;Hagen C. D. Wälzholz;de:05914:2517;28
+from-to;9;Hagen C. D. Wälzholz;de:05914:2517;Hagen Federnstr.;de:05914:2239;28
+from-to;9;Hagen Federnstr.;de:05914:2239;Hagen C. D. Wälzholz;de:05914:2517;28
+from-to;9;Hagen C. D. Wälzholz;de:05914:2517;Hagen Haus Busch;de:05914:2241;28
+from-to;9;Hagen Haus Busch;de:05914:2241;Hagen Kampmannshof;de:05914:2242;28
+from-to;9;Hagen Kampmannshof;de:05914:2242;Hagen Im Löhken;de:05914:2466;28
+from-to;9;Hagen Im Löhken;de:05914:2466;Hagen Pieperstr.;de:05914:2205;28
+from-to;9;Hagen Hünenpforte;de:05914:2259;Hagen Staplack / Enervie Zentr;de:05914:2262;28
+from-to;9;Hagen Staplack / Enervie Zentr;de:05914:2262;Hagen Eilpe Physiomed;de:05914:2083;28
+from-to;9;Hagen Eilpe Physiomed;de:05914:2083;Hagen Markt;de:05914:2002;28
+from-to;9;Hagen Markt;de:05914:2002;Hagen Rathaus an der Volme;de:05914:2410;28
+from-to;9;Hagen Stadtmitte/Volme Galerie;de:05914:2003;Hagen Hauptbahnhof;de:05914:2007;28
+from-to;9;Hagen Georgstr.;de:05914:2181;Hagen Albrechtstr.;de:05914:2180;27
+from-to;9;Hagen Albrechtstr.;de:05914:2180;Hagen Heinrichstr.;de:05914:2179;27
+from-to;9;Hagen Heinrichstr.;de:05914:2179;Hagen Albrechtstr.;de:05914:2180;27
+from-to;9;Hagen Albrechtstr.;de:05914:2180;Hagen Georgstr.;de:05914:2181;27
+from-to;9;Hagen Sportpark Ischeland;de:05914:2153;Hagen Westfalenbad;de:05914:2741;27
+from-to;9;Hagen Westfalenbad;de:05914:2741;Hagen Houbenstr.;de:05914:2152;27
+from-to;9;Hagen Houbenstr.;de:05914:2152;Hagen Westfalenbad;de:05914:2741;25
+from-to;9;Hagen Westfalenbad;de:05914:2741;Hagen Sportpark Ischeland;de:05914:2153;25
+from-to;9;Breckerfeld Rathaus;de:05954:8218;Breckerfeld Schule;de:05954:8294;22
+from-to;9;Breckerfeld Schule;de:05954:8294;Breckerfeld Busbahnhof;de:05954:8217;22
+from-to;9;Hagen Herbecker Weg;de:05914:2348;Hagen Herbeck;de:05914:2500;22
+from-to;9;Breckerfeld Busbahnhof;de:05954:8217;Breckerfeld Windmühlencenter;de:05954:8220;21
+from-to;9;Breckerfeld Windmühlencenter;de:05954:8220;Breckerfeld Brauck;de:05954:8221;21
+from-to;9;Breckerfeld Brauck;de:05954:8221;Breckerfeld Königsheide;de:05954:8222;21
+from-to;9;Breckerfeld Königsheide;de:05954:8222;Breckerfeld Sonnenschein;de:05954:8309;21
+from-to;9;Breckerfeld Sonnenschein;de:05954:8309;Breckerfeld Neuenloh;de:05954:8304;21
+from-to;9;Breckerfeld Neuenloh;de:05954:8304;Breckerfeld Schaffland;de:05954:8307;21
+from-to;9;Breckerfeld Schaffland;de:05954:8307;Breckerfeld Grüne;de:05954:8300;21
+from-to;9;Breckerfeld Grüne;de:05954:8300;Breckerfeld Zurstraße;de:05954:8312;21
+from-to;9;Breckerfeld Zurstraße;de:05954:8312;Breckerfeld Heide;de:05954:8301;21
+from-to;9;Breckerfeld Heide;de:05954:8301;Breckerfeld Eicken;de:05954:8299;21
+from-to;9;Breckerfeld Eicken;de:05954:8299;Hagen Am Damm;de:05914:2408;21
+from-to;9;Hagen Am Damm;de:05914:2408;Hagen Roter Hirsch;de:05914:2407;21
+from-to;9;Hagen Roter Hirsch;de:05914:2407;Hagen Selbecke;de:05914:2104;21
+from-to;9;Hagen Loxbaum;de:05914:2016;Hagen Waldfriedhof;de:05914:2518;21
+from-to;9;Hagen Waldfriedhof;de:05914:2518;Hagen Sportanlage Hoheleye;de:05914:2566;21
+from-to;9;Hagen Waldfriedhof;de:05914:2518;Hagen Loxbaum;de:05914:2016;21
+from-to;9;Hagen Westerbauer Schleife;de:05914:2561;Hagen Obervogelsang;de:05914:2390;21
+from-to;9;Hagen Obervogelsang;de:05914:2390;Hagen Am Baukloh;de:05914:2327;21
+from-to;9;Hagen Am Baukloh;de:05914:2327;Hagen Rotkäppchenweg;de:05914:2395;21
+from-to;9;Hagen Rotkäppchenweg;de:05914:2395;Hagen Baukloh;de:05914:2400;21
+from-to;9;Hagen Baukloh;de:05914:2400;Hagen Schneewittchenweg;de:05914:2393;21
+from-to;9;Hagen Schneewittchenweg;de:05914:2393;Hagen Am Baukloh;de:05914:2327;21
+from-to;9;Hagen Am Baukloh;de:05914:2327;Hagen Obervogelsang;de:05914:2390;21
+from-to;9;Hagen Obervogelsang;de:05914:2390;Hagen Westerbauer Schleife;de:05914:2561;21
+from-to;9;Hagen Wasserschloss Werdringen;de:05914:2973;Hagen Brockhausen;de:05914:2245;20
+from-to;9;Hagen Brockhausen;de:05914:2245;Hagen Wasserschloss Werdringen;de:05914:2973;20
+from-to;9;Hagen Selbecke;de:05914:2104;Hagen Roter Hirsch;de:05914:2407;19
+from-to;9;Hagen Roter Hirsch;de:05914:2407;Hagen Am Damm;de:05914:2408;19
+from-to;9;Hagen Am Damm;de:05914:2408;Breckerfeld Eicken;de:05954:8299;19
+from-to;9;Breckerfeld Eicken;de:05954:8299;Breckerfeld Heide;de:05954:8301;19
+from-to;9;Breckerfeld Heide;de:05954:8301;Breckerfeld Zurstraße;de:05954:8312;19
+from-to;9;Breckerfeld Zurstraße;de:05954:8312;Breckerfeld Grüne;de:05954:8300;19
+from-to;9;Breckerfeld Grüne;de:05954:8300;Breckerfeld Schaffland;de:05954:8307;19
+from-to;9;Breckerfeld Schaffland;de:05954:8307;Breckerfeld Neuenloh;de:05954:8304;19
+from-to;9;Breckerfeld Neuenloh;de:05954:8304;Breckerfeld Sonnenschein;de:05954:8309;19
+from-to;9;Breckerfeld Sonnenschein;de:05954:8309;Breckerfeld Königsheide;de:05954:8222;19
+from-to;9;Breckerfeld Königsheide;de:05954:8222;Breckerfeld Brauck;de:05954:8221;19
+from-to;9;Breckerfeld Brauck;de:05954:8221;Breckerfeld Windmühlencenter;de:05954:8220;19
+from-to;9;Breckerfeld Windmühlencenter;de:05954:8220;Breckerfeld Breckerfeld;de:05954:8219;19
+from-to;9;Breckerfeld Breckerfeld;de:05954:8219;Breckerfeld Rathaus;de:05954:8218;19
+from-to;9;Breckerf. Wengeberg Penninckw.;de:05954:8373;Breckerfeld Am Kreutz;de:05954:8374;19
+from-to;9;Breckerfeld Am Kreutz;de:05954:8374;Breckerfeld Jakobusweg;de:05954:8375;19
+from-to;9;Breckerfeld Jakobusweg;de:05954:8375;Breckerfeld Rathaus;de:05954:8218;19
+from-to;9;Hagen Herbeck;de:05914:2500;Hagen Herbecker Weg;de:05914:2348;19
+from-to;9;Hagen Hünenpforte;de:05914:2259;Hagen Hammacher;de:05914:2344;19
+from-to;9;Hagen Hammacher;de:05914:2344;Hagen Wiehagen;de:05914:2345;19
+from-to;9;Hagen Wiehagen;de:05914:2345;Hagen Heidnocken;de:05914:2347;19
+from-to;9;Hagen Heidnocken;de:05914:2347;Hagen Herbecker Weg;de:05914:2348;19
+from-to;9;Hagen Herbeck;de:05914:2500;Hagen Herbeck Denkmal;de:05914:2422;19
+from-to;9;Hagen Herbeck Denkmal;de:05914:2422;Hagen Gut Herbeck;de:05914:2502;19
+from-to;9;Hagen Gut Herbeck;de:05914:2502;Hagen Dolomitwerke;de:05914:2503;19
+from-to;9;Hagen Dolomitwerke;de:05914:2503;Hagen Lange Eck;de:05914:2524;19
+from-to;9;Hagen Lange Eck;de:05914:2524;Hagen Dolomitstr.;de:05914:2230;19
+from-to;9;Hagen Werkzeugstr.;de:05914:2412;Hagen Röhrenspring;de:05914:2238;19
+from-to;9;Hagen Röhrenspring;de:05914:2238;Hagen Wienbrauk;de:05914:2539;19
+from-to;9;Hagen Wienbrauk;de:05914:2539;Hagen Sportanlage Hoheleye;de:05914:2566;19
+from-to;9;Hagen Sportanlage Hoheleye;de:05914:2566;Hagen Waldfriedhof;de:05914:2518;19
+from-to;9;Hagen Kaltwalzwerk;de:05914:2749;Hagen Grote;de:05914:2073;19
+from-to;9;Hagen Grote;de:05914:2073;Hagen Feldstr.;de:05914:2403;19
+from-to;9;Hagen Feldstr.;de:05914:2403;Hagen Hoesch Siedlung;de:05914:2404;19
+from-to;9;Hagen Hoesch Siedlung;de:05914:2404;Hagen Oeger Str.;de:05914:2240;19
+from-to;9;Hagen Oeger Str.;de:05914:2240;Hagen Kronenburgplatz;de:05914:2364;19
+from-to;9;Hagen Sportanlage Hoheleye;de:05914:2566;Hagen Wienbrauk;de:05914:2539;18
+from-to;9;Hagen Wienbrauk;de:05914:2539;Hagen Röhrenspring;de:05914:2238;18
+from-to;9;Hagen Röhrenspring;de:05914:2238;Hagen Werkzeugstr.;de:05914:2412;18
+from-to;9;Hagen Dolomitstr.;de:05914:2230;Hagen Lange Eck;de:05914:2524;18
+from-to;9;Hagen Lange Eck;de:05914:2524;Hagen Dolomitwerke;de:05914:2503;18
+from-to;9;Hagen Dolomitwerke;de:05914:2503;Hagen Gut Herbeck;de:05914:2502;18
+from-to;9;Hagen Gut Herbeck;de:05914:2502;Hagen Herbeck Denkmal;de:05914:2422;18
+from-to;9;Hagen Herbeck Denkmal;de:05914:2422;Hagen Herbeck;de:05914:2500;18
+from-to;9;Herdecke Rosenstr.;de:05954:2286;Herdecke Breddestr.;de:05954:2285;18
+from-to;9;Hagen Dolomitstr.;de:05914:2230;Hagen Gründelbusch;de:05914:2879;18
+from-to;9;Hagen Gründelbusch;de:05914:2879;Hagen Industriestr.;de:05914:2229;18
+from-to;9;Hagen Industriestr.;de:05914:2229;Hagen Gosmann;de:05914:2128;18
+from-to;9;Hagen Berchum Schule;de:05914:2449;Hagen Am Kellerhofe;de:05914:2453;18
+from-to;9;Hagen Am Kellerhofe;de:05914:2453;Hagen Auf der Steinhard;de:05914:2451;18
+from-to;9;Hagen Auf der Steinhard;de:05914:2451;Hagen Berchum;de:05914:2125;18
+from-to;9;Hagen Borgenfeldstr.;de:05914:2114;Hagen Feldmühle;de:05914:2475;17
+from-to;9;Hagen Feldmühle;de:05914:2475;Hagen Heizkraftwerk Kabel;de:05914:2474;17
+from-to;9;Hagen Heizkraftwerk Kabel;de:05914:2474;Hagen Druckhaus;de:05914:2473;17
+from-to;9;Hagen Druckhaus;de:05914:2473;Hagen Klöckner;de:05914:2472;17
+from-to;9;Hagen Klöckner;de:05914:2472;Hagen Bathey;de:05914:2199;17
+from-to;9;Hagen Bonsmannstr.;de:05914:2200;Hagen Klöckner;de:05914:2472;17
+from-to;9;Hagen Klöckner;de:05914:2472;Hagen Druckhaus;de:05914:2473;17
+from-to;9;Hagen Druckhaus;de:05914:2473;Hagen Heizkraftwerk Kabel;de:05914:2474;17
+from-to;9;Hagen Heizkraftwerk Kabel;de:05914:2474;Hagen Feldmühle;de:05914:2475;17
+from-to;9;Hagen Feldmühle;de:05914:2475;Hagen Borgenfeldstr.;de:05914:2114;17
+from-to;9;Hagen Herbecker Weg;de:05914:2348;Hagen Heidnocken;de:05914:2347;17
+from-to;9;Hagen Heidnocken;de:05914:2347;Hagen Wiehagen;de:05914:2345;17
+from-to;9;Hagen Wiehagen;de:05914:2345;Hagen Hammacher;de:05914:2344;17
+from-to;9;Hagen Hammacher;de:05914:2344;Hagen Hünenpforte;de:05914:2259;17
+from-to;9;Herdecke Goethestr.;de:05954:2284;Herdecke Bf;de:05954:2269;17
+from-to;9;Hagen Berchum;de:05914:2125;Hagen Ergster Weg;de:05914:2123;17
+from-to;9;Hagen Ergster Weg;de:05914:2123;Hagen Garenfelder Weg;de:05914:2124;17
+from-to;9;Hagen Gosmann;de:05914:2128;Hagen Industriestr.;de:05914:2229;17
+from-to;9;Hagen Industriestr.;de:05914:2229;Hagen Gründelbusch;de:05914:2879;17
+from-to;9;Hagen Gründelbusch;de:05914:2879;Hagen Dolomitstr.;de:05914:2230;17
+from-to;9;Hagen Reh/Lenne Arena;de:05914:2069;Hagen Alter Reher Weg;de:05914:2070;17
+from-to;9;Hagen Alter Reher Weg;de:05914:2070;Hagen Florianstr.;de:05914:2870;17
+from-to;9;Hagen Florianstr.;de:05914:2870;Hagen Spannstiftstr.;de:05914:2455;17
+from-to;9;Hagen Spannstiftstr.;de:05914:2455;Hagen Wannebachstr.;de:05914:2228;17
+from-to;9;Hagen Wannebachstr.;de:05914:2228;Hagen Linnufer;de:05914:2126;17
+from-to;9;Hagen Gosmann;de:05914:2128;Hagen Kahlenberg;de:05914:2129;17
+from-to;9;Hagen Zur Feldlage;de:05914:2132;Hagen Garenfeld;de:05914:2133;17
+from-to;9;Hagen Garenfeld;de:05914:2133;Hagen Zur Heimke;de:05914:2134;17
+from-to;9;Hagen Zur Heimke;de:05914:2134;Hagen Ruhrbrücke;de:05914:2135;17
+from-to;9;Hagen Ruhrbrücke;de:05914:2135;Hagen Brauckwiesen;de:05914:2136;17
+from-to;9;Hagen Brauckwiesen;de:05914:2136;Hagen Lennhof;de:05914:2137;17
+from-to;9;Hagen Lennhof;de:05914:2137;Hagen Buschmühle;de:05914:2138;17
+from-to;9;Hagen Buschmühle;de:05914:2138;Hagen Buschmühlenstr.;de:05914:2192;17
+from-to;9;Hagen Buschmühlenstr.;de:05914:2192;Hagen Borgenfeldstr.;de:05914:2114;17
+from-to;9;Hagen Boele Markt;de:05914:2020;Hagen Lütkenheider Str.;de:05914:2501;17
+from-to;9;Hagen Lütkenheider Str.;de:05914:2501;Hagen Niedernhofstr.;de:05914:2289;17
+from-to;9;Hagen Niedernhofstr.;de:05914:2289;Hagen Lütkenheider Str.;de:05914:2501;17
+from-to;9;Hagen Lütkenheider Str.;de:05914:2501;Hagen Boele Markt;de:05914:2020;17
+from-to;9;Hagen Borgenfeldstr.;de:05914:2114;Hagen Buschmühlenstr.;de:05914:2192;17
+from-to;9;Hagen Buschmühlenstr.;de:05914:2192;Hagen Buschmühle;de:05914:2138;17
+from-to;9;Hagen Buschmühle;de:05914:2138;Hagen Lennhof;de:05914:2137;17
+from-to;9;Hagen Lennhof;de:05914:2137;Hagen Brauckwiesen;de:05914:2136;17
+from-to;9;Hagen Brauckwiesen;de:05914:2136;Hagen Ruhrbrücke;de:05914:2135;17
+from-to;9;Hagen Ruhrbrücke;de:05914:2135;Hagen Zur Heimke;de:05914:2134;17
+from-to;9;Hagen Zur Heimke;de:05914:2134;Hagen Garenfeld;de:05914:2133;17
+from-to;9;Hagen Garenfeld;de:05914:2133;Hagen Zur Feldlage;de:05914:2132;17
+from-to;9;Hagen Kahlenberg;de:05914:2129;Hagen Gosmann;de:05914:2128;17
+from-to;9;Hagen Linnufer;de:05914:2126;Hagen Wannebachstr.;de:05914:2228;17
+from-to;9;Hagen Wannebachstr.;de:05914:2228;Hagen Spannstiftstr.;de:05914:2455;17
+from-to;9;Hagen Spannstiftstr.;de:05914:2455;Hagen Florianstr.;de:05914:2870;17
+from-to;9;Hagen Florianstr.;de:05914:2870;Hagen Alter Reher Weg;de:05914:2070;17
+from-to;9;Hagen Alter Reher Weg;de:05914:2070;Hagen Reh/Lenne Arena;de:05914:2069;17
+from-to;9;Breckerfeld Rathaus;de:05954:8218;Breckerfeld Teichstr.;de:05954:8371;16
+from-to;9;Breckerfeld Teichstr.;de:05954:8371;Breckerfeld Erlenbruch;de:05954:8372;16
+from-to;9;Breckerfeld Erlenbruch;de:05954:8372;Breckerfeld Am Stollen;de:05954:8376;16
+from-to;9;Breckerfeld Am Stollen;de:05954:8376;Breckerf. Wengeberg Penninckw.;de:05954:8373;16
+from-to;9;Herdecke Goethestr.;de:05954:2284;Herdecke Breddestr.;de:05954:2285;16
+from-to;9;Hagen Westerbauer Schleife;de:05914:2561;Hagen Silscheder Str.;de:05914:2411;16
+from-to;9;Hagen Silscheder Str.;de:05914:2411;Gevelsberg Am Schilken;de:05954:8087;16
+from-to;9;Gevelsberg Am Schilken;de:05954:8087;Gevelsberg-Knapp;de:05954:8088;16
+from-to;9;Hagen Elsey Kirche;de:05914:2222;Hagen Henkhauser Str.;de:05914:2223;16
+from-to;9;Hagen Henkhauser Str.;de:05914:2223;Hagen Gotenweg;de:05914:2224;16
+from-to;9;Hagen Gotenweg;de:05914:2224;Hagen Schwalbenweg;de:05914:2065;16
+from-to;9;Hagen Elsey Post;de:05914:2063;Hagen Möllerstr.;de:05914:2489;16
+from-to;9;Hagen Möllerstr.;de:05914:2489;Hagen Breitenbruch;de:05914:2445;16
+from-to;9;Hagen Breitenbruch;de:05914:2445;Hagen Trappenweg;de:05914:2490;16
+from-to;9;Hagen Trappenweg;de:05914:2490;Hagen Wiesenstr.;de:05914:2468;16
+from-to;9;Hagen Wiesenstr.;de:05914:2468;Hagen Im Gersegge;de:05914:2467;16
+from-to;9;Hagen Im Gersegge;de:05914:2467;Hagen Steltenbergstr.;de:05914:2266;16
+from-to;9;Hagen Steltenbergstr.;de:05914:2266;Hagen Kirchenbergstadion;de:05914:2336;16
+from-to;9;Hagen Kirchenbergstadion;de:05914:2336;Hagen Berliner Allee;de:05914:2335;16
+from-to;9;Hagen Berliner Allee;de:05914:2335;Hagen Am Berge;de:05914:2333;16
+from-to;9;Hagen Am Berge;de:05914:2333;Hagen Im Sonnenwinkel;de:05914:2383;16
+from-to;9;Hagen Im Sonnenwinkel;de:05914:2383;Hagen Im Ölm;de:05914:2334;16
+from-to;9;Hagen Im Ölm;de:05914:2334;Hagen Am Schellbrink;de:05914:2458;16
+from-to;9;Hagen Am Schellbrink;de:05914:2458;Hagen Im Stockhof;de:05914:2066;16
+from-to;9;Hagen Hasselbach;de:05914:2509;Hagen Reh Schule;de:05914:2753;16
+from-to;9;Hagen Reh Schule;de:05914:2753;Hagen Reh Schälker Landstr.;de:05914:2755;16
+from-to;9;Hagen Reh Schälker Landstr.;de:05914:2755;Hagen Reh Schule;de:05914:2753;16
+from-to;9;Hagen Reh Schule;de:05914:2753;Hagen Hasselbach;de:05914:2509;16
+from-to;9;Hagen Im Stockhof;de:05914:2066;Hagen Am Schellbrink;de:05914:2458;16
+from-to;9;Hagen Am Schellbrink;de:05914:2458;Hagen Im Ölm;de:05914:2334;16
+from-to;9;Hagen Im Ölm;de:05914:2334;Hagen Im Sonnenwinkel;de:05914:2383;16
+from-to;9;Hagen Im Sonnenwinkel;de:05914:2383;Hagen Am Berge;de:05914:2333;16
+from-to;9;Hagen Am Berge;de:05914:2333;Hagen Berliner Allee;de:05914:2335;16
+from-to;9;Hagen Berliner Allee;de:05914:2335;Hagen Kirchenbergstadion;de:05914:2336;16
+from-to;9;Hagen Kirchenbergstadion;de:05914:2336;Hagen Steltenbergstr.;de:05914:2266;16
+from-to;9;Hagen Steltenbergstr.;de:05914:2266;Hagen Im Gersegge;de:05914:2467;16
+from-to;9;Hagen Im Gersegge;de:05914:2467;Hagen Wiesenstr.;de:05914:2468;16
+from-to;9;Hagen Wiesenstr.;de:05914:2468;Hagen Trappenweg;de:05914:2490;16
+from-to;9;Hagen Trappenweg;de:05914:2490;Hagen Breitenbruch;de:05914:2445;16
+from-to;9;Hagen Breitenbruch;de:05914:2445;Hagen Möllerstr.;de:05914:2489;16
+from-to;9;Hagen Möllerstr.;de:05914:2489;Hagen Brauhausstr.;de:05914:2471;16
+from-to;9;Hagen Brauhausstr.;de:05914:2471;Hagen Elsey Post;de:05914:2063;16
+from-to;9;Hagen Schwalbenweg;de:05914:2065;Hagen Gotenweg;de:05914:2224;16
+from-to;9;Hagen Gotenweg;de:05914:2224;Hagen Henkhauser Str.;de:05914:2223;16
+from-to;9;Hagen Henkhauser Str.;de:05914:2223;Hagen Elsey Kirche;de:05914:2222;16
+from-to;9;Hagen Hohenlimburg Bf;de:05914:2059;Hagen Kaltwalzwerk;de:05914:2749;16
+from-to;9;Hagen Kronenburgplatz;de:05914:2364;Hagen Wilhelmstr.;de:05914:2377;16
+from-to;9;Hagen Wilhelmstr.;de:05914:2377;Hagen Regenbogenschule;de:05914:2378;16
+from-to;9;Hagen Hohenlimburg Bf;de:05914:2059;Hagen Isenbergstr.;de:05914:2035;15
+from-to;9;Hagen Isenbergstr.;de:05914:2035;Hagen Wesselbachstr.;de:05914:2361;15
+from-to;9;Hagen Wesselbachstr.;de:05914:2361;Hagen Lolochstr.;de:05914:2485;15
+from-to;9;Hagen Lolochstr.;de:05914:2485;Hagen Wesselbach;de:05914:2488;15
+from-to;9;Hagen Wesselbach;de:05914:2488;Hagen Am Schloßberg;de:05914:2360;15
+from-to;9;Hagen Am Schloßberg;de:05914:2360;Hagen Alter Schloßweg;de:05914:2359;15
+from-to;9;Hagen Alter Schloßweg;de:05914:2359;Hagen Isenbergstr.;de:05914:2035;15
+from-to;9;Hagen Isenbergstr.;de:05914:2035;Hagen Hohenlimburg Bf;de:05914:2059;15
+from-to;9;Herdecke Rosenstr.;de:05954:2286;Herdecke Bf;de:05954:2269;15
+from-to;9;Gevelsberg-Knapp;de:05954:8088;Gevelsberg Am Schilken;de:05954:8087;15
+from-to;9;Gevelsberg Am Schilken;de:05954:8087;Hagen Silscheder Str.;de:05914:2411;15
+from-to;9;Hagen Silscheder Str.;de:05914:2411;Hagen Westerbauer Schleife;de:05914:2561;15
+from-to;9;Hagen Elsey Ehrenmal;de:05914:2221;Hagen Elsey Krankenhaus;de:05914:2062;15
+from-to;9;Hagen Regenbogenschule;de:05914:2378;Hagen Wilhelmstr.;de:05914:2377;15
+from-to;9;Hagen Wilhelmstr.;de:05914:2377;Hagen Unternahmer;de:05914:2365;15
+from-to;9;Hagen Unternahmer;de:05914:2365;Hagen Oeger Str.;de:05914:2240;15
+from-to;9;Hagen Oeger Str.;de:05914:2240;Hagen Hoesch Siedlung;de:05914:2404;15
+from-to;9;Hagen Hoesch Siedlung;de:05914:2404;Hagen Feldstr.;de:05914:2403;15
+from-to;9;Hagen Feldstr.;de:05914:2403;Hagen Grote;de:05914:2073;15
+from-to;9;Hagen Grote;de:05914:2073;Hagen Kaltwalzwerk;de:05914:2749;15
+from-to;9;Hagen Kaltwalzwerk;de:05914:2749;Hagen Hohenlimburg Bf;de:05914:2059;15
+from-to;9;Hagen Bissingheim;de:05914:2045;Hagen Elmenhorststr.;de:05914:2564;12
+from-to;9;Hagen Elmenhorststr.;de:05914:2564;Hagen Delstern Friedhof;de:05914:2542;12
+from-to;9;Hagen Delstern Friedhof;de:05914:2542;Hagen Delstern;de:05914:2309;12
+from-to;9;Hagen Luisenstr.;de:05914:2084;Hagen Hubertusstr.;de:05914:2547;12
+from-to;9;Hagen Hubertusstr.;de:05914:2547;Hagen Am Weitblick;de:05914:2545;12
+from-to;9;Hagen Am Weitblick;de:05914:2545;Hagen Elmarweg;de:05914:2558;12
+from-to;9;Hagen Elmarweg;de:05914:2558;Hagen Krähnockenstraße;de:05914:2515;12
+from-to;9;Hagen Krähnockenstraße;de:05914:2515;Hagen Am Waldwege;de:05914:2543;12
+from-to;9;Hagen Am Waldwege;de:05914:2543;Hagen Oberhagen;de:05914:2087;12
+from-to;9;Hagen Oberhagen;de:05914:2087;Hagen Goldbergschule;de:05914:2935;12
+from-to;9;Hagen Goldbergschule;de:05914:2935;Hagen Markt;de:05914:2002;12
+from-to;9;Hagen Oberhagen;de:05914:2087;Hagen Am Waldwege;de:05914:2543;12
+from-to;9;Hagen Am Waldwege;de:05914:2543;Hagen Krähnockenstraße;de:05914:2515;12
+from-to;9;Hagen Krähnockenstraße;de:05914:2515;Hagen Elmarweg;de:05914:2558;12
+from-to;9;Hagen Elmarweg;de:05914:2558;Hagen Am Weitblick;de:05914:2545;12
+from-to;9;Hagen Am Weitblick;de:05914:2545;Hagen Hubertusstr.;de:05914:2547;12
+from-to;9;Hagen Hubertusstr.;de:05914:2547;Hagen Luisenstr.;de:05914:2084;12
+from-to;9;Hagen Delstern;de:05914:2309;Hagen Delstern Friedhof;de:05914:2542;12
+from-to;9;Hagen Delstern Friedhof;de:05914:2542;Hagen Elmenhorststr.;de:05914:2564;12
+from-to;9;Hagen Elmenhorststr.;de:05914:2564;Hagen Bissingheim;de:05914:2045;12
+from-to;9;Wiblingwerde;de:05962:3320;Wiblingwerde Über dem Dorfe;de:05962:3338;8
+from-to;9;Wiblingwerde Über dem Dorfe;de:05962:3338;Wiblingwerde Harpkestr.;de:05962:3347;8
+from-to;9;Wiblingwerde Harpkestr.;de:05962:3347;Wiblingwerde Wörden;de:05962:3319;8
+from-to;9;Wiblingwerde Wörden;de:05962:3319;Wiblingwerde Vogelhenne;de:05962:3318;8
+from-to;9;Wiblingwerde Vogelhenne;de:05962:3318;Wiblingwerde Todtenhelle;de:05962:3348;8
+from-to;9;Wiblingwerde Todtenhelle;de:05962:3348;Wiblingwerde Veserde;de:05962:3317;8
+from-to;9;Wiblingwerde Veserde;de:05962:3317;Hagen Regenbogenschule;de:05914:2378;8
+from-to;9;Hagen Regenbogenschule;de:05914:2378;Wiblingwerde Veserde;de:05962:3317;8
+from-to;9;Wiblingwerde Veserde;de:05962:3317;Wiblingwerde Todtenhelle;de:05962:3348;8
+from-to;9;Wiblingwerde Todtenhelle;de:05962:3348;Wiblingwerde Vogelhenne;de:05962:3318;8
+from-to;9;Wiblingwerde Vogelhenne;de:05962:3318;Wiblingwerde Wörden;de:05962:3319;8
+from-to;9;Wiblingwerde Wörden;de:05962:3319;Wiblingwerde Harpkestr.;de:05962:3347;8
+from-to;9;Wiblingwerde Harpkestr.;de:05962:3347;Wiblingwerde;de:05962:3320;8
+from-to;9;Dortmund Syburg;de:05913:460;Hagen Hengsteysee;de:05914:2296;7
+from-to;9;Hagen Posener Str.;de:05914:2295;Hagen Kabeler Str.;de:05914:2202;7
+from-to;9;Hagen Kabeler Str.;de:05914:2202;Hagen Hengsteysee;de:05914:2296;7
+from-to;9;Hagen Hengsteysee;de:05914:2296;Dortmund Syburg;de:05913:460;7
+from-to;9;Hagen Hengsteysee;de:05914:2296;Hagen Kabeler Str.;de:05914:2202;5
+from-to;9;Hagen Kabeler Str.;de:05914:2202;Hagen Posener Str.;de:05914:2295;5
+from-to;9;Hagen Brockhausen;de:05914:2245;Hagen Brockhausen;de:05914:2245;5
+from-to;9;Hagen Fley Mitte;de:05914:2185;Hagen Fley Mitte;de:05914:2185;5
+from-to;9;Hagen Spielbrink;de:05914:2044;Hagen Spielbrink;de:05914:2044;5
+from-to;9;Hagen Hüttenplatz GWG;de:05914:2743;Hagen Haspe Zentrum;de:05914:2037;3
+from-to;9;Hagen Haspe Zentrum;de:05914:2037;Hagen Hasper Torhaus;de:05914:2194;3
+from-to;9;Hagen Frachtzentrum;de:05914:2762;Hagen Grueber;de:05914:2431;3
+from-to;9;Hagen Grueber;de:05914:2431;Hagen Uhde;de:05914:2463;3
+from-to;9;Hagen Uhde;de:05914:2463;Hagen Hoesch;de:05914:2462;3
+from-to;9;Hagen Hoesch;de:05914:2462;Hagen Borgenfeldstr.;de:05914:2114;3
+from-to;9;Hagen Borgenfeldstr.;de:05914:2114;Hagen Hoesch;de:05914:2462;3
+from-to;9;Hagen Hoesch;de:05914:2462;Hagen Uhde;de:05914:2463;3
+from-to;9;Hagen Uhde;de:05914:2463;Hagen Grueber;de:05914:2431;3
+from-to;9;Hagen Grueber;de:05914:2431;Hagen Frachtzentrum;de:05914:2762;3
+from-to;9;Hagen Brüderstr.;de:05914:2010;Hagen Boeler Str.;de:05914:2013;3
+from-to;9;Hagen Donnerkuhle;de:05914:2349;Hagen Herbecker Weg;de:05914:2348;3
+from-to;9;Hagen Emilienplatz;de:05914:2075;Hagen Aschenbergstr.;de:05914:2214;3
+from-to;9;Hagen Heigarenweg;de:05914:2186;Hagen Weidekampstr.;de:05914:2187;3
+from-to;9;Hagen Boelerheide;de:05914:2147;Hagen Sonntagstr.;de:05914:2417;3
+from-to;9;Hagen Hohenlimburg Mitte;de:05914:2060;Hagen Mühlenbergstr.;de:05914:2388;3
+from-to;9;Hagen Mühlenbergstr.;de:05914:2388;Hagen Kaltwalzwerk;de:05914:2749;3
+from-to;9;Hagen Haspe Zentrum;de:05914:2037;Hagen Ennepeufer;de:05914:2326;3
+from-to;9;Hagen Büddingstr.;de:05914:2042;Hagen Innsbrucker Str.;de:05914:2409;3
+from-to;9;Hagen Hasper Torhaus;de:05914:2194;Hagen Haspe Zentrum;de:05914:2037;3
+from-to;9;Hagen Stolzestr.;de:05914:2196;Hagen Neue Str.;de:05914:2557;3
+from-to;9;Hagen Hengsteysee;de:05914:2296;Hagen Bathey;de:05914:2199;2
+from-to;9;Hagen Osthofstr.;de:05914:2141;Hagen Fröbelstr.;de:05914:2142;2
+from-to;9;Hagen Boeler Str.;de:05914:2013;Hagen Brüderstr.;de:05914:2010;2
+from-to;9;Hagen Felsenstr.;de:05914:2109;Hagen Metzer Str.;de:05914:2077;2
+from-to;9;Hagen Metzer Str.;de:05914:2077;Hagen Felsenstr.;de:05914:2109;2
+from-to;9;Hagen Herbeck;de:05914:2500;Hagen Herbeck;de:05914:2500;2
+from-to;9;Hagen Herbecker Weg;de:05914:2348;Hagen Donnerkuhle;de:05914:2349;2
+from-to;9;Hagen Heigarenweg;de:05914:2186;Hagen Waldfriedhof;de:05914:2518;2
+from-to;9;Hagen Innsbrucker Str.;de:05914:2409;Hagen Büddingstr.;de:05914:2042;2
+from-to;9;Hagen Neue Str.;de:05914:2557;Hagen Stolzestr.;de:05914:2196;2
+between;9;Hagen Hauptbahnhof;de:05914:2007;Hagen Altenhg. Brücke;de:05914:2008;1398
+between;9;Hagen Schwenke;de:05914:2006;Hagen Hauptbahnhof;de:05914:2007;1367
+between;9;Hagen Theater;de:05914:2005;Hagen Schwenke;de:05914:2006;922
+between;9;Hagen Volkspark;de:05914:2004;Hagen Stadtmitte/Volme Galerie;de:05914:2003;918
+between;9;Hagen Volkspark;de:05914:2004;Hagen Theater;de:05914:2005;850
+between;9;Hagen Rathaus an der Volme;de:05914:2410;Hagen Stadtmitte/Volme Galerie;de:05914:2003;783
+between;9;Hagen Altenhg. Brücke;de:05914:2008;Hagen Neumarktstr.;de:05914:2030;717
+between;9;Hagen Neumarktstr.;de:05914:2030;Hagen Stadtmitte/Volme Galerie;de:05914:2003;710
+between;9;Hagen Stadtmitte/Volme Galerie;de:05914:2003;Hagen Emilienplatz;de:05914:2075;671
+between;9;Hagen Loxbaum;de:05914:2016;Hagen Kapellenstr.;de:05914:2017;530
+between;9;Hagen Emilienplatz;de:05914:2075;Hagen Landgericht;de:05914:2074;478
+between;9;Hagen Hohenlimburg Mitte;de:05914:2060;Hagen Hohenlimburg Bf;de:05914:2059;447
+between;9;Hagen Altenhg. Brücke;de:05914:2008;Hagen St-Josefs-Kirche;de:05914:2009;418
+between;9;Hagen Helfer Str.;de:05914:2019;Hagen Boele Markt;de:05914:2020;398
+between;9;Hagen Eilpe Physiomed;de:05914:2083;Hagen Kurfürstenstr. Diabetolo;de:05914:2258;355
+between;9;Hagen St-Josefs-Kirche;de:05914:2009;Hagen Brüderstr.;de:05914:2010;353
+between;9;Hagen Oberhagen;de:05914:2087;Hagen CineStar;de:05914:2772;343
+between;9;Hagen CineStar;de:05914:2772;Hagen Markt;de:05914:2002;343
+between;9;Hagen Siedlerstr. HVG;de:05914:2014;Hagen Ginsterheide;de:05914:2015;338
+between;9;Hagen Ginsterheide;de:05914:2015;Hagen Loxbaum;de:05914:2016;338
+between;9;Hagen Kapellenstr.;de:05914:2017;Hagen Stennesufer;de:05914:2018;333
+between;9;Hagen Stennesufer;de:05914:2018;Hagen Helfer Str.;de:05914:2019;333
+between;9;Hagen Markt;de:05914:2002;Hagen Dahlenkampstr.;de:05914:2551;331
+between;9;Hagen Dahlenkampstr.;de:05914:2551;Hagen Rathaus an der Volme;de:05914:2410;331
+between;9;Hagen Westerbauer Schleife;de:05914:2561;Hagen Nordstr.;de:05914:2321;326
+between;9;Hagen Polizeipräsidium;de:05914:2510;Hagen Loxbaum;de:05914:2016;317
+between;9;Hagen Volkshochschule;de:05914:2516;Hagen Schwenke;de:05914:2006;315
+between;9;Hagen Heubing Bf;de:05914:2432;Hagen Ennepeufer;de:05914:2326;272
+between;9;Hagen Klopstockstr.;de:05914:2093;Hagen Eichendorffstr.;de:05914:2092;269
+between;9;Hagen Eichendorffstr.;de:05914:2092;Hagen Fuhrparkstr.;de:05914:2091;269
+between;9;Hagen Bauhaus;de:05914:2172;Hagen Eicken;de:05914:2089;263
+between;9;Hagen Eicken;de:05914:2089;Hagen Eckeseyer Brücke;de:05914:2088;263
+between;9;Hagen Eckeseyer Brücke;de:05914:2088;Hagen Altenhg. Brücke;de:05914:2008;263
+between;9;Hagen Nordstr.;de:05914:2321;Hagen Martinstr.;de:05914:2560;261
+between;9;Hagen Grimmestr.;de:05914:2149;Hagen Hameckestr.;de:05914:2150;257
+between;9;Hagen Heilig-Geist-Str.;de:05914:2498;Hagen BasseDruck;de:05914:2520;254
+between;9;Hagen BasseDruck;de:05914:2520;Hagen Mercedes Jürgens;de:05914:2523;254
+between;9;Hagen Sportpark Ischeland;de:05914:2153;Hagen Höing;de:05914:2154;250
+between;9;Hagen Höing;de:05914:2154;Hagen Hildegardis-Schule;de:05914:2155;250
+between;9;Hagen Tondernstr.;de:05914:2280;Hagen FernUniversität;de:05914:2279;249
+between;9;Hagen FernUniversität;de:05914:2279;Hagen Polizeipräsidium;de:05914:2510;249
+between;9;Hagen Lennebad;de:05914:2061;Hagen Hohenlimburg Mitte;de:05914:2060;242
+between;9;Hagen Weststr.;de:05914:2095;Hagen Geitebrücke;de:05914:2094;237
+between;9;Hagen Ennepeufer;de:05914:2326;Hagen Hasper Torhaus;de:05914:2194;233
+between;9;Hagen Niedernhofstr.;de:05914:2289;Hagen Eckeseyer Str.;de:05914:2440;229
+between;9;Hagen Heilig-Geist-Str.;de:05914:2498;Hagen Haspe Zentrum;de:05914:2037;225
+between;9;Hagen Borgenfeldstr.;de:05914:2114;Hagen Külpestr.;de:05914:2113;216
+between;9;Hagen Külpestr.;de:05914:2113;Hagen Hammerstein;de:05914:2565;216
+between;9;Hagen Hammerstein;de:05914:2565;Hagen Boele Amtshaus;de:05914:2112;216
+between;9;Hagen Boele Amtshaus;de:05914:2112;Hagen Boele Markt;de:05914:2020;216
+between;9;Hagen Borgenfeldstr.;de:05914:2114;Hagen Kabel;de:05914:2115;213
+between;9;Hagen Geitebrücke;de:05914:2094;Hagen Klopstockstr.;de:05914:2093;203
+between;9;Hagen Kurfürstenstr. Diabetolo;de:05914:2258;Hagen Jägerstr.;de:05914:2763;201
+between;9;Hagen Jägerstr.;de:05914:2763;Hagen Elisabethstr.;de:05914:2111;201
+between;9;Hagen Elisabethstr.;de:05914:2111;Hagen Oberhagen;de:05914:2087;201
+between;9;Hagen Fuhrparkstr.;de:05914:2091;Hagen Bauhaus;de:05914:2172;198
+between;9;Hagen Rathaus an der Volme;de:05914:2410;Hagen Eickertstr.;de:05914:2029;198
+between;9;Hagen Eickertstr.;de:05914:2029;Hagen Totenhofweg;de:05914:2028;198
+between;9;Hagen Totenhofweg;de:05914:2028;Hagen Brunnenstr.;de:05914:2027;198
+between;9;Hagen Brunnenstr.;de:05914:2027;Hagen Eppenhauser Brunnen;de:05914:2026;198
+between;9;Hagen Eppenhauser Brunnen;de:05914:2026;Hagen Emster Str.;de:05914:2025;198
+between;9;Hagen Houbenstr.;de:05914:2152;Hagen Sportpark Ischeland;de:05914:2153;198
+between;9;Hagen Marktbrücke;de:05914:2001;Hagen Stadthalle;de:05914:2178;197
+between;9;Hagen Stadthalle;de:05914:2178;Hagen Wasserloses Tal;de:05914:2177;197
+between;9;Hagen Alexanderstr.;de:05914:2356;Hagen Röntgenstr.;de:05914:2355;195
+between;9;Hagen Röntgenstr.;de:05914:2355;Hagen Brüderstr.;de:05914:2010;195
+between;9;Hagen Stegerwaldstr.;de:05914:2189;Hagen Buschstr.;de:05914:2188;192
+between;9;Hagen Stadtmitte/Volme Galerie;de:05914:2003;Hagen Hildegardis-Schule;de:05914:2155;191
+between;9;Hagen Volkshochschule;de:05914:2516;Hagen Akku Hawker;de:05914:2032;190
+between;9;Hagen Akku Hawker;de:05914:2032;Hagen Wehringhauser Str.;de:05914:2033;190
+between;9;Hagen Wehringhauser Str.;de:05914:2033;Hagen Mercedes Jürgens;de:05914:2523;190
+between;9;Hagen Haspe Zentrum;de:05914:2037;Hagen Niederhaspe;de:05914:2038;189
+between;9;Hagen Niederhaspe;de:05914:2038;Hagen Kölner Str.;de:05914:2039;189
+between;9;Hagen Kölner Str.;de:05914:2039;Hagen Grundschötteler Str.;de:05914:2040;189
+between;9;Hagen Grundschötteler Str.;de:05914:2040;Hagen Im Mühlenwert;de:05914:2522;189
+between;9;Hagen Im Mühlenwert;de:05914:2522;Hagen Martinstr.;de:05914:2560;189
+between;9;Hagen Elsey Ehrenmal;de:05914:2221;Hagen Lennebad;de:05914:2061;187
+between;9;Hagen Siedlerstr. HVG;de:05914:2014;Hagen Houbenstr.;de:05914:2152;182
+between;9;Hagen Rohrstr.;de:05914:2236;Hagen Im Alten Holz;de:05914:2469;173
+between;9;Hagen Im Alten Holz;de:05914:2469;Hagen Sauerlandstr.;de:05914:2232;173
+between;9;Hagen Elsey Kirche;de:05914:2222;Hagen Elsey Ehrenmal;de:05914:2221;173
+between;9;Hagen Tondernstr.;de:05914:2280;Hagen Sonderburgstr.;de:05914:2235;171
+between;9;Hagen Sonderburgstr.;de:05914:2235;Hagen Spessartstr.;de:05914:2234;171
+between;9;Hagen Spessartstr.;de:05914:2234;Hagen Dümpelstr.;de:05914:2233;171
+between;9;Hagen Dümpelstr.;de:05914:2233;Hagen Sauerlandstr.;de:05914:2232;171
+between;9;Hagen Dortmunder Str.;de:05914:2294;Hagen Boele Markt;de:05914:2020;168
+between;9;Hagen Hünenpforte;de:05914:2259;Hagen Hohenlimburg Mitte;de:05914:2060;168
+between;9;Hagen Lortzingstr.;de:05914:2350;Hagen Tondernstr.;de:05914:2280;167
+between;9;Hagen J-G-Fichte-Str.;de:05914:2244;Hagen Wortherbruchstr.;de:05914:2243;163
+between;9;Hagen Wortherbruchstr.;de:05914:2243;HA-Vorhalle Mitte;de:05914:2098;163
+between;9;Hagen Geitebrücke;de:05914:2094;Hagen Eckeseyer Str.;de:05914:2440;163
+between;9;Hagen Boeler Str.;de:05914:2013;Hagen Siedlerstr. HVG;de:05914:2014;156
+between;9;Hagen Luisenstr.;de:05914:2084;Hagen Kurfürstenstr. Diabetolo;de:05914:2258;154
+between;9;Hagen Brüderstr.;de:05914:2010;Hagen Friedensstr.;de:05914:2011;153
+between;9;Hagen Friedensstr.;de:05914:2011;Hagen Alleestr.;de:05914:2012;153
+between;9;Hagen Alleestr.;de:05914:2012;Hagen Boeler Str.;de:05914:2013;153
+between;9;Hagen Elsey Krankenhaus;de:05914:2062;Hagen Lennebad;de:05914:2061;149
+between;9;Hagen Reh/Lenne Arena;de:05914:2069;Hagen Elseyer Str.;de:05914:2508;141
+between;9;Hagen Elseyer Str.;de:05914:2508;Hagen Elsey Kirche;de:05914:2222;141
+between;9;Hagen Fichte-Gymnasium;de:05914:2562;Hagen Cuno-Berufskolleg;de:05914:2190;140
+between;9;Hagen Realschule Haspe;de:05914:2559;Hagen Schützenstr.;de:05914:2165;139
+between;9;Hagen Schützenstr.;de:05914:2165;Hagen Hestertstr.;de:05914:2164;139
+between;9;Hagen Hestertstr.;de:05914:2164;Hagen Sachsenstr.;de:05914:2163;139
+between;9;Hagen Sachsenstr.;de:05914:2163;Hagen Hördenstr.;de:05914:2162;139
+between;9;Hagen Hördenstr.;de:05914:2162;Hagen Gewerbepark Kückelhausen;de:05914:2209;139
+between;9;Hagen Gewerbepark Kückelhausen;de:05914:2209;Hagen Obere Rehstr.;de:05914:2484;139
+between;9;Hagen Obere Rehstr.;de:05914:2484;Hagen Eugen-Richter-Str.;de:05914:2160;139
+between;9;Hagen Eugen-Richter-Str.;de:05914:2160;Hagen Gutenbergstr.;de:05914:2159;139
+between;9;Hagen Gutenbergstr.;de:05914:2159;Hagen Bachstr.;de:05914:2158;139
+between;9;Hagen Bachstr.;de:05914:2158;Hagen Allg. Krankenhaus;de:05914:2157;139
+between;9;Hagen Vollbrinkstr.;de:05914:2744;Hagen Hüttenplatz GWG;de:05914:2743;138
+between;9;Hagen Nordstr.;de:05914:2321;Hagen Westerbauer Bf;de:05914:2433;136
+between;9;Hagen Ev. Krankenhaus;de:05914:2166;Hagen Büdding Friedhof;de:05914:2448;136
+between;9;Hagen Büdding Friedhof;de:05914:2448;Hagen Heubing Bf;de:05914:2432;136
+between;9;Hagen Kapellenstr.;de:05914:2017;Hagen Auf dem Kuhl;de:05914:2143;136
+between;9;Hagen Auf dem Kuhl;de:05914:2143;Hagen Fröbelstr.;de:05914:2142;136
+between;9;Hagen Heubing Bf;de:05914:2432;Hagen Hasper Hammer;de:05914:2454;136
+between;9;Hagen Emst Kirche;de:05914:2049;Hagen Cunostr.;de:05914:2048;136
+between;9;Hagen Aschenbergstr.;de:05914:2214;Hagen Goebenstr./Wohnungsv HA.;de:05914:2213;134
+between;9;Hagen Goebenstr./Wohnungsv HA.;de:05914:2213;Hagen Fahrenbecke;de:05914:2212;134
+between;9;Hagen Fahrenbecke;de:05914:2212;Hagen Steubenstr.;de:05914:2211;134
+between;9;Hagen Steubenstr.;de:05914:2211;Hagen Hoheleye;de:05914:2210;134
+between;9;Herdecke Hengsteyseestr.;de:05954:2252;Herdecke Brüninghausstr.;de:05954:2386;134
+between;9;Herdecke Brüninghausstr.;de:05954:2386;Hagen Weststr.;de:05914:2095;134
+between;9;Herdecke Mitte;de:05954:2253;Herdecke Hengsteyseestr.;de:05954:2252;133
+between;9;Hagen Landgericht;de:05914:2074;Hagen Bülowstr.;de:05914:2318;132
+between;9;Hagen Bülowstr.;de:05914:2318;Hagen Bettermannshof;de:05914:2317;132
+between;9;Hagen Bettermannshof;de:05914:2317;Hagen Fachhochschule Südwestf.;de:05914:2316;132
+between;9;Hagen Fachhochschule Südwestf.;de:05914:2316;Hagen Tondernstr.;de:05914:2280;132
+between;9;Hagen Haßley;de:05914:2263;Hagen Staplack / Enervie Zentr;de:05914:2262;132
+between;9;Hagen Staplack / Enervie Zentr;de:05914:2262;Hagen Alte Dorfschule;de:05914:2261;132
+between;9;Hagen Alte Dorfschule;de:05914:2261;Hagen Holthausen;de:05914:2260;132
+between;9;Hagen Rehstr.;de:05914:2161;Hagen Franklinstr.;de:05914:2219;131
+between;9;Hagen Franklinstr.;de:05914:2219;Hagen Pelmkestr.;de:05914:2218;131
+between;9;Hagen Pelmkestr.;de:05914:2218;Hagen Wilhelmsplatz;de:05914:2217;131
+between;9;Hagen Wilhelmsplatz;de:05914:2217;Hagen Feuerwache;de:05914:2216;131
+between;9;Hagen Grimmestr.;de:05914:2149;Hagen Vereinsstr.;de:05914:2148;131
+between;9;Hagen Vereinsstr.;de:05914:2148;Hagen Boelerheide;de:05914:2147;131
+between;9;Hagen Oberhagen;de:05914:2087;Hagen Buntebachstr.;de:05914:2086;130
+between;9;Hagen Buntebachstr.;de:05914:2086;Hagen Franzstr.;de:05914:2085;130
+between;9;Hagen Franzstr.;de:05914:2085;Hagen Luisenstr.;de:05914:2084;130
+between;9;Hagen Eilpe Physiomed;de:05914:2083;Hagen Hüsteystr.;de:05914:2082;130
+between;9;Hagen Hüsteystr.;de:05914:2082;Hagen Mühlhauser Str.;de:05914:2081;130
+between;9;Hagen Mühlhauser Str.;de:05914:2081;Hagen Hohle Str.;de:05914:2080;130
+between;9;Hagen Hohle Str.;de:05914:2080;Hagen Elsässer Str.;de:05914:2079;130
+between;9;Hagen Elsässer Str.;de:05914:2079;Hagen Riegerbusch;de:05914:2078;130
+between;9;Hagen Riegerbusch;de:05914:2078;Hagen Metzer Str.;de:05914:2077;130
+between;9;Hagen K.-E.-Osthaus-Str.;de:05914:2050;Hagen Am Großen Feld;de:05914:2265;130
+between;9;Hagen Am Großen Feld;de:05914:2265;Hagen Emsterfeld;de:05914:2264;130
+between;9;HA-Vorhalle Mitte;de:05914:2098;Hagen In der Imke;de:05914:2099;129
+between;9;Hagen In der Imke;de:05914:2099;Hagen Untere Lindenstr.;de:05914:2100;129
+between;9;Hagen Untere Lindenstr.;de:05914:2100;Hagen Wolfskuhler Weg;de:05914:2446;129
+between;9;Hagen Wolfskuhler Weg;de:05914:2446;Hagen Sporbecker Weg;de:05914:2101;129
+between;9;Hagen Sporbecker Weg;de:05914:2101;Hagen Ulmenstr.;de:05914:2103;129
+between;9;Hagen Ulmenstr.;de:05914:2103;Hagen Ziegelei;de:05914:2444;129
+between;9;Hagen Ziegelei;de:05914:2444;Hagen Zieglerstr.;de:05914:2441;129
+between;9;Hagen Zieglerstr.;de:05914:2441;Hagen Geitebrücke;de:05914:2094;129
+between;9;Hagen Niedernhofstr.;de:05914:2289;Hagen Sonntagstr.;de:05914:2417;129
+between;9;Hagen Emster Str.;de:05914:2025;Hagen Haßleyer Str.;de:05914:2024;129
+between;9;Hagen Frachtzentrum;de:05914:2762;Hagen Profilstr.;de:05914:2464;128
+between;9;Hagen Profilstr.;de:05914:2464;Hagen Profilstr. Schleife;de:05914:2480;128
+between;9;Hagen Helfe Mitte;de:05914:2206;Hagen Stegerwaldstr.;de:05914:2189;127
+between;9;Hagen Vorhaller Str.;de:05914:2311;HA-Vorhalle Mitte;de:05914:2098;127
+between;9;Hagen Delstern;de:05914:2309;Hagen Delsterner Brücke;de:05914:2310;126
+between;9;Hagen Delsterner Brücke;de:05914:2310;Hagen Eilpe Physiomed;de:05914:2083;126
+between;9;Hagen Sonntagstr.;de:05914:2417;Hagen Grimmestr.;de:05914:2149;126
+between;9;Hagen Metzer Str.;de:05914:2077;Hagen Eilperfeld;de:05914:2076;126
+between;9;Hagen Kuhlerkamp;de:05914:2183;Hagen Ottostr.;de:05914:2452;125
+between;9;Hagen Ottostr.;de:05914:2452;Hagen Rudolfstr.;de:05914:2182;125
+between;9;Hagen Rudolfstr.;de:05914:2182;Hagen Georgstr.;de:05914:2181;125
+between;9;Hagen Heinrichstr.;de:05914:2179;Hagen Volkshochschule;de:05914:2516;125
+between;9;Hagen Hameckestr.;de:05914:2150;Hagen Alexanderstr.;de:05914:2356;124
+between;9;Hagen Hildegardis-Schule;de:05914:2155;Hagen Emilienplatz;de:05914:2075;124
+between;9;Hagen Federnstr.;de:05914:2239;Hagen Frachtzentrum;de:05914:2762;122
+between;9;Hagen Stirnband;de:05914:2282;Hagen Haßleyer Str.;de:05914:2024;122
+between;9;Hagen Haßleyer Str.;de:05914:2024;Hagen Deutsches Rotes Kreuz;de:05914:2525;122
+between;9;Hagen Deutsches Rotes Kreuz;de:05914:2525;Hagen Tondernstr.;de:05914:2280;122
+between;9;Hagen Buschstr.;de:05914:2188;Hagen SeniorenzentrumBuschstr.;de:05914:2207;122
+between;9;Hagen SeniorenzentrumBuschstr.;de:05914:2207;Hagen Baurothstr.;de:05914:2208;122
+between;9;Hagen Westerbauer Schleife;de:05914:2561;Gevelsberg Talstr.;de:05954:8282;116
+between;9;Gevelsberg Talstr.;de:05954:8282;Gevelsberg Am Schultenhof;de:05954:8293;116
+between;9;Gevelsberg Am Schultenhof;de:05954:8293;Gevelsberg Poeten;de:05954:8283;116
+between;9;Gevelsberg Poeten;de:05954:8283;Gevelsberg Kirchwinkelstr.;de:05954:8284;116
+between;9;Gevelsberg Kirchwinkelstr.;de:05954:8284;Gevelsberg Hagebölling;de:05954:8285;116
+between;9;Gevelsberg Hagebölling;de:05954:8285;Gevelsberg Hundeicken;de:05954:8286;116
+between;9;Gevelsberg Hundeicken;de:05954:8286;Gevelsberg Bergstr.;de:05954:8287;116
+between;9;Gevelsberg Bergstr.;de:05954:8287;Gevelsberg Haufe;de:05954:8288;116
+between;9;Gevelsberg Haufe;de:05954:8288;Gevelsberg Gesundheitszentrum;de:05954:8289;116
+between;9;Hagen Hünenpforte;de:05914:2259;Hagen Hohenlimburg Bf;de:05914:2059;116
+between;9;Hagen Landgericht;de:05914:2074;Hagen Reh/Lenne Arena;de:05914:2069;107
+between;9;Hagen Hasselbach;de:05914:2509;Hagen Fasanenweg;de:05914:2068;104
+between;9;Hagen Fasanenweg;de:05914:2068;Hagen Dachsweg;de:05914:2067;104
+between;9;Hagen Dachsweg;de:05914:2067;Hagen Im Stockhof;de:05914:2066;104
+between;9;Hagen Schwalbenweg;de:05914:2065;Hagen Rundturnhalle;de:05914:2064;104
+between;9;Hagen Rundturnhalle;de:05914:2064;Hagen Elsey Post;de:05914:2063;104
+between;9;Hagen Zur Feldlage;de:05914:2132;Hagen Grüll;de:05914:2131;104
+between;9;Hagen Grüll;de:05914:2131;Hagen Steinberg;de:05914:2130;104
+between;9;Hagen Steinberg;de:05914:2130;Hagen Kahlenberg;de:05914:2129;104
+between;9;Hagen Posener Str.;de:05914:2295;Hagen Dortmunder Str.;de:05914:2294;103
+between;9;Hagen Felsenstr.;de:05914:2109;Hagen Krähnocken;de:05914:2108;103
+between;9;Hagen Krähnocken;de:05914:2108;Hagen Freilichtmuseum;de:05914:2106;103
+between;9;Hagen Freilichtmuseum;de:05914:2106;Hagen Zur Höhe;de:05914:2105;103
+between;9;Hagen Zur Höhe;de:05914:2105;Hagen Höhwaldstr.;de:05914:2456;103
+between;9;Hagen Höhwaldstr.;de:05914:2456;Hagen Selbecke;de:05914:2104;103
+between;9;Hagen Werkzeugstr.;de:05914:2412;Hagen Rohrstr.;de:05914:2236;103
+between;9;Hagen Weststr.;de:05914:2095;Hagen Hartmannstr.;de:05914:2096;103
+between;9;Hagen Hartmannstr.;de:05914:2096;HA-Vorhalle Mitte;de:05914:2098;103
+between;9;Hagen Rummenohl Bf;de:05914:2298;Hagen Roland;de:05914:2299;102
+between;9;Hagen Roland;de:05914:2299;Hagen Priorei;de:05914:2118;102
+between;9;Hagen Priorei;de:05914:2118;Hagen Düinghauser Weg;de:05914:2774;102
+between;9;Hagen Düinghauser Weg;de:05914:2774;Hagen Kattwinkel;de:05914:2117;102
+between;9;Hagen Kattwinkel;de:05914:2117;Hagen Am Stuckenhagen;de:05914:2116;102
+between;9;Hagen Am Stuckenhagen;de:05914:2116;Hagen Sommerhagener Weg;de:05914:2384;102
+between;9;Hagen Sommerhagener Weg;de:05914:2384;Hagen Grabweg;de:05914:2740;102
+between;9;Hagen Grabweg;de:05914:2740;Hagen Dahl;de:05914:2301;102
+between;9;Hagen Dahl;de:05914:2301;Hagen Hoffnungstal;de:05914:2302;102
+between;9;Hagen Hoffnungstal;de:05914:2302;Hagen Finking;de:05914:2303;102
+between;9;Hagen Finking;de:05914:2303;Hagen Ambrock Delsterner Str.;de:05914:2620;102
+between;9;Hagen Ambrock Delsterner Str.;de:05914:2620;Hagen Ambrock;de:05914:2304;102
+between;9;Hagen Ambrock;de:05914:2304;Hagen Hunsdieker Weg/Marienhof;de:05914:2305;102
+between;9;Hagen Hunsdieker Weg/Marienhof;de:05914:2305;Hagen Oberdelstern;de:05914:2306;102
+between;9;Hagen Oberdelstern;de:05914:2306;Hagen Kuhweide;de:05914:2307;102
+between;9;Hagen Kuhweide;de:05914:2307;Hagen Volmeburg;de:05914:2308;102
+between;9;Hagen Volmeburg;de:05914:2308;Hagen Delstern;de:05914:2309;102
+between;9;Hagen Landgericht;de:05914:2074;Hagen Rubensstr.;de:05914:2550;102
+between;9;Hagen Rubensstr.;de:05914:2550;Hagen Lützowstr.;de:05914:2540;102
+between;9;Hagen Lützowstr.;de:05914:2540;Hagen Lortzingstr.;de:05914:2350;102
+between;9;Hagen Hasper Torhaus;de:05914:2194;Hagen Heilig-Geist-Str.;de:05914:2498;100
+between;9;Hagen Helfe Mitte;de:05914:2206;Hagen Pieperstr.;de:05914:2205;100
+between;9;Hagen Eilpe Physiomed;de:05914:2083;Hagen Grundschule Eilpe;de:05914:2291;99
+between;9;Hagen Grundschule Eilpe;de:05914:2291;Hagen Felsenstr.;de:05914:2109;99
+between;9;Hagen Rehstr.;de:05914:2161;Hagen Konrad-Adenauer-Ring;de:05914:2423;99
+between;9;Hagen Marktbrücke;de:05914:2001;Hagen Rathaus an der Volme;de:05914:2410;99
+between;9;Hagen Rathaus an der Volme;de:05914:2410;Hagen Märkischer Ring;de:05914:2506;98
+between;9;Hagen Märkischer Ring;de:05914:2506;Hagen Marktbrücke;de:05914:2001;98
+between;9;Hagen Vorhalle Bf;de:05914:2435;Hagen J-G-Fichte-Str.;de:05914:2244;96
+between;9;Hagen Cunostr.;de:05914:2048;Hagen Max-Planck-Str.;de:05914:2047;93
+between;9;Hagen Max-Planck-Str.;de:05914:2047;Hagen Köhlerweg;de:05914:2046;93
+between;9;Hagen Köhlerweg;de:05914:2046;Hagen Bissingheim;de:05914:2045;93
+between;9;Hagen Batheyer Str.;de:05914:2201;Hagen Posener Str.;de:05914:2295;91
+between;9;Hagen Cunostr.;de:05914:2048;Hagen Zeppelinweg;de:05914:2283;91
+between;9;Hagen Zeppelinweg;de:05914:2283;Hagen Emsterfeld;de:05914:2264;91
+between;9;Hagen Spielbrink;de:05914:2044;Hagen Spielbrinkstr.;de:05914:2043;77
+between;9;Hagen Spielbrinkstr.;de:05914:2043;Hagen Büddingstr.;de:05914:2042;77
+between;9;Hagen Heigarenweg;de:05914:2186;Hagen Henrichsiepen;de:05914:2036;75
+between;9;Hagen Henrichsiepen;de:05914:2036;Hagen Fley Mitte;de:05914:2185;75
+between;9;Hagen Hüttenplatz GWG;de:05914:2743;Hagen Haspe Zentrum;de:05914:2037;74
+between;9;Hagen K.-E.-Osthaus-Str.;de:05914:2050;Hagen Emst Kirche;de:05914:2049;74
+between;9;Hagen Stolzestr.;de:05914:2196;Hagen Dickenbruchstr.;de:05914:2195;73
+between;9;Hagen Dickenbruchstr.;de:05914:2195;Hagen Waldstr.;de:05914:2499;73
+between;9;Hagen Waldstr.;de:05914:2499;Hagen Intzestr.;de:05914:2193;73
+between;9;Hagen Intzestr.;de:05914:2193;Hagen Dammstr.;de:05914:2168;73
+between;9;Hagen Dammstr.;de:05914:2168;Hagen Vollbrinkstr.;de:05914:2744;73
+between;9;Hagen Allg. Krankenhaus;de:05914:2157;Hagen Fichte-Gymnasium;de:05914:2562;73
+between;9;Hagen Benekestr.;de:05914:2366;Hagen Stadeweg;de:05914:2367;73
+between;9;Hagen Stadeweg;de:05914:2367;Hagen Volkenborn;de:05914:2368;73
+between;9;Hagen Volkenborn;de:05914:2368;Hagen Krupp;de:05914:2369;73
+between;9;Hagen Krupp;de:05914:2369;Hagen Haardtstr.;de:05914:2370;73
+between;9;Hagen Haardtstr.;de:05914:2370;Hagen Giebel;de:05914:2371;73
+between;9;Hagen Giebel;de:05914:2371;Hagen Nimmertal;de:05914:2372;73
+between;9;Hagen Nimmertal;de:05914:2372;Hagen Nahmerbach;de:05914:2373;73
+between;9;Hagen Nahmerbach;de:05914:2373;Hagen Lahmen Hasen;de:05914:2374;73
+between;9;Hagen Lahmen Hasen;de:05914:2374;Hagen Obernahmer Land;de:05914:2375;73
+between;9;Hagen Obernahmer Land;de:05914:2375;Hagen Obernahmer;de:05914:2379;73
+between;9;Hagen Landgericht;de:05914:2074;Hagen Alter Reher Weg;de:05914:2070;72
+between;9;Hagen Alter Reher Weg;de:05914:2070;Hagen Hasselbach;de:05914:2509;72
+between;9;Hagen Im Stockhof;de:05914:2066;Hagen Im Niederfeld;de:05914:2442;72
+between;9;Hagen Im Niederfeld;de:05914:2442;Hagen Schwalbenweg;de:05914:2065;72
+between;9;Hagen Elsey Post;de:05914:2063;Hagen Elsey Krankenhaus;de:05914:2062;72
+between;9;Hagen Sauerlandstr.;de:05914:2232;Hagen ARCADEON;de:05914:2521;72
+between;9;Hagen ARCADEON;de:05914:2521;Hagen Dolomitstr.;de:05914:2230;72
+between;9;Hagen Emsterfeld;de:05914:2264;Hagen Haßley;de:05914:2263;72
+between;9;Hagen Martinstr.;de:05914:2560;Hagen Neue Str.;de:05914:2557;72
+between;9;Hagen Cuno-Berufskolleg;de:05914:2190;Hagen Theater;de:05914:2005;72
+between;9;Hagen Büddingstr.;de:05914:2042;Hagen Ev. Krankenhaus;de:05914:2166;72
+between;9;Hagen Pieperstr.;de:05914:2205;Hagen Schieferstr.;de:05914:2204;71
+between;9;Hagen Schieferstr.;de:05914:2204;Hagen Borgenfeldstr.;de:05914:2114;71
+between;9;Hagen Fuhrparkstr.;de:05914:2091;Hagen Hag. Entsorgungsbetr.;de:05914:2511;71
+between;9;Hagen Hag. Entsorgungsbetr.;de:05914:2511;Hagen Alexanderstr.;de:05914:2356;71
+between;9;Hagen Georgstr.;de:05914:2181;Hagen Leopoldstr.;de:05914:2482;71
+between;9;Hagen Leopoldstr.;de:05914:2482;Hagen Heinrichstr.;de:05914:2179;71
+between;9;Hagen Realschule Haspe;de:05914:2559;Hagen Heilig-Geist-Str.;de:05914:2498;71
+between;9;Hagen Hasper Hammer;de:05914:2454;Hagen Rodersiepen;de:05914:2495;70
+between;9;Hagen Rodersiepen;de:05914:2495;Hagen Pennacker;de:05914:2497;70
+between;9;Hagen Pennacker;de:05914:2497;Hagen Höxterstr.;de:05914:2330;70
+between;9;Hagen Höxterstr.;de:05914:2330;Hagen Detmolder Str.;de:05914:2494;70
+between;9;Hagen Detmolder Str.;de:05914:2494;Hagen Schaumburger Str.;de:05914:2493;70
+between;9;Hagen Schaumburger Str.;de:05914:2493;Hagen Tückinger Höhe;de:05914:2491;70
+between;9;Hagen Tückinger Höhe;de:05914:2491;Hagen Kuhlerkamp;de:05914:2183;70
+between;9;Hagen Garenfeld Mitte;de:05914:2470;Hagen Zur Feldlage;de:05914:2132;70
+between;9;Hagen Kahlenberg;de:05914:2129;Hagen Industriestr.;de:05914:2229;70
+between;9;Hagen Industriestr.;de:05914:2229;Hagen Rohrstr.;de:05914:2236;70
+between;9;Hagen Buschstr.;de:05914:2188;Hagen Erlhagen;de:05914:2414;70
+between;9;Hagen Erlhagen;de:05914:2414;Hagen Weidekampstr.;de:05914:2187;70
+between;9;Hagen Sportanlage Hoheleye;de:05914:2566;Hagen Heigarenweg;de:05914:2186;70
+between;9;Hagen Langenkamp;de:05914:2362;Hagen Lenneufer;de:05914:2363;70
+between;9;Hagen Westerbauer Bf;de:05914:2433;Hagen Quambusch;de:05914:2058;69
+between;9;Hagen Quambusch;de:05914:2058;Hagen Louise-Märcker-Str.;de:05914:2057;69
+between;9;Hagen Louise-Märcker-Str.;de:05914:2057;Hagen Kornstr.;de:05914:2056;69
+between;9;Hagen Kornstr.;de:05914:2056;Hagen Ährenstr.;de:05914:2055;69
+between;9;Hagen Ährenstr.;de:05914:2055;Hagen Twittingstr.;de:05914:2054;69
+between;9;Hagen Twittingstr.;de:05914:2054;Hagen Jungfernbruch;de:05914:2053;69
+between;9;Hagen Jungfernbruch;de:05914:2053;Hagen Harkortstr.;de:05914:2052;69
+between;9;Hagen Harkortstr.;de:05914:2052;Hagen Oedenburgstr.;de:05914:2041;69
+between;9;Hagen Oedenburgstr.;de:05914:2041;Hagen Innsbrucker Str.;de:05914:2409;69
+between;9;Hagen Linnufer;de:05914:2126;Hagen Gemarkenweg;de:05914:2127;69
+between;9;Hagen Gemarkenweg;de:05914:2127;Hagen Gosmann;de:05914:2128;69
+between;9;Hagen Emster Str.;de:05914:2025;Hagen Steinruther Str.;de:05914:2619;69
+between;9;Hagen Steinruther Str.;de:05914:2619;Hagen In der Luke;de:05914:2051;69
+between;9;Hagen In der Luke;de:05914:2051;Hagen K.-E.-Osthaus-Str.;de:05914:2050;69
+between;9;Hagen Gabelsberger Str.;de:05914:2197;Hagen Kipperstr.;de:05914:2198;68
+between;9;Hagen Hasper Torhaus;de:05914:2194;Hagen Realschule Haspe;de:05914:2559;68
+between;9;Hagen Cuno-Berufskolleg;de:05914:2190;Hagen Volkspark;de:05914:2004;68
+between;9;Hagen Hoheleye;de:05914:2210;Hagen Polizeipräsidium;de:05914:2510;68
+between;9;Hagen K.-E.-Osthaus-Str.;de:05914:2050;Hagen Walddorfstr.;de:05914:2176;68
+between;9;Hagen Walddorfstr.;de:05914:2176;Hagen Wasserloses Tal;de:05914:2177;68
+between;9;Hagen Hameckestr.;de:05914:2150;Hagen Pettenkoferstr.;de:05914:2151;68
+between;9;Hagen Pettenkoferstr.;de:05914:2151;Hagen Boeler Str.;de:05914:2013;68
+between;9;Hagen Boeler Str.;de:05914:2013;Hagen Houbenstr.;de:05914:2152;68
+between;9;Hagen Brockhausen;de:05914:2245;Hagen J-G-Fichte-Str.;de:05914:2244;67
+between;9;Hagen Wasserloses Tal;de:05914:2177;Hagen Willdestr.;de:05914:2175;67
+between;9;Hagen Willdestr.;de:05914:2175;Hagen K.-E.-Osthaus-Str.;de:05914:2050;67
+between;9;Herdecke Schanze;de:05954:2278;Herdecke Walkenhorst;de:05954:2277;67
+between;9;Herdecke Walkenhorst;de:05954:2277;Herdecke Am Hegede;de:05954:2276;67
+between;9;Herdecke Am Hegede;de:05954:2276;Herdecke Sperlingsweg;de:05954:2275;67
+between;9;Herdecke Sperlingsweg;de:05954:2275;Herdecke Nierfeldstr.;de:05954:2274;67
+between;9;Herdecke Nierfeldstr.;de:05954:2274;Herdecke Am Schlagbaum;de:05954:2273;67
+between;9;Herdecke Am Schlagbaum;de:05954:2273;Herdecke Gahlenfeldstr.;de:05954:2272;67
+between;9;Herdecke Gahlenfeldstr.;de:05954:2272;Herdecke Herdecker Bach;de:05954:2271;67
+between;9;Herdecke Herdecker Bach;de:05954:2271;Herdecke Mozartweg;de:05954:2270;67
+between;9;Herdecke Mozartweg;de:05954:2270;Herdecke Attenbergstr./Bahnhof;de:05954:2281;67
+between;9;Herdecke Attenbergstr./Bahnhof;de:05954:2281;Herdecke Rathaus;de:05954:2268;67
+between;9;Herdecke Rathaus;de:05954:2268;Herdecke Mitte;de:05954:2253;67
+between;9;Hagen Gewerbepark Kückelhausen;de:05914:2209;Hagen Konrad-Adenauer-Ring;de:05914:2423;67
+between;9;Hagen Feuerwache;de:05914:2216;Hagen Fichte-Gymnasium;de:05914:2562;67
+between;9;Hagen Weidekampstr.;de:05914:2187;Hagen Sportanlage Hoheleye;de:05914:2566;67
+between;9;Wetter Friedrichstr.;de:05954:8296;Wetter Ringstr./Harkortsee;de:05954:8295;67
+between;9;Wetter Ringstr./Harkortsee;de:05954:8295;Hagen Harkortbrücke;de:05914:2313;67
+between;9;Hagen Harkortbrücke;de:05914:2313;Hagen Vorhalle West;de:05914:2312;67
+between;9;Hagen Vorhalle West;de:05914:2312;Hagen Vorhaller Str.;de:05914:2311;67
+between;9;Hagen Loxbaum;de:05914:2016;Hagen Hoheleye;de:05914:2210;66
+between;9;Hagen Aschenbergstr.;de:05914:2214;Hagen Ruhrstr.;de:05914:2215;66
+between;9;Hagen Ruhrstr.;de:05914:2215;Hagen Emilienplatz;de:05914:2075;66
+between;9;Hagen Boele Markt;de:05914:2020;Hagen Boele Friedhof;de:05914:2387;66
+between;9;Hagen Boele Friedhof;de:05914:2387;Hagen Turmstr.;de:05914:2290;66
+between;9;Hagen Turmstr.;de:05914:2290;Hagen Niedernhofstr.;de:05914:2289;66
+between;9;Hagen Eckeseyer Str.;de:05914:2440;Hagen Klopstockstr.;de:05914:2093;66
+between;9;Hagen Holthausen;de:05914:2260;Hagen Hünenpforte;de:05914:2259;66
+between;9;Hagen Hünenpforte;de:05914:2259;Hagen Weißensteinstr.;de:05914:2481;66
+between;9;Hagen Weißensteinstr.;de:05914:2481;Hagen Holthausen;de:05914:2260;66
+between;9;Herdecke Mitte;de:05954:2253;Herdecke Kirche;de:05954:2254;66
+between;9;Herdecke Kirche;de:05954:2254;Herdecke Goethestr.;de:05954:2284;66
+between;9;Herdecke Rosenstr.;de:05954:2286;Herdecke Berliner Str.;de:05954:2287;66
+between;9;Herdecke Berliner Str.;de:05954:2287;Herdecke Nacken;de:05954:2288;66
+between;9;Hagen Werkzeugstr.;de:05914:2412;Hagen Feldmühlenstr.;de:05914:2549;66
+between;9;Hagen Feldmühlenstr.;de:05914:2549;Hagen Federnstr.;de:05914:2239;66
+between;9;Hagen Hasper Hammer;de:05914:2454;Hagen Im Lindental;de:05914:2328;66
+between;9;Hagen Im Lindental;de:05914:2328;Hagen Eisenwerk;de:05914:2329;66
+between;9;Hagen Eisenwerk;de:05914:2329;Hagen Geweke;de:05914:2331;66
+between;9;Hagen Allg. Krankenhaus;de:05914:2157;Hagen Schwenke;de:05914:2006;66
+between;9;Hagen Hildegardis-Schule;de:05914:2155;Hagen Aschenbergstr.;de:05914:2214;65
+between;9;Hagen Einhausstr.;de:05914:2461;Hagen Pillauer Str.;de:05914:2293;65
+between;9;Hagen Pillauer Str.;de:05914:2293;Hagen Dortmunder Str.;de:05914:2294;65
+between;9;Hagen Haßleyer Str.;de:05914:2024;Hagen Haferkamp;de:05914:2023;65
+between;9;Hagen Haferkamp;de:05914:2023;Hagen Bolohstr.;de:05914:2022;65
+between;9;Hagen Bolohstr.;de:05914:2022;Hagen Boloh;de:05914:2021;65
+between;9;Hagen Lortzingstr.;de:05914:2350;Hagen Hardenbergstr.;de:05914:2351;65
+between;9;Hagen Hardenbergstr.;de:05914:2351;Hagen Klosterstr.;de:05914:2352;65
+between;9;Hagen Klosterstr.;de:05914:2352;Hagen Gneisenaustr.;de:05914:2353;65
+between;9;Hagen Bauhaus;de:05914:2172;Hagen Hag. Entsorgungsbetr.;de:05914:2511;65
+between;9;Hagen Hag. Entsorgungsbetr.;de:05914:2511;Hagen Hameckestr.;de:05914:2150;65
+between;9;Hagen Boelerheide;de:05914:2147;Hagen Viktor-v.-Scheffel-Str.;de:05914:2398;65
+between;9;Hagen Viktor-v.-Scheffel-Str.;de:05914:2398;Hagen Wilhelm-Leuschner-Str.;de:05914:2399;65
+between;9;Hagen Wilhelm-Leuschner-Str.;de:05914:2399;Hagen Loxbaum;de:05914:2016;65
+between;9;Hagen Fröbelstr.;de:05914:2142;Hagen Stegerwaldstr.;de:05914:2189;65
+between;9;Hagen Blumenstr.;de:05914:2323;Hagen Hermannstr.;de:05914:2324;65
+between;9;Hagen Hermannstr.;de:05914:2324;Hagen Lahnstr.;de:05914:2325;65
+between;9;Hagen Lahnstr.;de:05914:2325;Hagen Friedensplatz;de:05914:2528;65
+between;9;Hagen Friedensplatz;de:05914:2528;Hagen St-Josefs-Kirche;de:05914:2009;65
+between;9;Hagen Helfer Str.;de:05914:2019;Hagen Osthofstr.;de:05914:2141;65
+between;9;Hagen Vollbrinkstr.;de:05914:2744;Hagen Rolandstr.;de:05914:2871;65
+between;9;Hagen Rolandstr.;de:05914:2871;Hagen Gewerbepark Kückelhausen;de:05914:2209;65
+between;9;Hagen Innsbrucker Str.;de:05914:2409;Hagen Ev. Krankenhaus;de:05914:2166;64
+between;9;Hagen Feuerwache;de:05914:2216;Hagen Schwenke;de:05914:2006;64
+between;9;Hagen Hüttenplatz GWG;de:05914:2743;Hagen Hasper Torhaus;de:05914:2194;64
+between;9;Hagen Donnerkuhle;de:05914:2349;Hagen Thorn-Prikker-Str.;de:05914:2439;64
+between;9;Hagen Thorn-Prikker-Str.;de:05914:2439;Hagen Haßleyer Str.;de:05914:2024;64
+between;9;Hagen Bathey;de:05914:2199;Hagen Batheyer Str.;de:05914:2201;63
+between;9;Hagen Gellertweg;de:05914:2144;Hagen Birkenstr.;de:05914:2145;63
+between;9;Hagen Birkenstr.;de:05914:2145;Hagen Lönsweg;de:05914:2146;63
+between;9;Hagen Lönsweg;de:05914:2146;Hagen Boelerheide;de:05914:2147;63
+between;9;Hagen Osthofstr.;de:05914:2141;Hagen Helfe Mitte;de:05914:2206;63
+between;9;Hagen Lennebad;de:05914:2061;Hagen Mühlenbergstr.;de:05914:2388;63
+between;9;Hagen Mühlenbergstr.;de:05914:2388;Hagen Hohenlimburg Bf;de:05914:2059;63
+between;9;Hagen Batheyer Str.;de:05914:2201;Hagen Auf dem Graskamp;de:05914:2476;62
+between;9;Hagen Auf dem Graskamp;de:05914:2476;Hagen Bonsmannstr.;de:05914:2200;62
+between;9;Hagen Wasserloses Tal;de:05914:2177;Hagen Am Waldesrand;de:05914:2569;62
+between;9;Hagen Am Waldesrand;de:05914:2569;Hagen Felsental;de:05914:2570;62
+between;9;Hagen Felsental;de:05914:2570;Hagen Wasserturm;de:05914:2173;62
+between;9;Hagen Wasserturm;de:05914:2173;Hagen Im Erlenbusch;de:05914:2430;62
+between;9;Hagen Im Erlenbusch;de:05914:2430;Hagen Emst Kirche;de:05914:2049;62
+between;9;Hagen Emsterfeld;de:05914:2264;Hagen Stirnband;de:05914:2282;62
+between;9;Hagen Elsey Krankenhaus;de:05914:2062;Hagen Burgweg;de:05914:2343;62
+between;9;Hagen Burgweg;de:05914:2343;Hagen Heidestr.;de:05914:2342;62
+between;9;Hagen Heidestr.;de:05914:2342;Hagen Auf dem Dreische;de:05914:2341;62
+between;9;Hagen Auf dem Dreische;de:05914:2341;Hagen Krahenbrink;de:05914:2340;62
+between;9;Hagen Krahenbrink;de:05914:2340;Hagen Im Sibb;de:05914:2339;62
+between;9;Hagen Baurothstr.;de:05914:2208;Hagen Kapellenstr.;de:05914:2017;61
+between;9;Hagen Loxbaum;de:05914:2016;Hagen Baurothstr.;de:05914:2208;61
+between;9;Hagen Stirnband;de:05914:2282;Hagen Fernheizwerk;de:05914:2507;60
+between;9;Hagen Fernheizwerk;de:05914:2507;Hagen Haßley;de:05914:2263;60
+between;9;Hagen Vossacker;de:05914:2479;Hagen Rehdeicke;de:05914:2478;60
+between;9;Hagen Rehdeicke;de:05914:2478;Hagen Vorhaller Str.;de:05914:2311;60
+between;9;HA-Vorhalle Mitte;de:05914:2098;Hagen Weststr.;de:05914:2095;60
+between;9;Hagen Weststr.;de:05914:2095;Hagen Bauhaus;de:05914:2172;60
+between;9;Hagen Bauhaus;de:05914:2172;Hagen Hauptbahnhof;de:05914:2007;60
+between;9;Hagen Donnerkuhle;de:05914:2349;Hagen Heidnocken;de:05914:2347;59
+between;9;Hagen Heidnocken;de:05914:2347;Hagen Hünenpforte;de:05914:2259;59
+between;9;Gevelsberg Gesundheitszentrum;de:05954:8289;Gevelsberg Rathaus;de:05954:8025;58
+between;9;Gevelsberg Rathaus;de:05954:8025;Gevelsberg Hbf.;de:05954:8313;58
+between;9;Gevelsberg Hbf.;de:05954:8313;Gevelsberg Commerzbank;de:05954:8026;58
+between;9;Gevelsberg Commerzbank;de:05954:8026;Gevelsberg Lusebrink;de:05954:8621;58
+between;9;Gevelsberg Lusebrink;de:05954:8621;Gevelsberg Gesundheitszentrum;de:05954:8289;58
+between;9;Hagen Hauptbahnhof;de:05914:2007;Hagen Stadtmitte/Volme Galerie;de:05914:2003;57
+between;9;Hagen Rathaus an der Volme;de:05914:2410;Hagen Markt;de:05914:2002;57
+between;9;Hagen Markt;de:05914:2002;Hagen Eilpe Physiomed;de:05914:2083;57
+between;9;Hagen Eilpe Physiomed;de:05914:2083;Hagen Staplack / Enervie Zentr;de:05914:2262;57
+between;9;Hagen Staplack / Enervie Zentr;de:05914:2262;Hagen Hünenpforte;de:05914:2259;57
+between;9;Hagen Pieperstr.;de:05914:2205;Hagen Im Löhken;de:05914:2466;56
+between;9;Hagen Im Löhken;de:05914:2466;Hagen Kampmannshof;de:05914:2242;56
+between;9;Hagen Kampmannshof;de:05914:2242;Hagen Haus Busch;de:05914:2241;56
+between;9;Hagen Haus Busch;de:05914:2241;Hagen C. D. Wälzholz;de:05914:2517;56
+between;9;Hagen C. D. Wälzholz;de:05914:2517;Hagen Federnstr.;de:05914:2239;56
+between;9;Hagen Georgstr.;de:05914:2181;Hagen Albrechtstr.;de:05914:2180;54
+between;9;Hagen Albrechtstr.;de:05914:2180;Hagen Heinrichstr.;de:05914:2179;54
+between;9;Hagen Linnufer;de:05914:2126;Hagen Kirchplatz;de:05914:2122;52
+between;9;Hagen Kirchplatz;de:05914:2122;Hagen Berchum Schule;de:05914:2449;52
+between;9;Hagen Houbenstr.;de:05914:2152;Hagen Westfalenbad;de:05914:2741;52
+between;9;Hagen Westfalenbad;de:05914:2741;Hagen Sportpark Ischeland;de:05914:2153;52
+between;9;Hagen Sterbecke;de:05914:2438;Hagen Rummenohl Bf;de:05914:2298;51
+between;9;Hagen Rummenohl Bf;de:05914:2298;Hagen Sterbecketal;de:05914:2437;51
+between;9;Hagen Sterbecketal;de:05914:2437;Hagen Sterbecke;de:05914:2438;51
+between;9;Herdecke Breddestr.;de:05954:2285;Herdecke Rosenstr.;de:05954:2286;51
+between;9;Hagen Garenfelder Weg;de:05914:2124;Hagen Linnufer;de:05914:2126;51
+between;9;Herdecke Goethestr.;de:05954:2284;Herdecke Breddestr.;de:05954:2285;49
+between;9;Hagen Bonsmannstr.;de:05914:2200;Hagen Bathey;de:05914:2199;45
+between;9;Hagen Loxbaum;de:05914:2016;Hagen Waldfriedhof;de:05914:2518;42
+between;9;Hagen Westerbauer Schleife;de:05914:2561;Hagen Obervogelsang;de:05914:2390;42
+between;9;Hagen Obervogelsang;de:05914:2390;Hagen Am Baukloh;de:05914:2327;42
+between;9;Hagen Herbeck;de:05914:2500;Hagen Herbecker Weg;de:05914:2348;41
+between;9;Hagen Selbecke;de:05914:2104;Hagen Roter Hirsch;de:05914:2407;40
+between;9;Hagen Roter Hirsch;de:05914:2407;Hagen Am Damm;de:05914:2408;40
+between;9;Hagen Am Damm;de:05914:2408;Breckerfeld Eicken;de:05954:8299;40
+between;9;Breckerfeld Eicken;de:05954:8299;Breckerfeld Heide;de:05954:8301;40
+between;9;Breckerfeld Heide;de:05954:8301;Breckerfeld Zurstraße;de:05954:8312;40
+between;9;Breckerfeld Zurstraße;de:05954:8312;Breckerfeld Grüne;de:05954:8300;40
+between;9;Breckerfeld Grüne;de:05954:8300;Breckerfeld Schaffland;de:05954:8307;40
+between;9;Breckerfeld Schaffland;de:05954:8307;Breckerfeld Neuenloh;de:05954:8304;40
+between;9;Breckerfeld Neuenloh;de:05954:8304;Breckerfeld Sonnenschein;de:05954:8309;40
+between;9;Breckerfeld Sonnenschein;de:05954:8309;Breckerfeld Königsheide;de:05954:8222;40
+between;9;Breckerfeld Königsheide;de:05954:8222;Breckerfeld Brauck;de:05954:8221;40
+between;9;Breckerfeld Brauck;de:05954:8221;Breckerfeld Windmühlencenter;de:05954:8220;40
+between;9;Hagen Waldfriedhof;de:05914:2518;Hagen Sportanlage Hoheleye;de:05914:2566;40
+between;9;Hagen Wasserschloss Werdringen;de:05914:2973;Hagen Brockhausen;de:05914:2245;40
+between;9;Hagen Ennepeufer;de:05914:2326;Hagen Haspe Zentrum;de:05914:2037;39
+between;9;Hagen Sportanlage Hoheleye;de:05914:2566;Hagen Wienbrauk;de:05914:2539;37
+between;9;Hagen Wienbrauk;de:05914:2539;Hagen Röhrenspring;de:05914:2238;37
+between;9;Hagen Röhrenspring;de:05914:2238;Hagen Werkzeugstr.;de:05914:2412;37
+between;9;Hagen Dolomitstr.;de:05914:2230;Hagen Lange Eck;de:05914:2524;37
+between;9;Hagen Lange Eck;de:05914:2524;Hagen Dolomitwerke;de:05914:2503;37
+between;9;Hagen Dolomitwerke;de:05914:2503;Hagen Gut Herbeck;de:05914:2502;37
+between;9;Hagen Gut Herbeck;de:05914:2502;Hagen Herbeck Denkmal;de:05914:2422;37
+between;9;Hagen Herbeck Denkmal;de:05914:2422;Hagen Herbeck;de:05914:2500;37
+between;9;Hagen Kronenburgplatz;de:05914:2364;Hagen Benekestr.;de:05914:2366;37
+between;9;Hagen Fröbelstr.;de:05914:2142;Hagen Helfe Mitte;de:05914:2206;36
+between;9;Hagen Herbecker Weg;de:05914:2348;Hagen Heidnocken;de:05914:2347;36
+between;9;Hagen Heidnocken;de:05914:2347;Hagen Wiehagen;de:05914:2345;36
+between;9;Hagen Wiehagen;de:05914:2345;Hagen Hammacher;de:05914:2344;36
+between;9;Hagen Hammacher;de:05914:2344;Hagen Hünenpforte;de:05914:2259;36
+between;9;Hagen Benekestr.;de:05914:2366;Hagen Unternahmer;de:05914:2365;36
+between;9;Hagen Unternahmer;de:05914:2365;Hagen Lenneufer;de:05914:2363;36
+between;9;Hagen Langenkamp;de:05914:2362;Hagen Hohenlimburg Bf;de:05914:2059;36
+between;9;Hagen Stolzestr.;de:05914:2196;Hagen Gabelsberger Str.;de:05914:2197;35
+between;9;Hagen Kipperstr.;de:05914:2198;Hagen Neue Str.;de:05914:2557;35
+between;9;Hagen Gosmann;de:05914:2128;Hagen Industriestr.;de:05914:2229;35
+between;9;Hagen Industriestr.;de:05914:2229;Hagen Gründelbusch;de:05914:2879;35
+between;9;Hagen Gründelbusch;de:05914:2879;Hagen Dolomitstr.;de:05914:2230;35
+between;9;Hagen Borgenfeldstr.;de:05914:2114;Hagen Feldmühle;de:05914:2475;34
+between;9;Hagen Feldmühle;de:05914:2475;Hagen Heizkraftwerk Kabel;de:05914:2474;34
+between;9;Hagen Heizkraftwerk Kabel;de:05914:2474;Hagen Druckhaus;de:05914:2473;34
+between;9;Hagen Druckhaus;de:05914:2473;Hagen Klöckner;de:05914:2472;34
+between;9;Hagen Reh/Lenne Arena;de:05914:2069;Hagen Alter Reher Weg;de:05914:2070;34
+between;9;Hagen Alter Reher Weg;de:05914:2070;Hagen Florianstr.;de:05914:2870;34
+between;9;Hagen Florianstr.;de:05914:2870;Hagen Spannstiftstr.;de:05914:2455;34
+between;9;Hagen Spannstiftstr.;de:05914:2455;Hagen Wannebachstr.;de:05914:2228;34
+between;9;Hagen Wannebachstr.;de:05914:2228;Hagen Linnufer;de:05914:2126;34
+between;9;Hagen Berchum Schule;de:05914:2449;Hagen Dreischengarten;de:05914:2450;34
+between;9;Hagen Dreischengarten;de:05914:2450;Hagen Garenfelder Weg;de:05914:2124;34
+between;9;Hagen Gosmann;de:05914:2128;Hagen Kahlenberg;de:05914:2129;34
+between;9;Hagen Zur Feldlage;de:05914:2132;Hagen Garenfeld;de:05914:2133;34
+between;9;Hagen Garenfeld;de:05914:2133;Hagen Zur Heimke;de:05914:2134;34
+between;9;Hagen Zur Heimke;de:05914:2134;Hagen Ruhrbrücke;de:05914:2135;34
+between;9;Hagen Ruhrbrücke;de:05914:2135;Hagen Brauckwiesen;de:05914:2136;34
+between;9;Hagen Brauckwiesen;de:05914:2136;Hagen Lennhof;de:05914:2137;34
+between;9;Hagen Lennhof;de:05914:2137;Hagen Buschmühle;de:05914:2138;34
+between;9;Hagen Buschmühle;de:05914:2138;Hagen Buschmühlenstr.;de:05914:2192;34
+between;9;Hagen Buschmühlenstr.;de:05914:2192;Hagen Borgenfeldstr.;de:05914:2114;34
+between;9;Hagen Boele Markt;de:05914:2020;Hagen Lütkenheider Str.;de:05914:2501;34
+between;9;Hagen Lütkenheider Str.;de:05914:2501;Hagen Niedernhofstr.;de:05914:2289;34
+between;9;Hagen Hohenlimburg Mitte;de:05914:2060;Hagen Cafe Möller;de:05914:2357;34
+between;9;Hagen Cafe Möller;de:05914:2357;Hagen Jahnstr.;de:05914:2358;34
+between;9;Hagen Jahnstr.;de:05914:2358;Hagen Isenbergstr.;de:05914:2035;34
+between;9;Hagen Isenbergstr.;de:05914:2035;Hagen Langenkamp;de:05914:2362;34
+between;9;Hagen Lenneufer;de:05914:2363;Hagen Kronenburgplatz;de:05914:2364;34
+between;9;Hagen Oeger Str.;de:05914:2240;Hagen Hoesch Siedlung;de:05914:2404;34
+between;9;Hagen Hoesch Siedlung;de:05914:2404;Hagen Feldstr.;de:05914:2403;34
+between;9;Hagen Feldstr.;de:05914:2403;Hagen Grote;de:05914:2073;34
+between;9;Hagen Grote;de:05914:2073;Hagen Kaltwalzwerk;de:05914:2749;34
+between;9;Wetter Bf.;de:05954:8080;Wetter Friedrichstr.;de:05954:8296;34
+between;9;Hagen Kipperstr.;de:05914:2198;Hagen Stolzestr.;de:05914:2196;33
+between;9;Hagen Pieperstr.;de:05914:2205;Hagen Fröbelstr.;de:05914:2142;33
+between;9;Hagen Familienbad Hengstey;de:05914:2526;Hagen Seestr.;de:05914:2447;33
+between;9;Hagen Seestr.;de:05914:2447;Hagen Einhausstr.;de:05914:2461;33
+between;9;Hagen Gneisenaustr.;de:05914:2353;Hagen Gerichtsstr.;de:05914:2354;33
+between;9;Hagen Gerichtsstr.;de:05914:2354;Hagen Landgericht;de:05914:2074;33
+between;9;Hagen Ischeland;de:05914:2322;Hagen Blumenstr.;de:05914:2323;33
+between;9;Wetter Friedrichstr.;de:05954:8296;Wetter Kaiserstr.;de:05954:8072;33
+between;9;Wetter Kaiserstr.;de:05954:8072;Wetter Bf.;de:05954:8080;33
+between;9;Hagen Mercedes Jürgens;de:05914:2523;Hagen Rehstr.;de:05914:2161;32
+between;9;Hagen Konrad-Adenauer-Ring;de:05914:2423;Hagen Mercedes Jürgens;de:05914:2523;32
+between;9;Hagen Einhausstr.;de:05914:2461;Hagen Familienbad Hengstey;de:05914:2526;32
+between;9;Herdecke Bf;de:05954:2269;Herdecke Breddestr.;de:05954:2285;32
+between;9;Hagen Neue Str.;de:05914:2557;Hagen Gabelsberger Str.;de:05914:2197;32
+between;9;Hagen Landgericht;de:05914:2074;Hagen Gneisenaustr.;de:05914:2353;32
+between;9;Hagen Blumenstr.;de:05914:2323;Hagen Wittekindstr.;de:05914:2097;32
+between;9;Hagen Wittekindstr.;de:05914:2097;Hagen Ischeland;de:05914:2322;32
+between;9;Hagen Gellertweg;de:05914:2144;Hagen Boele Markt;de:05914:2020;32
+between;9;Hagen Elsey Kirche;de:05914:2222;Hagen Henkhauser Str.;de:05914:2223;32
+between;9;Hagen Henkhauser Str.;de:05914:2223;Hagen Gotenweg;de:05914:2224;32
+between;9;Hagen Gotenweg;de:05914:2224;Hagen Schwalbenweg;de:05914:2065;32
+between;9;Hagen Möllerstr.;de:05914:2489;Hagen Breitenbruch;de:05914:2445;32
+between;9;Hagen Breitenbruch;de:05914:2445;Hagen Trappenweg;de:05914:2490;32
+between;9;Hagen Trappenweg;de:05914:2490;Hagen Wiesenstr.;de:05914:2468;32
+between;9;Hagen Wiesenstr.;de:05914:2468;Hagen Im Gersegge;de:05914:2467;32
+between;9;Hagen Im Gersegge;de:05914:2467;Hagen Steltenbergstr.;de:05914:2266;32
+between;9;Hagen Steltenbergstr.;de:05914:2266;Hagen Kirchenbergstadion;de:05914:2336;32
+between;9;Hagen Kirchenbergstadion;de:05914:2336;Hagen Berliner Allee;de:05914:2335;32
+between;9;Hagen Berliner Allee;de:05914:2335;Hagen Am Berge;de:05914:2333;32
+between;9;Hagen Am Berge;de:05914:2333;Hagen Im Sonnenwinkel;de:05914:2383;32
+between;9;Hagen Im Sonnenwinkel;de:05914:2383;Hagen Im Ölm;de:05914:2334;32
+between;9;Hagen Im Ölm;de:05914:2334;Hagen Am Schellbrink;de:05914:2458;32
+between;9;Hagen Am Schellbrink;de:05914:2458;Hagen Im Stockhof;de:05914:2066;32
+between;9;Hagen Hasselbach;de:05914:2509;Hagen Reh Schule;de:05914:2753;32
+between;9;Hagen Reh Schule;de:05914:2753;Hagen Reh Schälker Landstr.;de:05914:2755;32
+between;9;Gevelsberg-Knapp;de:05954:8088;Gevelsberg Am Schilken;de:05954:8087;31
+between;9;Gevelsberg Am Schilken;de:05954:8087;Hagen Silscheder Str.;de:05914:2411;31
+between;9;Hagen Silscheder Str.;de:05914:2411;Hagen Westerbauer Schleife;de:05914:2561;31
+between;9;Hagen Boele Markt;de:05914:2020;Hagen Stennesufer;de:05914:2018;31
+between;9;Hagen Stennesufer;de:05914:2018;Hagen Gellertweg;de:05914:2144;31
+between;9;Hagen Hohenlimburg Bf;de:05914:2059;Hagen Lennebad;de:05914:2061;31
+between;9;Hagen Regenbogenschule;de:05914:2378;Hagen Wilhelmstr.;de:05914:2377;31
+between;9;Hagen Kaltwalzwerk;de:05914:2749;Hagen Hohenlimburg Bf;de:05914:2059;31
+between;9;Hagen Hohenlimburg Bf;de:05914:2059;Hagen Isenbergstr.;de:05914:2035;30
+between;9;Hagen Bissingheim;de:05914:2045;Hagen Elmenhorststr.;de:05914:2564;24
+between;9;Hagen Elmenhorststr.;de:05914:2564;Hagen Delstern Friedhof;de:05914:2542;24
+between;9;Hagen Delstern Friedhof;de:05914:2542;Hagen Delstern;de:05914:2309;24
+between;9;Hagen Luisenstr.;de:05914:2084;Hagen Hubertusstr.;de:05914:2547;24
+between;9;Hagen Hubertusstr.;de:05914:2547;Hagen Am Weitblick;de:05914:2545;24
+between;9;Hagen Am Weitblick;de:05914:2545;Hagen Elmarweg;de:05914:2558;24
+between;9;Hagen Elmarweg;de:05914:2558;Hagen Krähnockenstraße;de:05914:2515;24
+between;9;Hagen Krähnockenstraße;de:05914:2515;Hagen Am Waldwege;de:05914:2543;24
+between;9;Hagen Am Waldwege;de:05914:2543;Hagen Oberhagen;de:05914:2087;24
+between;9;Breckerfeld Rathaus;de:05954:8218;Breckerfeld Schule;de:05954:8294;22
+between;9;Breckerfeld Schule;de:05954:8294;Breckerfeld Busbahnhof;de:05954:8217;22
+between;9;Breckerfeld Busbahnhof;de:05954:8217;Breckerfeld Windmühlencenter;de:05954:8220;21
+between;9;Hagen Am Baukloh;de:05914:2327;Hagen Rotkäppchenweg;de:05914:2395;21
+between;9;Hagen Rotkäppchenweg;de:05914:2395;Hagen Baukloh;de:05914:2400;21
+between;9;Hagen Baukloh;de:05914:2400;Hagen Schneewittchenweg;de:05914:2393;21
+between;9;Hagen Schneewittchenweg;de:05914:2393;Hagen Am Baukloh;de:05914:2327;21
+between;9;Breckerfeld Windmühlencenter;de:05954:8220;Breckerfeld Breckerfeld;de:05954:8219;19
+between;9;Breckerfeld Breckerfeld;de:05954:8219;Breckerfeld Rathaus;de:05954:8218;19
+between;9;Breckerf. Wengeberg Penninckw.;de:05954:8373;Breckerfeld Am Kreutz;de:05954:8374;19
+between;9;Breckerfeld Am Kreutz;de:05954:8374;Breckerfeld Jakobusweg;de:05954:8375;19
+between;9;Breckerfeld Jakobusweg;de:05954:8375;Breckerfeld Rathaus;de:05954:8218;19
+between;9;Hagen Oeger Str.;de:05914:2240;Hagen Kronenburgplatz;de:05914:2364;19
+between;9;Hagen Berchum Schule;de:05914:2449;Hagen Am Kellerhofe;de:05914:2453;18
+between;9;Hagen Am Kellerhofe;de:05914:2453;Hagen Auf der Steinhard;de:05914:2451;18
+between;9;Hagen Auf der Steinhard;de:05914:2451;Hagen Berchum;de:05914:2125;18
+between;9;Hagen Klöckner;de:05914:2472;Hagen Bathey;de:05914:2199;17
+between;9;Hagen Bonsmannstr.;de:05914:2200;Hagen Klöckner;de:05914:2472;17
+between;9;Herdecke Goethestr.;de:05954:2284;Herdecke Bf;de:05954:2269;17
+between;9;Hagen Berchum;de:05914:2125;Hagen Ergster Weg;de:05914:2123;17
+between;9;Hagen Ergster Weg;de:05914:2123;Hagen Garenfelder Weg;de:05914:2124;17
+between;9;Breckerfeld Rathaus;de:05954:8218;Breckerfeld Teichstr.;de:05954:8371;16
+between;9;Breckerfeld Teichstr.;de:05954:8371;Breckerfeld Erlenbruch;de:05954:8372;16
+between;9;Breckerfeld Erlenbruch;de:05954:8372;Breckerfeld Am Stollen;de:05954:8376;16
+between;9;Breckerfeld Am Stollen;de:05954:8376;Breckerf. Wengeberg Penninckw.;de:05954:8373;16
+between;9;Hagen Elsey Post;de:05914:2063;Hagen Möllerstr.;de:05914:2489;16
+between;9;Hagen Möllerstr.;de:05914:2489;Hagen Brauhausstr.;de:05914:2471;16
+between;9;Hagen Brauhausstr.;de:05914:2471;Hagen Elsey Post;de:05914:2063;16
+between;9;Wiblingwerde Harpkestr.;de:05962:3347;Wiblingwerde Wörden;de:05962:3319;16
+between;9;Wiblingwerde Wörden;de:05962:3319;Wiblingwerde Vogelhenne;de:05962:3318;16
+between;9;Wiblingwerde Vogelhenne;de:05962:3318;Wiblingwerde Todtenhelle;de:05962:3348;16
+between;9;Wiblingwerde Todtenhelle;de:05962:3348;Wiblingwerde Veserde;de:05962:3317;16
+between;9;Wiblingwerde Veserde;de:05962:3317;Hagen Regenbogenschule;de:05914:2378;16
+between;9;Hagen Kronenburgplatz;de:05914:2364;Hagen Wilhelmstr.;de:05914:2377;16
+between;9;Hagen Isenbergstr.;de:05914:2035;Hagen Wesselbachstr.;de:05914:2361;15
+between;9;Hagen Wesselbachstr.;de:05914:2361;Hagen Lolochstr.;de:05914:2485;15
+between;9;Hagen Lolochstr.;de:05914:2485;Hagen Wesselbach;de:05914:2488;15
+between;9;Hagen Wesselbach;de:05914:2488;Hagen Am Schloßberg;de:05914:2360;15
+between;9;Hagen Am Schloßberg;de:05914:2360;Hagen Alter Schloßweg;de:05914:2359;15
+between;9;Hagen Alter Schloßweg;de:05914:2359;Hagen Isenbergstr.;de:05914:2035;15
+between;9;Herdecke Rosenstr.;de:05954:2286;Herdecke Bf;de:05954:2269;15
+between;9;Hagen Elsey Ehrenmal;de:05914:2221;Hagen Elsey Krankenhaus;de:05914:2062;15
+between;9;Hagen Wilhelmstr.;de:05914:2377;Hagen Unternahmer;de:05914:2365;15
+between;9;Hagen Unternahmer;de:05914:2365;Hagen Oeger Str.;de:05914:2240;15
+between;9;Dortmund Syburg;de:05913:460;Hagen Hengsteysee;de:05914:2296;14
+between;9;Hagen Hengsteysee;de:05914:2296;Hagen Kabeler Str.;de:05914:2202;12
+between;9;Hagen Kabeler Str.;de:05914:2202;Hagen Posener Str.;de:05914:2295;12
+between;9;Hagen Oberhagen;de:05914:2087;Hagen Goldbergschule;de:05914:2935;12
+between;9;Hagen Goldbergschule;de:05914:2935;Hagen Markt;de:05914:2002;12
+between;9;Wiblingwerde;de:05962:3320;Wiblingwerde Über dem Dorfe;de:05962:3338;8
+between;9;Wiblingwerde Über dem Dorfe;de:05962:3338;Wiblingwerde Harpkestr.;de:05962:3347;8
+between;9;Wiblingwerde Harpkestr.;de:05962:3347;Wiblingwerde;de:05962:3320;8
+between;9;Hagen Haspe Zentrum;de:05914:2037;Hagen Hasper Torhaus;de:05914:2194;6
+between;9;Hagen Frachtzentrum;de:05914:2762;Hagen Grueber;de:05914:2431;6
+between;9;Hagen Grueber;de:05914:2431;Hagen Uhde;de:05914:2463;6
+between;9;Hagen Uhde;de:05914:2463;Hagen Hoesch;de:05914:2462;6
+between;9;Hagen Hoesch;de:05914:2462;Hagen Borgenfeldstr.;de:05914:2114;6
+between;9;Hagen Brüderstr.;de:05914:2010;Hagen Boeler Str.;de:05914:2013;5
+between;9;Hagen Brockhausen;de:05914:2245;Hagen Brockhausen;de:05914:2245;5
+between;9;Hagen Herbecker Weg;de:05914:2348;Hagen Donnerkuhle;de:05914:2349;5
+between;9;Hagen Fley Mitte;de:05914:2185;Hagen Fley Mitte;de:05914:2185;5
+between;9;Hagen Innsbrucker Str.;de:05914:2409;Hagen Büddingstr.;de:05914:2042;5
+between;9;Hagen Spielbrink;de:05914:2044;Hagen Spielbrink;de:05914:2044;5
+between;9;Hagen Neue Str.;de:05914:2557;Hagen Stolzestr.;de:05914:2196;5
+between;9;Hagen Felsenstr.;de:05914:2109;Hagen Metzer Str.;de:05914:2077;4
+between;9;Hagen Emilienplatz;de:05914:2075;Hagen Aschenbergstr.;de:05914:2214;3
+between;9;Hagen Heigarenweg;de:05914:2186;Hagen Weidekampstr.;de:05914:2187;3
+between;9;Hagen Boelerheide;de:05914:2147;Hagen Sonntagstr.;de:05914:2417;3
+between;9;Hagen Hohenlimburg Mitte;de:05914:2060;Hagen Mühlenbergstr.;de:05914:2388;3
+between;9;Hagen Mühlenbergstr.;de:05914:2388;Hagen Kaltwalzwerk;de:05914:2749;3
+between;9;Hagen Hengsteysee;de:05914:2296;Hagen Bathey;de:05914:2199;2
+between;9;Hagen Osthofstr.;de:05914:2141;Hagen Fröbelstr.;de:05914:2142;2
+between;9;Hagen Herbeck;de:05914:2500;Hagen Herbeck;de:05914:2500;2
+between;9;Hagen Heigarenweg;de:05914:2186;Hagen Waldfriedhof;de:05914:2518;2
+from;9;Hagen Stadtmitte/Volme Galerie;de:05914:2003;;;1663
+from;9;Hagen Hauptbahnhof;de:05914:2007;;;1443
+from;9;Hagen Altenhg. Brücke;de:05914:2008;;;1398
+from;9;Hagen Schwenke;de:05914:2006;;;1367
+from;9;Hagen Theater;de:05914:2005;;;922
+from;9;Hagen Volkspark;de:05914:2004;;;918
+from;9;Hagen Rathaus an der Volme;de:05914:2410;;;783
+from;9;Hagen Neumarktstr.;de:05914:2030;;;717
+from;9;Hagen Loxbaum;de:05914:2016;;;708
+from;9;Hagen Emilienplatz;de:05914:2075;;;671
+from;9;Hagen Kapellenstr.;de:05914:2017;;;530
+from;9;Hagen Landgericht;de:05914:2074;;;478
+from;9;Hagen Boele Markt;de:05914:2020;;;472
+from;9;Hagen Hohenlimburg Mitte;de:05914:2060;;;447
+from;9;Hagen Tondernstr.;de:05914:2280;;;421
+from;9;Hagen St-Josefs-Kirche;de:05914:2009;;;418
+from;9;Hagen Eilpe Physiomed;de:05914:2083;;;412
+from;9;Hagen Markt;de:05914:2002;;;400
+from;9;Hagen Helfer Str.;de:05914:2019;;;398
+from;9;Hagen Hohenlimburg Bf;de:05914:2059;;;377
+from;9;Hagen Geitebrücke;de:05914:2094;;;366
+from;9;Hagen Stennesufer;de:05914:2018;;;364
+from;9;Hagen Nordstr.;de:05914:2321;;;361
+from;9;Hagen Kurfürstenstr. Diabetolo;de:05914:2258;;;355
+from;9;Hagen Oberhagen;de:05914:2087;;;355
+from;9;Hagen Brüderstr.;de:05914:2010;;;353
+from;9;Hagen CineStar;de:05914:2772;;;343
+from;9;Hagen Siedlerstr. HVG;de:05914:2014;;;338
+from;9;Hagen Ginsterheide;de:05914:2015;;;338
+from;9;Hagen Lennebad;de:05914:2061;;;336
+from;9;Hagen Dahlenkampstr.;de:05914:2551;;;331
+from;9;Hagen Heilig-Geist-Str.;de:05914:2498;;;325
+from;9;Hagen Bauhaus;de:05914:2172;;;323
+from;9;Hagen Polizeipräsidium;de:05914:2510;;;317
+from;9;Hagen Hildegardis-Schule;de:05914:2155;;;315
+from;9;Hagen Volkshochschule;de:05914:2516;;;315
+from;9;Hagen Weststr.;de:05914:2095;;;297
+from;9;HA-Vorhalle Mitte;de:05914:2098;;;291
+from;9;Hagen Borgenfeldstr.;de:05914:2114;;;287
+from;9;Hagen Hünenpforte;de:05914:2259;;;284
+from;9;Hagen Heubing Bf;de:05914:2432;;;272
+from;9;Hagen Ennepeufer;de:05914:2326;;;272
+from;9;Hagen Klopstockstr.;de:05914:2093;;;269
+from;9;Hagen Eichendorffstr.;de:05914:2092;;;269
+from;9;Hagen Fuhrparkstr.;de:05914:2091;;;269
+from;9;Hagen Haspe Zentrum;de:05914:2037;;;266
+from;9;Hagen Eicken;de:05914:2089;;;263
+from;9;Hagen Eckeseyer Brücke;de:05914:2088;;;263
+from;9;Hagen Martinstr.;de:05914:2560;;;261
+from;9;Hagen Westerbauer Schleife;de:05914:2561;;;258
+from;9;Hagen Grimmestr.;de:05914:2149;;;257
+from;9;Hagen Hameckestr.;de:05914:2150;;;257
+from;9;Hagen BasseDruck;de:05914:2520;;;254
+from;9;Hagen Mercedes Jürgens;de:05914:2523;;;254
+from;9;Hagen Haßleyer Str.;de:05914:2024;;;251
+from;9;Hagen Houbenstr.;de:05914:2152;;;250
+from;9;Hagen Sportpark Ischeland;de:05914:2153;;;250
+from;9;Hagen Höing;de:05914:2154;;;250
+from;9;Hagen FernUniversität;de:05914:2279;;;249
+from;9;Hagen Hasper Torhaus;de:05914:2194;;;236
+from;9;Hagen Niedernhofstr.;de:05914:2289;;;229
+from;9;Hagen Eckeseyer Str.;de:05914:2440;;;229
+from;9;Hagen Boeler Str.;de:05914:2013;;;224
+from;9;Hagen Külpestr.;de:05914:2113;;;216
+from;9;Hagen Hammerstein;de:05914:2565;;;216
+from;9;Hagen Boele Amtshaus;de:05914:2112;;;216
+from;9;Hagen Sauerlandstr.;de:05914:2232;;;208
+from;9;Hagen Gewerbepark Kückelhausen;de:05914:2209;;;206
+from;9;Hagen K.-E.-Osthaus-Str.;de:05914:2050;;;204
+from;9;Hagen Jägerstr.;de:05914:2763;;;201
+from;9;Hagen Elisabethstr.;de:05914:2111;;;201
+from;9;Hagen Eickertstr.;de:05914:2029;;;198
+from;9;Hagen Totenhofweg;de:05914:2028;;;198
+from;9;Hagen Brunnenstr.;de:05914:2027;;;198
+from;9;Hagen Eppenhauser Brunnen;de:05914:2026;;;198
+from;9;Hagen Emster Str.;de:05914:2025;;;198
+from;9;Hagen Marktbrücke;de:05914:2001;;;197
+from;9;Hagen Stadthalle;de:05914:2178;;;197
+from;9;Hagen Wasserloses Tal;de:05914:2177;;;197
+from;9;Hagen Alexanderstr.;de:05914:2356;;;195
+from;9;Hagen Röntgenstr.;de:05914:2355;;;195
+from;9;Hagen Stegerwaldstr.;de:05914:2189;;;192
+from;9;Hagen Buschstr.;de:05914:2188;;;192
+from;9;Hagen Akku Hawker;de:05914:2032;;;190
+from;9;Hagen Wehringhauser Str.;de:05914:2033;;;190
+from;9;Hagen Staplack / Enervie Zentr;de:05914:2262;;;189
+from;9;Hagen Niederhaspe;de:05914:2038;;;189
+from;9;Hagen Kölner Str.;de:05914:2039;;;189
+from;9;Hagen Grundschötteler Str.;de:05914:2040;;;189
+from;9;Hagen Im Mühlenwert;de:05914:2522;;;189
+from;9;Hagen Elsey Ehrenmal;de:05914:2221;;;188
+from;9;Hagen Emsterfeld;de:05914:2264;;;178
+from;9;Hagen Rohrstr.;de:05914:2236;;;173
+from;9;Hagen Im Alten Holz;de:05914:2469;;;173
+from;9;Hagen Elsey Kirche;de:05914:2222;;;173
+from;9;Hagen Sonderburgstr.;de:05914:2235;;;171
+from;9;Hagen Spessartstr.;de:05914:2234;;;171
+from;9;Hagen Dümpelstr.;de:05914:2233;;;171
+from;9;Hagen Dortmunder Str.;de:05914:2294;;;168
+from;9;Hagen Lortzingstr.;de:05914:2350;;;167
+from;9;Hagen Helfe Mitte;de:05914:2206;;;163
+from;9;Hagen J-G-Fichte-Str.;de:05914:2244;;;163
+from;9;Hagen Wortherbruchstr.;de:05914:2243;;;163
+from;9;Hagen Cunostr.;de:05914:2048;;;160
+from;9;Hagen Luisenstr.;de:05914:2084;;;154
+from;9;Hagen Friedensstr.;de:05914:2011;;;153
+from;9;Hagen Alleestr.;de:05914:2012;;;153
+from;9;Hagen Elsey Krankenhaus;de:05914:2062;;;149
+from;9;Hagen Reh/Lenne Arena;de:05914:2069;;;141
+from;9;Hagen Elseyer Str.;de:05914:2508;;;141
+from;9;Hagen Fichte-Gymnasium;de:05914:2562;;;140
+from;9;Hagen Cuno-Berufskolleg;de:05914:2190;;;140
+from;9;Hagen Realschule Haspe;de:05914:2559;;;139
+from;9;Hagen Schützenstr.;de:05914:2165;;;139
+from;9;Hagen Hestertstr.;de:05914:2164;;;139
+from;9;Hagen Sachsenstr.;de:05914:2163;;;139
+from;9;Hagen Hördenstr.;de:05914:2162;;;139
+from;9;Hagen Obere Rehstr.;de:05914:2484;;;139
+from;9;Hagen Eugen-Richter-Str.;de:05914:2160;;;139
+from;9;Hagen Gutenbergstr.;de:05914:2159;;;139
+from;9;Hagen Bachstr.;de:05914:2158;;;139
+from;9;Hagen Allg. Krankenhaus;de:05914:2157;;;139
+from;9;Hagen Vollbrinkstr.;de:05914:2744;;;138
+from;9;Hagen Hüttenplatz GWG;de:05914:2743;;;138
+from;9;Hagen Ev. Krankenhaus;de:05914:2166;;;136
+from;9;Hagen Büdding Friedhof;de:05914:2448;;;136
+from;9;Hagen Auf dem Kuhl;de:05914:2143;;;136
+from;9;Hagen Fröbelstr.;de:05914:2142;;;136
+from;9;Hagen Hag. Entsorgungsbetr.;de:05914:2511;;;136
+from;9;Hagen Hasper Hammer;de:05914:2454;;;136
+from;9;Hagen Emst Kirche;de:05914:2049;;;136
+from;9;Hagen Aschenbergstr.;de:05914:2214;;;134
+from;9;Hagen Goebenstr./Wohnungsv HA.;de:05914:2213;;;134
+from;9;Hagen Fahrenbecke;de:05914:2212;;;134
+from;9;Hagen Steubenstr.;de:05914:2211;;;134
+from;9;Hagen Hoheleye;de:05914:2210;;;134
+from;9;Herdecke Hengsteyseestr.;de:05954:2252;;;134
+from;9;Herdecke Brüninghausstr.;de:05954:2386;;;134
+from;9;Hagen Bülowstr.;de:05914:2318;;;132
+from;9;Hagen Bettermannshof;de:05914:2317;;;132
+from;9;Hagen Fachhochschule Südwestf.;de:05914:2316;;;132
+from;9;Hagen Haßley;de:05914:2263;;;132
+from;9;Hagen Alte Dorfschule;de:05914:2261;;;132
+from;9;Hagen Holthausen;de:05914:2260;;;132
+from;9;Herdecke Mitte;de:05954:2253;;;132
+from;9;Hagen Rehstr.;de:05914:2161;;;131
+from;9;Hagen Franklinstr.;de:05914:2219;;;131
+from;9;Hagen Pelmkestr.;de:05914:2218;;;131
+from;9;Hagen Wilhelmsplatz;de:05914:2217;;;131
+from;9;Hagen Feuerwache;de:05914:2216;;;131
+from;9;Hagen Vereinsstr.;de:05914:2148;;;131
+from;9;Hagen Boelerheide;de:05914:2147;;;131
+from;9;Hagen Pieperstr.;de:05914:2205;;;130
+from;9;Hagen Buntebachstr.;de:05914:2086;;;130
+from;9;Hagen Franzstr.;de:05914:2085;;;130
+from;9;Hagen Hüsteystr.;de:05914:2082;;;130
+from;9;Hagen Mühlhauser Str.;de:05914:2081;;;130
+from;9;Hagen Hohle Str.;de:05914:2080;;;130
+from;9;Hagen Elsässer Str.;de:05914:2079;;;130
+from;9;Hagen Riegerbusch;de:05914:2078;;;130
+from;9;Hagen Metzer Str.;de:05914:2077;;;130
+from;9;Hagen Am Großen Feld;de:05914:2265;;;130
+from;9;Hagen In der Imke;de:05914:2099;;;129
+from;9;Hagen Untere Lindenstr.;de:05914:2100;;;129
+from;9;Hagen Wolfskuhler Weg;de:05914:2446;;;129
+from;9;Hagen Sporbecker Weg;de:05914:2101;;;129
+from;9;Hagen Ulmenstr.;de:05914:2103;;;129
+from;9;Hagen Ziegelei;de:05914:2444;;;129
+from;9;Hagen Zieglerstr.;de:05914:2441;;;129
+from;9;Hagen Sonntagstr.;de:05914:2417;;;129
+from;9;Hagen Frachtzentrum;de:05914:2762;;;128
+from;9;Hagen Profilstr.;de:05914:2464;;;128
+from;9;Hagen Vorhaller Str.;de:05914:2311;;;127
+from;9;Hagen Delstern;de:05914:2309;;;126
+from;9;Hagen Delsterner Brücke;de:05914:2310;;;126
+from;9;Hagen Ottostr.;de:05914:2452;;;125
+from;9;Hagen Rudolfstr.;de:05914:2182;;;125
+from;9;Hagen Georgstr.;de:05914:2181;;;125
+from;9;Hagen Heinrichstr.;de:05914:2179;;;125
+from;9;Hagen Federnstr.;de:05914:2239;;;122
+from;9;Hagen Stirnband;de:05914:2282;;;122
+from;9;Hagen Deutsches Rotes Kreuz;de:05914:2525;;;122
+from;9;Hagen SeniorenzentrumBuschstr.;de:05914:2207;;;122
+from;9;Hagen Baurothstr.;de:05914:2208;;;122
+from;9;Gevelsberg Talstr.;de:05954:8282;;;116
+from;9;Gevelsberg Am Schultenhof;de:05954:8293;;;116
+from;9;Gevelsberg Poeten;de:05954:8283;;;116
+from;9;Gevelsberg Kirchwinkelstr.;de:05954:8284;;;116
+from;9;Gevelsberg Hagebölling;de:05954:8285;;;116
+from;9;Gevelsberg Hundeicken;de:05954:8286;;;116
+from;9;Gevelsberg Bergstr.;de:05954:8287;;;116
+from;9;Gevelsberg Haufe;de:05954:8288;;;116
+from;9;Gevelsberg Gesundheitszentrum;de:05954:8289;;;116
+from;9;Hagen Batheyer Str.;de:05914:2201;;;108
+from;9;Hagen Sportanlage Hoheleye;de:05914:2566;;;107
+from;9;Hagen Alter Reher Weg;de:05914:2070;;;106
+from;9;Hagen Kabel;de:05914:2115;;;106
+from;9;Hagen Industriestr.;de:05914:2229;;;105
+from;9;Hagen Hasselbach;de:05914:2509;;;104
+from;9;Hagen Fasanenweg;de:05914:2068;;;104
+from;9;Hagen Dachsweg;de:05914:2067;;;104
+from;9;Hagen Im Stockhof;de:05914:2066;;;104
+from;9;Hagen Schwalbenweg;de:05914:2065;;;104
+from;9;Hagen Rundturnhalle;de:05914:2064;;;104
+from;9;Hagen Elsey Post;de:05914:2063;;;104
+from;9;Hagen Zur Feldlage;de:05914:2132;;;104
+from;9;Hagen Grüll;de:05914:2131;;;104
+from;9;Hagen Steinberg;de:05914:2130;;;104
+from;9;Hagen Kahlenberg;de:05914:2129;;;104
+from;9;Hagen Posener Str.;de:05914:2295;;;103
+from;9;Hagen Felsenstr.;de:05914:2109;;;103
+from;9;Hagen Krähnocken;de:05914:2108;;;103
+from;9;Hagen Freilichtmuseum;de:05914:2106;;;103
+from;9;Hagen Zur Höhe;de:05914:2105;;;103
+from;9;Hagen Höhwaldstr.;de:05914:2456;;;103
+from;9;Hagen Werkzeugstr.;de:05914:2412;;;103
+from;9;Hagen Linnufer;de:05914:2126;;;103
+from;9;Hagen Hartmannstr.;de:05914:2096;;;103
+from;9;Hagen Rummenohl Bf;de:05914:2298;;;102
+from;9;Hagen Roland;de:05914:2299;;;102
+from;9;Hagen Priorei;de:05914:2118;;;102
+from;9;Hagen Düinghauser Weg;de:05914:2774;;;102
+from;9;Hagen Kattwinkel;de:05914:2117;;;102
+from;9;Hagen Am Stuckenhagen;de:05914:2116;;;102
+from;9;Hagen Sommerhagener Weg;de:05914:2384;;;102
+from;9;Hagen Grabweg;de:05914:2740;;;102
+from;9;Hagen Dahl;de:05914:2301;;;102
+from;9;Hagen Hoffnungstal;de:05914:2302;;;102
+from;9;Hagen Finking;de:05914:2303;;;102
+from;9;Hagen Ambrock Delsterner Str.;de:05914:2620;;;102
+from;9;Hagen Ambrock;de:05914:2304;;;102
+from;9;Hagen Hunsdieker Weg/Marienhof;de:05914:2305;;;102
+from;9;Hagen Oberdelstern;de:05914:2306;;;102
+from;9;Hagen Kuhweide;de:05914:2307;;;102
+from;9;Hagen Volmeburg;de:05914:2308;;;102
+from;9;Hagen Rubensstr.;de:05914:2550;;;102
+from;9;Hagen Lützowstr.;de:05914:2540;;;102
+from;9;Hagen Westerbauer Bf;de:05914:2433;;;101
+from;9;Hagen Grundschule Eilpe;de:05914:2291;;;99
+from;9;Hagen Konrad-Adenauer-Ring;de:05914:2423;;;99
+from;9;Hagen Märkischer Ring;de:05914:2506;;;98
+from;9;Hagen Kuhlerkamp;de:05914:2183;;;97
+from;9;Hagen Heidnocken;de:05914:2347;;;95
+from;9;Hagen Max-Planck-Str.;de:05914:2047;;;93
+from;9;Hagen Köhlerweg;de:05914:2046;;;93
+from;9;Hagen Zeppelinweg;de:05914:2283;;;91
+from;9;Hagen Spielbrinkstr.;de:05914:2043;;;77
+from;9;Hagen Büddingstr.;de:05914:2042;;;77
+from;9;Hagen Heigarenweg;de:05914:2186;;;75
+from;9;Hagen Henrichsiepen;de:05914:2036;;;75
+from;9;Hagen Stolzestr.;de:05914:2196;;;73
+from;9;Hagen Dickenbruchstr.;de:05914:2195;;;73
+from;9;Hagen Waldstr.;de:05914:2499;;;73
+from;9;Hagen Intzestr.;de:05914:2193;;;73
+from;9;Hagen Dammstr.;de:05914:2168;;;73
+from;9;Hagen Benekestr.;de:05914:2366;;;73
+from;9;Hagen Stadeweg;de:05914:2367;;;73
+from;9;Hagen Volkenborn;de:05914:2368;;;73
+from;9;Hagen Krupp;de:05914:2369;;;73
+from;9;Hagen Haardtstr.;de:05914:2370;;;73
+from;9;Hagen Giebel;de:05914:2371;;;73
+from;9;Hagen Nimmertal;de:05914:2372;;;73
+from;9;Hagen Nahmerbach;de:05914:2373;;;73
+from;9;Hagen Lahmen Hasen;de:05914:2374;;;73
+from;9;Hagen Obernahmer Land;de:05914:2375;;;73
+from;9;Hagen Selbecke;de:05914:2104;;;72
+from;9;Hagen Im Niederfeld;de:05914:2442;;;72
+from;9;Hagen ARCADEON;de:05914:2521;;;72
+from;9;Hagen Dolomitstr.;de:05914:2230;;;72
+from;9;Hagen Neue Str.;de:05914:2557;;;72
+from;9;Hagen Schieferstr.;de:05914:2204;;;71
+from;9;Hagen Leopoldstr.;de:05914:2482;;;71
+from;9;Hagen Rodersiepen;de:05914:2495;;;70
+from;9;Hagen Pennacker;de:05914:2497;;;70
+from;9;Hagen Höxterstr.;de:05914:2330;;;70
+from;9;Hagen Detmolder Str.;de:05914:2494;;;70
+from;9;Hagen Schaumburger Str.;de:05914:2493;;;70
+from;9;Hagen Tückinger Höhe;de:05914:2491;;;70
+from;9;Hagen Erlhagen;de:05914:2414;;;70
+from;9;Hagen Weidekampstr.;de:05914:2187;;;70
+from;9;Hagen Langenkamp;de:05914:2362;;;70
+from;9;Hagen Lenneufer;de:05914:2363;;;70
+from;9;Hagen Quambusch;de:05914:2058;;;69
+from;9;Hagen Louise-Märcker-Str.;de:05914:2057;;;69
+from;9;Hagen Kornstr.;de:05914:2056;;;69
+from;9;Hagen Ährenstr.;de:05914:2055;;;69
+from;9;Hagen Twittingstr.;de:05914:2054;;;69
+from;9;Hagen Jungfernbruch;de:05914:2053;;;69
+from;9;Hagen Harkortstr.;de:05914:2052;;;69
+from;9;Hagen Oedenburgstr.;de:05914:2041;;;69
+from;9;Hagen Innsbrucker Str.;de:05914:2409;;;69
+from;9;Hagen Gemarkenweg;de:05914:2127;;;69
+from;9;Hagen Gosmann;de:05914:2128;;;69
+from;9;Hagen Steinruther Str.;de:05914:2619;;;69
+from;9;Hagen In der Luke;de:05914:2051;;;69
+from;9;Hagen Gabelsberger Str.;de:05914:2197;;;68
+from;9;Hagen Kipperstr.;de:05914:2198;;;68
+from;9;Hagen Walddorfstr.;de:05914:2176;;;68
+from;9;Hagen Pettenkoferstr.;de:05914:2151;;;68
+from;9;Hagen Willdestr.;de:05914:2175;;;67
+from;9;Herdecke Walkenhorst;de:05954:2277;;;67
+from;9;Herdecke Am Hegede;de:05954:2276;;;67
+from;9;Herdecke Sperlingsweg;de:05954:2275;;;67
+from;9;Herdecke Nierfeldstr.;de:05954:2274;;;67
+from;9;Herdecke Am Schlagbaum;de:05954:2273;;;67
+from;9;Herdecke Gahlenfeldstr.;de:05954:2272;;;67
+from;9;Herdecke Herdecker Bach;de:05954:2271;;;67
+from;9;Herdecke Mozartweg;de:05954:2270;;;67
+from;9;Herdecke Attenbergstr./Bahnhof;de:05954:2281;;;67
+from;9;Herdecke Rathaus;de:05954:2268;;;67
+from;9;Wetter Friedrichstr.;de:05954:8296;;;67
+from;9;Wetter Ringstr./Harkortsee;de:05954:8295;;;67
+from;9;Hagen Harkortbrücke;de:05914:2313;;;67
+from;9;Hagen Vorhalle West;de:05914:2312;;;67
+from;9;Hagen Ruhrstr.;de:05914:2215;;;66
+from;9;Hagen Boele Friedhof;de:05914:2387;;;66
+from;9;Hagen Turmstr.;de:05914:2290;;;66
+from;9;Hagen Weißensteinstr.;de:05914:2481;;;66
+from;9;Herdecke Kirche;de:05954:2254;;;66
+from;9;Herdecke Goethestr.;de:05954:2284;;;66
+from;9;Herdecke Breddestr.;de:05954:2285;;;66
+from;9;Herdecke Rosenstr.;de:05954:2286;;;66
+from;9;Herdecke Berliner Str.;de:05954:2287;;;66
+from;9;Hagen Feldmühlenstr.;de:05914:2549;;;66
+from;9;Hagen Im Lindental;de:05914:2328;;;66
+from;9;Hagen Eisenwerk;de:05914:2329;;;66
+from;9;Hagen Mühlenbergstr.;de:05914:2388;;;66
+from;9;Hagen Einhausstr.;de:05914:2461;;;65
+from;9;Hagen Pillauer Str.;de:05914:2293;;;65
+from;9;Hagen Haferkamp;de:05914:2023;;;65
+from;9;Hagen Bolohstr.;de:05914:2022;;;65
+from;9;Hagen Hardenbergstr.;de:05914:2351;;;65
+from;9;Hagen Klosterstr.;de:05914:2352;;;65
+from;9;Hagen Gneisenaustr.;de:05914:2353;;;65
+from;9;Hagen Viktor-v.-Scheffel-Str.;de:05914:2398;;;65
+from;9;Hagen Wilhelm-Leuschner-Str.;de:05914:2399;;;65
+from;9;Hagen Blumenstr.;de:05914:2323;;;65
+from;9;Hagen Hermannstr.;de:05914:2324;;;65
+from;9;Hagen Lahnstr.;de:05914:2325;;;65
+from;9;Hagen Friedensplatz;de:05914:2528;;;65
+from;9;Hagen Osthofstr.;de:05914:2141;;;65
+from;9;Hagen Rolandstr.;de:05914:2871;;;65
+from;9;Hagen Isenbergstr.;de:05914:2035;;;64
+from;9;Hagen Profilstr. Schleife;de:05914:2480;;;64
+from;9;Hagen Donnerkuhle;de:05914:2349;;;64
+from;9;Hagen Thorn-Prikker-Str.;de:05914:2439;;;64
+from;9;Hagen Bathey;de:05914:2199;;;63
+from;9;Hagen Gellertweg;de:05914:2144;;;63
+from;9;Hagen Birkenstr.;de:05914:2145;;;63
+from;9;Hagen Lönsweg;de:05914:2146;;;63
+from;9;Hagen Auf dem Graskamp;de:05914:2476;;;62
+from;9;Hagen Bonsmannstr.;de:05914:2200;;;62
+from;9;Hagen Eilperfeld;de:05914:2076;;;62
+from;9;Hagen Am Waldesrand;de:05914:2569;;;62
+from;9;Hagen Felsental;de:05914:2570;;;62
+from;9;Hagen Wasserturm;de:05914:2173;;;62
+from;9;Hagen Im Erlenbusch;de:05914:2430;;;62
+from;9;Hagen Burgweg;de:05914:2343;;;62
+from;9;Hagen Heidestr.;de:05914:2342;;;62
+from;9;Hagen Auf dem Dreische;de:05914:2341;;;62
+from;9;Hagen Krahenbrink;de:05914:2340;;;62
+from;9;Hagen Fernheizwerk;de:05914:2507;;;60
+from;9;Hagen Rehdeicke;de:05914:2478;;;60
+from;9;Hagen Brockhausen;de:05914:2245;;;59
+from;9;Hagen Bissingheim;de:05914:2045;;;59
+from;9;Gevelsberg Rathaus;de:05954:8025;;;58
+from;9;Gevelsberg Hbf.;de:05954:8313;;;58
+from;9;Gevelsberg Commerzbank;de:05954:8026;;;58
+from;9;Gevelsberg Lusebrink;de:05954:8621;;;58
+from;9;Hagen Im Löhken;de:05914:2466;;;56
+from;9;Hagen Kampmannshof;de:05914:2242;;;56
+from;9;Hagen Haus Busch;de:05914:2241;;;56
+from;9;Hagen C. D. Wälzholz;de:05914:2517;;;56
+from;9;Hagen Albrechtstr.;de:05914:2180;;;54
+from;9;Hagen Kronenburgplatz;de:05914:2364;;;53
+from;9;Hagen Kirchplatz;de:05914:2122;;;52
+from;9;Hagen Berchum Schule;de:05914:2449;;;52
+from;9;Hagen Westfalenbad;de:05914:2741;;;52
+from;9;Hagen Sterbecke;de:05914:2438;;;51
+from;9;Hagen Sterbecketal;de:05914:2437;;;51
+from;9;Hagen Garenfelder Weg;de:05914:2124;;;51
+from;9;Hagen Unternahmer;de:05914:2365;;;51
+from;9;Hagen Vorhalle Bf;de:05914:2435;;;48
+from;9;Hagen Spielbrink;de:05914:2044;;;44
+from;9;Hagen Waldfriedhof;de:05914:2518;;;42
+from;9;Hagen Fley Mitte;de:05914:2185;;;42
+from;9;Hagen Obervogelsang;de:05914:2390;;;42
+from;9;Hagen Am Baukloh;de:05914:2327;;;42
+from;9;Hagen Herbecker Weg;de:05914:2348;;;41
+from;9;Hagen Roter Hirsch;de:05914:2407;;;40
+from;9;Hagen Am Damm;de:05914:2408;;;40
+from;9;Breckerfeld Eicken;de:05954:8299;;;40
+from;9;Breckerfeld Heide;de:05954:8301;;;40
+from;9;Breckerfeld Zurstraße;de:05954:8312;;;40
+from;9;Breckerfeld Grüne;de:05954:8300;;;40
+from;9;Breckerfeld Schaffland;de:05954:8307;;;40
+from;9;Breckerfeld Neuenloh;de:05954:8304;;;40
+from;9;Breckerfeld Sonnenschein;de:05954:8309;;;40
+from;9;Breckerfeld Königsheide;de:05954:8222;;;40
+from;9;Breckerfeld Brauck;de:05954:8221;;;40
+from;9;Breckerfeld Windmühlencenter;de:05954:8220;;;40
+from;9;Hagen Herbeck;de:05914:2500;;;40
+from;9;Breckerfeld Rathaus;de:05954:8218;;;38
+from;9;Hagen Wienbrauk;de:05914:2539;;;37
+from;9;Hagen Röhrenspring;de:05914:2238;;;37
+from;9;Hagen Lange Eck;de:05914:2524;;;37
+from;9;Hagen Dolomitwerke;de:05914:2503;;;37
+from;9;Hagen Gut Herbeck;de:05914:2502;;;37
+from;9;Hagen Herbeck Denkmal;de:05914:2422;;;37
+from;9;Hagen Wiehagen;de:05914:2345;;;36
+from;9;Hagen Hammacher;de:05914:2344;;;36
+from;9;Hagen Obernahmer;de:05914:2379;;;36
+from;9;Hagen Garenfeld Mitte;de:05914:2470;;;35
+from;9;Hagen Gründelbusch;de:05914:2879;;;35
+from;9;Hagen Feldmühle;de:05914:2475;;;34
+from;9;Hagen Heizkraftwerk Kabel;de:05914:2474;;;34
+from;9;Hagen Druckhaus;de:05914:2473;;;34
+from;9;Hagen Klöckner;de:05914:2472;;;34
+from;9;Hagen Florianstr.;de:05914:2870;;;34
+from;9;Hagen Spannstiftstr.;de:05914:2455;;;34
+from;9;Hagen Wannebachstr.;de:05914:2228;;;34
+from;9;Hagen Dreischengarten;de:05914:2450;;;34
+from;9;Hagen Garenfeld;de:05914:2133;;;34
+from;9;Hagen Zur Heimke;de:05914:2134;;;34
+from;9;Hagen Ruhrbrücke;de:05914:2135;;;34
+from;9;Hagen Brauckwiesen;de:05914:2136;;;34
+from;9;Hagen Lennhof;de:05914:2137;;;34
+from;9;Hagen Buschmühle;de:05914:2138;;;34
+from;9;Hagen Buschmühlenstr.;de:05914:2192;;;34
+from;9;Hagen Lütkenheider Str.;de:05914:2501;;;34
+from;9;Hagen Cafe Möller;de:05914:2357;;;34
+from;9;Hagen Jahnstr.;de:05914:2358;;;34
+from;9;Hagen Oeger Str.;de:05914:2240;;;34
+from;9;Hagen Hoesch Siedlung;de:05914:2404;;;34
+from;9;Hagen Feldstr.;de:05914:2403;;;34
+from;9;Hagen Grote;de:05914:2073;;;34
+from;9;Hagen Kaltwalzwerk;de:05914:2749;;;34
+from;9;Wetter Bf.;de:05954:8080;;;34
+from;9;Hagen Familienbad Hengstey;de:05914:2526;;;33
+from;9;Hagen Seestr.;de:05914:2447;;;33
+from;9;Herdecke Schanze;de:05954:2278;;;33
+from;9;Herdecke Nacken;de:05954:2288;;;33
+from;9;Hagen Boloh;de:05914:2021;;;33
+from;9;Hagen Gerichtsstr.;de:05914:2354;;;33
+from;9;Hagen Geweke;de:05914:2331;;;33
+from;9;Hagen Ischeland;de:05914:2322;;;33
+from;9;Wetter Kaiserstr.;de:05954:8072;;;33
+from;9;Herdecke Bf;de:05954:2269;;;32
+from;9;Hagen Wittekindstr.;de:05914:2097;;;32
+from;9;Hagen Henkhauser Str.;de:05914:2223;;;32
+from;9;Hagen Gotenweg;de:05914:2224;;;32
+from;9;Hagen Möllerstr.;de:05914:2489;;;32
+from;9;Hagen Breitenbruch;de:05914:2445;;;32
+from;9;Hagen Trappenweg;de:05914:2490;;;32
+from;9;Hagen Wiesenstr.;de:05914:2468;;;32
+from;9;Hagen Im Gersegge;de:05914:2467;;;32
+from;9;Hagen Steltenbergstr.;de:05914:2266;;;32
+from;9;Hagen Kirchenbergstadion;de:05914:2336;;;32
+from;9;Hagen Berliner Allee;de:05914:2335;;;32
+from;9;Hagen Am Berge;de:05914:2333;;;32
+from;9;Hagen Im Sonnenwinkel;de:05914:2383;;;32
+from;9;Hagen Im Ölm;de:05914:2334;;;32
+from;9;Hagen Am Schellbrink;de:05914:2458;;;32
+from;9;Hagen Reh Schule;de:05914:2753;;;32
+from;9;Gevelsberg Am Schilken;de:05954:8087;;;31
+from;9;Hagen Silscheder Str.;de:05914:2411;;;31
+from;9;Hagen Im Sibb;de:05914:2339;;;31
+from;9;Hagen Wilhelmstr.;de:05914:2377;;;31
+from;9;Hagen Vossacker;de:05914:2479;;;30
+from;9;Hagen Elmenhorststr.;de:05914:2564;;;24
+from;9;Hagen Delstern Friedhof;de:05914:2542;;;24
+from;9;Hagen Hubertusstr.;de:05914:2547;;;24
+from;9;Hagen Am Weitblick;de:05914:2545;;;24
+from;9;Hagen Elmarweg;de:05914:2558;;;24
+from;9;Hagen Krähnockenstraße;de:05914:2515;;;24
+from;9;Hagen Am Waldwege;de:05914:2543;;;24
+from;9;Hagen Regenbogenschule;de:05914:2378;;;23
+from;9;Breckerfeld Schule;de:05954:8294;;;22
+from;9;Breckerfeld Busbahnhof;de:05954:8217;;;21
+from;9;Hagen Rotkäppchenweg;de:05914:2395;;;21
+from;9;Hagen Baukloh;de:05914:2400;;;21
+from;9;Hagen Schneewittchenweg;de:05914:2393;;;21
+from;9;Hagen Wasserschloss Werdringen;de:05914:2973;;;20
+from;9;Breckerfeld Breckerfeld;de:05954:8219;;;19
+from;9;Breckerf. Wengeberg Penninckw.;de:05954:8373;;;19
+from;9;Breckerfeld Am Kreutz;de:05954:8374;;;19
+from;9;Breckerfeld Jakobusweg;de:05954:8375;;;19
+from;9;Hagen Am Kellerhofe;de:05914:2453;;;18
+from;9;Hagen Auf der Steinhard;de:05914:2451;;;18
+from;9;Hagen Berchum;de:05914:2125;;;17
+from;9;Hagen Ergster Weg;de:05914:2123;;;17
+from;9;Breckerfeld Teichstr.;de:05954:8371;;;16
+from;9;Breckerfeld Erlenbruch;de:05954:8372;;;16
+from;9;Breckerfeld Am Stollen;de:05954:8376;;;16
+from;9;Hagen Reh Schälker Landstr.;de:05914:2755;;;16
+from;9;Hagen Brauhausstr.;de:05914:2471;;;16
+from;9;Wiblingwerde Harpkestr.;de:05962:3347;;;16
+from;9;Wiblingwerde Wörden;de:05962:3319;;;16
+from;9;Wiblingwerde Vogelhenne;de:05962:3318;;;16
+from;9;Wiblingwerde Todtenhelle;de:05962:3348;;;16
+from;9;Wiblingwerde Veserde;de:05962:3317;;;16
+from;9;Hagen Wesselbachstr.;de:05914:2361;;;15
+from;9;Hagen Lolochstr.;de:05914:2485;;;15
+from;9;Hagen Wesselbach;de:05914:2488;;;15
+from;9;Hagen Am Schloßberg;de:05914:2360;;;15
+from;9;Hagen Alter Schloßweg;de:05914:2359;;;15
+from;9;Gevelsberg-Knapp;de:05954:8088;;;15
+from;9;Hagen Hengsteysee;de:05914:2296;;;14
+from;9;Hagen Kabeler Str.;de:05914:2202;;;12
+from;9;Hagen Goldbergschule;de:05914:2935;;;12
+from;9;Wiblingwerde;de:05962:3320;;;8
+from;9;Wiblingwerde Über dem Dorfe;de:05962:3338;;;8
+from;9;Dortmund Syburg;de:05913:460;;;7
+from;9;Hagen Grueber;de:05914:2431;;;6
+from;9;Hagen Uhde;de:05914:2463;;;6
+from;9;Hagen Hoesch;de:05914:2462;;;6

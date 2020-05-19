@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.1" />
+<title>DINO2.types API documentation</title>
+<meta name="description" content="Custom types" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>DINO2.types</code></h1>
+</header>
+<section id="section-intro">
+<p>Custom types</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: utf-8 -*-
+&#34;&#34;&#34;Custom types&#34;&#34;&#34;
+
+from __future__ import annotations
+
+from datetime import date, timedelta
+from enum import Enum
+from sqlalchemy import String, Integer, cast, func
+from sqlalchemy.engine.interfaces import Dialect
+from sqlalchemy.types import TypeDecorator, TypeEngine
+from typing import Optional, Type, Tuple, Any, Union
+
+
+# https://stackoverflow.com/q/35209650
+class DinoDate(TypeDecorator):
+    &#34;&#34;&#34;Column type for date strings in yyyymmdd format, converted to `datetime.date` objects&#34;&#34;&#34;
+    impl = String(length=8)
+
+    def coerce_compared_value(self, op, value):
+        if isinstance(value, str):
+            return self.impl
+        return self
+
+    class comparator_factory(TypeDecorator.Comparator, impl.comparator_factory):
+        @property
+        def year(self):
+            return cast(func.substr(self.expr, 1, 4), Integer)
+
+        @property
+        def month(self):
+            return cast(func.substr(self.expr, 5, 2), Integer)
+
+        @property
+        def day(self):
+            return cast(func.substr(self.expr, 7, 2), Integer)
+
+    def process_bind_param(self, value: Optional[date], dialect: Optional[Dialect] = None) -&gt; Optional[str]:
+        if value is None:
+            return None
+        if isinstance(value, date):
+            return &#39;%04d%02d%02d&#39; % (value.year, value.month, value.day)
+        raise ValueError(f&#34;expected datetime.date, got {value.__class__.__name__}&#34;)
+
+    def process_result_value(self, value: Optional[str], dialect: Optional[Dialect] = None) -&gt; Optional[date]:
+        if value:
+            return date(year=int(value[0:4]), month=int(value[4:6]), day=int(value[6:8]))
+        return None
+
+
+class DinoTimeDelta(TypeDecorator):
+    &#34;&#34;&#34;Column type for timedeltas saved as int in the database, converted to `datetime.timedelta` objects&#34;&#34;&#34;
+    impl = Integer
+    should_evaluate_none = True
+
+    def __init__(self, minus_1_none: bool = False):
+        super().__init__()
+        self.minus_1_none = minus_1_none
+
+    # do not coerce None to &#34;is NULL&#34; automatically
+    coerce_to_is_types: Tuple[Type, ...] = tuple()
+
+    def coerce_compared_value(self, op, value):
+        if isinstance(value, int):
+            return self.impl
+        return self
+
+    class comparator_factory(TypeDecorator.Comparator, impl.comparator_factory):
+        @property
+        def total_seconds(self):
+            return cast(self.expr, Integer)
+
+    def process_bind_param(self, value: Optional[timedelta], dialect: Optional[Dialect] = None) -&gt; Optional[int]:
+        if value is None:
+            return -1 if self.minus_1_none else None
+        if isinstance(value, timedelta):
+            return int(value.total_seconds())
+        raise ValueError(f&#34;expected datetime.timedelta, got {value.__class__.__name__}&#34;)
+
+    def process_result_value(self, value: Optional[int], dialect: Optional[Dialect] = None) -&gt; Optional[timedelta]:
+        if (value is None) or (value == -1 and self.minus_1_none):
+            return None
+        return timedelta(seconds=int(value))
+
+    def copy(self, **kwargs):
+        return DinoTimeDelta(self.minus_1_none)
+
+
+# https://stackoverflow.com/a/38786737
+class TypeEnum(TypeDecorator):
+    &#34;&#34;&#34;Column type for python `enum.Enum`s stored in the database&#34;&#34;&#34;
+    impl: Union[TypeEngine, Type[TypeEngine]] = TypeEngine
+
+    def __init__(self, enum_type: Type[Enum]):
+        if self.__class__ == TypeEnum:
+            raise NotImplementedError(f&#34;Do not use {self.__class__} directly&#34;)
+        super().__init__()
+        self.enum_type = enum_type
+
+    def process_bind_param(self, value: Optional[Enum], dialect: Optional[Dialect] = None) -&gt; Optional[Any]:
+        if value is None:
+            return None
+        if isinstance(value, self.enum_type):
+            return value.value
+        raise ValueError(f&#39;expected {self.enum_type.__name__} value, got {value.__class__.__name__}&#39;)
+
+    def process_result_value(self, value: Optional[Any], dialect: Optional[Dialect] = None) -&gt; Optional[Enum]:
+        if value is None:
+            return None
+        return self.enum_type(value)
+
+    def copy(self, **kwargs):
+        return self.__class__(self.enum_type)
+
+
+class IntEnum(TypeEnum):
+    &#34;&#34;&#34;Column type for python `enum.Enum`s stored as int in the database&#34;&#34;&#34;
+    impl = Integer
+
+    def coerce_compared_value(self, op, value):
+        if isinstance(value, int):
+            return self.impl
+        return self
+
+
+class CharEnum(TypeEnum):
+    &#34;&#34;&#34;Column type for python `enum.Enum`s stored as a single character in the database&#34;&#34;&#34;
+    impl = String(length=1)
+
+    def coerce_compared_value(self, op, value):
+        if isinstance(value, str):
+            return self.impl
+        return self</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="DINO2.types.DinoDate"><code class="flex name class">
+<span>class <span class="ident">DinoDate</span></span>
+<span>(</span><span>*args, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Column type for date strings in yyyymmdd format, converted to <code>datetime.date</code> objects</p>
+<p>Construct a :class:<code>.TypeDecorator</code>.</p>
+<p>Arguments sent here are passed to the constructor
+of the class assigned to the <code>impl</code> class level attribute,
+assuming the <code>impl</code> is a callable, and the resulting
+object is assigned to the <code>self.impl</code> instance attribute
+(thus overriding the class attribute of the same name).</p>
+<p>If the class level <code>impl</code> is not a callable (the unusual case),
+it will be assigned to the same instance attribute 'as-is',
+ignoring those arguments passed to the constructor.</p>
+<p>Subclasses can override this to customize the generation
+of <code>self.impl</code> entirely.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class DinoDate(TypeDecorator):
+    &#34;&#34;&#34;Column type for date strings in yyyymmdd format, converted to `datetime.date` objects&#34;&#34;&#34;
+    impl = String(length=8)
+
+    def coerce_compared_value(self, op, value):
+        if isinstance(value, str):
+            return self.impl
+        return self
+
+    class comparator_factory(TypeDecorator.Comparator, impl.comparator_factory):
+        @property
+        def year(self):
+            return cast(func.substr(self.expr, 1, 4), Integer)
+
+        @property
+        def month(self):
+            return cast(func.substr(self.expr, 5, 2), Integer)
+
+        @property
+        def day(self):
+            return cast(func.substr(self.expr, 7, 2), Integer)
+
+    def process_bind_param(self, value: Optional[date], dialect: Optional[Dialect] = None) -&gt; Optional[str]:
+        if value is None:
+            return None
+        if isinstance(value, date):
+            return &#39;%04d%02d%02d&#39; % (value.year, value.month, value.day)
+        raise ValueError(f&#34;expected datetime.date, got {value.__class__.__name__}&#34;)
+
+    def process_result_value(self, value: Optional[str], dialect: Optional[Dialect] = None) -&gt; Optional[date]:
+        if value:
+            return date(year=int(value[0:4]), month=int(value[4:6]), day=int(value[6:8]))
+        return None</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.sql.type_api.TypeDecorator</li>
+<li>sqlalchemy.sql.base.SchemaEventTarget</li>
+<li>sqlalchemy.sql.type_api.TypeEngine</li>
+<li>sqlalchemy.sql.visitors.Visitable</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.types.DinoDate.impl"><code class="name">var <span class="ident">impl</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.types.DinoDate.comparator_factory"><code class="name">var <span class="ident">comparator_factory</span></code></dt>
+<dd>
+<div class="desc"><p>A :class:<code>.TypeEngine.Comparator</code> that is specific to
+:class:<code>.TypeDecorator</code>.</p>
+<p>User-defined :class:<code>.TypeDecorator</code> classes should not typically
+need to modify this.</p></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="DINO2.types.DinoDate.coerce_compared_value"><code class="name flex">
+<span>def <span class="ident">coerce_compared_value</span></span>(<span>self, op, value)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Suggest a type for a 'coerced' Python value in an expression.</p>
+<p>By default, returns self.
+This method is called by
+the expression system when an object using this type is
+on the left or right side of an expression against a plain Python
+object which does not yet have a SQLAlchemy type assigned::</p>
+<pre><code>expr = table.c.somecolumn + 35
+</code></pre>
+<p>Where above, if <code>somecolumn</code> uses this type, this method will
+be called with the value <code>operator.add</code>
+and <code>35</code>.
+The return value is whatever SQLAlchemy type should
+be used for <code>35</code> for this particular operation.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def coerce_compared_value(self, op, value):
+    if isinstance(value, str):
+        return self.impl
+    return self</code></pre>
+</details>
+</dd>
+<dt id="DINO2.types.DinoDate.process_bind_param"><code class="name flex">
+<span>def <span class="ident">process_bind_param</span></span>(<span>self, value: Optional[date], dialect: Optional[Dialect] = None) -> Union[str, NoneType]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Receive a bound parameter value to be converted.</p>
+<p>Subclasses override this method to return the
+value that should be passed along to the underlying
+:class:<code>.TypeEngine</code> object, and from there to the
+DBAPI <code>execute()</code> method.</p>
+<p>The operation could be anything desired to perform custom
+behavior, such as transforming or serializing data.
+This could also be used as a hook for validating logic.</p>
+<p>This operation should be designed with the reverse operation
+in mind, which would be the process_result_value method of
+this class.</p>
+<p>:param value: Data to operate upon, of any type expected by
+this method in the subclass.
+Can be <code>None</code>.
+:param dialect: the :class:<code>.Dialect</code> in use.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def process_bind_param(self, value: Optional[date], dialect: Optional[Dialect] = None) -&gt; Optional[str]:
+    if value is None:
+        return None
+    if isinstance(value, date):
+        return &#39;%04d%02d%02d&#39; % (value.year, value.month, value.day)
+    raise ValueError(f&#34;expected datetime.date, got {value.__class__.__name__}&#34;)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.types.DinoDate.process_result_value"><code class="name flex">
+<span>def <span class="ident">process_result_value</span></span>(<span>self, value: Optional[str], dialect: Optional[Dialect] = None) -> Union[datetime.date, NoneType]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Receive a result-row column value to be converted.</p>
+<p>Subclasses should implement this method to operate on data
+fetched from the database.</p>
+<p>Subclasses override this method to return the
+value that should be passed back to the application,
+given a value that is already processed by
+the underlying :class:<code>.TypeEngine</code> object, originally
+from the DBAPI cursor method <code>fetchone()</code> or similar.</p>
+<p>The operation could be anything desired to perform custom
+behavior, such as transforming or serializing data.
+This could also be used as a hook for validating logic.</p>
+<p>:param value: Data to operate upon, of any type expected by
+this method in the subclass.
+Can be <code>None</code>.
+:param dialect: the :class:<code>.Dialect</code> in use.</p>
+<p>This operation should be designed to be reversible by
+the "process_bind_param" method of this class.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def process_result_value(self, value: Optional[str], dialect: Optional[Dialect] = None) -&gt; Optional[date]:
+    if value:
+        return date(year=int(value[0:4]), month=int(value[4:6]), day=int(value[6:8]))
+    return None</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.types.DinoTimeDelta"><code class="flex name class">
+<span>class <span class="ident">DinoTimeDelta</span></span>
+<span>(</span><span>minus_1_none: bool = False)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Column type for timedeltas saved as int in the database, converted to <code>datetime.timedelta</code> objects</p>
+<p>Construct a :class:<code>.TypeDecorator</code>.</p>
+<p>Arguments sent here are passed to the constructor
+of the class assigned to the <code>impl</code> class level attribute,
+assuming the <code>impl</code> is a callable, and the resulting
+object is assigned to the <code>self.impl</code> instance attribute
+(thus overriding the class attribute of the same name).</p>
+<p>If the class level <code>impl</code> is not a callable (the unusual case),
+it will be assigned to the same instance attribute 'as-is',
+ignoring those arguments passed to the constructor.</p>
+<p>Subclasses can override this to customize the generation
+of <code>self.impl</code> entirely.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class DinoTimeDelta(TypeDecorator):
+    &#34;&#34;&#34;Column type for timedeltas saved as int in the database, converted to `datetime.timedelta` objects&#34;&#34;&#34;
+    impl = Integer
+    should_evaluate_none = True
+
+    def __init__(self, minus_1_none: bool = False):
+        super().__init__()
+        self.minus_1_none = minus_1_none
+
+    # do not coerce None to &#34;is NULL&#34; automatically
+    coerce_to_is_types: Tuple[Type, ...] = tuple()
+
+    def coerce_compared_value(self, op, value):
+        if isinstance(value, int):
+            return self.impl
+        return self
+
+    class comparator_factory(TypeDecorator.Comparator, impl.comparator_factory):
+        @property
+        def total_seconds(self):
+            return cast(self.expr, Integer)
+
+    def process_bind_param(self, value: Optional[timedelta], dialect: Optional[Dialect] = None) -&gt; Optional[int]:
+        if value is None:
+            return -1 if self.minus_1_none else None
+        if isinstance(value, timedelta):
+            return int(value.total_seconds())
+        raise ValueError(f&#34;expected datetime.timedelta, got {value.__class__.__name__}&#34;)
+
+    def process_result_value(self, value: Optional[int], dialect: Optional[Dialect] = None) -&gt; Optional[timedelta]:
+        if (value is None) or (value == -1 and self.minus_1_none):
+            return None
+        return timedelta(seconds=int(value))
+
+    def copy(self, **kwargs):
+        return DinoTimeDelta(self.minus_1_none)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.sql.type_api.TypeDecorator</li>
+<li>sqlalchemy.sql.base.SchemaEventTarget</li>
+<li>sqlalchemy.sql.type_api.TypeEngine</li>
+<li>sqlalchemy.sql.visitors.Visitable</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.types.DinoTimeDelta.impl"><code class="name">var <span class="ident">impl</span></code></dt>
+<dd>
+<div class="desc"><p>A type for <code>int</code> integers.</p></div>
+</dd>
+<dt id="DINO2.types.DinoTimeDelta.should_evaluate_none"><code class="name">var <span class="ident">should_evaluate_none</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.types.DinoTimeDelta.coerce_to_is_types"><code class="name">var <span class="ident">coerce_to_is_types</span> : Tuple[Type, ...]</code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.types.DinoTimeDelta.comparator_factory"><code class="name">var <span class="ident">comparator_factory</span></code></dt>
+<dd>
+<div class="desc"><p>A :class:<code>.TypeEngine.Comparator</code> that is specific to
+:class:<code>.TypeDecorator</code>.</p>
+<p>User-defined :class:<code>.TypeDecorator</code> classes should not typically
+need to modify this.</p></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="DINO2.types.DinoTimeDelta.coerce_compared_value"><code class="name flex">
+<span>def <span class="ident">coerce_compared_value</span></span>(<span>self, op, value)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Suggest a type for a 'coerced' Python value in an expression.</p>
+<p>By default, returns self.
+This method is called by
+the expression system when an object using this type is
+on the left or right side of an expression against a plain Python
+object which does not yet have a SQLAlchemy type assigned::</p>
+<pre><code>expr = table.c.somecolumn + 35
+</code></pre>
+<p>Where above, if <code>somecolumn</code> uses this type, this method will
+be called with the value <code>operator.add</code>
+and <code>35</code>.
+The return value is whatever SQLAlchemy type should
+be used for <code>35</code> for this particular operation.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def coerce_compared_value(self, op, value):
+    if isinstance(value, int):
+        return self.impl
+    return self</code></pre>
+</details>
+</dd>
+<dt id="DINO2.types.DinoTimeDelta.process_bind_param"><code class="name flex">
+<span>def <span class="ident">process_bind_param</span></span>(<span>self, value: Optional[timedelta], dialect: Optional[Dialect] = None) -> Union[int, NoneType]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Receive a bound parameter value to be converted.</p>
+<p>Subclasses override this method to return the
+value that should be passed along to the underlying
+:class:<code>.TypeEngine</code> object, and from there to the
+DBAPI <code>execute()</code> method.</p>
+<p>The operation could be anything desired to perform custom
+behavior, such as transforming or serializing data.
+This could also be used as a hook for validating logic.</p>
+<p>This operation should be designed with the reverse operation
+in mind, which would be the process_result_value method of
+this class.</p>
+<p>:param value: Data to operate upon, of any type expected by
+this method in the subclass.
+Can be <code>None</code>.
+:param dialect: the :class:<code>.Dialect</code> in use.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def process_bind_param(self, value: Optional[timedelta], dialect: Optional[Dialect] = None) -&gt; Optional[int]:
+    if value is None:
+        return -1 if self.minus_1_none else None
+    if isinstance(value, timedelta):
+        return int(value.total_seconds())
+    raise ValueError(f&#34;expected datetime.timedelta, got {value.__class__.__name__}&#34;)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.types.DinoTimeDelta.process_result_value"><code class="name flex">
+<span>def <span class="ident">process_result_value</span></span>(<span>self, value: Optional[int], dialect: Optional[Dialect] = None) -> Union[datetime.timedelta, NoneType]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Receive a result-row column value to be converted.</p>
+<p>Subclasses should implement this method to operate on data
+fetched from the database.</p>
+<p>Subclasses override this method to return the
+value that should be passed back to the application,
+given a value that is already processed by
+the underlying :class:<code>.TypeEngine</code> object, originally
+from the DBAPI cursor method <code>fetchone()</code> or similar.</p>
+<p>The operation could be anything desired to perform custom
+behavior, such as transforming or serializing data.
+This could also be used as a hook for validating logic.</p>
+<p>:param value: Data to operate upon, of any type expected by
+this method in the subclass.
+Can be <code>None</code>.
+:param dialect: the :class:<code>.Dialect</code> in use.</p>
+<p>This operation should be designed to be reversible by
+the "process_bind_param" method of this class.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def process_result_value(self, value: Optional[int], dialect: Optional[Dialect] = None) -&gt; Optional[timedelta]:
+    if (value is None) or (value == -1 and self.minus_1_none):
+        return None
+    return timedelta(seconds=int(value))</code></pre>
+</details>
+</dd>
+<dt id="DINO2.types.DinoTimeDelta.copy"><code class="name flex">
+<span>def <span class="ident">copy</span></span>(<span>self, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Produce a copy of this :class:<code>.TypeDecorator</code> instance.</p>
+<p>This is a shallow copy and is provided to fulfill part of
+the :class:<code>.TypeEngine</code> contract.
+It usually does not
+need to be overridden unless the user-defined :class:<code>.TypeDecorator</code>
+has local state that should be deep-copied.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def copy(self, **kwargs):
+    return DinoTimeDelta(self.minus_1_none)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.types.TypeEnum"><code class="flex name class">
+<span>class <span class="ident">TypeEnum</span></span>
+<span>(</span><span>enum_type: Type[Enum])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Column type for python <code>enum.Enum</code>s stored in the database</p>
+<p>Construct a :class:<code>.TypeDecorator</code>.</p>
+<p>Arguments sent here are passed to the constructor
+of the class assigned to the <code>impl</code> class level attribute,
+assuming the <code>impl</code> is a callable, and the resulting
+object is assigned to the <code>self.impl</code> instance attribute
+(thus overriding the class attribute of the same name).</p>
+<p>If the class level <code>impl</code> is not a callable (the unusual case),
+it will be assigned to the same instance attribute 'as-is',
+ignoring those arguments passed to the constructor.</p>
+<p>Subclasses can override this to customize the generation
+of <code>self.impl</code> entirely.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class TypeEnum(TypeDecorator):
+    &#34;&#34;&#34;Column type for python `enum.Enum`s stored in the database&#34;&#34;&#34;
+    impl: Union[TypeEngine, Type[TypeEngine]] = TypeEngine
+
+    def __init__(self, enum_type: Type[Enum]):
+        if self.__class__ == TypeEnum:
+            raise NotImplementedError(f&#34;Do not use {self.__class__} directly&#34;)
+        super().__init__()
+        self.enum_type = enum_type
+
+    def process_bind_param(self, value: Optional[Enum], dialect: Optional[Dialect] = None) -&gt; Optional[Any]:
+        if value is None:
+            return None
+        if isinstance(value, self.enum_type):
+            return value.value
+        raise ValueError(f&#39;expected {self.enum_type.__name__} value, got {value.__class__.__name__}&#39;)
+
+    def process_result_value(self, value: Optional[Any], dialect: Optional[Dialect] = None) -&gt; Optional[Enum]:
+        if value is None:
+            return None
+        return self.enum_type(value)
+
+    def copy(self, **kwargs):
+        return self.__class__(self.enum_type)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.sql.type_api.TypeDecorator</li>
+<li>sqlalchemy.sql.base.SchemaEventTarget</li>
+<li>sqlalchemy.sql.type_api.TypeEngine</li>
+<li>sqlalchemy.sql.visitors.Visitable</li>
+</ul>
+<h3>Subclasses</h3>
+<ul class="hlist">
+<li><a title="DINO2.types.CharEnum" href="#DINO2.types.CharEnum">CharEnum</a></li>
+<li><a title="DINO2.types.IntEnum" href="#DINO2.types.IntEnum">IntEnum</a></li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.types.TypeEnum.impl"><code class="name">var <span class="ident">impl</span> : Union[sqlalchemy.sql.type_api.TypeEngine, Type[sqlalchemy.sql.type_api.TypeEngine]]</code></dt>
+<dd>
+<div class="desc"><p>The ultimate base class for all SQL datatypes.</p>
+<p>Common subclasses of :class:<code>.TypeEngine</code> include
+:class:<code>.String</code>, :class:<code>.Integer</code>, and :class:<code>.Boolean</code>.</p>
+<p>For an overview of the SQLAlchemy typing system, see
+:ref:<code>types_toplevel</code>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">Seealso</p>
+<p>:ref:<code>types_toplevel</code></p>
+</div></div>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="DINO2.types.TypeEnum.process_bind_param"><code class="name flex">
+<span>def <span class="ident">process_bind_param</span></span>(<span>self, value: Optional[Enum], dialect: Optional[Dialect] = None) -> Union[Any, NoneType]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Receive a bound parameter value to be converted.</p>
+<p>Subclasses override this method to return the
+value that should be passed along to the underlying
+:class:<code>.TypeEngine</code> object, and from there to the
+DBAPI <code>execute()</code> method.</p>
+<p>The operation could be anything desired to perform custom
+behavior, such as transforming or serializing data.
+This could also be used as a hook for validating logic.</p>
+<p>This operation should be designed with the reverse operation
+in mind, which would be the process_result_value method of
+this class.</p>
+<p>:param value: Data to operate upon, of any type expected by
+this method in the subclass.
+Can be <code>None</code>.
+:param dialect: the :class:<code>.Dialect</code> in use.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def process_bind_param(self, value: Optional[Enum], dialect: Optional[Dialect] = None) -&gt; Optional[Any]:
+    if value is None:
+        return None
+    if isinstance(value, self.enum_type):
+        return value.value
+    raise ValueError(f&#39;expected {self.enum_type.__name__} value, got {value.__class__.__name__}&#39;)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.types.TypeEnum.process_result_value"><code class="name flex">
+<span>def <span class="ident">process_result_value</span></span>(<span>self, value: Optional[Any], dialect: Optional[Dialect] = None) -> Union[enum.Enum, NoneType]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Receive a result-row column value to be converted.</p>
+<p>Subclasses should implement this method to operate on data
+fetched from the database.</p>
+<p>Subclasses override this method to return the
+value that should be passed back to the application,
+given a value that is already processed by
+the underlying :class:<code>.TypeEngine</code> object, originally
+from the DBAPI cursor method <code>fetchone()</code> or similar.</p>
+<p>The operation could be anything desired to perform custom
+behavior, such as transforming or serializing data.
+This could also be used as a hook for validating logic.</p>
+<p>:param value: Data to operate upon, of any type expected by
+this method in the subclass.
+Can be <code>None</code>.
+:param dialect: the :class:<code>.Dialect</code> in use.</p>
+<p>This operation should be designed to be reversible by
+the "process_bind_param" method of this class.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def process_result_value(self, value: Optional[Any], dialect: Optional[Dialect] = None) -&gt; Optional[Enum]:
+    if value is None:
+        return None
+    return self.enum_type(value)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.types.TypeEnum.copy"><code class="name flex">
+<span>def <span class="ident">copy</span></span>(<span>self, **kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Produce a copy of this :class:<code>.TypeDecorator</code> instance.</p>
+<p>This is a shallow copy and is provided to fulfill part of
+the :class:<code>.TypeEngine</code> contract.
+It usually does not
+need to be overridden unless the user-defined :class:<code>.TypeDecorator</code>
+has local state that should be deep-copied.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def copy(self, **kwargs):
+    return self.__class__(self.enum_type)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.types.IntEnum"><code class="flex name class">
+<span>class <span class="ident">IntEnum</span></span>
+<span>(</span><span>enum_type: Type[Enum])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Column type for python <code>enum.Enum</code>s stored as int in the database</p>
+<p>Construct a :class:<code>.TypeDecorator</code>.</p>
+<p>Arguments sent here are passed to the constructor
+of the class assigned to the <code>impl</code> class level attribute,
+assuming the <code>impl</code> is a callable, and the resulting
+object is assigned to the <code>self.impl</code> instance attribute
+(thus overriding the class attribute of the same name).</p>
+<p>If the class level <code>impl</code> is not a callable (the unusual case),
+it will be assigned to the same instance attribute 'as-is',
+ignoring those arguments passed to the constructor.</p>
+<p>Subclasses can override this to customize the generation
+of <code>self.impl</code> entirely.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class IntEnum(TypeEnum):
+    &#34;&#34;&#34;Column type for python `enum.Enum`s stored as int in the database&#34;&#34;&#34;
+    impl = Integer
+
+    def coerce_compared_value(self, op, value):
+        if isinstance(value, int):
+            return self.impl
+        return self</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="DINO2.types.TypeEnum" href="#DINO2.types.TypeEnum">TypeEnum</a></li>
+<li>sqlalchemy.sql.type_api.TypeDecorator</li>
+<li>sqlalchemy.sql.base.SchemaEventTarget</li>
+<li>sqlalchemy.sql.type_api.TypeEngine</li>
+<li>sqlalchemy.sql.visitors.Visitable</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="DINO2.types.IntEnum.coerce_compared_value"><code class="name flex">
+<span>def <span class="ident">coerce_compared_value</span></span>(<span>self, op, value)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Suggest a type for a 'coerced' Python value in an expression.</p>
+<p>By default, returns self.
+This method is called by
+the expression system when an object using this type is
+on the left or right side of an expression against a plain Python
+object which does not yet have a SQLAlchemy type assigned::</p>
+<pre><code>expr = table.c.somecolumn + 35
+</code></pre>
+<p>Where above, if <code>somecolumn</code> uses this type, this method will
+be called with the value <code>operator.add</code>
+and <code>35</code>.
+The return value is whatever SQLAlchemy type should
+be used for <code>35</code> for this particular operation.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def coerce_compared_value(self, op, value):
+    if isinstance(value, int):
+        return self.impl
+    return self</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="DINO2.types.TypeEnum" href="#DINO2.types.TypeEnum">TypeEnum</a></b></code>:
+<ul class="hlist">
+<li><code><a title="DINO2.types.TypeEnum.copy" href="#DINO2.types.TypeEnum.copy">copy</a></code></li>
+<li><code><a title="DINO2.types.TypeEnum.impl" href="#DINO2.types.TypeEnum.impl">impl</a></code></li>
+<li><code><a title="DINO2.types.TypeEnum.process_bind_param" href="#DINO2.types.TypeEnum.process_bind_param">process_bind_param</a></code></li>
+<li><code><a title="DINO2.types.TypeEnum.process_result_value" href="#DINO2.types.TypeEnum.process_result_value">process_result_value</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+<dt id="DINO2.types.CharEnum"><code class="flex name class">
+<span>class <span class="ident">CharEnum</span></span>
+<span>(</span><span>enum_type: Type[Enum])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Column type for python <code>enum.Enum</code>s stored as a single character in the database</p>
+<p>Construct a :class:<code>.TypeDecorator</code>.</p>
+<p>Arguments sent here are passed to the constructor
+of the class assigned to the <code>impl</code> class level attribute,
+assuming the <code>impl</code> is a callable, and the resulting
+object is assigned to the <code>self.impl</code> instance attribute
+(thus overriding the class attribute of the same name).</p>
+<p>If the class level <code>impl</code> is not a callable (the unusual case),
+it will be assigned to the same instance attribute 'as-is',
+ignoring those arguments passed to the constructor.</p>
+<p>Subclasses can override this to customize the generation
+of <code>self.impl</code> entirely.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class CharEnum(TypeEnum):
+    &#34;&#34;&#34;Column type for python `enum.Enum`s stored as a single character in the database&#34;&#34;&#34;
+    impl = String(length=1)
+
+    def coerce_compared_value(self, op, value):
+        if isinstance(value, str):
+            return self.impl
+        return self</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li><a title="DINO2.types.TypeEnum" href="#DINO2.types.TypeEnum">TypeEnum</a></li>
+<li>sqlalchemy.sql.type_api.TypeDecorator</li>
+<li>sqlalchemy.sql.base.SchemaEventTarget</li>
+<li>sqlalchemy.sql.type_api.TypeEngine</li>
+<li>sqlalchemy.sql.visitors.Visitable</li>
+</ul>
+<h3>Methods</h3>
+<dl>
+<dt id="DINO2.types.CharEnum.coerce_compared_value"><code class="name flex">
+<span>def <span class="ident">coerce_compared_value</span></span>(<span>self, op, value)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Suggest a type for a 'coerced' Python value in an expression.</p>
+<p>By default, returns self.
+This method is called by
+the expression system when an object using this type is
+on the left or right side of an expression against a plain Python
+object which does not yet have a SQLAlchemy type assigned::</p>
+<pre><code>expr = table.c.somecolumn + 35
+</code></pre>
+<p>Where above, if <code>somecolumn</code> uses this type, this method will
+be called with the value <code>operator.add</code>
+and <code>35</code>.
+The return value is whatever SQLAlchemy type should
+be used for <code>35</code> for this particular operation.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def coerce_compared_value(self, op, value):
+    if isinstance(value, str):
+        return self.impl
+    return self</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Inherited members</h3>
+<ul class="hlist">
+<li><code><b><a title="DINO2.types.TypeEnum" href="#DINO2.types.TypeEnum">TypeEnum</a></b></code>:
+<ul class="hlist">
+<li><code><a title="DINO2.types.TypeEnum.copy" href="#DINO2.types.TypeEnum.copy">copy</a></code></li>
+<li><code><a title="DINO2.types.TypeEnum.impl" href="#DINO2.types.TypeEnum.impl">impl</a></code></li>
+<li><code><a title="DINO2.types.TypeEnum.process_bind_param" href="#DINO2.types.TypeEnum.process_bind_param">process_bind_param</a></code></li>
+<li><code><a title="DINO2.types.TypeEnum.process_result_value" href="#DINO2.types.TypeEnum.process_result_value">process_result_value</a></code></li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="DINO2" href="index.html">DINO2</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="DINO2.types.DinoDate" href="#DINO2.types.DinoDate">DinoDate</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.types.DinoDate.coerce_compared_value" href="#DINO2.types.DinoDate.coerce_compared_value">coerce_compared_value</a></code></li>
+<li><code><a title="DINO2.types.DinoDate.process_bind_param" href="#DINO2.types.DinoDate.process_bind_param">process_bind_param</a></code></li>
+<li><code><a title="DINO2.types.DinoDate.process_result_value" href="#DINO2.types.DinoDate.process_result_value">process_result_value</a></code></li>
+<li><code><a title="DINO2.types.DinoDate.impl" href="#DINO2.types.DinoDate.impl">impl</a></code></li>
+<li><code><a title="DINO2.types.DinoDate.comparator_factory" href="#DINO2.types.DinoDate.comparator_factory">comparator_factory</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.types.DinoTimeDelta" href="#DINO2.types.DinoTimeDelta">DinoTimeDelta</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.types.DinoTimeDelta.coerce_compared_value" href="#DINO2.types.DinoTimeDelta.coerce_compared_value">coerce_compared_value</a></code></li>
+<li><code><a title="DINO2.types.DinoTimeDelta.process_bind_param" href="#DINO2.types.DinoTimeDelta.process_bind_param">process_bind_param</a></code></li>
+<li><code><a title="DINO2.types.DinoTimeDelta.process_result_value" href="#DINO2.types.DinoTimeDelta.process_result_value">process_result_value</a></code></li>
+<li><code><a title="DINO2.types.DinoTimeDelta.copy" href="#DINO2.types.DinoTimeDelta.copy">copy</a></code></li>
+<li><code><a title="DINO2.types.DinoTimeDelta.impl" href="#DINO2.types.DinoTimeDelta.impl">impl</a></code></li>
+<li><code><a title="DINO2.types.DinoTimeDelta.should_evaluate_none" href="#DINO2.types.DinoTimeDelta.should_evaluate_none">should_evaluate_none</a></code></li>
+<li><code><a title="DINO2.types.DinoTimeDelta.coerce_to_is_types" href="#DINO2.types.DinoTimeDelta.coerce_to_is_types">coerce_to_is_types</a></code></li>
+<li><code><a title="DINO2.types.DinoTimeDelta.comparator_factory" href="#DINO2.types.DinoTimeDelta.comparator_factory">comparator_factory</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.types.TypeEnum" href="#DINO2.types.TypeEnum">TypeEnum</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.types.TypeEnum.process_bind_param" href="#DINO2.types.TypeEnum.process_bind_param">process_bind_param</a></code></li>
+<li><code><a title="DINO2.types.TypeEnum.process_result_value" href="#DINO2.types.TypeEnum.process_result_value">process_result_value</a></code></li>
+<li><code><a title="DINO2.types.TypeEnum.copy" href="#DINO2.types.TypeEnum.copy">copy</a></code></li>
+<li><code><a title="DINO2.types.TypeEnum.impl" href="#DINO2.types.TypeEnum.impl">impl</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.types.IntEnum" href="#DINO2.types.IntEnum">IntEnum</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.types.IntEnum.coerce_compared_value" href="#DINO2.types.IntEnum.coerce_compared_value">coerce_compared_value</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.types.CharEnum" href="#DINO2.types.CharEnum">CharEnum</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.types.CharEnum.coerce_compared_value" href="#DINO2.types.CharEnum.coerce_compared_value">coerce_compared_value</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

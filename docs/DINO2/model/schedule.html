@@ -1,0 +1,2905 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.1" />
+<title>DINO2.model.schedule API documentation</title>
+<meta name="description" content="DINO 2.1 schedule data" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>DINO2.model.schedule</code></h1>
+</header>
+<section id="section-intro">
+<p>DINO 2.1 schedule data</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: utf-8 -*-
+&#34;&#34;&#34;DINO 2.1 schedule data&#34;&#34;&#34;
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+from datetime import date, timedelta
+from enum import Enum
+from sqlalchemy import Column, String, Integer, Boolean, ForeignKey, ForeignKeyConstraint, CheckConstraint, and_, or_, tuple_
+from sqlalchemy.orm import relationship, RelationshipProperty, joinedload, Query
+from typing import Optional, Tuple, FrozenSet, Sequence, TYPE_CHECKING
+
+from ..types import DinoTimeDelta, IntEnum, CharEnum
+from . import Base, Version
+
+if TYPE_CHECKING:
+    from .calendar import DayAttribute, Restriction
+    from .location import Stop, StopPoint
+    from .operational import Operator, OperatorBranchOffice, VehicleType, VehicleDestinationText
+    from .network import Course, CourseStop, CourseStopTiming
+
+
+class NoticeContentType(Enum):
+    general = 0
+    train_name = 1
+    on_demand_phone = 2
+    bicycle = 3
+    track = 4
+
+
+class NoticeDisplayType(Enum):
+    always = 0
+    on_boarding = 1
+    on_alighting = 2
+    on_board = 4
+    # DINO docs are extremely ambiguous here (DE / EN)
+    on_boarding_or_alighting = 5
+    on_board_or_alighting = 8
+
+
+class Notice(Base):
+    &#34;&#34;&#34;
+    Operational notice
+
+    Primary key: `version_id` &amp; _`line`_ &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;notice.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    line: Column[Optional[int]] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;Line number (if None, valid for all lines)&#34;&#34;&#34;
+
+    id: Column[str] = Column(&#34;NOTICE&#34;, String(length=5), primary_key=True)
+    &#34;&#34;&#34;Notice id&#34;&#34;&#34;
+
+    text: Column[str] = Column(&#34;NOTICE_TEXT&#34;, String(length=1000), nullable=False)
+    &#34;&#34;&#34;Notice text&#34;&#34;&#34;
+
+    content_type: Column[Optional[NoticeContentType]] = Column(&#34;CONTENT_TYPE&#34;, IntEnum(NoticeContentType))
+    &#34;&#34;&#34;Content type&#34;&#34;&#34;
+
+    display_type: Column[Optional[NoticeDisplayType]] = Column(&#34;DISPLAY_TYPE&#34;, IntEnum(NoticeDisplayType))
+    &#34;&#34;&#34;Display type&#34;&#34;&#34;
+
+    trips: RelationshipProperty[Sequence[Trip]] = relationship(&#34;Trip&#34;, primaryjoin=&#34;and_(Notice.version_id==Trip.version_id, or_(Notice.id==Trip.notice1id, Notice.id==Trip.notice2id, Notice.id==Trip.notice3id, Notice.id==Trip.notice4id, Notice.id==Trip.notice5id), or_(Notice.line==Trip.line, Notice.line==None))&#34;, viewonly=True)
+    &#34;&#34;&#34;`Trip`s that refer to this this notice&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;notices&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Notice(version_id={self.version_id}, id={self.id}, line={self.line}, text={self.text})&gt;&#34;
+
+
+@dataclass(frozen=True)
+class TripStop:
+    &#34;&#34;&#34;A single trip stop including constraint, destination text, and time information&#34;&#34;&#34;
+    trip: Trip
+    stop: Stop
+    stop_point: StopPoint
+    course_stop: CourseStop
+    stop_timing: CourseStopTiming
+    constraints: Optional[FrozenSet[StopConstraint]]
+    vdt_before: Optional[VehicleDestinationText]
+    vdt_after: Optional[VehicleDestinationText]
+    arr_time: Optional[timedelta]
+    dep_time: Optional[timedelta]
+    distance_travelled: Optional[int]
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;TripStop(trip={self.trip}, stop_timing={self.stop_timing}, arr_time={self.arr_time}, dep_time={self.dep_time})&gt;&#34;
+
+
+class Trip(Base):
+    &#34;&#34;&#34;
+    Trip
+
+    A trip of a `DINO2.model.network.Course` with a specific &#34;timing group&#34;.  
+    Valid days defined using `Trip.day_attribute` and `Trip.restriction`.
+
+    Primary key: `version_id` &amp; `line` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;trip.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    line: Column[int] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Line id&#34;&#34;&#34;
+
+    course_id: Column[str] = Column(&#34;STR_LINE_VAR&#34;, String(length=4), primary_key=False, nullable=False)
+    &#34;&#34;&#34;Course id&#34;&#34;&#34;
+
+    line_dir: Column[int] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;), primary_key=False, nullable=False)
+    &#34;&#34;&#34;Line direction (1 or 2)&#34;&#34;&#34;
+
+    # todo: ggf. noch zusaetzlich trigger oderso als check dass timing_group auch existiert??
+    timing_group: Column[int] = Column(&#34;TIMING_GROUP_NR&#34;, Integer(), primary_key=False, nullable=False)
+    &#34;&#34;&#34;Timing group id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;TRIP_ID&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Trip id&#34;&#34;&#34;
+
+    id_printing: Column[Optional[int]] = Column(&#34;TRIP_ID_PRINTING&#34;, Integer())
+    &#34;&#34;&#34;Trip id for presentation&#34;&#34;&#34;
+
+    departure_time: Column[timedelta] = Column(&#34;DEPARTURE_TIME&#34;, DinoTimeDelta(), nullable=False)
+    &#34;&#34;&#34;Departure time as timedelta&#34;&#34;&#34;
+
+    dep_stop_id: Column[int] = Column(&#34;DEP_STOP_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Departure stop id&#34;&#34;&#34;
+    dep_stop_point_id: Column[int] = Column(&#34;DEP_STOPPING_POINT_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Departure stop point id&#34;&#34;&#34;
+    arr_stop_id: Column[int] = Column(&#34;ARR_STOP_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Arrival stop id&#34;&#34;&#34;
+    arr_stop_point_id: Column[int] = Column(&#34;ARR_STOPPING_POINT_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Arrival stop point id&#34;&#34;&#34;
+
+    vehicle_type_id: Column[Optional[int]] = Column(&#34;VEH_TYPE_NR&#34;, Integer())
+    &#34;&#34;&#34;Vehicle type id&#34;&#34;&#34;
+
+    day_attribute_id: Column[int] = Column(&#34;DAY_ATTRIBUTE_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Day attribute grouping id&#34;&#34;&#34;
+    restriction_id: Column[Optional[str]] = Column(&#34;RESTRICTION&#34;, String(length=5))
+    &#34;&#34;&#34;Restriction id&#34;&#34;&#34;
+
+    notice1id: Column[Optional[str]] = Column(&#34;NOTICE&#34;, String(length=5))
+    &#34;&#34;&#34;Notice id 1&#34;&#34;&#34;
+    notice2id: Column[Optional[str]] = Column(&#34;NOTICE_2&#34;, String(length=5))
+    notice3id: Column[Optional[str]] = Column(&#34;NOTICE_3&#34;, String(length=5))
+    notice4id: Column[Optional[str]] = Column(&#34;NOTICE_4&#34;, String(length=5))
+    notice5id: Column[Optional[str]] = Column(&#34;NOTICE_5&#34;, String(length=5))
+
+    round_trip_id: Column[Optional[int]] = Column(&#34;ROUND_TRIP_ID&#34;, Integer())
+    &#34;&#34;&#34;
+    Round trip id.
+    Supposed to be primary key, but not implemented here.
+    Also, the column name seems to be wrong in the documentation (&#34;ROUND_TRIP_NR&#34;)
+    &#34;&#34;&#34;
+    train_id: Column[Optional[int]] = Column(&#34;TRAIN_NR&#34;, Integer())
+    train_category_abbr: Column[Optional[str]] = Column(&#34;TRAIN_CATEGORY_SHORT_NAME&#34;, String(length=10))
+
+    operator_id: Column[Optional[str]] = Column(&#34;OP_CODE&#34;, String(length=10))
+    &#34;&#34;&#34;Operator id&#34;&#34;&#34;
+    operator_branch_office_id: Column[Optional[str]] = Column(&#34;OBO_SHORT_NAME&#34;, String(length=10))
+    &#34;&#34;&#34;Operator branch office id&#34;&#34;&#34;
+
+    global_id: Column[Optional[str]] = Column(&#34;GLOBAL_ID&#34;, String(length=100))
+    &#34;&#34;&#34;Global trip id&#34;&#34;&#34;
+    bike_allowed: Column[Optional[bool]] = Column(&#34;BIKE_ALLOWED&#34;, Boolean())
+    &#34;&#34;&#34;Whether bikes are allowed on this trip&#34;&#34;&#34;
+    purpose_id: Column[Optional[int]] = Column(&#34;PURPOSE_NR&#34;, Integer())
+    &#34;&#34;&#34;FK to trip purpose (not implemented yet, internal)&#34;&#34;&#34;
+
+    dep_stop: RelationshipProperty[Stop] = relationship(&#34;Stop&#34;, foreign_keys=&#34;[Trip.version_id, Trip.dep_stop_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;
+    Departure `DINO2.model.location.Stop`
+
+    It is unclear what these four attributes are used for.  
+    They can&#39;t be used to &#39;slice&#39; the `DINO2.model.network.Course`; there is no &#39;stop index&#39; in case a stop is stopped at multiple times.  
+    They might just be simple helpful &#34;shortcuts&#34;.
+    &#34;&#34;&#34;
+    # evtl. todo (query machen)
+    dep_stop_point: RelationshipProperty[StopPoint] = relationship(&#34;StopPoint&#34;, foreign_keys=&#34;[Trip.version_id, Trip.dep_stop_id, Trip.dep_stop_point_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;Departure `DINO2.model.location.StopPoint`&#34;&#34;&#34;
+    arr_stop: RelationshipProperty[Stop] = relationship(&#34;Stop&#34;, foreign_keys=&#34;[Trip.version_id, Trip.arr_stop_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;Arrival `DINO2.model.location.Stop`&#34;&#34;&#34;
+    arr_stop_point: RelationshipProperty[StopPoint] = relationship(&#34;StopPoint&#34;, foreign_keys=&#34;[Trip.version_id, Trip.arr_stop_id, Trip.arr_stop_point_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;Arrival `DINO2.model.location.StopPoint`&#34;&#34;&#34;
+
+    vehicle_type: RelationshipProperty[Optional[VehicleType]] = relationship(&#34;VehicleType&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.VehicleType`&#34;&#34;&#34;
+    day_attribute: RelationshipProperty[DayAttribute] = relationship(&#34;DayAttribute&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.calendar.DayAttribute`&#34;&#34;&#34;
+    restriction: RelationshipProperty[Optional[Restriction]] = relationship(&#34;Restriction&#34;, primaryjoin=&#34;and_(Restriction.version_id==Trip.version_id, Restriction.id==Trip.restriction_id, or_(Restriction.line==Trip.line, Restriction.line==None))&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.calendar.Restriction`&#34;&#34;&#34;
+    notice1: RelationshipProperty[Optional[Notice]] = relationship(Notice, primaryjoin=&#34;and_(Notice.version_id==Trip.version_id, Notice.id==Trip.notice1id, or_(Notice.line==Trip.line, Notice.line==None))&#34;, viewonly=True)
+    &#34;&#34;&#34;`Notice` 1&#34;&#34;&#34;
+    notice2: RelationshipProperty[Optional[Notice]] = relationship(Notice, primaryjoin=&#34;and_(Notice.version_id==Trip.version_id, Notice.id==Trip.notice2id, or_(Notice.line==Trip.line, Notice.line==None))&#34;, viewonly=True)
+    notice3: RelationshipProperty[Optional[Notice]] = relationship(Notice, primaryjoin=&#34;and_(Notice.version_id==Trip.version_id, Notice.id==Trip.notice3id, or_(Notice.line==Trip.line, Notice.line==None))&#34;, viewonly=True)
+    notice4: RelationshipProperty[Optional[Notice]] = relationship(Notice, primaryjoin=&#34;and_(Notice.version_id==Trip.version_id, Notice.id==Trip.notice4id, or_(Notice.line==Trip.line, Notice.line==None))&#34;, viewonly=True)
+    notice5: RelationshipProperty[Optional[Notice]] = relationship(Notice, primaryjoin=&#34;and_(Notice.version_id==Trip.version_id, Notice.id==Trip.notice5id, or_(Notice.line==Trip.line, Notice.line==None))&#34;, viewonly=True)
+    operator: RelationshipProperty[Optional[Operator]] = relationship(&#34;Operator&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.Operator`&#34;&#34;&#34;
+    operator_branch_office: RelationshipProperty[Optional[OperatorBranchOffice]] = relationship(&#34;OperatorBranchOffice&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.OperatorBranchOffice`&#34;&#34;&#34;
+    stop_timings: RelationshipProperty[Sequence[CourseStopTiming]] = relationship(&#34;CourseStopTiming&#34;, primaryjoin=&#34;and_(CourseStopTiming.version_id==Trip.version_id, CourseStopTiming.line==Trip.line, CourseStopTiming.course_id==Trip.course_id, CourseStopTiming.line_dir==Trip.line_dir, CourseStopTiming.timing_group==Trip.timing_group)&#34;, order_by=&#34;asc(CourseStopTiming.consec_stop_nr)&#34;, foreign_keys=[version_id, line, course_id, line_dir, timing_group], viewonly=True, uselist=True)
+    &#34;&#34;&#34;`DINO2.model.network.CourseStopTiming`s&#34;&#34;&#34;
+    course: RelationshipProperty[Course] = relationship(&#34;Course&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.Course`&#34;&#34;&#34;
+    constraints: RelationshipProperty[Sequence[StopConstraint]] = relationship(&#34;StopConstraint&#34;, back_populates=&#34;trip&#34;)
+    &#34;&#34;&#34;`StopConstraint`s of this trip&#34;&#34;&#34;
+    vdt_changes: RelationshipProperty[Sequence[TripVDT]] = relationship(&#34;TripVDT&#34;, order_by=&#34;asc(TripVDT.consec_stop_nr)&#34;, back_populates=&#34;trip&#34;)
+    &#34;&#34;&#34;Vehicle destination text changes (`TripVDT`) on this trip&#34;&#34;&#34;
+    vdts: RelationshipProperty[Sequence[VehicleDestinationText]] = relationship(&#34;VehicleDestinationText&#34;, order_by=&#34;asc(TripVDT.consec_stop_nr)&#34;, secondary=&#34;trip_vdt&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.VehicleDestinationText`s used on this trip&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;trips&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    @property
+    def notices(self) -&gt; FrozenSet[Notice]:
+        &#34;&#34;&#34;Set of `Notice`s of this trip&#34;&#34;&#34;
+        return frozenset(filter(None, (self.notice1, self.notice2, self.notice3, self.notice4, self.notice5)))
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, line, course_id, line_dir], [&#34;line.VERSION&#34;, &#34;line.LINE_NR&#34;,  &#34;line.STR_LINE_VAR&#34;, &#34;line.LINE_DIR_NR&#34;]),
+        ForeignKeyConstraint([version_id, dep_stop_id], [&#34;stop.VERSION&#34;, &#34;stop.STOP_NR&#34;]),
+        ForeignKeyConstraint([version_id, dep_stop_id, dep_stop_point_id], [&#34;stop_point.VERSION&#34;, &#34;stop_point.STOP_NR&#34;, &#34;stop_point.STOPPING_POINT_NR&#34;]),
+        ForeignKeyConstraint([version_id, arr_stop_id], [&#34;stop.VERSION&#34;, &#34;stop.STOP_NR&#34;]),
+        ForeignKeyConstraint([version_id, arr_stop_id, arr_stop_point_id], [&#34;stop_point.VERSION&#34;, &#34;stop_point.STOP_NR&#34;, &#34;stop_point.STOPPING_POINT_NR&#34;]),
+        ForeignKeyConstraint([version_id, vehicle_type_id], [&#34;vehicle_type.VERSION&#34;, &#34;vehicle_type.VEH_TYPE_NR&#34;]),
+        ForeignKeyConstraint([version_id, day_attribute_id], [&#34;day_attribute.VERSION&#34;, &#34;day_attribute.DAY_ATTRIBUTE_NR&#34;]),
+        ForeignKeyConstraint([version_id, restriction_id], [&#34;service_restriction.VERSION&#34;, &#34;service_restriction.RESTRICTION&#34;]),
+        ForeignKeyConstraint([version_id, restriction_id, line], [&#34;service_restriction.VERSION&#34;, &#34;service_restriction.RESTRICTION&#34;, &#34;service_restriction.LINE_NR&#34;]),
+        ForeignKeyConstraint([version_id, notice1id], [&#34;notice.VERSION&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, notice2id], [&#34;notice.VERSION&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, notice3id], [&#34;notice.VERSION&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, notice4id], [&#34;notice.VERSION&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, notice5id], [&#34;notice.VERSION&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, line, notice1id], [&#34;notice.VERSION&#34;, &#34;notice.LINE_NR&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, line, notice2id], [&#34;notice.VERSION&#34;, &#34;notice.LINE_NR&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, line, notice3id], [&#34;notice.VERSION&#34;, &#34;notice.LINE_NR&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, line, notice4id], [&#34;notice.VERSION&#34;, &#34;notice.LINE_NR&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, line, notice5id], [&#34;notice.VERSION&#34;, &#34;notice.LINE_NR&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, operator_id], [&#34;operator.VERSION&#34;, &#34;operator.OP_CODE&#34;]),
+        ForeignKeyConstraint([version_id, operator_id, operator_branch_office_id], [&#34;operator_branch_office.VERSION&#34;, &#34;operator_branch_office.OP_CODE&#34;, &#34;operator_branch_office.OBO_SHORT_NAME&#34;])
+    )
+
+    def trip_stops(self, simple: bool = False) -&gt; Tuple[TripStop, ...]:
+        &#34;&#34;&#34;All trip stops as `TripStop` objects&#34;&#34;&#34;
+        tstops = []
+        currenttime = self.departure_time
+        current_Tvdt: Optional[TripVDT] = None
+        d_t: Optional[int] = None
+        for timing in self.stop_timings:
+            if timing.time_to_stop is not None:
+                # None: passes through stop
+                currenttime += timing.time_to_stop
+            if not simple and timing.course_stop.length is not None:
+                d_t = (d_t or 0) + timing.course_stop.length
+            prev_Tvdt = current_Tvdt
+            if not simple:
+                current_Tvdt = next(filter(lambda c: c.consec_stop_nr == timing.consec_stop_nr, self.vdt_changes), None) or prev_Tvdt
+            tstops.append(
+                TripStop(
+                    trip=self,
+                    stop=timing.course_stop.stop,
+                    stop_point=timing.course_stop.stop_point,
+                    course_stop=timing.course_stop,
+                    stop_timing=timing,
+                    constraints=frozenset(filter(lambda c: c.consec_stop_nr == timing.consec_stop_nr, self.constraints)) if not simple else None,
+                    vdt_before=prev_Tvdt.vdt if prev_Tvdt else None,
+                    vdt_after=current_Tvdt.vdt if current_Tvdt else None,
+                    arr_time=None if timing.time_to_stop is None else currenttime,
+                    dep_time=None if timing.time_to_stop is None else (currenttime + timing.stopping_time),
+                    distance_travelled=d_t
+                ))
+            if timing.time_to_stop is not None:
+                currenttime += timing.stopping_time
+        return tuple(tstops)
+
+    def wkt(self, day: Optional[date] = None) -&gt; str:
+        &#34;&#34;&#34;Get WKT (well known text) representation with time measures of this trip&#34;&#34;&#34;
+        return self.course.wkt_m(self.timing_group, self.departure_time, day)
+
+    @property
+    def duration(self) -&gt; timedelta:
+        &#34;&#34;&#34;Trip duration&#34;&#34;&#34;
+        return self.course.duration(self.timing_group)
+
+    @property
+    def dates(self) -&gt; FrozenSet[date]:
+        &#34;&#34;&#34;Valid dates&#34;&#34;&#34;
+        ds = self.day_attribute.dates if self.restriction is None else (self.day_attribute.dates &amp; self.restriction.dates)
+        return frozenset(filter(self.course.date_valid, ds))
+
+    @staticmethod
+    def query_for_date(session, date_obj: date) -&gt; Query:
+        &#34;&#34;&#34;Query for all trips valid on a specific `datetime.date`. Does not check for `DINO2.model.Version.priority`!&#34;&#34;&#34;
+        from .calendar import Restriction, DayAttribute, CalendarDay
+        from .network import Course
+        restrictions = set((r.version_id, r.id) for r in session.query(Restriction).all() if date_obj in r.dates)
+        # todo: ist Restriction.line zu beachten?
+        attrs = session.query(DayAttribute).join(&#39;days&#39;).filter(CalendarDay.day == date_obj).subquery()
+        return session.query(Trip).options(joinedload(&#39;course&#39;, innerjoin=True)).join(attrs) \
+            .filter(Trip.course.has(criterion=Course.date_valid(date_obj))) \
+            .filter((Trip.restriction_id == None) | (tuple_(Trip.version_id, Trip.restriction_id).in_(restrictions)))
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Trip(version_id={self.version_id}, line={self.line}, id={self.id}, departure_time={self.departure_time}, day_attribute={self.day_attribute}, restriction_id={self.restriction_id})&gt;&#34;
+
+
+class StopConstraintType(Enum):
+    only_alighting = &#39;A&#39;
+    only_boarding = &#39;E&#39;
+    no_place_internal = &#39;I&#39;
+    undocumented_type_B = &#39;B&#39;
+
+
+class StopConstraint(Base):
+    &#34;&#34;&#34;
+    Stopping constraint
+
+    Primary key: `version_id` &amp; `line` &amp; `trip_id` &amp; `consec_stop_nr` &amp; `constraint`
+    &#34;&#34;&#34;
+    _din_file = &#34;service_constraint.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    line: Column[int] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Line id&#34;&#34;&#34;
+
+    course_id: Column[Optional[str]] = Column(&#34;STR_LINE_VAR&#34;, String(length=4))
+    &#34;&#34;&#34;Course id&#34;&#34;&#34;
+
+    line_dir: Column[Optional[int]] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;))
+    &#34;&#34;&#34;Line direction (1 or 2)&#34;&#34;&#34;
+
+    trip_id: Column[int] = Column(&#34;TRIP_ID&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Trip id&#34;&#34;&#34;
+
+    consec_stop_nr: Column[int] = Column(&#34;LINE_CONSEC_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Consecutive stop number in route&#34;&#34;&#34;
+
+    stop_id: Column[Optional[int]] = Column(&#34;STOP_NR&#34;, Integer())
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+    stop_point_id: Column[Optional[int]] = Column(&#34;STOPPING_POINT_NR&#34;, Integer())
+    &#34;&#34;&#34;Stopping point id&#34;&#34;&#34;
+
+    constraint: Column[StopConstraintType] = Column(&#34;SERVICE_INTERDICTION_CODE&#34;, CharEnum(StopConstraintType), primary_key=True)
+    &#34;&#34;&#34;Stopping constraint&#34;&#34;&#34;
+
+    course: RelationshipProperty[Optional[Course]] = relationship(&#34;Course&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.Course`&#34;&#34;&#34;
+    course_stop: RelationshipProperty[Optional[CourseStop]] = relationship(&#34;CourseStop&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.CourseStop`&#34;&#34;&#34;
+    trip: RelationshipProperty[Trip] = relationship(Trip, back_populates=&#34;constraints&#34;)
+    &#34;&#34;&#34;`Trip`&#34;&#34;&#34;
+    stop: RelationshipProperty[Optional[Stop]] = relationship(&#34;Stop&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.Stop`&#34;&#34;&#34;
+    stop_point: RelationshipProperty[Optional[StopPoint]] = relationship(&#34;StopPoint&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.StopPoint`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, line, course_id, line_dir], [&#34;line.VERSION&#34;, &#34;line.LINE_NR&#34;, &#34;line.STR_LINE_VAR&#34;, &#34;line.LINE_DIR_NR&#34;]),
+        ForeignKeyConstraint([version_id, line, course_id, line_dir, consec_stop_nr], [&#34;route.VERSION&#34;, &#34;route.LINE_NR&#34;, &#34;route.STR_LINE_VAR&#34;, &#34;route.LINE_DIR_NR&#34;, &#34;route.LINE_CONSEC_NR&#34;]),
+        ForeignKeyConstraint([version_id, line, trip_id], [Trip.version_id, Trip.line, Trip.id]),
+        ForeignKeyConstraint([version_id, stop_id], [&#34;stop.VERSION&#34;, &#34;stop.STOP_NR&#34;]),
+        ForeignKeyConstraint([version_id, stop_id, stop_point_id], [&#34;stop_point.VERSION&#34;, &#34;stop_point.STOP_NR&#34;, &#34;stop_point.STOPPING_POINT_NR&#34;])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;StopConstraint(version_id={self.version_id}, line={self.line}, trip_id={self.trip_id}, consec_stop_nr={self.consec_stop_nr}, constraint={self.constraint})&gt;&#34;
+
+
+class TripVDT(Base):
+    &#34;&#34;&#34;
+    Destination text for a `Trip`
+
+    Primary key contains `TripVDT.trip_id` instead of `TripVDT.course_id` and `TripVDT.line_dir`..
+
+    Primary key: `version_id` &amp; _`period`_ &amp; `line` &amp; ~~`course_id`~~ &amp; ~~`line_dir`~~ &amp; ++`trip_id`++ &amp; `consec_stop_nr`
+    &#34;&#34;&#34;
+    _din_file = &#34;trip_vdt.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    period: Column[Optional[str]] = Column(&#34;TIMETABLE_PERIOD&#34;, String(length=4), primary_key=True, nullable=True)
+    &#34;&#34;&#34;Timetable period abbreviation&#34;&#34;&#34;
+
+    line: Column[int] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Line id&#34;&#34;&#34;
+
+    # course_id: Column[Optional[str]] = Column(&#34;STR_LINE_VAR&#34;, String(length=4), primary_key=True, nullable=True)
+    course_id: Column[Optional[str]] = Column(&#34;STR_LINE_VAR&#34;, String(length=4), primary_key=False)
+    &#34;&#34;&#34;Course id&#34;&#34;&#34;
+
+    # line_dir: Column[Optional[int]] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;), primary_key=True, nullable=True)
+    line_dir: Column[Optional[int]] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;), primary_key=False)
+    &#34;&#34;&#34;Line direction (1 or 2)&#34;&#34;&#34;
+
+    # trip_id: Column[int] = Column(&#34;TRIP_ID&#34;, Integer(), nullable=False)
+    trip_id: Column[int] = Column(&#34;TRIP_ID&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Trip id&#34;&#34;&#34;
+
+    consec_stop_nr: Column[int] = Column(&#34;LINE_CONSEC_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Consecutive stop number in route&#34;&#34;&#34;
+
+    vdt_id: Column[int] = Column(&#34;VDT_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Vehicle destination text id&#34;&#34;&#34;
+
+    course_stop: RelationshipProperty[Optional[CourseStop]] = relationship(&#34;CourseStop&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.CourseStop`&#34;&#34;&#34;
+    trip: RelationshipProperty[Trip] = relationship(Trip, back_populates=&#34;vdt_changes&#34;)
+    &#34;&#34;&#34;`Trip`&#34;&#34;&#34;
+    vdt: RelationshipProperty[VehicleDestinationText] = relationship(&#34;VehicleDestinationText&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.VehicleDestinationText`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, line, course_id, line_dir], [&#34;line.VERSION&#34;, &#34;line.LINE_NR&#34;, &#34;line.STR_LINE_VAR&#34;, &#34;line.LINE_DIR_NR&#34;]),
+        ForeignKeyConstraint([version_id, line, course_id, line_dir, consec_stop_nr], [&#34;route.VERSION&#34;, &#34;route.LINE_NR&#34;, &#34;route.STR_LINE_VAR&#34;, &#34;route.LINE_DIR_NR&#34;, &#34;route.LINE_CONSEC_NR&#34;]),
+        ForeignKeyConstraint([version_id, line, trip_id], [Trip.version_id, Trip.line, Trip.id]),
+        # ohne branch. line &amp; trip_id sind zusammen eindeutig.. ?
+        ForeignKeyConstraint([version_id, vdt_id], [&#34;vehicle_destination_text.VERSION&#34;, &#34;vehicle_destination_text.VDT_NR&#34;])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;TripVDT(version_id={self.version_id}, line={self.line}, trip_id={self.trip_id}, consec_stop_nr={self.consec_stop_nr}, vdt={self.vdt})&gt;&#34;</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="DINO2.model.schedule.NoticeContentType"><code class="flex name class">
+<span>class <span class="ident">NoticeContentType</span></span>
+<span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>An enumeration.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class NoticeContentType(Enum):
+    general = 0
+    train_name = 1
+    on_demand_phone = 2
+    bicycle = 3
+    track = 4</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>enum.Enum</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.model.schedule.NoticeContentType.general"><code class="name">var <span class="ident">general</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.schedule.NoticeContentType.train_name"><code class="name">var <span class="ident">train_name</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.schedule.NoticeContentType.on_demand_phone"><code class="name">var <span class="ident">on_demand_phone</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.schedule.NoticeContentType.bicycle"><code class="name">var <span class="ident">bicycle</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.schedule.NoticeContentType.track"><code class="name">var <span class="ident">track</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.schedule.NoticeDisplayType"><code class="flex name class">
+<span>class <span class="ident">NoticeDisplayType</span></span>
+<span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>An enumeration.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class NoticeDisplayType(Enum):
+    always = 0
+    on_boarding = 1
+    on_alighting = 2
+    on_board = 4
+    # DINO docs are extremely ambiguous here (DE / EN)
+    on_boarding_or_alighting = 5
+    on_board_or_alighting = 8</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>enum.Enum</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.model.schedule.NoticeDisplayType.always"><code class="name">var <span class="ident">always</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.schedule.NoticeDisplayType.on_boarding"><code class="name">var <span class="ident">on_boarding</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.schedule.NoticeDisplayType.on_alighting"><code class="name">var <span class="ident">on_alighting</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.schedule.NoticeDisplayType.on_board"><code class="name">var <span class="ident">on_board</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.schedule.NoticeDisplayType.on_boarding_or_alighting"><code class="name">var <span class="ident">on_boarding_or_alighting</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.schedule.NoticeDisplayType.on_board_or_alighting"><code class="name">var <span class="ident">on_board_or_alighting</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.schedule.Notice"><code class="flex name class">
+<span>class <span class="ident">Notice</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Operational notice</p>
+<p>Primary key: <code>version_id</code> &amp; <em><code>line</code></em> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Notice(Base):
+    &#34;&#34;&#34;
+    Operational notice
+
+    Primary key: `version_id` &amp; _`line`_ &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;notice.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    line: Column[Optional[int]] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;Line number (if None, valid for all lines)&#34;&#34;&#34;
+
+    id: Column[str] = Column(&#34;NOTICE&#34;, String(length=5), primary_key=True)
+    &#34;&#34;&#34;Notice id&#34;&#34;&#34;
+
+    text: Column[str] = Column(&#34;NOTICE_TEXT&#34;, String(length=1000), nullable=False)
+    &#34;&#34;&#34;Notice text&#34;&#34;&#34;
+
+    content_type: Column[Optional[NoticeContentType]] = Column(&#34;CONTENT_TYPE&#34;, IntEnum(NoticeContentType))
+    &#34;&#34;&#34;Content type&#34;&#34;&#34;
+
+    display_type: Column[Optional[NoticeDisplayType]] = Column(&#34;DISPLAY_TYPE&#34;, IntEnum(NoticeDisplayType))
+    &#34;&#34;&#34;Display type&#34;&#34;&#34;
+
+    trips: RelationshipProperty[Sequence[Trip]] = relationship(&#34;Trip&#34;, primaryjoin=&#34;and_(Notice.version_id==Trip.version_id, or_(Notice.id==Trip.notice1id, Notice.id==Trip.notice2id, Notice.id==Trip.notice3id, Notice.id==Trip.notice4id, Notice.id==Trip.notice5id), or_(Notice.line==Trip.line, Notice.line==None))&#34;, viewonly=True)
+    &#34;&#34;&#34;`Trip`s that refer to this this notice&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;notices&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Notice(version_id={self.version_id}, id={self.id}, line={self.line}, text={self.text})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.schedule.Notice.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Notice.line"><code class="name">var <span class="ident">line</span></code></dt>
+<dd>
+<div class="desc"><p>Line number (if None, valid for all lines)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Notice.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Notice id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Notice.text"><code class="name">var <span class="ident">text</span></code></dt>
+<dd>
+<div class="desc"><p>Notice text</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Notice.content_type"><code class="name">var <span class="ident">content_type</span></code></dt>
+<dd>
+<div class="desc"><p>Content type</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Notice.display_type"><code class="name">var <span class="ident">display_type</span></code></dt>
+<dd>
+<div class="desc"><p>Display type</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Notice.trips"><code class="name">var <span class="ident">trips</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.schedule.Trip" href="#DINO2.model.schedule.Trip">Trip</a></code>s that refer to this this notice</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Notice.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.schedule.TripStop"><code class="flex name class">
+<span>class <span class="ident">TripStop</span></span>
+<span>(</span><span>trip: Trip, stop: Stop, stop_point: StopPoint, course_stop: CourseStop, stop_timing: CourseStopTiming, constraints: Optional[FrozenSet[StopConstraint]], vdt_before: Optional[VehicleDestinationText], vdt_after: Optional[VehicleDestinationText], arr_time: Optional[timedelta], dep_time: Optional[timedelta], distance_travelled: Optional[int])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>A single trip stop including constraint, destination text, and time information</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class TripStop:
+    &#34;&#34;&#34;A single trip stop including constraint, destination text, and time information&#34;&#34;&#34;
+    trip: Trip
+    stop: Stop
+    stop_point: StopPoint
+    course_stop: CourseStop
+    stop_timing: CourseStopTiming
+    constraints: Optional[FrozenSet[StopConstraint]]
+    vdt_before: Optional[VehicleDestinationText]
+    vdt_after: Optional[VehicleDestinationText]
+    arr_time: Optional[timedelta]
+    dep_time: Optional[timedelta]
+    distance_travelled: Optional[int]
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;TripStop(trip={self.trip}, stop_timing={self.stop_timing}, arr_time={self.arr_time}, dep_time={self.dep_time})&gt;&#34;</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip"><code class="flex name class">
+<span>class <span class="ident">Trip</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Trip</p>
+<p>A trip of a <code><a title="DINO2.model.network.Course" href="network.html#DINO2.model.network.Course">Course</a></code> with a specific "timing group".<br>
+Valid days defined using <code><a title="DINO2.model.schedule.Trip.day_attribute" href="#DINO2.model.schedule.Trip.day_attribute">Trip.day_attribute</a></code> and <code><a title="DINO2.model.schedule.Trip.restriction" href="#DINO2.model.schedule.Trip.restriction">Trip.restriction</a></code>.</p>
+<p>Primary key: <code>version_id</code> &amp; <code>line</code> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Trip(Base):
+    &#34;&#34;&#34;
+    Trip
+
+    A trip of a `DINO2.model.network.Course` with a specific &#34;timing group&#34;.  
+    Valid days defined using `Trip.day_attribute` and `Trip.restriction`.
+
+    Primary key: `version_id` &amp; `line` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;trip.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    line: Column[int] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Line id&#34;&#34;&#34;
+
+    course_id: Column[str] = Column(&#34;STR_LINE_VAR&#34;, String(length=4), primary_key=False, nullable=False)
+    &#34;&#34;&#34;Course id&#34;&#34;&#34;
+
+    line_dir: Column[int] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;), primary_key=False, nullable=False)
+    &#34;&#34;&#34;Line direction (1 or 2)&#34;&#34;&#34;
+
+    # todo: ggf. noch zusaetzlich trigger oderso als check dass timing_group auch existiert??
+    timing_group: Column[int] = Column(&#34;TIMING_GROUP_NR&#34;, Integer(), primary_key=False, nullable=False)
+    &#34;&#34;&#34;Timing group id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;TRIP_ID&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Trip id&#34;&#34;&#34;
+
+    id_printing: Column[Optional[int]] = Column(&#34;TRIP_ID_PRINTING&#34;, Integer())
+    &#34;&#34;&#34;Trip id for presentation&#34;&#34;&#34;
+
+    departure_time: Column[timedelta] = Column(&#34;DEPARTURE_TIME&#34;, DinoTimeDelta(), nullable=False)
+    &#34;&#34;&#34;Departure time as timedelta&#34;&#34;&#34;
+
+    dep_stop_id: Column[int] = Column(&#34;DEP_STOP_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Departure stop id&#34;&#34;&#34;
+    dep_stop_point_id: Column[int] = Column(&#34;DEP_STOPPING_POINT_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Departure stop point id&#34;&#34;&#34;
+    arr_stop_id: Column[int] = Column(&#34;ARR_STOP_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Arrival stop id&#34;&#34;&#34;
+    arr_stop_point_id: Column[int] = Column(&#34;ARR_STOPPING_POINT_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Arrival stop point id&#34;&#34;&#34;
+
+    vehicle_type_id: Column[Optional[int]] = Column(&#34;VEH_TYPE_NR&#34;, Integer())
+    &#34;&#34;&#34;Vehicle type id&#34;&#34;&#34;
+
+    day_attribute_id: Column[int] = Column(&#34;DAY_ATTRIBUTE_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Day attribute grouping id&#34;&#34;&#34;
+    restriction_id: Column[Optional[str]] = Column(&#34;RESTRICTION&#34;, String(length=5))
+    &#34;&#34;&#34;Restriction id&#34;&#34;&#34;
+
+    notice1id: Column[Optional[str]] = Column(&#34;NOTICE&#34;, String(length=5))
+    &#34;&#34;&#34;Notice id 1&#34;&#34;&#34;
+    notice2id: Column[Optional[str]] = Column(&#34;NOTICE_2&#34;, String(length=5))
+    notice3id: Column[Optional[str]] = Column(&#34;NOTICE_3&#34;, String(length=5))
+    notice4id: Column[Optional[str]] = Column(&#34;NOTICE_4&#34;, String(length=5))
+    notice5id: Column[Optional[str]] = Column(&#34;NOTICE_5&#34;, String(length=5))
+
+    round_trip_id: Column[Optional[int]] = Column(&#34;ROUND_TRIP_ID&#34;, Integer())
+    &#34;&#34;&#34;
+    Round trip id.
+    Supposed to be primary key, but not implemented here.
+    Also, the column name seems to be wrong in the documentation (&#34;ROUND_TRIP_NR&#34;)
+    &#34;&#34;&#34;
+    train_id: Column[Optional[int]] = Column(&#34;TRAIN_NR&#34;, Integer())
+    train_category_abbr: Column[Optional[str]] = Column(&#34;TRAIN_CATEGORY_SHORT_NAME&#34;, String(length=10))
+
+    operator_id: Column[Optional[str]] = Column(&#34;OP_CODE&#34;, String(length=10))
+    &#34;&#34;&#34;Operator id&#34;&#34;&#34;
+    operator_branch_office_id: Column[Optional[str]] = Column(&#34;OBO_SHORT_NAME&#34;, String(length=10))
+    &#34;&#34;&#34;Operator branch office id&#34;&#34;&#34;
+
+    global_id: Column[Optional[str]] = Column(&#34;GLOBAL_ID&#34;, String(length=100))
+    &#34;&#34;&#34;Global trip id&#34;&#34;&#34;
+    bike_allowed: Column[Optional[bool]] = Column(&#34;BIKE_ALLOWED&#34;, Boolean())
+    &#34;&#34;&#34;Whether bikes are allowed on this trip&#34;&#34;&#34;
+    purpose_id: Column[Optional[int]] = Column(&#34;PURPOSE_NR&#34;, Integer())
+    &#34;&#34;&#34;FK to trip purpose (not implemented yet, internal)&#34;&#34;&#34;
+
+    dep_stop: RelationshipProperty[Stop] = relationship(&#34;Stop&#34;, foreign_keys=&#34;[Trip.version_id, Trip.dep_stop_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;
+    Departure `DINO2.model.location.Stop`
+
+    It is unclear what these four attributes are used for.  
+    They can&#39;t be used to &#39;slice&#39; the `DINO2.model.network.Course`; there is no &#39;stop index&#39; in case a stop is stopped at multiple times.  
+    They might just be simple helpful &#34;shortcuts&#34;.
+    &#34;&#34;&#34;
+    # evtl. todo (query machen)
+    dep_stop_point: RelationshipProperty[StopPoint] = relationship(&#34;StopPoint&#34;, foreign_keys=&#34;[Trip.version_id, Trip.dep_stop_id, Trip.dep_stop_point_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;Departure `DINO2.model.location.StopPoint`&#34;&#34;&#34;
+    arr_stop: RelationshipProperty[Stop] = relationship(&#34;Stop&#34;, foreign_keys=&#34;[Trip.version_id, Trip.arr_stop_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;Arrival `DINO2.model.location.Stop`&#34;&#34;&#34;
+    arr_stop_point: RelationshipProperty[StopPoint] = relationship(&#34;StopPoint&#34;, foreign_keys=&#34;[Trip.version_id, Trip.arr_stop_id, Trip.arr_stop_point_id]&#34;, viewonly=True)
+    &#34;&#34;&#34;Arrival `DINO2.model.location.StopPoint`&#34;&#34;&#34;
+
+    vehicle_type: RelationshipProperty[Optional[VehicleType]] = relationship(&#34;VehicleType&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.VehicleType`&#34;&#34;&#34;
+    day_attribute: RelationshipProperty[DayAttribute] = relationship(&#34;DayAttribute&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.calendar.DayAttribute`&#34;&#34;&#34;
+    restriction: RelationshipProperty[Optional[Restriction]] = relationship(&#34;Restriction&#34;, primaryjoin=&#34;and_(Restriction.version_id==Trip.version_id, Restriction.id==Trip.restriction_id, or_(Restriction.line==Trip.line, Restriction.line==None))&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.calendar.Restriction`&#34;&#34;&#34;
+    notice1: RelationshipProperty[Optional[Notice]] = relationship(Notice, primaryjoin=&#34;and_(Notice.version_id==Trip.version_id, Notice.id==Trip.notice1id, or_(Notice.line==Trip.line, Notice.line==None))&#34;, viewonly=True)
+    &#34;&#34;&#34;`Notice` 1&#34;&#34;&#34;
+    notice2: RelationshipProperty[Optional[Notice]] = relationship(Notice, primaryjoin=&#34;and_(Notice.version_id==Trip.version_id, Notice.id==Trip.notice2id, or_(Notice.line==Trip.line, Notice.line==None))&#34;, viewonly=True)
+    notice3: RelationshipProperty[Optional[Notice]] = relationship(Notice, primaryjoin=&#34;and_(Notice.version_id==Trip.version_id, Notice.id==Trip.notice3id, or_(Notice.line==Trip.line, Notice.line==None))&#34;, viewonly=True)
+    notice4: RelationshipProperty[Optional[Notice]] = relationship(Notice, primaryjoin=&#34;and_(Notice.version_id==Trip.version_id, Notice.id==Trip.notice4id, or_(Notice.line==Trip.line, Notice.line==None))&#34;, viewonly=True)
+    notice5: RelationshipProperty[Optional[Notice]] = relationship(Notice, primaryjoin=&#34;and_(Notice.version_id==Trip.version_id, Notice.id==Trip.notice5id, or_(Notice.line==Trip.line, Notice.line==None))&#34;, viewonly=True)
+    operator: RelationshipProperty[Optional[Operator]] = relationship(&#34;Operator&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.Operator`&#34;&#34;&#34;
+    operator_branch_office: RelationshipProperty[Optional[OperatorBranchOffice]] = relationship(&#34;OperatorBranchOffice&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.OperatorBranchOffice`&#34;&#34;&#34;
+    stop_timings: RelationshipProperty[Sequence[CourseStopTiming]] = relationship(&#34;CourseStopTiming&#34;, primaryjoin=&#34;and_(CourseStopTiming.version_id==Trip.version_id, CourseStopTiming.line==Trip.line, CourseStopTiming.course_id==Trip.course_id, CourseStopTiming.line_dir==Trip.line_dir, CourseStopTiming.timing_group==Trip.timing_group)&#34;, order_by=&#34;asc(CourseStopTiming.consec_stop_nr)&#34;, foreign_keys=[version_id, line, course_id, line_dir, timing_group], viewonly=True, uselist=True)
+    &#34;&#34;&#34;`DINO2.model.network.CourseStopTiming`s&#34;&#34;&#34;
+    course: RelationshipProperty[Course] = relationship(&#34;Course&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.Course`&#34;&#34;&#34;
+    constraints: RelationshipProperty[Sequence[StopConstraint]] = relationship(&#34;StopConstraint&#34;, back_populates=&#34;trip&#34;)
+    &#34;&#34;&#34;`StopConstraint`s of this trip&#34;&#34;&#34;
+    vdt_changes: RelationshipProperty[Sequence[TripVDT]] = relationship(&#34;TripVDT&#34;, order_by=&#34;asc(TripVDT.consec_stop_nr)&#34;, back_populates=&#34;trip&#34;)
+    &#34;&#34;&#34;Vehicle destination text changes (`TripVDT`) on this trip&#34;&#34;&#34;
+    vdts: RelationshipProperty[Sequence[VehicleDestinationText]] = relationship(&#34;VehicleDestinationText&#34;, order_by=&#34;asc(TripVDT.consec_stop_nr)&#34;, secondary=&#34;trip_vdt&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.VehicleDestinationText`s used on this trip&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;trips&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    @property
+    def notices(self) -&gt; FrozenSet[Notice]:
+        &#34;&#34;&#34;Set of `Notice`s of this trip&#34;&#34;&#34;
+        return frozenset(filter(None, (self.notice1, self.notice2, self.notice3, self.notice4, self.notice5)))
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, line, course_id, line_dir], [&#34;line.VERSION&#34;, &#34;line.LINE_NR&#34;,  &#34;line.STR_LINE_VAR&#34;, &#34;line.LINE_DIR_NR&#34;]),
+        ForeignKeyConstraint([version_id, dep_stop_id], [&#34;stop.VERSION&#34;, &#34;stop.STOP_NR&#34;]),
+        ForeignKeyConstraint([version_id, dep_stop_id, dep_stop_point_id], [&#34;stop_point.VERSION&#34;, &#34;stop_point.STOP_NR&#34;, &#34;stop_point.STOPPING_POINT_NR&#34;]),
+        ForeignKeyConstraint([version_id, arr_stop_id], [&#34;stop.VERSION&#34;, &#34;stop.STOP_NR&#34;]),
+        ForeignKeyConstraint([version_id, arr_stop_id, arr_stop_point_id], [&#34;stop_point.VERSION&#34;, &#34;stop_point.STOP_NR&#34;, &#34;stop_point.STOPPING_POINT_NR&#34;]),
+        ForeignKeyConstraint([version_id, vehicle_type_id], [&#34;vehicle_type.VERSION&#34;, &#34;vehicle_type.VEH_TYPE_NR&#34;]),
+        ForeignKeyConstraint([version_id, day_attribute_id], [&#34;day_attribute.VERSION&#34;, &#34;day_attribute.DAY_ATTRIBUTE_NR&#34;]),
+        ForeignKeyConstraint([version_id, restriction_id], [&#34;service_restriction.VERSION&#34;, &#34;service_restriction.RESTRICTION&#34;]),
+        ForeignKeyConstraint([version_id, restriction_id, line], [&#34;service_restriction.VERSION&#34;, &#34;service_restriction.RESTRICTION&#34;, &#34;service_restriction.LINE_NR&#34;]),
+        ForeignKeyConstraint([version_id, notice1id], [&#34;notice.VERSION&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, notice2id], [&#34;notice.VERSION&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, notice3id], [&#34;notice.VERSION&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, notice4id], [&#34;notice.VERSION&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, notice5id], [&#34;notice.VERSION&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, line, notice1id], [&#34;notice.VERSION&#34;, &#34;notice.LINE_NR&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, line, notice2id], [&#34;notice.VERSION&#34;, &#34;notice.LINE_NR&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, line, notice3id], [&#34;notice.VERSION&#34;, &#34;notice.LINE_NR&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, line, notice4id], [&#34;notice.VERSION&#34;, &#34;notice.LINE_NR&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, line, notice5id], [&#34;notice.VERSION&#34;, &#34;notice.LINE_NR&#34;, &#34;notice.NOTICE&#34;]),
+        ForeignKeyConstraint([version_id, operator_id], [&#34;operator.VERSION&#34;, &#34;operator.OP_CODE&#34;]),
+        ForeignKeyConstraint([version_id, operator_id, operator_branch_office_id], [&#34;operator_branch_office.VERSION&#34;, &#34;operator_branch_office.OP_CODE&#34;, &#34;operator_branch_office.OBO_SHORT_NAME&#34;])
+    )
+
+    def trip_stops(self, simple: bool = False) -&gt; Tuple[TripStop, ...]:
+        &#34;&#34;&#34;All trip stops as `TripStop` objects&#34;&#34;&#34;
+        tstops = []
+        currenttime = self.departure_time
+        current_Tvdt: Optional[TripVDT] = None
+        d_t: Optional[int] = None
+        for timing in self.stop_timings:
+            if timing.time_to_stop is not None:
+                # None: passes through stop
+                currenttime += timing.time_to_stop
+            if not simple and timing.course_stop.length is not None:
+                d_t = (d_t or 0) + timing.course_stop.length
+            prev_Tvdt = current_Tvdt
+            if not simple:
+                current_Tvdt = next(filter(lambda c: c.consec_stop_nr == timing.consec_stop_nr, self.vdt_changes), None) or prev_Tvdt
+            tstops.append(
+                TripStop(
+                    trip=self,
+                    stop=timing.course_stop.stop,
+                    stop_point=timing.course_stop.stop_point,
+                    course_stop=timing.course_stop,
+                    stop_timing=timing,
+                    constraints=frozenset(filter(lambda c: c.consec_stop_nr == timing.consec_stop_nr, self.constraints)) if not simple else None,
+                    vdt_before=prev_Tvdt.vdt if prev_Tvdt else None,
+                    vdt_after=current_Tvdt.vdt if current_Tvdt else None,
+                    arr_time=None if timing.time_to_stop is None else currenttime,
+                    dep_time=None if timing.time_to_stop is None else (currenttime + timing.stopping_time),
+                    distance_travelled=d_t
+                ))
+            if timing.time_to_stop is not None:
+                currenttime += timing.stopping_time
+        return tuple(tstops)
+
+    def wkt(self, day: Optional[date] = None) -&gt; str:
+        &#34;&#34;&#34;Get WKT (well known text) representation with time measures of this trip&#34;&#34;&#34;
+        return self.course.wkt_m(self.timing_group, self.departure_time, day)
+
+    @property
+    def duration(self) -&gt; timedelta:
+        &#34;&#34;&#34;Trip duration&#34;&#34;&#34;
+        return self.course.duration(self.timing_group)
+
+    @property
+    def dates(self) -&gt; FrozenSet[date]:
+        &#34;&#34;&#34;Valid dates&#34;&#34;&#34;
+        ds = self.day_attribute.dates if self.restriction is None else (self.day_attribute.dates &amp; self.restriction.dates)
+        return frozenset(filter(self.course.date_valid, ds))
+
+    @staticmethod
+    def query_for_date(session, date_obj: date) -&gt; Query:
+        &#34;&#34;&#34;Query for all trips valid on a specific `datetime.date`. Does not check for `DINO2.model.Version.priority`!&#34;&#34;&#34;
+        from .calendar import Restriction, DayAttribute, CalendarDay
+        from .network import Course
+        restrictions = set((r.version_id, r.id) for r in session.query(Restriction).all() if date_obj in r.dates)
+        # todo: ist Restriction.line zu beachten?
+        attrs = session.query(DayAttribute).join(&#39;days&#39;).filter(CalendarDay.day == date_obj).subquery()
+        return session.query(Trip).options(joinedload(&#39;course&#39;, innerjoin=True)).join(attrs) \
+            .filter(Trip.course.has(criterion=Course.date_valid(date_obj))) \
+            .filter((Trip.restriction_id == None) | (tuple_(Trip.version_id, Trip.restriction_id).in_(restrictions)))
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Trip(version_id={self.version_id}, line={self.line}, id={self.id}, departure_time={self.departure_time}, day_attribute={self.day_attribute}, restriction_id={self.restriction_id})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Static methods</h3>
+<dl>
+<dt id="DINO2.model.schedule.Trip.query_for_date"><code class="name flex">
+<span>def <span class="ident">query_for_date</span></span>(<span>session, date_obj: date) -> sqlalchemy.orm.query.Query</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Query for all trips valid on a specific <code>datetime.date</code>. Does not check for <code><a title="DINO2.model.Version.priority" href="index.html#DINO2.model.Version.priority">Version.priority</a></code>!</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@staticmethod
+def query_for_date(session, date_obj: date) -&gt; Query:
+    &#34;&#34;&#34;Query for all trips valid on a specific `datetime.date`. Does not check for `DINO2.model.Version.priority`!&#34;&#34;&#34;
+    from .calendar import Restriction, DayAttribute, CalendarDay
+    from .network import Course
+    restrictions = set((r.version_id, r.id) for r in session.query(Restriction).all() if date_obj in r.dates)
+    # todo: ist Restriction.line zu beachten?
+    attrs = session.query(DayAttribute).join(&#39;days&#39;).filter(CalendarDay.day == date_obj).subquery()
+    return session.query(Trip).options(joinedload(&#39;course&#39;, innerjoin=True)).join(attrs) \
+        .filter(Trip.course.has(criterion=Course.date_valid(date_obj))) \
+        .filter((Trip.restriction_id == None) | (tuple_(Trip.version_id, Trip.restriction_id).in_(restrictions)))</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.schedule.Trip.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.line"><code class="name">var <span class="ident">line</span></code></dt>
+<dd>
+<div class="desc"><p>Line id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.course_id"><code class="name">var <span class="ident">course_id</span></code></dt>
+<dd>
+<div class="desc"><p>Course id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.line_dir"><code class="name">var <span class="ident">line_dir</span></code></dt>
+<dd>
+<div class="desc"><p>Line direction (1 or 2)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.timing_group"><code class="name">var <span class="ident">timing_group</span></code></dt>
+<dd>
+<div class="desc"><p>Timing group id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Trip id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.id_printing"><code class="name">var <span class="ident">id_printing</span></code></dt>
+<dd>
+<div class="desc"><p>Trip id for presentation</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.departure_time"><code class="name">var <span class="ident">departure_time</span></code></dt>
+<dd>
+<div class="desc"><p>Departure time as timedelta</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.dep_stop_id"><code class="name">var <span class="ident">dep_stop_id</span></code></dt>
+<dd>
+<div class="desc"><p>Departure stop id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.dep_stop_point_id"><code class="name">var <span class="ident">dep_stop_point_id</span></code></dt>
+<dd>
+<div class="desc"><p>Departure stop point id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.arr_stop_id"><code class="name">var <span class="ident">arr_stop_id</span></code></dt>
+<dd>
+<div class="desc"><p>Arrival stop id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.arr_stop_point_id"><code class="name">var <span class="ident">arr_stop_point_id</span></code></dt>
+<dd>
+<div class="desc"><p>Arrival stop point id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.vehicle_type_id"><code class="name">var <span class="ident">vehicle_type_id</span></code></dt>
+<dd>
+<div class="desc"><p>Vehicle type id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.day_attribute_id"><code class="name">var <span class="ident">day_attribute_id</span></code></dt>
+<dd>
+<div class="desc"><p>Day attribute grouping id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.restriction_id"><code class="name">var <span class="ident">restriction_id</span></code></dt>
+<dd>
+<div class="desc"><p>Restriction id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.notice1id"><code class="name">var <span class="ident">notice1id</span></code></dt>
+<dd>
+<div class="desc"><p>Notice id 1</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.notice2id"><code class="name">var <span class="ident">notice2id</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.notice3id"><code class="name">var <span class="ident">notice3id</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.notice4id"><code class="name">var <span class="ident">notice4id</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.notice5id"><code class="name">var <span class="ident">notice5id</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.round_trip_id"><code class="name">var <span class="ident">round_trip_id</span></code></dt>
+<dd>
+<div class="desc"><p>Round trip id.
+Supposed to be primary key, but not implemented here.
+Also, the column name seems to be wrong in the documentation ("ROUND_TRIP_NR")</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.train_id"><code class="name">var <span class="ident">train_id</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.train_category_abbr"><code class="name">var <span class="ident">train_category_abbr</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.operator_id"><code class="name">var <span class="ident">operator_id</span></code></dt>
+<dd>
+<div class="desc"><p>Operator id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.operator_branch_office_id"><code class="name">var <span class="ident">operator_branch_office_id</span></code></dt>
+<dd>
+<div class="desc"><p>Operator branch office id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.global_id"><code class="name">var <span class="ident">global_id</span></code></dt>
+<dd>
+<div class="desc"><p>Global trip id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.bike_allowed"><code class="name">var <span class="ident">bike_allowed</span></code></dt>
+<dd>
+<div class="desc"><p>Whether bikes are allowed on this trip</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.purpose_id"><code class="name">var <span class="ident">purpose_id</span></code></dt>
+<dd>
+<div class="desc"><p>FK to trip purpose (not implemented yet, internal)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.dep_stop"><code class="name">var <span class="ident">dep_stop</span></code></dt>
+<dd>
+<div class="desc"><p>Departure <code><a title="DINO2.model.location.Stop" href="location.html#DINO2.model.location.Stop">Stop</a></code></p>
+<p>It is unclear what these four attributes are used for.<br>
+They can't be used to 'slice' the <code><a title="DINO2.model.network.Course" href="network.html#DINO2.model.network.Course">Course</a></code>; there is no 'stop index' in case a stop is stopped at multiple times.<br>
+They might just be simple helpful "shortcuts".</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.dep_stop_point"><code class="name">var <span class="ident">dep_stop_point</span></code></dt>
+<dd>
+<div class="desc"><p>Departure <code><a title="DINO2.model.location.StopPoint" href="location.html#DINO2.model.location.StopPoint">StopPoint</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.arr_stop"><code class="name">var <span class="ident">arr_stop</span></code></dt>
+<dd>
+<div class="desc"><p>Arrival <code><a title="DINO2.model.location.Stop" href="location.html#DINO2.model.location.Stop">Stop</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.arr_stop_point"><code class="name">var <span class="ident">arr_stop_point</span></code></dt>
+<dd>
+<div class="desc"><p>Arrival <code><a title="DINO2.model.location.StopPoint" href="location.html#DINO2.model.location.StopPoint">StopPoint</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.vehicle_type"><code class="name">var <span class="ident">vehicle_type</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.VehicleType" href="operational.html#DINO2.model.operational.VehicleType">VehicleType</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.day_attribute"><code class="name">var <span class="ident">day_attribute</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.calendar.DayAttribute" href="calendar.html#DINO2.model.calendar.DayAttribute">DayAttribute</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.restriction"><code class="name">var <span class="ident">restriction</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.calendar.Restriction" href="calendar.html#DINO2.model.calendar.Restriction">Restriction</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.notice1"><code class="name">var <span class="ident">notice1</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.schedule.Notice" href="#DINO2.model.schedule.Notice">Notice</a></code> 1</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.notice2"><code class="name">var <span class="ident">notice2</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.notice3"><code class="name">var <span class="ident">notice3</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.notice4"><code class="name">var <span class="ident">notice4</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.notice5"><code class="name">var <span class="ident">notice5</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.operator"><code class="name">var <span class="ident">operator</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.Operator" href="operational.html#DINO2.model.operational.Operator">Operator</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.operator_branch_office"><code class="name">var <span class="ident">operator_branch_office</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.OperatorBranchOffice" href="operational.html#DINO2.model.operational.OperatorBranchOffice">OperatorBranchOffice</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.stop_timings"><code class="name">var <span class="ident">stop_timings</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.CourseStopTiming" href="network.html#DINO2.model.network.CourseStopTiming">CourseStopTiming</a></code>s</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.course"><code class="name">var <span class="ident">course</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.Course" href="network.html#DINO2.model.network.Course">Course</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.constraints"><code class="name">var <span class="ident">constraints</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.schedule.StopConstraint" href="#DINO2.model.schedule.StopConstraint">StopConstraint</a></code>s of this trip</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.vdt_changes"><code class="name">var <span class="ident">vdt_changes</span></code></dt>
+<dd>
+<div class="desc"><p>Vehicle destination text changes (<code><a title="DINO2.model.schedule.TripVDT" href="#DINO2.model.schedule.TripVDT">TripVDT</a></code>) on this trip</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.vdts"><code class="name">var <span class="ident">vdts</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.VehicleDestinationText" href="operational.html#DINO2.model.operational.VehicleDestinationText">VehicleDestinationText</a></code>s used on this trip</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.notices"><code class="name">var <span class="ident">notices</span> : FrozenSet[<a title="DINO2.model.schedule.Notice" href="#DINO2.model.schedule.Notice">Notice</a>]</code></dt>
+<dd>
+<div class="desc"><p>Set of <code><a title="DINO2.model.schedule.Notice" href="#DINO2.model.schedule.Notice">Notice</a></code>s of this trip</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def notices(self) -&gt; FrozenSet[Notice]:
+    &#34;&#34;&#34;Set of `Notice`s of this trip&#34;&#34;&#34;
+    return frozenset(filter(None, (self.notice1, self.notice2, self.notice3, self.notice4, self.notice5)))</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.duration"><code class="name">var <span class="ident">duration</span> : datetime.timedelta</code></dt>
+<dd>
+<div class="desc"><p>Trip duration</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def duration(self) -&gt; timedelta:
+    &#34;&#34;&#34;Trip duration&#34;&#34;&#34;
+    return self.course.duration(self.timing_group)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.dates"><code class="name">var <span class="ident">dates</span> : FrozenSet[datetime.date]</code></dt>
+<dd>
+<div class="desc"><p>Valid dates</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def dates(self) -&gt; FrozenSet[date]:
+    &#34;&#34;&#34;Valid dates&#34;&#34;&#34;
+    ds = self.day_attribute.dates if self.restriction is None else (self.day_attribute.dates &amp; self.restriction.dates)
+    return frozenset(filter(self.course.date_valid, ds))</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="DINO2.model.schedule.Trip.trip_stops"><code class="name flex">
+<span>def <span class="ident">trip_stops</span></span>(<span>self, simple: bool = False) -> Tuple[<a title="DINO2.model.schedule.TripStop" href="#DINO2.model.schedule.TripStop">TripStop</a>, ...]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>All trip stops as <code><a title="DINO2.model.schedule.TripStop" href="#DINO2.model.schedule.TripStop">TripStop</a></code> objects</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def trip_stops(self, simple: bool = False) -&gt; Tuple[TripStop, ...]:
+    &#34;&#34;&#34;All trip stops as `TripStop` objects&#34;&#34;&#34;
+    tstops = []
+    currenttime = self.departure_time
+    current_Tvdt: Optional[TripVDT] = None
+    d_t: Optional[int] = None
+    for timing in self.stop_timings:
+        if timing.time_to_stop is not None:
+            # None: passes through stop
+            currenttime += timing.time_to_stop
+        if not simple and timing.course_stop.length is not None:
+            d_t = (d_t or 0) + timing.course_stop.length
+        prev_Tvdt = current_Tvdt
+        if not simple:
+            current_Tvdt = next(filter(lambda c: c.consec_stop_nr == timing.consec_stop_nr, self.vdt_changes), None) or prev_Tvdt
+        tstops.append(
+            TripStop(
+                trip=self,
+                stop=timing.course_stop.stop,
+                stop_point=timing.course_stop.stop_point,
+                course_stop=timing.course_stop,
+                stop_timing=timing,
+                constraints=frozenset(filter(lambda c: c.consec_stop_nr == timing.consec_stop_nr, self.constraints)) if not simple else None,
+                vdt_before=prev_Tvdt.vdt if prev_Tvdt else None,
+                vdt_after=current_Tvdt.vdt if current_Tvdt else None,
+                arr_time=None if timing.time_to_stop is None else currenttime,
+                dep_time=None if timing.time_to_stop is None else (currenttime + timing.stopping_time),
+                distance_travelled=d_t
+            ))
+        if timing.time_to_stop is not None:
+            currenttime += timing.stopping_time
+    return tuple(tstops)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.Trip.wkt"><code class="name flex">
+<span>def <span class="ident">wkt</span></span>(<span>self, day: Optional[date] = None) -> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Get WKT (well known text) representation with time measures of this trip</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def wkt(self, day: Optional[date] = None) -&gt; str:
+    &#34;&#34;&#34;Get WKT (well known text) representation with time measures of this trip&#34;&#34;&#34;
+    return self.course.wkt_m(self.timing_group, self.departure_time, day)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraintType"><code class="flex name class">
+<span>class <span class="ident">StopConstraintType</span></span>
+<span>(</span><span>value, names=None, *, module=None, qualname=None, type=None, start=1)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>An enumeration.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class StopConstraintType(Enum):
+    only_alighting = &#39;A&#39;
+    only_boarding = &#39;E&#39;
+    no_place_internal = &#39;I&#39;
+    undocumented_type_B = &#39;B&#39;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>enum.Enum</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.model.schedule.StopConstraintType.only_alighting"><code class="name">var <span class="ident">only_alighting</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraintType.only_boarding"><code class="name">var <span class="ident">only_boarding</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraintType.no_place_internal"><code class="name">var <span class="ident">no_place_internal</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraintType.undocumented_type_B"><code class="name">var <span class="ident">undocumented_type_B</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint"><code class="flex name class">
+<span>class <span class="ident">StopConstraint</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Stopping constraint</p>
+<p>Primary key: <code>version_id</code> &amp; <code>line</code> &amp; <code>trip_id</code> &amp; <code>consec_stop_nr</code> &amp; <code>constraint</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class StopConstraint(Base):
+    &#34;&#34;&#34;
+    Stopping constraint
+
+    Primary key: `version_id` &amp; `line` &amp; `trip_id` &amp; `consec_stop_nr` &amp; `constraint`
+    &#34;&#34;&#34;
+    _din_file = &#34;service_constraint.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    line: Column[int] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Line id&#34;&#34;&#34;
+
+    course_id: Column[Optional[str]] = Column(&#34;STR_LINE_VAR&#34;, String(length=4))
+    &#34;&#34;&#34;Course id&#34;&#34;&#34;
+
+    line_dir: Column[Optional[int]] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;))
+    &#34;&#34;&#34;Line direction (1 or 2)&#34;&#34;&#34;
+
+    trip_id: Column[int] = Column(&#34;TRIP_ID&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Trip id&#34;&#34;&#34;
+
+    consec_stop_nr: Column[int] = Column(&#34;LINE_CONSEC_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Consecutive stop number in route&#34;&#34;&#34;
+
+    stop_id: Column[Optional[int]] = Column(&#34;STOP_NR&#34;, Integer())
+    &#34;&#34;&#34;Stop id&#34;&#34;&#34;
+    stop_point_id: Column[Optional[int]] = Column(&#34;STOPPING_POINT_NR&#34;, Integer())
+    &#34;&#34;&#34;Stopping point id&#34;&#34;&#34;
+
+    constraint: Column[StopConstraintType] = Column(&#34;SERVICE_INTERDICTION_CODE&#34;, CharEnum(StopConstraintType), primary_key=True)
+    &#34;&#34;&#34;Stopping constraint&#34;&#34;&#34;
+
+    course: RelationshipProperty[Optional[Course]] = relationship(&#34;Course&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.Course`&#34;&#34;&#34;
+    course_stop: RelationshipProperty[Optional[CourseStop]] = relationship(&#34;CourseStop&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.CourseStop`&#34;&#34;&#34;
+    trip: RelationshipProperty[Trip] = relationship(Trip, back_populates=&#34;constraints&#34;)
+    &#34;&#34;&#34;`Trip`&#34;&#34;&#34;
+    stop: RelationshipProperty[Optional[Stop]] = relationship(&#34;Stop&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.Stop`&#34;&#34;&#34;
+    stop_point: RelationshipProperty[Optional[StopPoint]] = relationship(&#34;StopPoint&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.StopPoint`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, line, course_id, line_dir], [&#34;line.VERSION&#34;, &#34;line.LINE_NR&#34;, &#34;line.STR_LINE_VAR&#34;, &#34;line.LINE_DIR_NR&#34;]),
+        ForeignKeyConstraint([version_id, line, course_id, line_dir, consec_stop_nr], [&#34;route.VERSION&#34;, &#34;route.LINE_NR&#34;, &#34;route.STR_LINE_VAR&#34;, &#34;route.LINE_DIR_NR&#34;, &#34;route.LINE_CONSEC_NR&#34;]),
+        ForeignKeyConstraint([version_id, line, trip_id], [Trip.version_id, Trip.line, Trip.id]),
+        ForeignKeyConstraint([version_id, stop_id], [&#34;stop.VERSION&#34;, &#34;stop.STOP_NR&#34;]),
+        ForeignKeyConstraint([version_id, stop_id, stop_point_id], [&#34;stop_point.VERSION&#34;, &#34;stop_point.STOP_NR&#34;, &#34;stop_point.STOPPING_POINT_NR&#34;])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;StopConstraint(version_id={self.version_id}, line={self.line}, trip_id={self.trip_id}, consec_stop_nr={self.consec_stop_nr}, constraint={self.constraint})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.schedule.StopConstraint.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.line"><code class="name">var <span class="ident">line</span></code></dt>
+<dd>
+<div class="desc"><p>Line id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.course_id"><code class="name">var <span class="ident">course_id</span></code></dt>
+<dd>
+<div class="desc"><p>Course id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.line_dir"><code class="name">var <span class="ident">line_dir</span></code></dt>
+<dd>
+<div class="desc"><p>Line direction (1 or 2)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.trip_id"><code class="name">var <span class="ident">trip_id</span></code></dt>
+<dd>
+<div class="desc"><p>Trip id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.consec_stop_nr"><code class="name">var <span class="ident">consec_stop_nr</span></code></dt>
+<dd>
+<div class="desc"><p>Consecutive stop number in route</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.stop_id"><code class="name">var <span class="ident">stop_id</span></code></dt>
+<dd>
+<div class="desc"><p>Stop id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.stop_point_id"><code class="name">var <span class="ident">stop_point_id</span></code></dt>
+<dd>
+<div class="desc"><p>Stopping point id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.constraint"><code class="name">var <span class="ident">constraint</span></code></dt>
+<dd>
+<div class="desc"><p>Stopping constraint</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.course"><code class="name">var <span class="ident">course</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.Course" href="network.html#DINO2.model.network.Course">Course</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.course_stop"><code class="name">var <span class="ident">course_stop</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.CourseStop" href="network.html#DINO2.model.network.CourseStop">CourseStop</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.trip"><code class="name">var <span class="ident">trip</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.schedule.Trip" href="#DINO2.model.schedule.Trip">Trip</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.stop"><code class="name">var <span class="ident">stop</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Stop" href="location.html#DINO2.model.location.Stop">Stop</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.stop_point"><code class="name">var <span class="ident">stop_point</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.StopPoint" href="location.html#DINO2.model.location.StopPoint">StopPoint</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.StopConstraint.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.schedule.TripVDT"><code class="flex name class">
+<span>class <span class="ident">TripVDT</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Destination text for a <code><a title="DINO2.model.schedule.Trip" href="#DINO2.model.schedule.Trip">Trip</a></code></p>
+<p>Primary key contains <code><a title="DINO2.model.schedule.TripVDT.trip_id" href="#DINO2.model.schedule.TripVDT.trip_id">TripVDT.trip_id</a></code> instead of <code><a title="DINO2.model.schedule.TripVDT.course_id" href="#DINO2.model.schedule.TripVDT.course_id">TripVDT.course_id</a></code> and <code><a title="DINO2.model.schedule.TripVDT.line_dir" href="#DINO2.model.schedule.TripVDT.line_dir">TripVDT.line_dir</a></code>..</p>
+<p>Primary key: <code>version_id</code> &amp; <em><code>period</code></em> &amp; <code>line</code> &amp; ~~<code>course_id</code>~~ &amp; ~~<code>line_dir</code>~~ &amp; ++<code>trip_id</code>++ &amp; <code>consec_stop_nr</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class TripVDT(Base):
+    &#34;&#34;&#34;
+    Destination text for a `Trip`
+
+    Primary key contains `TripVDT.trip_id` instead of `TripVDT.course_id` and `TripVDT.line_dir`..
+
+    Primary key: `version_id` &amp; _`period`_ &amp; `line` &amp; ~~`course_id`~~ &amp; ~~`line_dir`~~ &amp; ++`trip_id`++ &amp; `consec_stop_nr`
+    &#34;&#34;&#34;
+    _din_file = &#34;trip_vdt.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    period: Column[Optional[str]] = Column(&#34;TIMETABLE_PERIOD&#34;, String(length=4), primary_key=True, nullable=True)
+    &#34;&#34;&#34;Timetable period abbreviation&#34;&#34;&#34;
+
+    line: Column[int] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Line id&#34;&#34;&#34;
+
+    # course_id: Column[Optional[str]] = Column(&#34;STR_LINE_VAR&#34;, String(length=4), primary_key=True, nullable=True)
+    course_id: Column[Optional[str]] = Column(&#34;STR_LINE_VAR&#34;, String(length=4), primary_key=False)
+    &#34;&#34;&#34;Course id&#34;&#34;&#34;
+
+    # line_dir: Column[Optional[int]] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;), primary_key=True, nullable=True)
+    line_dir: Column[Optional[int]] = Column(&#34;LINE_DIR_NR&#34;, Integer(), CheckConstraint(&#34;LINE_DIR_NR in (1, 2)&#34;), primary_key=False)
+    &#34;&#34;&#34;Line direction (1 or 2)&#34;&#34;&#34;
+
+    # trip_id: Column[int] = Column(&#34;TRIP_ID&#34;, Integer(), nullable=False)
+    trip_id: Column[int] = Column(&#34;TRIP_ID&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Trip id&#34;&#34;&#34;
+
+    consec_stop_nr: Column[int] = Column(&#34;LINE_CONSEC_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Consecutive stop number in route&#34;&#34;&#34;
+
+    vdt_id: Column[int] = Column(&#34;VDT_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Vehicle destination text id&#34;&#34;&#34;
+
+    course_stop: RelationshipProperty[Optional[CourseStop]] = relationship(&#34;CourseStop&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.network.CourseStop`&#34;&#34;&#34;
+    trip: RelationshipProperty[Trip] = relationship(Trip, back_populates=&#34;vdt_changes&#34;)
+    &#34;&#34;&#34;`Trip`&#34;&#34;&#34;
+    vdt: RelationshipProperty[VehicleDestinationText] = relationship(&#34;VehicleDestinationText&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.operational.VehicleDestinationText`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, line, course_id, line_dir], [&#34;line.VERSION&#34;, &#34;line.LINE_NR&#34;, &#34;line.STR_LINE_VAR&#34;, &#34;line.LINE_DIR_NR&#34;]),
+        ForeignKeyConstraint([version_id, line, course_id, line_dir, consec_stop_nr], [&#34;route.VERSION&#34;, &#34;route.LINE_NR&#34;, &#34;route.STR_LINE_VAR&#34;, &#34;route.LINE_DIR_NR&#34;, &#34;route.LINE_CONSEC_NR&#34;]),
+        ForeignKeyConstraint([version_id, line, trip_id], [Trip.version_id, Trip.line, Trip.id]),
+        # ohne branch. line &amp; trip_id sind zusammen eindeutig.. ?
+        ForeignKeyConstraint([version_id, vdt_id], [&#34;vehicle_destination_text.VERSION&#34;, &#34;vehicle_destination_text.VDT_NR&#34;])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;TripVDT(version_id={self.version_id}, line={self.line}, trip_id={self.trip_id}, consec_stop_nr={self.consec_stop_nr}, vdt={self.vdt})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.schedule.TripVDT.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.TripVDT.period"><code class="name">var <span class="ident">period</span></code></dt>
+<dd>
+<div class="desc"><p>Timetable period abbreviation</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.TripVDT.line"><code class="name">var <span class="ident">line</span></code></dt>
+<dd>
+<div class="desc"><p>Line id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.TripVDT.course_id"><code class="name">var <span class="ident">course_id</span></code></dt>
+<dd>
+<div class="desc"><p>Course id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.TripVDT.line_dir"><code class="name">var <span class="ident">line_dir</span></code></dt>
+<dd>
+<div class="desc"><p>Line direction (1 or 2)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.TripVDT.trip_id"><code class="name">var <span class="ident">trip_id</span></code></dt>
+<dd>
+<div class="desc"><p>Trip id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.TripVDT.consec_stop_nr"><code class="name">var <span class="ident">consec_stop_nr</span></code></dt>
+<dd>
+<div class="desc"><p>Consecutive stop number in route</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.TripVDT.vdt_id"><code class="name">var <span class="ident">vdt_id</span></code></dt>
+<dd>
+<div class="desc"><p>Vehicle destination text id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.TripVDT.course_stop"><code class="name">var <span class="ident">course_stop</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.network.CourseStop" href="network.html#DINO2.model.network.CourseStop">CourseStop</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.TripVDT.trip"><code class="name">var <span class="ident">trip</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.schedule.Trip" href="#DINO2.model.schedule.Trip">Trip</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.TripVDT.vdt"><code class="name">var <span class="ident">vdt</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.operational.VehicleDestinationText" href="operational.html#DINO2.model.operational.VehicleDestinationText">VehicleDestinationText</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.schedule.TripVDT.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="DINO2.model" href="index.html">DINO2.model</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="DINO2.model.schedule.NoticeContentType" href="#DINO2.model.schedule.NoticeContentType">NoticeContentType</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.schedule.NoticeContentType.general" href="#DINO2.model.schedule.NoticeContentType.general">general</a></code></li>
+<li><code><a title="DINO2.model.schedule.NoticeContentType.train_name" href="#DINO2.model.schedule.NoticeContentType.train_name">train_name</a></code></li>
+<li><code><a title="DINO2.model.schedule.NoticeContentType.on_demand_phone" href="#DINO2.model.schedule.NoticeContentType.on_demand_phone">on_demand_phone</a></code></li>
+<li><code><a title="DINO2.model.schedule.NoticeContentType.bicycle" href="#DINO2.model.schedule.NoticeContentType.bicycle">bicycle</a></code></li>
+<li><code><a title="DINO2.model.schedule.NoticeContentType.track" href="#DINO2.model.schedule.NoticeContentType.track">track</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.schedule.NoticeDisplayType" href="#DINO2.model.schedule.NoticeDisplayType">NoticeDisplayType</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.schedule.NoticeDisplayType.always" href="#DINO2.model.schedule.NoticeDisplayType.always">always</a></code></li>
+<li><code><a title="DINO2.model.schedule.NoticeDisplayType.on_boarding" href="#DINO2.model.schedule.NoticeDisplayType.on_boarding">on_boarding</a></code></li>
+<li><code><a title="DINO2.model.schedule.NoticeDisplayType.on_alighting" href="#DINO2.model.schedule.NoticeDisplayType.on_alighting">on_alighting</a></code></li>
+<li><code><a title="DINO2.model.schedule.NoticeDisplayType.on_board" href="#DINO2.model.schedule.NoticeDisplayType.on_board">on_board</a></code></li>
+<li><code><a title="DINO2.model.schedule.NoticeDisplayType.on_boarding_or_alighting" href="#DINO2.model.schedule.NoticeDisplayType.on_boarding_or_alighting">on_boarding_or_alighting</a></code></li>
+<li><code><a title="DINO2.model.schedule.NoticeDisplayType.on_board_or_alighting" href="#DINO2.model.schedule.NoticeDisplayType.on_board_or_alighting">on_board_or_alighting</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.schedule.Notice" href="#DINO2.model.schedule.Notice">Notice</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.schedule.Notice.version_id" href="#DINO2.model.schedule.Notice.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Notice.line" href="#DINO2.model.schedule.Notice.line">line</a></code></li>
+<li><code><a title="DINO2.model.schedule.Notice.id" href="#DINO2.model.schedule.Notice.id">id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Notice.text" href="#DINO2.model.schedule.Notice.text">text</a></code></li>
+<li><code><a title="DINO2.model.schedule.Notice.content_type" href="#DINO2.model.schedule.Notice.content_type">content_type</a></code></li>
+<li><code><a title="DINO2.model.schedule.Notice.display_type" href="#DINO2.model.schedule.Notice.display_type">display_type</a></code></li>
+<li><code><a title="DINO2.model.schedule.Notice.trips" href="#DINO2.model.schedule.Notice.trips">trips</a></code></li>
+<li><code><a title="DINO2.model.schedule.Notice.version" href="#DINO2.model.schedule.Notice.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.schedule.TripStop" href="#DINO2.model.schedule.TripStop">TripStop</a></code></h4>
+</li>
+<li>
+<h4><code><a title="DINO2.model.schedule.Trip" href="#DINO2.model.schedule.Trip">Trip</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.schedule.Trip.query_for_date" href="#DINO2.model.schedule.Trip.query_for_date">query_for_date</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.trip_stops" href="#DINO2.model.schedule.Trip.trip_stops">trip_stops</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.wkt" href="#DINO2.model.schedule.Trip.wkt">wkt</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.version_id" href="#DINO2.model.schedule.Trip.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.line" href="#DINO2.model.schedule.Trip.line">line</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.course_id" href="#DINO2.model.schedule.Trip.course_id">course_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.line_dir" href="#DINO2.model.schedule.Trip.line_dir">line_dir</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.timing_group" href="#DINO2.model.schedule.Trip.timing_group">timing_group</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.id" href="#DINO2.model.schedule.Trip.id">id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.id_printing" href="#DINO2.model.schedule.Trip.id_printing">id_printing</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.departure_time" href="#DINO2.model.schedule.Trip.departure_time">departure_time</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.dep_stop_id" href="#DINO2.model.schedule.Trip.dep_stop_id">dep_stop_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.dep_stop_point_id" href="#DINO2.model.schedule.Trip.dep_stop_point_id">dep_stop_point_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.arr_stop_id" href="#DINO2.model.schedule.Trip.arr_stop_id">arr_stop_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.arr_stop_point_id" href="#DINO2.model.schedule.Trip.arr_stop_point_id">arr_stop_point_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.vehicle_type_id" href="#DINO2.model.schedule.Trip.vehicle_type_id">vehicle_type_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.day_attribute_id" href="#DINO2.model.schedule.Trip.day_attribute_id">day_attribute_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.restriction_id" href="#DINO2.model.schedule.Trip.restriction_id">restriction_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.notice1id" href="#DINO2.model.schedule.Trip.notice1id">notice1id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.notice2id" href="#DINO2.model.schedule.Trip.notice2id">notice2id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.notice3id" href="#DINO2.model.schedule.Trip.notice3id">notice3id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.notice4id" href="#DINO2.model.schedule.Trip.notice4id">notice4id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.notice5id" href="#DINO2.model.schedule.Trip.notice5id">notice5id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.round_trip_id" href="#DINO2.model.schedule.Trip.round_trip_id">round_trip_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.train_id" href="#DINO2.model.schedule.Trip.train_id">train_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.train_category_abbr" href="#DINO2.model.schedule.Trip.train_category_abbr">train_category_abbr</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.operator_id" href="#DINO2.model.schedule.Trip.operator_id">operator_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.operator_branch_office_id" href="#DINO2.model.schedule.Trip.operator_branch_office_id">operator_branch_office_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.global_id" href="#DINO2.model.schedule.Trip.global_id">global_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.bike_allowed" href="#DINO2.model.schedule.Trip.bike_allowed">bike_allowed</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.purpose_id" href="#DINO2.model.schedule.Trip.purpose_id">purpose_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.dep_stop" href="#DINO2.model.schedule.Trip.dep_stop">dep_stop</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.dep_stop_point" href="#DINO2.model.schedule.Trip.dep_stop_point">dep_stop_point</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.arr_stop" href="#DINO2.model.schedule.Trip.arr_stop">arr_stop</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.arr_stop_point" href="#DINO2.model.schedule.Trip.arr_stop_point">arr_stop_point</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.vehicle_type" href="#DINO2.model.schedule.Trip.vehicle_type">vehicle_type</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.day_attribute" href="#DINO2.model.schedule.Trip.day_attribute">day_attribute</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.restriction" href="#DINO2.model.schedule.Trip.restriction">restriction</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.notice1" href="#DINO2.model.schedule.Trip.notice1">notice1</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.notice2" href="#DINO2.model.schedule.Trip.notice2">notice2</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.notice3" href="#DINO2.model.schedule.Trip.notice3">notice3</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.notice4" href="#DINO2.model.schedule.Trip.notice4">notice4</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.notice5" href="#DINO2.model.schedule.Trip.notice5">notice5</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.operator" href="#DINO2.model.schedule.Trip.operator">operator</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.operator_branch_office" href="#DINO2.model.schedule.Trip.operator_branch_office">operator_branch_office</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.stop_timings" href="#DINO2.model.schedule.Trip.stop_timings">stop_timings</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.course" href="#DINO2.model.schedule.Trip.course">course</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.constraints" href="#DINO2.model.schedule.Trip.constraints">constraints</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.vdt_changes" href="#DINO2.model.schedule.Trip.vdt_changes">vdt_changes</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.vdts" href="#DINO2.model.schedule.Trip.vdts">vdts</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.version" href="#DINO2.model.schedule.Trip.version">version</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.notices" href="#DINO2.model.schedule.Trip.notices">notices</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.duration" href="#DINO2.model.schedule.Trip.duration">duration</a></code></li>
+<li><code><a title="DINO2.model.schedule.Trip.dates" href="#DINO2.model.schedule.Trip.dates">dates</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.schedule.StopConstraintType" href="#DINO2.model.schedule.StopConstraintType">StopConstraintType</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.schedule.StopConstraintType.only_alighting" href="#DINO2.model.schedule.StopConstraintType.only_alighting">only_alighting</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraintType.only_boarding" href="#DINO2.model.schedule.StopConstraintType.only_boarding">only_boarding</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraintType.no_place_internal" href="#DINO2.model.schedule.StopConstraintType.no_place_internal">no_place_internal</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraintType.undocumented_type_B" href="#DINO2.model.schedule.StopConstraintType.undocumented_type_B">undocumented_type_B</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.schedule.StopConstraint" href="#DINO2.model.schedule.StopConstraint">StopConstraint</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.schedule.StopConstraint.version_id" href="#DINO2.model.schedule.StopConstraint.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.line" href="#DINO2.model.schedule.StopConstraint.line">line</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.course_id" href="#DINO2.model.schedule.StopConstraint.course_id">course_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.line_dir" href="#DINO2.model.schedule.StopConstraint.line_dir">line_dir</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.trip_id" href="#DINO2.model.schedule.StopConstraint.trip_id">trip_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.consec_stop_nr" href="#DINO2.model.schedule.StopConstraint.consec_stop_nr">consec_stop_nr</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.stop_id" href="#DINO2.model.schedule.StopConstraint.stop_id">stop_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.stop_point_id" href="#DINO2.model.schedule.StopConstraint.stop_point_id">stop_point_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.constraint" href="#DINO2.model.schedule.StopConstraint.constraint">constraint</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.course" href="#DINO2.model.schedule.StopConstraint.course">course</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.course_stop" href="#DINO2.model.schedule.StopConstraint.course_stop">course_stop</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.trip" href="#DINO2.model.schedule.StopConstraint.trip">trip</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.stop" href="#DINO2.model.schedule.StopConstraint.stop">stop</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.stop_point" href="#DINO2.model.schedule.StopConstraint.stop_point">stop_point</a></code></li>
+<li><code><a title="DINO2.model.schedule.StopConstraint.version" href="#DINO2.model.schedule.StopConstraint.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.schedule.TripVDT" href="#DINO2.model.schedule.TripVDT">TripVDT</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.schedule.TripVDT.version_id" href="#DINO2.model.schedule.TripVDT.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.TripVDT.period" href="#DINO2.model.schedule.TripVDT.period">period</a></code></li>
+<li><code><a title="DINO2.model.schedule.TripVDT.line" href="#DINO2.model.schedule.TripVDT.line">line</a></code></li>
+<li><code><a title="DINO2.model.schedule.TripVDT.course_id" href="#DINO2.model.schedule.TripVDT.course_id">course_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.TripVDT.line_dir" href="#DINO2.model.schedule.TripVDT.line_dir">line_dir</a></code></li>
+<li><code><a title="DINO2.model.schedule.TripVDT.trip_id" href="#DINO2.model.schedule.TripVDT.trip_id">trip_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.TripVDT.consec_stop_nr" href="#DINO2.model.schedule.TripVDT.consec_stop_nr">consec_stop_nr</a></code></li>
+<li><code><a title="DINO2.model.schedule.TripVDT.vdt_id" href="#DINO2.model.schedule.TripVDT.vdt_id">vdt_id</a></code></li>
+<li><code><a title="DINO2.model.schedule.TripVDT.course_stop" href="#DINO2.model.schedule.TripVDT.course_stop">course_stop</a></code></li>
+<li><code><a title="DINO2.model.schedule.TripVDT.trip" href="#DINO2.model.schedule.TripVDT.trip">trip</a></code></li>
+<li><code><a title="DINO2.model.schedule.TripVDT.vdt" href="#DINO2.model.schedule.TripVDT.vdt">vdt</a></code></li>
+<li><code><a title="DINO2.model.schedule.TripVDT.version" href="#DINO2.model.schedule.TripVDT.version">version</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

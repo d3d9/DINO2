@@ -1,0 +1,6 @@
+VERSION;DAY_ATTRIBUTE_NR;DAY_ATTRIBUTE_TEXT;STR_DAY_ATTRIBUTE;
+ 9;  1;SO                                      ;  ;
+ 9; 10;DO, SA                                  ;  ;
+ 9; 14;DO, FR, SA                              ;  ;
+ 9; 20;MI, FR                                  ;  ;
+ 9;124;MO, DI, MI, DO, FR                      ;  ;

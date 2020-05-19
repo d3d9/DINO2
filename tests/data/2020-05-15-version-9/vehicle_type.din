@@ -1,0 +1,6 @@
+VERSION;VEH_TYPE_NR;VEH_TYPE_SEATS;VEH_TYPE_STRAPS;PLACES_FOR_DISABLED_PERSONS;VEH_TYPE_TEXT;STR_VEH_TYPE;VEH_TYPE_DOOR_WIDTH;VEH_TYPE_WIDTH;VEH_TYPE_HEIGHT;VEH_TYPE_ACCESS_EQUIP;
+ 9;       8; 28; 53;  0;Midibus                                 ;MI    ;    ;    ;    ;    ;
+ 9;      10; 49; 62;  0;Niederflurgelenkbus                     ;NG    ;    ;    ;    ;    ;
+ 9;      11; 31; 45;  0;Niederflurlinienbus                     ;NL    ;    ;    ;    ;    ;
+ 9;      17; 31; 45;  0;Standardlinienbus                       ;SL    ;    ;    ;    ;    ;
+ 9;      30; 50;102;  0;Niederflurgelenkbus                     ;NFG   ;    ;    ;    ;    ;

@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.1" />
+<title>DINO2.tools.export.csv API documentation</title>
+<meta name="description" content="Functions for simple csv exports" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>DINO2.tools.export.csv</code></h1>
+</header>
+<section id="section-intro">
+<p>Functions for simple csv exports</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: utf-8 -*-
+&#34;&#34;&#34;Functions for simple csv exports&#34;&#34;&#34;
+
+from __future__ import annotations
+
+from collections import defaultdict
+from csv import writer
+from datetime import date, datetime, timedelta
+import itertools
+import os
+from sqlalchemy import tuple_
+from sqlalchemy.orm import joinedload, load_only, Query, Load
+from sqlalchemy.orm.session import Session
+from typing import Optional, Set, Dict, Tuple, List
+
+from ...model import Base, Version, calendar, fares, location, operational, network, schedule
+
+
+def stops(session: Session, fname: str, version_id: Optional[int] = None) -&gt; None:
+    &#34;&#34;&#34;Export csv file of all stops, one row per stop position&#34;&#34;&#34;
+    rows = [
+        (
+            &#34;version&#34;, &#34;stopid&#34;, &#34;stopname&#34;, &#34;placename&#34;, &#34;stopshortname&#34;,
+            &#34;stopifopt&#34;, &#34;areaid&#34;, &#34;areaname&#34;, &#34;areaifopt&#34;,
+            &#34;posid&#34;, &#34;posname&#34;, &#34;posifopt&#34;, &#34;X&#34;, &#34;Y&#34;, &#34;farezones&#34;
+        )]
+    q = session.query(location.Stop).options(joinedload(&#39;points&#39;).joinedload(&#39;area&#39;))
+    if version_id is not None:
+        q = q.filter_by(version_id=version_id)
+    for stop in q.all():
+        for point in stop.points:
+            area_id, area_name, area_ifopt = (point.area.id, point.area.name, point.area.ifopt) if point.area is not None else (None, None, None)
+            rows.append(
+                (
+                    stop.version_id, stop.id, stop.name, stop.place, stop.abbr,
+                    stop.ifopt, area_id, area_name, area_ifopt,
+                    point.id, point.name, point.ifopt, point.pos_x, point.pos_y,
+                    &#34;,&#34;.join(str(fzid) for fzid in stop.fare_zone_ids)
+                ))
+    with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+        writer(f, delimiter=&#34;;&#34;, lineterminator=&#39;\n&#39;).writerows(rows)
+
+
+def courses(session: Session, path: str, line_ids: Optional[Set[int]] = None, export_full_name: bool = False, version_id: Optional[int] = None) -&gt; None:
+    &#34;&#34;&#34;Export csv files of all course stops per trip&#34;&#34;&#34;
+    q = session.query(network.Course).options(joinedload(&#39;stops&#39;).joinedload(&#39;stop&#39;), joinedload(&#39;stops&#39;).joinedload(&#39;stop_point&#39;))
+    if version_id is not None:
+        q = q.filter_by(version_id=version_id)
+    if line_ids:
+        q = q.filter(network.Course.line.in_(line_ids))
+    for course in q.all():
+        _from_stop, _to_stop = course.stops[0], course.stops[-1]
+
+        def try_name(cs: network.CourseStop) -&gt; str:
+            name = cs.stop.name_noloc
+            if name:
+                return name.replace(&#34;/&#34;, &#34;&#34;).replace(&#34;.&#34;, &#34;&#34;)
+            name = cs.stop.name
+            try:
+                return name.split(&#34; &#34;)[1].replace(&#34;/&#34;, &#34;&#34;).replace(&#34;.&#34;, &#34;&#34;)
+            except IndexError:
+                return name.replace(&#34;/&#34;, &#34;&#34;).replace(&#34;.&#34;, &#34;&#34;)
+        _from, _to = try_name(_from_stop), try_name(_to_stop)
+        fname = os.path.join(path, f&#34;dino_{course.name}_{course.id}_{_from}_{_to}.csv&#34;)
+        os.makedirs(os.path.dirname(fname), exist_ok=True)
+        with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+            writer(f, delimiter=&#34;;&#34;, lineterminator=&#39;\n&#39;).writerows([
+                (
+                    cs.consec_stop_nr,
+                    (cs.stop_point.ifopt if (cs.stop_point is not None and cs.stop_point.ifopt) else cs.stop.ifopt),
+                    (cs.stop.name if (export_full_name or not cs.stop.name_noloc) else cs.stop.name_noloc)
+                ) for cs in course.stops])
+
+
+def trips(session: Session, fname: str, date_: date, line_ids: Optional[Set[int]] = None, version_id: Optional[int] = None) -&gt; None:
+    &#34;&#34;&#34;Export csv file of trips for a given date&#34;&#34;&#34;
+    rows = [(&#34;lineid&#34;, &#34;linesymbol&#34;, &#34;from&#34;, &#34;to&#34;, &#34;startt&#34;, &#34;endt&#34;, &#34;tripid&#34;, &#34;wkt&#34;)]
+    q = schedule.Trip.query_for_date(session, date_)
+    if version_id is not None:
+        q = q.filter_by(version_id=version_id)
+    if line_ids:
+        q = q.filter(schedule.Trip.line.in_(line_ids))
+    for trip in q.all():
+        rows.append(
+            (
+                trip.line, trip.course.name, trip.dep_stop.name, trip.arr_stop.name,
+                int(trip.departure_time.total_seconds()),
+                int(trip.departure_time.total_seconds()+trip.duration.total_seconds()),
+                trip.id, trip.wkt()
+            ))
+    with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+        writer(f, delimiter=&#34;;&#34;, lineterminator=&#39;\n&#39;).writerows(rows)
+
+
+def line_stats(session: Session, fname: str, version_id: Optional[int] = None) -&gt; None:
+    &#34;&#34;&#34;Line statistics with total year-kilometers per version-&gt;line-&gt;course&#34;&#34;&#34;
+    lq = session.query(schedule.Trip, network.Course.length) \
+        .order_by(schedule.Trip.version_id.asc(), schedule.Trip.line.asc(), schedule.Trip.line_dir.asc(), schedule.Trip.course_id.asc()) \
+        .options(
+            joinedload(&#39;course&#39;, innerjoin=True),
+            joinedload(&#39;day_attribute&#39;, innerjoin=True),
+            joinedload(&#39;restriction&#39;),
+            *(load_only(_) for _ in (&#39;line&#39;, &#39;course_id&#39;, &#39;line_dir&#39;, &#39;day_attribute_id&#39;, &#39;restriction_id&#39;))
+        ).join(network.Course)
+    if version_id is not None:
+        lq = lq.filter_by(version_id=version_id)
+    total = 0
+    rows = [(&#34;version&#34;, &#34;line&#34;, &#34;course&#34;, &#34;km&#34;)]
+    for versionid, version_grouper in itertools.groupby(lq.all(), lambda t_l: t_l[0].version_id):
+        version_total = 0
+        for lineid, line_grouper in itertools.groupby(version_grouper, lambda t_l: t_l[0].line):
+            line_total = 0
+            for courseid, course_grouper in itertools.groupby(line_grouper, lambda t_l: t_l[0].course_id):
+                course_total = 0
+                for trip, length in course_grouper:
+                    days = len(trip.dates)
+                    km = days*(length/1000)
+                    course_total += km
+                rows.append((versionid, lineid, courseid, f&#34;{course_total:.2f}&#34;))
+                line_total += course_total
+            rows.append((versionid, lineid, &#34;total&#34;, f&#34;{line_total:.2f}&#34;))
+            version_total += line_total
+        rows.append((versionid, &#34;total&#34;, &#34;&#34;, f&#34;{version_total:.2f}&#34;))
+        total += version_total
+    rows.append((&#34;total&#34;, &#34;&#34;, &#34;&#34;, f&#34;{total:.2f}&#34;))
+    with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+        writer(f, delimiter=&#34;;&#34;, lineterminator=&#39;\n&#39;).writerows(rows)
+
+
+def departure_stats(tripquery: Query, fname: str) -&gt; None:
+    &#34;&#34;&#34;Departures from-&gt;to, between, and from stops.&#34;&#34;&#34;
+    tripquery = tripquery.options(
+        load_only(&#39;version_id&#39;), load_only(&#39;line&#39;), load_only(&#39;id&#39;), load_only(&#39;course_id&#39;), load_only(&#39;line_dir&#39;),
+        joinedload(&#39;course&#39;, innerjoin=True).load_only(&#39;version_id&#39;).load_only(&#39;line&#39;).load_only(&#39;id&#39;).load_only(&#39;line_dir&#39;)
+        .joinedload(&#39;stops&#39;, innerjoin=True).load_only(&#39;version_id&#39;).load_only(&#39;line&#39;).load_only(&#39;course_id&#39;).load_only(&#39;line_dir&#39;).load_only(&#39;consec_stop_nr&#39;)
+        .joinedload(&#39;stop&#39;, innerjoin=True).load_only(&#39;version_id&#39;).load_only(&#39;ifopt&#39;).load_only(&#39;name&#39;))
+
+    pairs: Dict[Tuple[location.Stop, location.Stop], int] = defaultdict(int)
+    for trip in tripquery.all():
+        for _stopi, cstop in enumerate(trip.course.stops):
+            if cstop.consec_stop_nr != len(trip.course.stops):
+                pairs[(cstop.stop, trip.course.stops[_stopi+1].stop)] += 1
+
+    # todo: ggf. version &#34;ignorieren&#34;, stops version-uebergreifend zuordnen?
+    rows = [(&#34;type&#34;, &#34;version&#34;, &#34;from/A&#34;, &#34;l-ifopt&#34;, &#34;to/B&#34;, &#34;r-ifopt&#34;, &#34;count&#34;)]
+    for (sf, st), dc in sorted(pairs.items(), key=lambda i: -i[1]):
+        rows.append((&#34;from-to&#34;, sf.version_id, sf.name, sf.ifopt, st.name, st.ifopt, dc))
+
+    pairsbidi = {}
+    for (sf, st), dc in pairs.items():
+        if (sf, st) not in pairsbidi and (st, sf) not in pairsbidi:
+            pairsbidi[(sf, st)] = dc
+            if (st, sf) in pairs and (sf, st) != (st, sf):
+                pairsbidi[(sf, st)] += pairs[(st, sf)]
+
+    for (sf, st), dc in sorted(pairsbidi.items(), key=lambda i: -i[1]):
+        rows.append((&#34;between&#34;, sf.version_id, sf.name, sf.ifopt, st.name, st.ifopt, dc))
+
+    stopdeps = {stop: sum(dc for ((sf, st), dc) in pairs.items() if stop == sf) for (stop, _) in pairs}
+    for stop, dc in sorted(stopdeps.items(), key=lambda i: -i[1]):
+        rows.append((&#34;from&#34;, sf.version_id, stop.name, stop.ifopt, &#34;&#34;, &#34;&#34;, dc))
+
+    with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+        writer(f, delimiter=&#34;;&#34;, lineterminator=&#39;\n&#39;).writerows(rows)
+
+
+def departures(stop: location.Stop, day: date, fname: str, days: int = 1) -&gt; None:
+    &#34;&#34;&#34;Departures from a given stop for a given date (range)&#34;&#34;&#34;
+    servinglines = set((c.line, c.id) for c in stop.courses)
+    deps: List[Tuple[datetime, schedule.TripStop]] = []
+    for currdate in (day + timedelta(days=n) for n in range(days)):
+        tripquery = schedule.Trip.query_for_date(stop._session, currdate) \
+            .filter(
+                (schedule.Trip.version_id == stop.version_id)
+                &amp; tuple_(schedule.Trip.line, schedule.Trip.course_id).in_(servinglines)
+            ).options(
+                load_only(&#39;version_id&#39;), load_only(&#39;line&#39;), load_only(&#39;id&#39;), load_only(&#39;course_id&#39;), load_only(&#39;line_dir&#39;), load_only(&#39;timing_group&#39;), load_only(&#39;departure_time&#39;), load_only(&#39;arr_stop_id&#39;),
+                joinedload(&#39;course&#39;, innerjoin=True).load_only(&#39;version_id&#39;).load_only(&#39;line&#39;).load_only(&#39;id&#39;).load_only(&#39;line_dir&#39;).load_only(&#39;name&#39;),
+                joinedload(&#39;arr_stop&#39;).load_only(&#39;name&#39;)
+            )
+        trips = [(t, t.trip_stops(simple=True)) for t in tripquery.all()]
+        # todo: eventuell mal das trip_stops sich sparen koennen.
+        for trip, tripstops in trips:
+            deps.extend(
+                (datetime.combine(currdate, datetime.min.time()) + ts.dep_time, ts)
+                for n, ts
+                in filter(
+                    lambda n_ts: n_ts[1].stop == stop and n_ts[0] != len(tripstops),
+                    enumerate(tripstops, start=1)
+                ))
+    rows = [(&#34;date&#34;, &#34;time&#34;, &#34;plat&#34;, &#34;linenum&#34;, &#34;direction&#34;)]
+    rows.extend(
+        (
+            deptime.strftime(&#34;%Y-%m-%d&#34;), deptime.strftime(&#34;%H:%M:%S&#34;),
+            ts.stop_point.name if ts.stop_point is not None else &#34;&#34;,
+            ts.trip.course.name, ts.trip.arr_stop.name
+        ) for deptime, ts in sorted(deps, key=lambda d: d[0]))
+    with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+        writer(f, delimiter=&#34;;&#34;, lineterminator=&#39;\n&#39;).writerows(rows)</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="DINO2.tools.export.csv.stops"><code class="name flex">
+<span>def <span class="ident">stops</span></span>(<span>session: Session, fname: str, version_id: Optional[int] = None) -> NoneType</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Export csv file of all stops, one row per stop position</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def stops(session: Session, fname: str, version_id: Optional[int] = None) -&gt; None:
+    &#34;&#34;&#34;Export csv file of all stops, one row per stop position&#34;&#34;&#34;
+    rows = [
+        (
+            &#34;version&#34;, &#34;stopid&#34;, &#34;stopname&#34;, &#34;placename&#34;, &#34;stopshortname&#34;,
+            &#34;stopifopt&#34;, &#34;areaid&#34;, &#34;areaname&#34;, &#34;areaifopt&#34;,
+            &#34;posid&#34;, &#34;posname&#34;, &#34;posifopt&#34;, &#34;X&#34;, &#34;Y&#34;, &#34;farezones&#34;
+        )]
+    q = session.query(location.Stop).options(joinedload(&#39;points&#39;).joinedload(&#39;area&#39;))
+    if version_id is not None:
+        q = q.filter_by(version_id=version_id)
+    for stop in q.all():
+        for point in stop.points:
+            area_id, area_name, area_ifopt = (point.area.id, point.area.name, point.area.ifopt) if point.area is not None else (None, None, None)
+            rows.append(
+                (
+                    stop.version_id, stop.id, stop.name, stop.place, stop.abbr,
+                    stop.ifopt, area_id, area_name, area_ifopt,
+                    point.id, point.name, point.ifopt, point.pos_x, point.pos_y,
+                    &#34;,&#34;.join(str(fzid) for fzid in stop.fare_zone_ids)
+                ))
+    with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+        writer(f, delimiter=&#34;;&#34;, lineterminator=&#39;\n&#39;).writerows(rows)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.csv.courses"><code class="name flex">
+<span>def <span class="ident">courses</span></span>(<span>session: Session, path: str, line_ids: Optional[Set[int]] = None, export_full_name: bool = False, version_id: Optional[int] = None) -> NoneType</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Export csv files of all course stops per trip</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def courses(session: Session, path: str, line_ids: Optional[Set[int]] = None, export_full_name: bool = False, version_id: Optional[int] = None) -&gt; None:
+    &#34;&#34;&#34;Export csv files of all course stops per trip&#34;&#34;&#34;
+    q = session.query(network.Course).options(joinedload(&#39;stops&#39;).joinedload(&#39;stop&#39;), joinedload(&#39;stops&#39;).joinedload(&#39;stop_point&#39;))
+    if version_id is not None:
+        q = q.filter_by(version_id=version_id)
+    if line_ids:
+        q = q.filter(network.Course.line.in_(line_ids))
+    for course in q.all():
+        _from_stop, _to_stop = course.stops[0], course.stops[-1]
+
+        def try_name(cs: network.CourseStop) -&gt; str:
+            name = cs.stop.name_noloc
+            if name:
+                return name.replace(&#34;/&#34;, &#34;&#34;).replace(&#34;.&#34;, &#34;&#34;)
+            name = cs.stop.name
+            try:
+                return name.split(&#34; &#34;)[1].replace(&#34;/&#34;, &#34;&#34;).replace(&#34;.&#34;, &#34;&#34;)
+            except IndexError:
+                return name.replace(&#34;/&#34;, &#34;&#34;).replace(&#34;.&#34;, &#34;&#34;)
+        _from, _to = try_name(_from_stop), try_name(_to_stop)
+        fname = os.path.join(path, f&#34;dino_{course.name}_{course.id}_{_from}_{_to}.csv&#34;)
+        os.makedirs(os.path.dirname(fname), exist_ok=True)
+        with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+            writer(f, delimiter=&#34;;&#34;, lineterminator=&#39;\n&#39;).writerows([
+                (
+                    cs.consec_stop_nr,
+                    (cs.stop_point.ifopt if (cs.stop_point is not None and cs.stop_point.ifopt) else cs.stop.ifopt),
+                    (cs.stop.name if (export_full_name or not cs.stop.name_noloc) else cs.stop.name_noloc)
+                ) for cs in course.stops])</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.csv.trips"><code class="name flex">
+<span>def <span class="ident">trips</span></span>(<span>session: Session, fname: str, date_: date, line_ids: Optional[Set[int]] = None, version_id: Optional[int] = None) -> NoneType</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Export csv file of trips for a given date</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def trips(session: Session, fname: str, date_: date, line_ids: Optional[Set[int]] = None, version_id: Optional[int] = None) -&gt; None:
+    &#34;&#34;&#34;Export csv file of trips for a given date&#34;&#34;&#34;
+    rows = [(&#34;lineid&#34;, &#34;linesymbol&#34;, &#34;from&#34;, &#34;to&#34;, &#34;startt&#34;, &#34;endt&#34;, &#34;tripid&#34;, &#34;wkt&#34;)]
+    q = schedule.Trip.query_for_date(session, date_)
+    if version_id is not None:
+        q = q.filter_by(version_id=version_id)
+    if line_ids:
+        q = q.filter(schedule.Trip.line.in_(line_ids))
+    for trip in q.all():
+        rows.append(
+            (
+                trip.line, trip.course.name, trip.dep_stop.name, trip.arr_stop.name,
+                int(trip.departure_time.total_seconds()),
+                int(trip.departure_time.total_seconds()+trip.duration.total_seconds()),
+                trip.id, trip.wkt()
+            ))
+    with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+        writer(f, delimiter=&#34;;&#34;, lineterminator=&#39;\n&#39;).writerows(rows)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.csv.line_stats"><code class="name flex">
+<span>def <span class="ident">line_stats</span></span>(<span>session: Session, fname: str, version_id: Optional[int] = None) -> NoneType</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Line statistics with total year-kilometers per version-&gt;line-&gt;course</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def line_stats(session: Session, fname: str, version_id: Optional[int] = None) -&gt; None:
+    &#34;&#34;&#34;Line statistics with total year-kilometers per version-&gt;line-&gt;course&#34;&#34;&#34;
+    lq = session.query(schedule.Trip, network.Course.length) \
+        .order_by(schedule.Trip.version_id.asc(), schedule.Trip.line.asc(), schedule.Trip.line_dir.asc(), schedule.Trip.course_id.asc()) \
+        .options(
+            joinedload(&#39;course&#39;, innerjoin=True),
+            joinedload(&#39;day_attribute&#39;, innerjoin=True),
+            joinedload(&#39;restriction&#39;),
+            *(load_only(_) for _ in (&#39;line&#39;, &#39;course_id&#39;, &#39;line_dir&#39;, &#39;day_attribute_id&#39;, &#39;restriction_id&#39;))
+        ).join(network.Course)
+    if version_id is not None:
+        lq = lq.filter_by(version_id=version_id)
+    total = 0
+    rows = [(&#34;version&#34;, &#34;line&#34;, &#34;course&#34;, &#34;km&#34;)]
+    for versionid, version_grouper in itertools.groupby(lq.all(), lambda t_l: t_l[0].version_id):
+        version_total = 0
+        for lineid, line_grouper in itertools.groupby(version_grouper, lambda t_l: t_l[0].line):
+            line_total = 0
+            for courseid, course_grouper in itertools.groupby(line_grouper, lambda t_l: t_l[0].course_id):
+                course_total = 0
+                for trip, length in course_grouper:
+                    days = len(trip.dates)
+                    km = days*(length/1000)
+                    course_total += km
+                rows.append((versionid, lineid, courseid, f&#34;{course_total:.2f}&#34;))
+                line_total += course_total
+            rows.append((versionid, lineid, &#34;total&#34;, f&#34;{line_total:.2f}&#34;))
+            version_total += line_total
+        rows.append((versionid, &#34;total&#34;, &#34;&#34;, f&#34;{version_total:.2f}&#34;))
+        total += version_total
+    rows.append((&#34;total&#34;, &#34;&#34;, &#34;&#34;, f&#34;{total:.2f}&#34;))
+    with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+        writer(f, delimiter=&#34;;&#34;, lineterminator=&#39;\n&#39;).writerows(rows)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.csv.departure_stats"><code class="name flex">
+<span>def <span class="ident">departure_stats</span></span>(<span>tripquery: Query, fname: str) -> NoneType</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Departures from-&gt;to, between, and from stops.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def departure_stats(tripquery: Query, fname: str) -&gt; None:
+    &#34;&#34;&#34;Departures from-&gt;to, between, and from stops.&#34;&#34;&#34;
+    tripquery = tripquery.options(
+        load_only(&#39;version_id&#39;), load_only(&#39;line&#39;), load_only(&#39;id&#39;), load_only(&#39;course_id&#39;), load_only(&#39;line_dir&#39;),
+        joinedload(&#39;course&#39;, innerjoin=True).load_only(&#39;version_id&#39;).load_only(&#39;line&#39;).load_only(&#39;id&#39;).load_only(&#39;line_dir&#39;)
+        .joinedload(&#39;stops&#39;, innerjoin=True).load_only(&#39;version_id&#39;).load_only(&#39;line&#39;).load_only(&#39;course_id&#39;).load_only(&#39;line_dir&#39;).load_only(&#39;consec_stop_nr&#39;)
+        .joinedload(&#39;stop&#39;, innerjoin=True).load_only(&#39;version_id&#39;).load_only(&#39;ifopt&#39;).load_only(&#39;name&#39;))
+
+    pairs: Dict[Tuple[location.Stop, location.Stop], int] = defaultdict(int)
+    for trip in tripquery.all():
+        for _stopi, cstop in enumerate(trip.course.stops):
+            if cstop.consec_stop_nr != len(trip.course.stops):
+                pairs[(cstop.stop, trip.course.stops[_stopi+1].stop)] += 1
+
+    # todo: ggf. version &#34;ignorieren&#34;, stops version-uebergreifend zuordnen?
+    rows = [(&#34;type&#34;, &#34;version&#34;, &#34;from/A&#34;, &#34;l-ifopt&#34;, &#34;to/B&#34;, &#34;r-ifopt&#34;, &#34;count&#34;)]
+    for (sf, st), dc in sorted(pairs.items(), key=lambda i: -i[1]):
+        rows.append((&#34;from-to&#34;, sf.version_id, sf.name, sf.ifopt, st.name, st.ifopt, dc))
+
+    pairsbidi = {}
+    for (sf, st), dc in pairs.items():
+        if (sf, st) not in pairsbidi and (st, sf) not in pairsbidi:
+            pairsbidi[(sf, st)] = dc
+            if (st, sf) in pairs and (sf, st) != (st, sf):
+                pairsbidi[(sf, st)] += pairs[(st, sf)]
+
+    for (sf, st), dc in sorted(pairsbidi.items(), key=lambda i: -i[1]):
+        rows.append((&#34;between&#34;, sf.version_id, sf.name, sf.ifopt, st.name, st.ifopt, dc))
+
+    stopdeps = {stop: sum(dc for ((sf, st), dc) in pairs.items() if stop == sf) for (stop, _) in pairs}
+    for stop, dc in sorted(stopdeps.items(), key=lambda i: -i[1]):
+        rows.append((&#34;from&#34;, sf.version_id, stop.name, stop.ifopt, &#34;&#34;, &#34;&#34;, dc))
+
+    with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+        writer(f, delimiter=&#34;;&#34;, lineterminator=&#39;\n&#39;).writerows(rows)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.tools.export.csv.departures"><code class="name flex">
+<span>def <span class="ident">departures</span></span>(<span>stop: location.Stop, day: date, fname: str, days: int = 1) -> NoneType</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Departures from a given stop for a given date (range)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def departures(stop: location.Stop, day: date, fname: str, days: int = 1) -&gt; None:
+    &#34;&#34;&#34;Departures from a given stop for a given date (range)&#34;&#34;&#34;
+    servinglines = set((c.line, c.id) for c in stop.courses)
+    deps: List[Tuple[datetime, schedule.TripStop]] = []
+    for currdate in (day + timedelta(days=n) for n in range(days)):
+        tripquery = schedule.Trip.query_for_date(stop._session, currdate) \
+            .filter(
+                (schedule.Trip.version_id == stop.version_id)
+                &amp; tuple_(schedule.Trip.line, schedule.Trip.course_id).in_(servinglines)
+            ).options(
+                load_only(&#39;version_id&#39;), load_only(&#39;line&#39;), load_only(&#39;id&#39;), load_only(&#39;course_id&#39;), load_only(&#39;line_dir&#39;), load_only(&#39;timing_group&#39;), load_only(&#39;departure_time&#39;), load_only(&#39;arr_stop_id&#39;),
+                joinedload(&#39;course&#39;, innerjoin=True).load_only(&#39;version_id&#39;).load_only(&#39;line&#39;).load_only(&#39;id&#39;).load_only(&#39;line_dir&#39;).load_only(&#39;name&#39;),
+                joinedload(&#39;arr_stop&#39;).load_only(&#39;name&#39;)
+            )
+        trips = [(t, t.trip_stops(simple=True)) for t in tripquery.all()]
+        # todo: eventuell mal das trip_stops sich sparen koennen.
+        for trip, tripstops in trips:
+            deps.extend(
+                (datetime.combine(currdate, datetime.min.time()) + ts.dep_time, ts)
+                for n, ts
+                in filter(
+                    lambda n_ts: n_ts[1].stop == stop and n_ts[0] != len(tripstops),
+                    enumerate(tripstops, start=1)
+                ))
+    rows = [(&#34;date&#34;, &#34;time&#34;, &#34;plat&#34;, &#34;linenum&#34;, &#34;direction&#34;)]
+    rows.extend(
+        (
+            deptime.strftime(&#34;%Y-%m-%d&#34;), deptime.strftime(&#34;%H:%M:%S&#34;),
+            ts.stop_point.name if ts.stop_point is not None else &#34;&#34;,
+            ts.trip.course.name, ts.trip.arr_stop.name
+        ) for deptime, ts in sorted(deps, key=lambda d: d[0]))
+    with open(fname, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+        writer(f, delimiter=&#34;;&#34;, lineterminator=&#39;\n&#39;).writerows(rows)</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="DINO2.tools.export" href="index.html">DINO2.tools.export</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="two-column">
+<li><code><a title="DINO2.tools.export.csv.stops" href="#DINO2.tools.export.csv.stops">stops</a></code></li>
+<li><code><a title="DINO2.tools.export.csv.courses" href="#DINO2.tools.export.csv.courses">courses</a></code></li>
+<li><code><a title="DINO2.tools.export.csv.trips" href="#DINO2.tools.export.csv.trips">trips</a></code></li>
+<li><code><a title="DINO2.tools.export.csv.line_stats" href="#DINO2.tools.export.csv.line_stats">line_stats</a></code></li>
+<li><code><a title="DINO2.tools.export.csv.departure_stats" href="#DINO2.tools.export.csv.departure_stats">departure_stats</a></code></li>
+<li><code><a title="DINO2.tools.export.csv.departures" href="#DINO2.tools.export.csv.departures">departures</a></code></li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

@@ -1,0 +1,1534 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.1" />
+<title>DINO2.model.calendar API documentation</title>
+<meta name="description" content="DINO 2.1 calendar data" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>DINO2.model.calendar</code></h1>
+</header>
+<section id="section-intro">
+<p>DINO 2.1 calendar data</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: utf-8 -*-
+&#34;&#34;&#34;DINO 2.1 calendar data&#34;&#34;&#34;
+
+from __future__ import annotations
+
+from calendar import monthrange, month_abbr
+from collections import UserString
+from datetime import date, timedelta
+from sqlalchemy import Column, String, Integer, ForeignKey, ForeignKeyConstraint, and_
+from sqlalchemy.ext.hybrid import hybrid_property
+from sqlalchemy.orm import composite, CompositeProperty, relationship, RelationshipProperty
+from typing import Optional, Tuple, Set, FrozenSet, TYPE_CHECKING, Sequence
+
+from ..types import DinoDate
+from . import Base, Version
+
+
+class DayType(Base):
+    &#34;&#34;&#34;
+    Day type description
+
+    Usually one for each day of a week.
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;day_type.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+    id: Column[int] = Column(&#34;DAY_TYPE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Day type id&#34;&#34;&#34;
+
+    text: Column[Optional[str]] = Column(&#34;DAY_TYPE_TEXT&#34;, String(length=40))
+    &#34;&#34;&#34;Day type description&#34;&#34;&#34;
+    abbr: Column[Optional[str]] = Column(&#34;STR_DAY_TYPE&#34;, String(length=2))
+    &#34;&#34;&#34;Day type abbreviation&#34;&#34;&#34;
+
+    dayattrs: RelationshipProperty[Sequence[DayAttribute]] = relationship(&#34;DayAttribute&#34;, secondary=&#34;day_type_2_day_attribute&#34;, viewonly=True)
+    &#34;&#34;&#34;`DayAttribute` groups this day type is part of&#34;&#34;&#34;
+    _daygroupings: RelationshipProperty[Sequence[DayGrouping]] = relationship(&#34;DayGrouping&#34;, viewonly=True)
+    days: RelationshipProperty[Sequence[CalendarDay]] = relationship(&#34;CalendarDay&#34;, back_populates=&#34;daytype&#34;)
+    &#34;&#34;&#34;`CalendarDay`s with this day type&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;daytypes&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;DayType(version_id={self.version_id}, id={self.id}, text={self.text}, abbr={self.abbr})&gt;&#34;
+
+
+class DayAttribute(Base):
+    &#34;&#34;&#34;
+    Day attribute description (group of day types)
+
+    For example a grouping called &#34;weekend&#34; of the day types for Saturday and Sunday.  
+    Used in `DINO2.model.schedule.Trip`s to define the base set of days a trip is valid on, additionally restricted using `Restriction`s.
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;day_attribute.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+    id: Column[int] = Column(&#34;DAY_ATTRIBUTE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Day attribute group id&#34;&#34;&#34;
+
+    text: Column[str] = Column(&#34;DAY_ATTRIBUTE_TEXT&#34;, String(length=40), nullable=False)
+    &#34;&#34;&#34;Day attribute description&#34;&#34;&#34;
+    abbr: Column[Optional[str]] = Column(&#34;STR_DAY_ATTRIBUTE&#34;, String(length=2))
+    &#34;&#34;&#34;Day attribute abbreviation&#34;&#34;&#34;
+
+    daytypes: RelationshipProperty[Sequence[DayType]] = relationship(&#34;DayType&#34;, secondary=&#34;day_type_2_day_attribute&#34;, viewonly=True)
+    &#34;&#34;&#34;`DayType`s that belong to this day attribute group&#34;&#34;&#34;
+    days: RelationshipProperty[Sequence[CalendarDay]] = relationship(&#34;CalendarDay&#34;, secondary=&#34;join(DayGrouping, DayType, and_(DayGrouping.version_id == DayType.version_id, DayGrouping.daytype_id == DayType.id))&#34;, viewonly=True)
+    &#34;&#34;&#34;`CalendarDay`s of the day types that belong to this day attribute grouping&#34;&#34;&#34;
+    _daygroupings: RelationshipProperty[Sequence[DayGrouping]] = relationship(&#34;DayGrouping&#34;, viewonly=True)
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;dayattrs&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    @property
+    def dates(self) -&gt; FrozenSet[date]:
+        &#34;&#34;&#34;Valid dates of the day types that belong to this day attribute grouping&#34;&#34;&#34;
+        return frozenset(cd.day for cd in self.days)
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;DayAttribute(version_id={self.version_id}, id={self.id}, text={self.text}, abbr={self.abbr})&gt;&#34;
+
+
+class DayGrouping(Base):
+    &#34;&#34;&#34;
+    Association class for grouping day types as day attribute groups
+
+    Primary key: `version_id` &amp; `daytype_id` &amp; `dayattr_id`
+    &#34;&#34;&#34;
+    _din_file = &#34;day_type_2_day_attribute.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+    daytype_id: Column[int] = Column(&#34;DAY_TYPE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Day type id&#34;&#34;&#34;
+    _daytype: RelationshipProperty[DayType] = relationship(&#34;DayType&#34;, viewonly=True)
+    dayattr_id: Column[int] = Column(&#34;DAY_ATTRIBUTE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Day attribute id&#34;&#34;&#34;
+    _dayattr: RelationshipProperty[DayAttribute] = relationship(&#34;DayAttribute&#34;, viewonly=True)
+
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;daygroupings&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, daytype_id], [DayType.version_id, DayType.id]),
+        ForeignKeyConstraint([version_id, dayattr_id], [DayAttribute.version_id, DayAttribute.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;DayGrouping(version_id={self.version_id}, daytype_id={self.daytype_id}, dayattr_id={self.dayattr_id})&gt;&#34;
+
+
+class CalendarDay(Base):
+    &#34;&#34;&#34;
+    Schedule day with its respective `DayType`
+
+    Primary key: `version_id` &amp; `day`
+    &#34;&#34;&#34;
+    _din_file = &#34;day_type_calendar.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+    day: Column[date] = Column(&#34;DAY&#34;, DinoDate, primary_key=True)
+    &#34;&#34;&#34;Date of day&#34;&#34;&#34;
+
+    daytype_id: Column[int] = Column(&#34;DAY_TYPE_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Day type id&#34;&#34;&#34;
+    daytype: RelationshipProperty[DayType] = relationship(&#34;DayType&#34;, back_populates=&#34;days&#34;)
+    &#34;&#34;&#34;Day type&#34;&#34;&#34;
+
+    text: Column[Optional[str]] = Column(&#34;DAY_TEXT&#34;, String(length=40))
+    &#34;&#34;&#34;Day description&#34;&#34;&#34;
+
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, daytype_id], [DayType.version_id, DayType.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;CalendarDay(version_id={self.version_id}, day={self.day}, daytype={self.daytype}, text={self.text})&gt;&#34;
+
+
+class RestrictionText(UserString):
+    &#34;&#34;&#34;
+    Class for composite restriction text column
+
+    Method `from_columns` is used for creation from five separate columns.
+    Length is limited to 60 characters per column.
+    &#34;&#34;&#34;
+    CompositeTuple = Tuple[Optional[str], Optional[str], Optional[str], Optional[str], Optional[str]]
+
+    def __init__(self, text: Optional[str]):
+        self.data = text or &#39;&#39;
+
+    @classmethod
+    def from_columns(cls, rt1: Optional[str], rt2: Optional[str], rt3: Optional[str], rt4: Optional[str], rt5: Optional[str]):
+        def _n(s: Optional[str]) -&gt; str:
+            v = s or &#39;&#39;
+            assert len(v) &lt;= 60
+            return v
+        return cls(_n(rt1) + _n(rt2) + _n(rt3) + _n(rt4) + _n(rt5))
+
+    @staticmethod
+    def split_text(text: str) -&gt; CompositeTuple:
+        return tuple((text[_:_+60] or None) for _ in range(0, 60*5, 60))
+
+    def __composite_values__(self) -&gt; CompositeTuple:
+        return self.__class__.split_text(self.data)
+
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return other.__composite_values__() == self.__composite_values__()
+        elif isinstance(other, UserString):
+            return other.data == self.data
+        else:
+            return other == self.data
+
+    def __ne__(self, other):
+        return not self.__eq__(other)
+
+
+class _RTComparator(CompositeProperty.Comparator):
+    # todo: nicht nur eq; und bessere vorgehensweise
+    def __eq__(self, other):
+        if hasattr(other, &#39;__composite_values__&#39;):
+            values = other.__composite_values__()
+        else:
+            values = RestrictionText.split_text(other or &#39;&#39;)
+        return and_(*(s == o for s, o in zip(self.__clause_element__().clauses, values)))
+
+
+class Restriction(Base):
+    &#34;&#34;&#34;
+    Restriction of service
+
+    Used additionally to `DayAttribute` groups for `DINO2.model.schedule.Trip`s.  
+    Used for example for special services operating only for a specific time period, or services not operating in vacation times.
+
+    Primary key: `version_id` &amp; `id` &amp; _`line`_
+    &#34;&#34;&#34;
+    _din_file = &#34;service_restriction.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+    id: Column[str] = Column(&#34;RESTRICTION&#34;, String(length=5), primary_key=True)
+    &#34;&#34;&#34;Restriction id&#34;&#34;&#34;
+
+    _rt1: Column[Optional[str]] = Column(&#34;RESTRICT_TEXT1&#34;, String(length=60))
+    _rt2: Column[Optional[str]] = Column(&#34;RESTRICT_TEXT2&#34;, String(length=60))
+    _rt3: Column[Optional[str]] = Column(&#34;RESTRICT_TEXT3&#34;, String(length=60))
+    _rt4: Column[Optional[str]] = Column(&#34;RESTRICT_TEXT4&#34;, String(length=60))
+    _rt5: Column[Optional[str]] = Column(&#34;RESTRICT_TEXT5&#34;, String(length=60))
+
+    text: CompositeProperty = composite(RestrictionText.from_columns, _rt1, _rt2, _rt3, _rt4, _rt5, comparator_factory=_RTComparator)
+    &#34;&#34;&#34;Restriction description&#34;&#34;&#34;
+
+    daystring: Column[str] = Column(&#34;RESTRICTION_DAYS&#34;, String(length=192), nullable=False)
+
+    @staticmethod
+    def calc_dateset(daystring: str, date_from: date, date_until: date) -&gt; FrozenSet[date]:
+        &#34;&#34;&#34;Get valid dates for given restriction string and start/end date&#34;&#34;&#34;
+        dates: Set[date] = set()
+        currentyear, currentmonth = date_from.year, date_from.month
+        firstday, lastday = date_from.day, date_until.day
+        for o in range(0, len(daystring), 8):
+            bits = bin(int(daystring[o:o+8], 16))[2:].zfill(32)[1:][::-1]
+            if currentmonth == 13:
+                currentmonth = 1
+                currentyear += 1
+            daysinmonth = monthrange(currentyear, currentmonth)[1]
+            for x in range(1, daysinmonth+1):
+                if not (((not o) and x &lt; firstday) or (o == len(daystring) - 8 and x &gt; lastday)) and bool(int(bits[x-1])):
+                    dates.add(date(currentyear, currentmonth, x))
+            currentmonth += 1
+        return frozenset(dates)
+
+    _dates: Optional[Tuple[str, FrozenSet[date]]] = None
+
+    @property
+    def dates(self) -&gt; FrozenSet[date]:
+        &#34;&#34;&#34;Valid dates&#34;&#34;&#34;
+        if self._dates is None or self._dates[0] != self.daystring:
+            self._dates = self.daystring, self.__class__.calc_dateset(self.daystring, self.date_from, self.date_until)
+        return self._dates[1]
+
+    date_from: Column[date] = Column(&#34;DATE_FROM&#34;, DinoDate, nullable=False)
+    &#34;&#34;&#34;Date of the beginning of the restriction&#34;&#34;&#34;
+    date_until: Column[date] = Column(&#34;DATE_UNTIL&#34;, DinoDate, nullable=False)
+    &#34;&#34;&#34;Date of last day of the restriction&#34;&#34;&#34;
+
+    line: Column[Optional[int]] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;Line for which this restriction is valid&#34;&#34;&#34;
+
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;restrictions&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Restriction(version_id={self.version_id}, id={self.id}, text={self.text}, daystring={self.daystring}, date_from={self.date_from}, date_until={self.date_until}, line={self.line})&gt;&#34;
+
+    def textcalendar(self) -&gt; str:
+        &#34;&#34;&#34;Human readable calendar of valid days&#34;&#34;&#34;
+        text = &#34;\t  0        1         2         3 \n&#34; \
+               &#34;\t  1234567890123456789012345678901\n&#34; \
+               &#34;\t   | | | | | | | | | | | | | | | &#34;
+        currdate = self.date_from.replace(day=1)
+        while currdate &lt;= self.date_until:
+            if currdate.day == 1:
+                text += f&#34;\n{month_abbr[currdate.month]} {currdate.year}  &#34;
+            text += &#34; &#34; if currdate &lt; self.date_from else (&#34;1&#34; if currdate in self.dates else &#34;0&#34;)
+            currdate += timedelta(days=1)
+        return text</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="DINO2.model.calendar.DayType"><code class="flex name class">
+<span>class <span class="ident">DayType</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Day type description</p>
+<p>Usually one for each day of a week.</p>
+<p>Primary key: <code>version_id</code> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class DayType(Base):
+    &#34;&#34;&#34;
+    Day type description
+
+    Usually one for each day of a week.
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;day_type.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+    id: Column[int] = Column(&#34;DAY_TYPE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Day type id&#34;&#34;&#34;
+
+    text: Column[Optional[str]] = Column(&#34;DAY_TYPE_TEXT&#34;, String(length=40))
+    &#34;&#34;&#34;Day type description&#34;&#34;&#34;
+    abbr: Column[Optional[str]] = Column(&#34;STR_DAY_TYPE&#34;, String(length=2))
+    &#34;&#34;&#34;Day type abbreviation&#34;&#34;&#34;
+
+    dayattrs: RelationshipProperty[Sequence[DayAttribute]] = relationship(&#34;DayAttribute&#34;, secondary=&#34;day_type_2_day_attribute&#34;, viewonly=True)
+    &#34;&#34;&#34;`DayAttribute` groups this day type is part of&#34;&#34;&#34;
+    _daygroupings: RelationshipProperty[Sequence[DayGrouping]] = relationship(&#34;DayGrouping&#34;, viewonly=True)
+    days: RelationshipProperty[Sequence[CalendarDay]] = relationship(&#34;CalendarDay&#34;, back_populates=&#34;daytype&#34;)
+    &#34;&#34;&#34;`CalendarDay`s with this day type&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;daytypes&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;DayType(version_id={self.version_id}, id={self.id}, text={self.text}, abbr={self.abbr})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.calendar.DayType.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayType.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Day type id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayType.text"><code class="name">var <span class="ident">text</span></code></dt>
+<dd>
+<div class="desc"><p>Day type description</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayType.abbr"><code class="name">var <span class="ident">abbr</span></code></dt>
+<dd>
+<div class="desc"><p>Day type abbreviation</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayType.dayattrs"><code class="name">var <span class="ident">dayattrs</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.calendar.DayAttribute" href="#DINO2.model.calendar.DayAttribute">DayAttribute</a></code> groups this day type is part of</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayType.days"><code class="name">var <span class="ident">days</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.calendar.CalendarDay" href="#DINO2.model.calendar.CalendarDay">CalendarDay</a></code>s with this day type</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayType.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.calendar.DayAttribute"><code class="flex name class">
+<span>class <span class="ident">DayAttribute</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Day attribute description (group of day types)</p>
+<p>For example a grouping called "weekend" of the day types for Saturday and Sunday.<br>
+Used in <code><a title="DINO2.model.schedule.Trip" href="schedule.html#DINO2.model.schedule.Trip">Trip</a></code>s to define the base set of days a trip is valid on, additionally restricted using <code><a title="DINO2.model.calendar.Restriction" href="#DINO2.model.calendar.Restriction">Restriction</a></code>s.</p>
+<p>Primary key: <code>version_id</code> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class DayAttribute(Base):
+    &#34;&#34;&#34;
+    Day attribute description (group of day types)
+
+    For example a grouping called &#34;weekend&#34; of the day types for Saturday and Sunday.  
+    Used in `DINO2.model.schedule.Trip`s to define the base set of days a trip is valid on, additionally restricted using `Restriction`s.
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;day_attribute.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+    id: Column[int] = Column(&#34;DAY_ATTRIBUTE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Day attribute group id&#34;&#34;&#34;
+
+    text: Column[str] = Column(&#34;DAY_ATTRIBUTE_TEXT&#34;, String(length=40), nullable=False)
+    &#34;&#34;&#34;Day attribute description&#34;&#34;&#34;
+    abbr: Column[Optional[str]] = Column(&#34;STR_DAY_ATTRIBUTE&#34;, String(length=2))
+    &#34;&#34;&#34;Day attribute abbreviation&#34;&#34;&#34;
+
+    daytypes: RelationshipProperty[Sequence[DayType]] = relationship(&#34;DayType&#34;, secondary=&#34;day_type_2_day_attribute&#34;, viewonly=True)
+    &#34;&#34;&#34;`DayType`s that belong to this day attribute group&#34;&#34;&#34;
+    days: RelationshipProperty[Sequence[CalendarDay]] = relationship(&#34;CalendarDay&#34;, secondary=&#34;join(DayGrouping, DayType, and_(DayGrouping.version_id == DayType.version_id, DayGrouping.daytype_id == DayType.id))&#34;, viewonly=True)
+    &#34;&#34;&#34;`CalendarDay`s of the day types that belong to this day attribute grouping&#34;&#34;&#34;
+    _daygroupings: RelationshipProperty[Sequence[DayGrouping]] = relationship(&#34;DayGrouping&#34;, viewonly=True)
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;dayattrs&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    @property
+    def dates(self) -&gt; FrozenSet[date]:
+        &#34;&#34;&#34;Valid dates of the day types that belong to this day attribute grouping&#34;&#34;&#34;
+        return frozenset(cd.day for cd in self.days)
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;DayAttribute(version_id={self.version_id}, id={self.id}, text={self.text}, abbr={self.abbr})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.calendar.DayAttribute.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayAttribute.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Day attribute group id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayAttribute.text"><code class="name">var <span class="ident">text</span></code></dt>
+<dd>
+<div class="desc"><p>Day attribute description</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayAttribute.abbr"><code class="name">var <span class="ident">abbr</span></code></dt>
+<dd>
+<div class="desc"><p>Day attribute abbreviation</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayAttribute.daytypes"><code class="name">var <span class="ident">daytypes</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.calendar.DayType" href="#DINO2.model.calendar.DayType">DayType</a></code>s that belong to this day attribute group</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayAttribute.days"><code class="name">var <span class="ident">days</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.calendar.CalendarDay" href="#DINO2.model.calendar.CalendarDay">CalendarDay</a></code>s of the day types that belong to this day attribute grouping</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayAttribute.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayAttribute.dates"><code class="name">var <span class="ident">dates</span> : FrozenSet[datetime.date]</code></dt>
+<dd>
+<div class="desc"><p>Valid dates of the day types that belong to this day attribute grouping</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def dates(self) -&gt; FrozenSet[date]:
+    &#34;&#34;&#34;Valid dates of the day types that belong to this day attribute grouping&#34;&#34;&#34;
+    return frozenset(cd.day for cd in self.days)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.calendar.DayGrouping"><code class="flex name class">
+<span>class <span class="ident">DayGrouping</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Association class for grouping day types as day attribute groups</p>
+<p>Primary key: <code>version_id</code> &amp; <code>daytype_id</code> &amp; <code>dayattr_id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class DayGrouping(Base):
+    &#34;&#34;&#34;
+    Association class for grouping day types as day attribute groups
+
+    Primary key: `version_id` &amp; `daytype_id` &amp; `dayattr_id`
+    &#34;&#34;&#34;
+    _din_file = &#34;day_type_2_day_attribute.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+    daytype_id: Column[int] = Column(&#34;DAY_TYPE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Day type id&#34;&#34;&#34;
+    _daytype: RelationshipProperty[DayType] = relationship(&#34;DayType&#34;, viewonly=True)
+    dayattr_id: Column[int] = Column(&#34;DAY_ATTRIBUTE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Day attribute id&#34;&#34;&#34;
+    _dayattr: RelationshipProperty[DayAttribute] = relationship(&#34;DayAttribute&#34;, viewonly=True)
+
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;daygroupings&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, daytype_id], [DayType.version_id, DayType.id]),
+        ForeignKeyConstraint([version_id, dayattr_id], [DayAttribute.version_id, DayAttribute.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;DayGrouping(version_id={self.version_id}, daytype_id={self.daytype_id}, dayattr_id={self.dayattr_id})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.calendar.DayGrouping.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayGrouping.daytype_id"><code class="name">var <span class="ident">daytype_id</span></code></dt>
+<dd>
+<div class="desc"><p>Day type id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayGrouping.dayattr_id"><code class="name">var <span class="ident">dayattr_id</span></code></dt>
+<dd>
+<div class="desc"><p>Day attribute id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.DayGrouping.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.calendar.CalendarDay"><code class="flex name class">
+<span>class <span class="ident">CalendarDay</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Schedule day with its respective <code><a title="DINO2.model.calendar.DayType" href="#DINO2.model.calendar.DayType">DayType</a></code></p>
+<p>Primary key: <code>version_id</code> &amp; <code>day</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class CalendarDay(Base):
+    &#34;&#34;&#34;
+    Schedule day with its respective `DayType`
+
+    Primary key: `version_id` &amp; `day`
+    &#34;&#34;&#34;
+    _din_file = &#34;day_type_calendar.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+    day: Column[date] = Column(&#34;DAY&#34;, DinoDate, primary_key=True)
+    &#34;&#34;&#34;Date of day&#34;&#34;&#34;
+
+    daytype_id: Column[int] = Column(&#34;DAY_TYPE_NR&#34;, Integer(), nullable=False)
+    &#34;&#34;&#34;Day type id&#34;&#34;&#34;
+    daytype: RelationshipProperty[DayType] = relationship(&#34;DayType&#34;, back_populates=&#34;days&#34;)
+    &#34;&#34;&#34;Day type&#34;&#34;&#34;
+
+    text: Column[Optional[str]] = Column(&#34;DAY_TEXT&#34;, String(length=40))
+    &#34;&#34;&#34;Day description&#34;&#34;&#34;
+
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, daytype_id], [DayType.version_id, DayType.id]),
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;CalendarDay(version_id={self.version_id}, day={self.day}, daytype={self.daytype}, text={self.text})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.calendar.CalendarDay.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.CalendarDay.day"><code class="name">var <span class="ident">day</span></code></dt>
+<dd>
+<div class="desc"><p>Date of day</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.CalendarDay.daytype_id"><code class="name">var <span class="ident">daytype_id</span></code></dt>
+<dd>
+<div class="desc"><p>Day type id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.CalendarDay.daytype"><code class="name">var <span class="ident">daytype</span></code></dt>
+<dd>
+<div class="desc"><p>Day type</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.CalendarDay.text"><code class="name">var <span class="ident">text</span></code></dt>
+<dd>
+<div class="desc"><p>Day description</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.CalendarDay.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.calendar.RestrictionText"><code class="flex name class">
+<span>class <span class="ident">RestrictionText</span></span>
+<span>(</span><span>text: Optional[str])</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Class for composite restriction text column</p>
+<p>Method <code>from_columns</code> is used for creation from five separate columns.
+Length is limited to 60 characters per column.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class RestrictionText(UserString):
+    &#34;&#34;&#34;
+    Class for composite restriction text column
+
+    Method `from_columns` is used for creation from five separate columns.
+    Length is limited to 60 characters per column.
+    &#34;&#34;&#34;
+    CompositeTuple = Tuple[Optional[str], Optional[str], Optional[str], Optional[str], Optional[str]]
+
+    def __init__(self, text: Optional[str]):
+        self.data = text or &#39;&#39;
+
+    @classmethod
+    def from_columns(cls, rt1: Optional[str], rt2: Optional[str], rt3: Optional[str], rt4: Optional[str], rt5: Optional[str]):
+        def _n(s: Optional[str]) -&gt; str:
+            v = s or &#39;&#39;
+            assert len(v) &lt;= 60
+            return v
+        return cls(_n(rt1) + _n(rt2) + _n(rt3) + _n(rt4) + _n(rt5))
+
+    @staticmethod
+    def split_text(text: str) -&gt; CompositeTuple:
+        return tuple((text[_:_+60] or None) for _ in range(0, 60*5, 60))
+
+    def __composite_values__(self) -&gt; CompositeTuple:
+        return self.__class__.split_text(self.data)
+
+    def __eq__(self, other):
+        if isinstance(other, self.__class__):
+            return other.__composite_values__() == self.__composite_values__()
+        elif isinstance(other, UserString):
+            return other.data == self.data
+        else:
+            return other == self.data
+
+    def __ne__(self, other):
+        return not self.__eq__(other)</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>collections.UserString</li>
+<li>collections.abc.Sequence</li>
+<li>collections.abc.Reversible</li>
+<li>collections.abc.Collection</li>
+<li>collections.abc.Sized</li>
+<li>collections.abc.Iterable</li>
+<li>collections.abc.Container</li>
+</ul>
+<h3>Class variables</h3>
+<dl>
+<dt id="DINO2.model.calendar.RestrictionText.CompositeTuple"><code class="name">var <span class="ident">CompositeTuple</span></code></dt>
+<dd>
+<div class="desc"></div>
+</dd>
+</dl>
+<h3>Static methods</h3>
+<dl>
+<dt id="DINO2.model.calendar.RestrictionText.from_columns"><code class="name flex">
+<span>def <span class="ident">from_columns</span></span>(<span>rt1: Optional[str], rt2: Optional[str], rt3: Optional[str], rt4: Optional[str], rt5: Optional[str])</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@classmethod
+def from_columns(cls, rt1: Optional[str], rt2: Optional[str], rt3: Optional[str], rt4: Optional[str], rt5: Optional[str]):
+    def _n(s: Optional[str]) -&gt; str:
+        v = s or &#39;&#39;
+        assert len(v) &lt;= 60
+        return v
+    return cls(_n(rt1) + _n(rt2) + _n(rt3) + _n(rt4) + _n(rt5))</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.RestrictionText.split_text"><code class="name flex">
+<span>def <span class="ident">split_text</span></span>(<span>text: str) -> 'CompositeTuple'</span>
+</code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@staticmethod
+def split_text(text: str) -&gt; CompositeTuple:
+    return tuple((text[_:_+60] or None) for _ in range(0, 60*5, 60))</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.calendar.Restriction"><code class="flex name class">
+<span>class <span class="ident">Restriction</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Restriction of service</p>
+<p>Used additionally to <code><a title="DINO2.model.calendar.DayAttribute" href="#DINO2.model.calendar.DayAttribute">DayAttribute</a></code> groups for <code><a title="DINO2.model.schedule.Trip" href="schedule.html#DINO2.model.schedule.Trip">Trip</a></code>s.<br>
+Used for example for special services operating only for a specific time period, or services not operating in vacation times.</p>
+<p>Primary key: <code>version_id</code> &amp; <code>id</code> &amp; <em><code>line</code></em></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Restriction(Base):
+    &#34;&#34;&#34;
+    Restriction of service
+
+    Used additionally to `DayAttribute` groups for `DINO2.model.schedule.Trip`s.  
+    Used for example for special services operating only for a specific time period, or services not operating in vacation times.
+
+    Primary key: `version_id` &amp; `id` &amp; _`line`_
+    &#34;&#34;&#34;
+    _din_file = &#34;service_restriction.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+    id: Column[str] = Column(&#34;RESTRICTION&#34;, String(length=5), primary_key=True)
+    &#34;&#34;&#34;Restriction id&#34;&#34;&#34;
+
+    _rt1: Column[Optional[str]] = Column(&#34;RESTRICT_TEXT1&#34;, String(length=60))
+    _rt2: Column[Optional[str]] = Column(&#34;RESTRICT_TEXT2&#34;, String(length=60))
+    _rt3: Column[Optional[str]] = Column(&#34;RESTRICT_TEXT3&#34;, String(length=60))
+    _rt4: Column[Optional[str]] = Column(&#34;RESTRICT_TEXT4&#34;, String(length=60))
+    _rt5: Column[Optional[str]] = Column(&#34;RESTRICT_TEXT5&#34;, String(length=60))
+
+    text: CompositeProperty = composite(RestrictionText.from_columns, _rt1, _rt2, _rt3, _rt4, _rt5, comparator_factory=_RTComparator)
+    &#34;&#34;&#34;Restriction description&#34;&#34;&#34;
+
+    daystring: Column[str] = Column(&#34;RESTRICTION_DAYS&#34;, String(length=192), nullable=False)
+
+    @staticmethod
+    def calc_dateset(daystring: str, date_from: date, date_until: date) -&gt; FrozenSet[date]:
+        &#34;&#34;&#34;Get valid dates for given restriction string and start/end date&#34;&#34;&#34;
+        dates: Set[date] = set()
+        currentyear, currentmonth = date_from.year, date_from.month
+        firstday, lastday = date_from.day, date_until.day
+        for o in range(0, len(daystring), 8):
+            bits = bin(int(daystring[o:o+8], 16))[2:].zfill(32)[1:][::-1]
+            if currentmonth == 13:
+                currentmonth = 1
+                currentyear += 1
+            daysinmonth = monthrange(currentyear, currentmonth)[1]
+            for x in range(1, daysinmonth+1):
+                if not (((not o) and x &lt; firstday) or (o == len(daystring) - 8 and x &gt; lastday)) and bool(int(bits[x-1])):
+                    dates.add(date(currentyear, currentmonth, x))
+            currentmonth += 1
+        return frozenset(dates)
+
+    _dates: Optional[Tuple[str, FrozenSet[date]]] = None
+
+    @property
+    def dates(self) -&gt; FrozenSet[date]:
+        &#34;&#34;&#34;Valid dates&#34;&#34;&#34;
+        if self._dates is None or self._dates[0] != self.daystring:
+            self._dates = self.daystring, self.__class__.calc_dateset(self.daystring, self.date_from, self.date_until)
+        return self._dates[1]
+
+    date_from: Column[date] = Column(&#34;DATE_FROM&#34;, DinoDate, nullable=False)
+    &#34;&#34;&#34;Date of the beginning of the restriction&#34;&#34;&#34;
+    date_until: Column[date] = Column(&#34;DATE_UNTIL&#34;, DinoDate, nullable=False)
+    &#34;&#34;&#34;Date of last day of the restriction&#34;&#34;&#34;
+
+    line: Column[Optional[int]] = Column(&#34;LINE_NR&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;Line for which this restriction is valid&#34;&#34;&#34;
+
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;restrictions&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;Restriction(version_id={self.version_id}, id={self.id}, text={self.text}, daystring={self.daystring}, date_from={self.date_from}, date_until={self.date_until}, line={self.line})&gt;&#34;
+
+    def textcalendar(self) -&gt; str:
+        &#34;&#34;&#34;Human readable calendar of valid days&#34;&#34;&#34;
+        text = &#34;\t  0        1         2         3 \n&#34; \
+               &#34;\t  1234567890123456789012345678901\n&#34; \
+               &#34;\t   | | | | | | | | | | | | | | | &#34;
+        currdate = self.date_from.replace(day=1)
+        while currdate &lt;= self.date_until:
+            if currdate.day == 1:
+                text += f&#34;\n{month_abbr[currdate.month]} {currdate.year}  &#34;
+            text += &#34; &#34; if currdate &lt; self.date_from else (&#34;1&#34; if currdate in self.dates else &#34;0&#34;)
+            currdate += timedelta(days=1)
+        return text</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Static methods</h3>
+<dl>
+<dt id="DINO2.model.calendar.Restriction.calc_dateset"><code class="name flex">
+<span>def <span class="ident">calc_dateset</span></span>(<span>daystring: str, date_from: date, date_until: date) -> FrozenSet[datetime.date]</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Get valid dates for given restriction string and start/end date</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@staticmethod
+def calc_dateset(daystring: str, date_from: date, date_until: date) -&gt; FrozenSet[date]:
+    &#34;&#34;&#34;Get valid dates for given restriction string and start/end date&#34;&#34;&#34;
+    dates: Set[date] = set()
+    currentyear, currentmonth = date_from.year, date_from.month
+    firstday, lastday = date_from.day, date_until.day
+    for o in range(0, len(daystring), 8):
+        bits = bin(int(daystring[o:o+8], 16))[2:].zfill(32)[1:][::-1]
+        if currentmonth == 13:
+            currentmonth = 1
+            currentyear += 1
+        daysinmonth = monthrange(currentyear, currentmonth)[1]
+        for x in range(1, daysinmonth+1):
+            if not (((not o) and x &lt; firstday) or (o == len(daystring) - 8 and x &gt; lastday)) and bool(int(bits[x-1])):
+                dates.add(date(currentyear, currentmonth, x))
+        currentmonth += 1
+    return frozenset(dates)</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.calendar.Restriction.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.Restriction.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Restriction id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.Restriction.text"><code class="name">var <span class="ident">text</span></code></dt>
+<dd>
+<div class="desc"><p>Restriction description</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def fget(instance):
+    dict_ = attributes.instance_dict(instance)
+    state = attributes.instance_state(instance)
+
+    if self.key not in dict_:
+        # key not present.  Iterate through related
+        # attributes, retrieve their values.  This
+        # ensures they all load.
+        values = [
+            getattr(instance, key) for key in self._attribute_keys
+        ]
+
+        # current expected behavior here is that the composite is
+        # created on access if the object is persistent or if
+        # col attributes have non-None.  This would be better
+        # if the composite were created unconditionally,
+        # but that would be a behavioral change.
+        if self.key not in dict_ and (
+            state.key is not None or not _none_set.issuperset(values)
+        ):
+            dict_[self.key] = self.composite_class(*values)
+            state.manager.dispatch.refresh(state, None, [self.key])
+
+    return dict_.get(self.key, None)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.Restriction.daystring"><code class="name">var <span class="ident">daystring</span></code></dt>
+<dd>
+<div class="desc"></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.Restriction.dates"><code class="name">var <span class="ident">dates</span> : FrozenSet[datetime.date]</code></dt>
+<dd>
+<div class="desc"><p>Valid dates</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">@property
+def dates(self) -&gt; FrozenSet[date]:
+    &#34;&#34;&#34;Valid dates&#34;&#34;&#34;
+    if self._dates is None or self._dates[0] != self.daystring:
+        self._dates = self.daystring, self.__class__.calc_dateset(self.daystring, self.date_from, self.date_until)
+    return self._dates[1]</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.Restriction.date_from"><code class="name">var <span class="ident">date_from</span></code></dt>
+<dd>
+<div class="desc"><p>Date of the beginning of the restriction</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.Restriction.date_until"><code class="name">var <span class="ident">date_until</span></code></dt>
+<dd>
+<div class="desc"><p>Date of last day of the restriction</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.Restriction.line"><code class="name">var <span class="ident">line</span></code></dt>
+<dd>
+<div class="desc"><p>Line for which this restriction is valid</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.calendar.Restriction.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+<h3>Methods</h3>
+<dl>
+<dt id="DINO2.model.calendar.Restriction.textcalendar"><code class="name flex">
+<span>def <span class="ident">textcalendar</span></span>(<span>self) -> str</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Human readable calendar of valid days</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def textcalendar(self) -&gt; str:
+    &#34;&#34;&#34;Human readable calendar of valid days&#34;&#34;&#34;
+    text = &#34;\t  0        1         2         3 \n&#34; \
+           &#34;\t  1234567890123456789012345678901\n&#34; \
+           &#34;\t   | | | | | | | | | | | | | | | &#34;
+    currdate = self.date_from.replace(day=1)
+    while currdate &lt;= self.date_until:
+        if currdate.day == 1:
+            text += f&#34;\n{month_abbr[currdate.month]} {currdate.year}  &#34;
+        text += &#34; &#34; if currdate &lt; self.date_from else (&#34;1&#34; if currdate in self.dates else &#34;0&#34;)
+        currdate += timedelta(days=1)
+    return text</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="DINO2.model" href="index.html">DINO2.model</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="DINO2.model.calendar.DayType" href="#DINO2.model.calendar.DayType">DayType</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.calendar.DayType.version_id" href="#DINO2.model.calendar.DayType.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayType.id" href="#DINO2.model.calendar.DayType.id">id</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayType.text" href="#DINO2.model.calendar.DayType.text">text</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayType.abbr" href="#DINO2.model.calendar.DayType.abbr">abbr</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayType.dayattrs" href="#DINO2.model.calendar.DayType.dayattrs">dayattrs</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayType.days" href="#DINO2.model.calendar.DayType.days">days</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayType.version" href="#DINO2.model.calendar.DayType.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.calendar.DayAttribute" href="#DINO2.model.calendar.DayAttribute">DayAttribute</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.calendar.DayAttribute.version_id" href="#DINO2.model.calendar.DayAttribute.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayAttribute.id" href="#DINO2.model.calendar.DayAttribute.id">id</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayAttribute.text" href="#DINO2.model.calendar.DayAttribute.text">text</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayAttribute.abbr" href="#DINO2.model.calendar.DayAttribute.abbr">abbr</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayAttribute.daytypes" href="#DINO2.model.calendar.DayAttribute.daytypes">daytypes</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayAttribute.days" href="#DINO2.model.calendar.DayAttribute.days">days</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayAttribute.version" href="#DINO2.model.calendar.DayAttribute.version">version</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayAttribute.dates" href="#DINO2.model.calendar.DayAttribute.dates">dates</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.calendar.DayGrouping" href="#DINO2.model.calendar.DayGrouping">DayGrouping</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.calendar.DayGrouping.version_id" href="#DINO2.model.calendar.DayGrouping.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayGrouping.daytype_id" href="#DINO2.model.calendar.DayGrouping.daytype_id">daytype_id</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayGrouping.dayattr_id" href="#DINO2.model.calendar.DayGrouping.dayattr_id">dayattr_id</a></code></li>
+<li><code><a title="DINO2.model.calendar.DayGrouping.version" href="#DINO2.model.calendar.DayGrouping.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.calendar.CalendarDay" href="#DINO2.model.calendar.CalendarDay">CalendarDay</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.calendar.CalendarDay.version_id" href="#DINO2.model.calendar.CalendarDay.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.calendar.CalendarDay.day" href="#DINO2.model.calendar.CalendarDay.day">day</a></code></li>
+<li><code><a title="DINO2.model.calendar.CalendarDay.daytype_id" href="#DINO2.model.calendar.CalendarDay.daytype_id">daytype_id</a></code></li>
+<li><code><a title="DINO2.model.calendar.CalendarDay.daytype" href="#DINO2.model.calendar.CalendarDay.daytype">daytype</a></code></li>
+<li><code><a title="DINO2.model.calendar.CalendarDay.text" href="#DINO2.model.calendar.CalendarDay.text">text</a></code></li>
+<li><code><a title="DINO2.model.calendar.CalendarDay.version" href="#DINO2.model.calendar.CalendarDay.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.calendar.RestrictionText" href="#DINO2.model.calendar.RestrictionText">RestrictionText</a></code></h4>
+<ul class="">
+<li><code><a title="DINO2.model.calendar.RestrictionText.from_columns" href="#DINO2.model.calendar.RestrictionText.from_columns">from_columns</a></code></li>
+<li><code><a title="DINO2.model.calendar.RestrictionText.split_text" href="#DINO2.model.calendar.RestrictionText.split_text">split_text</a></code></li>
+<li><code><a title="DINO2.model.calendar.RestrictionText.CompositeTuple" href="#DINO2.model.calendar.RestrictionText.CompositeTuple">CompositeTuple</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.calendar.Restriction" href="#DINO2.model.calendar.Restriction">Restriction</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.calendar.Restriction.calc_dateset" href="#DINO2.model.calendar.Restriction.calc_dateset">calc_dateset</a></code></li>
+<li><code><a title="DINO2.model.calendar.Restriction.textcalendar" href="#DINO2.model.calendar.Restriction.textcalendar">textcalendar</a></code></li>
+<li><code><a title="DINO2.model.calendar.Restriction.version_id" href="#DINO2.model.calendar.Restriction.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.calendar.Restriction.id" href="#DINO2.model.calendar.Restriction.id">id</a></code></li>
+<li><code><a title="DINO2.model.calendar.Restriction.text" href="#DINO2.model.calendar.Restriction.text">text</a></code></li>
+<li><code><a title="DINO2.model.calendar.Restriction.daystring" href="#DINO2.model.calendar.Restriction.daystring">daystring</a></code></li>
+<li><code><a title="DINO2.model.calendar.Restriction.dates" href="#DINO2.model.calendar.Restriction.dates">dates</a></code></li>
+<li><code><a title="DINO2.model.calendar.Restriction.date_from" href="#DINO2.model.calendar.Restriction.date_from">date_from</a></code></li>
+<li><code><a title="DINO2.model.calendar.Restriction.date_until" href="#DINO2.model.calendar.Restriction.date_until">date_until</a></code></li>
+<li><code><a title="DINO2.model.calendar.Restriction.line" href="#DINO2.model.calendar.Restriction.line">line</a></code></li>
+<li><code><a title="DINO2.model.calendar.Restriction.version" href="#DINO2.model.calendar.Restriction.version">version</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

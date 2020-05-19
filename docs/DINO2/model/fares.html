@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.8.1" />
+<title>DINO2.model.fares API documentation</title>
+<meta name="description" content="DINO 2.1 fare zone data" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>DINO2.model.fares</code></h1>
+</header>
+<section id="section-intro">
+<p>DINO 2.1 fare zone data</p>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python"># -*- coding: utf-8 -*-
+&#34;&#34;&#34;DINO 2.1 fare zone data&#34;&#34;&#34;
+
+from __future__ import annotations
+
+from sqlalchemy import Column, String, Integer, Boolean, ForeignKey, ForeignKeyConstraint
+from sqlalchemy.orm import relationship, RelationshipProperty
+from typing import Optional, Sequence, TYPE_CHECKING
+
+from . import Base, Version
+
+if TYPE_CHECKING:
+    from .location import Stop
+
+
+class FareZone(Base):
+    &#34;&#34;&#34;
+    Fare zone
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;fare_zone.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;FARE_ZONE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Fare zone id&#34;&#34;&#34;
+
+    name: Column[Optional[str]] = Column(&#34;FARE_ZONE_LONG_NAME&#34;, String(length=50))
+    &#34;&#34;&#34;Fare zone long name&#34;&#34;&#34;
+    neutral: Column[Optional[bool]] = Column(&#34;FARE_ZONE_TYPE&#34;, Boolean())
+    &#34;&#34;&#34;Fare zone type/neutrality (False = normal)&#34;&#34;&#34;
+    color: Column[Optional[int]] = Column(&#34;FARE_ZONE_COLOR&#34;, Integer())
+    &#34;&#34;&#34;Fare zone color (RGB 3x8 bit)&#34;&#34;&#34;
+
+    stops: RelationshipProperty[Sequence[Stop]] = relationship(&#34;Stop&#34;, primaryjoin=&#34;and_(FareZone.version_id==Stop.version_id, or_(FareZone.id==Stop.fz1id,FareZone.id==Stop.fz2id,FareZone.id==Stop.fz3id,FareZone.id==Stop.fz4id,FareZone.id==Stop.fz5id,FareZone.id==Stop.fz6id))&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.Stop`s in this fare zone&#34;&#34;&#34;
+    _neighbourgroupingsF = relationship(&#34;NeighbourFareZone&#34;, foreign_keys=&#34;[NeighbourFareZone.version_id, NeighbourFareZone.farezone_id]&#34;, viewonly=True)
+    _neighbourgroupingsN = relationship(&#34;NeighbourFareZone&#34;, foreign_keys=&#34;[NeighbourFareZone.version_id, NeighbourFareZone.neighbour_id]&#34;, viewonly=True)
+    neighbours: RelationshipProperty[Sequence[FareZone]] = relationship(&#34;FareZone&#34;, secondary=&#34;neighbour_fare_zone&#34;, primaryjoin=&#34;and_(FareZone.version_id==NeighbourFareZone.version_id, FareZone.id==NeighbourFareZone.farezone_id)&#34;, secondaryjoin=&#34;and_(FareZone.version_id==NeighbourFareZone.version_id, FareZone.id==NeighbourFareZone.neighbour_id)&#34;, back_populates=&#34;neighbours&#34;)
+    &#34;&#34;&#34;Neighbour `FareZone`s&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;farezones&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;FareZone(version_id={self.version_id}, id={self.id}, name={self.name}, neutral={self.neutral}, color={self.color})&gt;&#34;
+
+
+class NeighbourFareZone(Base):
+    &#34;&#34;&#34;
+    Neighbour fare zone grouping
+
+    Primary key: `version_id` &amp; `farezone_id` &amp; _`neighbour_id`_
+    &#34;&#34;&#34;
+    _din_file = &#34;neighbour_fare_zone.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    farezone_id: Column[int] = Column(&#34;FARE_ZONE&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Fare zone id&#34;&#34;&#34;
+
+    neighbour_id: Column[Optional[int]] = Column(&#34;NEIGHBOUR_FARE_ZONE&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;Neighbour fare zone id (can be None)&#34;&#34;&#34;
+
+    farezone: RelationshipProperty[FareZone] = relationship(&#34;FareZone&#34;, foreign_keys=[version_id, farezone_id], viewonly=True)
+    &#34;&#34;&#34;`FareZone`&#34;&#34;&#34;
+    neighbour: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=[version_id, neighbour_id], viewonly=True)
+    &#34;&#34;&#34;Neighbour `FareZone`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;farezonegroupings&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, farezone_id], [FareZone.version_id, FareZone.id]),
+        ForeignKeyConstraint([version_id, neighbour_id], [FareZone.version_id, FareZone.id])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;NeighbourFareZone(version_id={self.version_id}, farezone_id={self.farezone_id}, neighbour_id={self.neighbour_id})&gt;&#34;</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="DINO2.model.fares.FareZone"><code class="flex name class">
+<span>class <span class="ident">FareZone</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Fare zone</p>
+<p>Primary key: <code>version_id</code> &amp; <code>id</code></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class FareZone(Base):
+    &#34;&#34;&#34;
+    Fare zone
+
+    Primary key: `version_id` &amp; `id`
+    &#34;&#34;&#34;
+    _din_file = &#34;fare_zone.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    id: Column[int] = Column(&#34;FARE_ZONE_NR&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Fare zone id&#34;&#34;&#34;
+
+    name: Column[Optional[str]] = Column(&#34;FARE_ZONE_LONG_NAME&#34;, String(length=50))
+    &#34;&#34;&#34;Fare zone long name&#34;&#34;&#34;
+    neutral: Column[Optional[bool]] = Column(&#34;FARE_ZONE_TYPE&#34;, Boolean())
+    &#34;&#34;&#34;Fare zone type/neutrality (False = normal)&#34;&#34;&#34;
+    color: Column[Optional[int]] = Column(&#34;FARE_ZONE_COLOR&#34;, Integer())
+    &#34;&#34;&#34;Fare zone color (RGB 3x8 bit)&#34;&#34;&#34;
+
+    stops: RelationshipProperty[Sequence[Stop]] = relationship(&#34;Stop&#34;, primaryjoin=&#34;and_(FareZone.version_id==Stop.version_id, or_(FareZone.id==Stop.fz1id,FareZone.id==Stop.fz2id,FareZone.id==Stop.fz3id,FareZone.id==Stop.fz4id,FareZone.id==Stop.fz5id,FareZone.id==Stop.fz6id))&#34;, viewonly=True)
+    &#34;&#34;&#34;`DINO2.model.location.Stop`s in this fare zone&#34;&#34;&#34;
+    _neighbourgroupingsF = relationship(&#34;NeighbourFareZone&#34;, foreign_keys=&#34;[NeighbourFareZone.version_id, NeighbourFareZone.farezone_id]&#34;, viewonly=True)
+    _neighbourgroupingsN = relationship(&#34;NeighbourFareZone&#34;, foreign_keys=&#34;[NeighbourFareZone.version_id, NeighbourFareZone.neighbour_id]&#34;, viewonly=True)
+    neighbours: RelationshipProperty[Sequence[FareZone]] = relationship(&#34;FareZone&#34;, secondary=&#34;neighbour_fare_zone&#34;, primaryjoin=&#34;and_(FareZone.version_id==NeighbourFareZone.version_id, FareZone.id==NeighbourFareZone.farezone_id)&#34;, secondaryjoin=&#34;and_(FareZone.version_id==NeighbourFareZone.version_id, FareZone.id==NeighbourFareZone.neighbour_id)&#34;, back_populates=&#34;neighbours&#34;)
+    &#34;&#34;&#34;Neighbour `FareZone`s&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;farezones&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;FareZone(version_id={self.version_id}, id={self.id}, name={self.name}, neutral={self.neutral}, color={self.color})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.fares.FareZone.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.fares.FareZone.id"><code class="name">var <span class="ident">id</span></code></dt>
+<dd>
+<div class="desc"><p>Fare zone id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.fares.FareZone.name"><code class="name">var <span class="ident">name</span></code></dt>
+<dd>
+<div class="desc"><p>Fare zone long name</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.fares.FareZone.neutral"><code class="name">var <span class="ident">neutral</span></code></dt>
+<dd>
+<div class="desc"><p>Fare zone type/neutrality (False = normal)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.fares.FareZone.color"><code class="name">var <span class="ident">color</span></code></dt>
+<dd>
+<div class="desc"><p>Fare zone color (RGB 3x8 bit)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.fares.FareZone.stops"><code class="name">var <span class="ident">stops</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.location.Stop" href="location.html#DINO2.model.location.Stop">Stop</a></code>s in this fare zone</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.fares.FareZone.neighbours"><code class="name">var <span class="ident">neighbours</span></code></dt>
+<dd>
+<div class="desc"><p>Neighbour <code><a title="DINO2.model.fares.FareZone" href="#DINO2.model.fares.FareZone">FareZone</a></code>s</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.fares.FareZone.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+<dt id="DINO2.model.fares.NeighbourFareZone"><code class="flex name class">
+<span>class <span class="ident">NeighbourFareZone</span></span>
+<span>(</span><span>**kwargs)</span>
+</code></dt>
+<dd>
+<div class="desc"><p>Neighbour fare zone grouping</p>
+<p>Primary key: <code>version_id</code> &amp; <code>farezone_id</code> &amp; <em><code>neighbour_id</code></em></p>
+<p>A simple constructor that allows initialization from kwargs.</p>
+<p>Sets attributes on the constructed instance using the names and
+values in <code>kwargs</code>.</p>
+<p>Only keys that are present as
+attributes of the instance's class are allowed. These could be,
+for example, any mapped columns or relationships.</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class NeighbourFareZone(Base):
+    &#34;&#34;&#34;
+    Neighbour fare zone grouping
+
+    Primary key: `version_id` &amp; `farezone_id` &amp; _`neighbour_id`_
+    &#34;&#34;&#34;
+    _din_file = &#34;neighbour_fare_zone.din&#34;
+
+    version_id: Column[int] = Column(&#34;VERSION&#34;, Integer(), ForeignKey(Version.id), primary_key=True)
+    &#34;&#34;&#34;Version id&#34;&#34;&#34;
+
+    farezone_id: Column[int] = Column(&#34;FARE_ZONE&#34;, Integer(), primary_key=True)
+    &#34;&#34;&#34;Fare zone id&#34;&#34;&#34;
+
+    neighbour_id: Column[Optional[int]] = Column(&#34;NEIGHBOUR_FARE_ZONE&#34;, Integer(), primary_key=True, nullable=True)
+    &#34;&#34;&#34;Neighbour fare zone id (can be None)&#34;&#34;&#34;
+
+    farezone: RelationshipProperty[FareZone] = relationship(&#34;FareZone&#34;, foreign_keys=[version_id, farezone_id], viewonly=True)
+    &#34;&#34;&#34;`FareZone`&#34;&#34;&#34;
+    neighbour: RelationshipProperty[Optional[FareZone]] = relationship(&#34;FareZone&#34;, foreign_keys=[version_id, neighbour_id], viewonly=True)
+    &#34;&#34;&#34;Neighbour `FareZone`&#34;&#34;&#34;
+    version: RelationshipProperty[Version] = relationship(&#34;Version&#34;, back_populates=&#34;farezonegroupings&#34;)
+    &#34;&#34;&#34;`DINO2.model.Version`&#34;&#34;&#34;
+
+    __table_args__ = (
+        ForeignKeyConstraint([version_id, farezone_id], [FareZone.version_id, FareZone.id]),
+        ForeignKeyConstraint([version_id, neighbour_id], [FareZone.version_id, FareZone.id])
+    )
+
+    def __repr__(self) -&gt; str:
+        return f&#34;&lt;NeighbourFareZone(version_id={self.version_id}, farezone_id={self.farezone_id}, neighbour_id={self.neighbour_id})&gt;&#34;</code></pre>
+</details>
+<h3>Ancestors</h3>
+<ul class="hlist">
+<li>sqlalchemy.ext.declarative.api.Base</li>
+<li><a title="DINO2.model.DinoBase" href="index.html#DINO2.model.DinoBase">DinoBase</a></li>
+</ul>
+<h3>Instance variables</h3>
+<dl>
+<dt id="DINO2.model.fares.NeighbourFareZone.version_id"><code class="name">var <span class="ident">version_id</span></code></dt>
+<dd>
+<div class="desc"><p>Version id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.fares.NeighbourFareZone.farezone_id"><code class="name">var <span class="ident">farezone_id</span></code></dt>
+<dd>
+<div class="desc"><p>Fare zone id</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.fares.NeighbourFareZone.neighbour_id"><code class="name">var <span class="ident">neighbour_id</span></code></dt>
+<dd>
+<div class="desc"><p>Neighbour fare zone id (can be None)</p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.fares.NeighbourFareZone.farezone"><code class="name">var <span class="ident">farezone</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.fares.FareZone" href="#DINO2.model.fares.FareZone">FareZone</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.fares.NeighbourFareZone.neighbour"><code class="name">var <span class="ident">neighbour</span></code></dt>
+<dd>
+<div class="desc"><p>Neighbour <code><a title="DINO2.model.fares.FareZone" href="#DINO2.model.fares.FareZone">FareZone</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+<dt id="DINO2.model.fares.NeighbourFareZone.version"><code class="name">var <span class="ident">version</span></code></dt>
+<dd>
+<div class="desc"><p><code><a title="DINO2.model.Version" href="index.html#DINO2.model.Version">Version</a></code></p></div>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def __get__(self, instance, owner):
+    if instance is None:
+        return self
+
+    dict_ = instance_dict(instance)
+    if self._supports_population and self.key in dict_:
+        return dict_[self.key]
+    else:
+        return self.impl.get(instance_state(instance), dict_)</code></pre>
+</details>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="DINO2.model" href="index.html">DINO2.model</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="DINO2.model.fares.FareZone" href="#DINO2.model.fares.FareZone">FareZone</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.fares.FareZone.version_id" href="#DINO2.model.fares.FareZone.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.fares.FareZone.id" href="#DINO2.model.fares.FareZone.id">id</a></code></li>
+<li><code><a title="DINO2.model.fares.FareZone.name" href="#DINO2.model.fares.FareZone.name">name</a></code></li>
+<li><code><a title="DINO2.model.fares.FareZone.neutral" href="#DINO2.model.fares.FareZone.neutral">neutral</a></code></li>
+<li><code><a title="DINO2.model.fares.FareZone.color" href="#DINO2.model.fares.FareZone.color">color</a></code></li>
+<li><code><a title="DINO2.model.fares.FareZone.stops" href="#DINO2.model.fares.FareZone.stops">stops</a></code></li>
+<li><code><a title="DINO2.model.fares.FareZone.neighbours" href="#DINO2.model.fares.FareZone.neighbours">neighbours</a></code></li>
+<li><code><a title="DINO2.model.fares.FareZone.version" href="#DINO2.model.fares.FareZone.version">version</a></code></li>
+</ul>
+</li>
+<li>
+<h4><code><a title="DINO2.model.fares.NeighbourFareZone" href="#DINO2.model.fares.NeighbourFareZone">NeighbourFareZone</a></code></h4>
+<ul class="two-column">
+<li><code><a title="DINO2.model.fares.NeighbourFareZone.version_id" href="#DINO2.model.fares.NeighbourFareZone.version_id">version_id</a></code></li>
+<li><code><a title="DINO2.model.fares.NeighbourFareZone.farezone_id" href="#DINO2.model.fares.NeighbourFareZone.farezone_id">farezone_id</a></code></li>
+<li><code><a title="DINO2.model.fares.NeighbourFareZone.neighbour_id" href="#DINO2.model.fares.NeighbourFareZone.neighbour_id">neighbour_id</a></code></li>
+<li><code><a title="DINO2.model.fares.NeighbourFareZone.farezone" href="#DINO2.model.fares.NeighbourFareZone.farezone">farezone</a></code></li>
+<li><code><a title="DINO2.model.fares.NeighbourFareZone.neighbour" href="#DINO2.model.fares.NeighbourFareZone.neighbour">neighbour</a></code></li>
+<li><code><a title="DINO2.model.fares.NeighbourFareZone.version" href="#DINO2.model.fares.NeighbourFareZone.version">version</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.8.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>

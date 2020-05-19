@@ -1,0 +1,3 @@
+VERSION;OP_CODE;OP_BRANCH_NR;OP_SHORT_NAME;OP_LONG_NAME;OP_PUBLIC_SHORT_NAME;OP_LICENCE_NAME;OP_TRADING_NAME;OP_VAT_REGISTERED_FLAG;
+ 9;00        ;      ;00     ;Sonstige                                                    ;00     ;                                                            ;                                                            ;0;
+ 9;50        ;      ;50     ;HST                                                         ;HST    ;                                                            ;                                                            ;0;
