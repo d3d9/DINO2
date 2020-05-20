@@ -15,21 +15,28 @@ from DINO2.tools.imp import main
 from DINO2.tools.export import csv, wikitable
 from DINO2.types import DinoDate, DinoTimeDelta, TypeEnum, IntEnum
 
+_test_dburl = "sqlite:///./tests/data/_test.db"
+
+@pytest.fixture(scope='session')
+def db_obj():
+    path = _test_dburl[10:]
+    yield Database(_test_dburl)
+    os.remove(path)
+
 def test_import_clear():
-    argv = [None, None, "c"]
+    argv = ["<python>", _test_dburl, None, "c"]
     main(argv)
 
 def test_import_success():
-    argv = [None, "./tests/data/2020-05-15-version-9", "a"]
+    argv = ["<python>", _test_dburl, "./tests/data/2020-05-15-version-9", "a"]
     main(argv)
 
 def test_import_integrityerror():
     with pytest.raises(IntegrityError):
         test_import_success()
 
-def test_dataset_counts():
-    db = Database()
-    session = db.Session()
+def test_dataset_counts(db_obj):
+    session = db_obj.Session()
     assert session.query(Version).count() == 1
     version = session.query(Version).one()
     assert len(version.daytypes) == 7
@@ -39,9 +46,8 @@ def test_dataset_counts():
     assert len(version.trips) == 4938
     session.close()
 
-def test_wikitable():
-    db = Database()
-    session = db.Session()
+def test_wikitable(db_obj):
+    session = db_obj.Session()
     fn = "./tests/data/_test_wiki-9.txt"
     if os.path.exists(fn):
         raise Exception(f"{fn} already exists, won't delete")
@@ -51,9 +57,8 @@ def test_wikitable():
     session.close()
     assert equal
 
-def test_stops():
-    db = Database()
-    session = db.Session()
+def test_stops(db_obj):
+    session = db_obj.Session()
     fn = "./tests/data/_test_stops-9.csv"
     if os.path.exists(fn):
         raise Exception(f"{fn} already exists, won't delete")
@@ -63,9 +68,8 @@ def test_stops():
     session.close()
     assert equal
 
-def test_courses():
-    db = Database()
-    session = db.Session()
+def test_courses(db_obj):
+    session = db_obj.Session()
     fp = "./tests/data/_test_courses-9/"
     if os.path.exists(fp):
         raise Exception(f"{fp} already exists, won't delete")
@@ -76,9 +80,8 @@ def test_courses():
     session.close()
     assert equal
 
-def test_trips():
-    db = Database()
-    session = db.Session()
+def test_trips(db_obj):
+    session = db_obj.Session()
     fn = "./tests/data/_test_trips-9-50514-2020-06-14.csv"
     if os.path.exists(fn):
         raise Exception(f"{fn} already exists, won't delete")
@@ -88,9 +91,8 @@ def test_trips():
     session.close()
     assert equal
 
-def test_line_stats():
-    db = Database()
-    session = db.Session()
+def test_line_stats(db_obj):
+    session = db_obj.Session()
     fn = "./tests/data/_test_line_stats-9.csv"
     if os.path.exists(fn):
         raise Exception(f"{fn} already exists, won't delete")
@@ -100,9 +102,8 @@ def test_line_stats():
     session.close()
     assert equal
 
-def test_departure_stats():
-    db = Database()
-    session = db.Session()
+def test_departure_stats(db_obj):
+    session = db_obj.Session()
     tq = Trip.query_for_date(session, date(2020,6,15))
     assert tq.count() == 2038
     fn = "./tests/data/_test_departure_stats-9-2020-06-15.csv"
@@ -114,9 +115,8 @@ def test_departure_stats():
     session.close()
     assert equal
 
-def test_departures():
-    db = Database()
-    session = db.Session()
+def test_departures(db_obj):
+    session = db_obj.Session()
     fw = session.query(Stop).filter_by(version_id=9, id=2216).one()
     assert fw.name == "Hagen Feuerwache"
     fn = "./tests/data/_test_departures-9-2216-2020-06-14+8.csv"

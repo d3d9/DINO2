@@ -2,18 +2,21 @@
 # -*- coding: utf-8 -*-
 """Create graphs using `DINO2.model` and using database `MetaData`"""
 
+from __future__ import annotations
+
 from ._sqlalchemy_schemadisplay import create_uml_graph, create_schema_graph
 from sqlalchemy.orm import class_mapper
 from sqlalchemy import MetaData
 from sys import argv
+from typing import Collection
 
 from .. import Database
 from ..model import Base, Version, calendar, fares, location, operational, network, schedule
 
-def schema_graph(path: str, noversion: bool):
+def schema_graph(dburl: str, path: str, noversion: bool):
     # https://github.com/sqlalchemy/sqlalchemy/wiki/SchemaDisplay
     # create the pydot graph object by autoloading all tables via a bound metadata object
-    graph = create_schema_graph(metadata=MetaData('sqlite:///./dino2.1.db'),
+    graph = create_schema_graph(metadata=MetaData(dburl),
        show_datatypes=True, # The image would get nasty big if we'd show the datatypes
        show_indexes=False, # ditto for indexes
        rankdir='LR', # From left to right (instead of top to bottom)
@@ -49,14 +52,14 @@ def schema_graph(path: str, noversion: bool):
     )
     graph.write_png(f'{path}/schema_model.png') # write out the file
 
-def main():
-    db = Database()
+def main(argv: Collection[str]):
+    db = Database(argv[1])
     Base.metadata.create_all(db.engine)
-    path = argv[1]
+    path = argv[2]
     noversion = True
-    if len(argv) > 2:
-        noversion = bool(int(argv[2])) if argv[2].isdigit() else (argv[2].lower() == "true")
-    schema_graph(path, noversion)
+    if len(argv) > 3:
+        noversion = bool(int(argv[3])) if argv[3].isdigit() else (argv[3].lower() == "true")
+    schema_graph(db.url, path, noversion)
 
 if __name__ == "__main__":
-    main()
+    main(argv)

@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="DINO2-d3d9",
-    version="1.0",
+    version="1.1",
     author="Kevin Arutyunyan",
     author_email="d3d9@riseup.net",
     description="Process timetable data in the DINO 2.1 format",

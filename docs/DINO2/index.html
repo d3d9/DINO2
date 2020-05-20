@@ -29,9 +29,9 @@ Developed and tested with/for python 3.7 and sqlite.</p>
 Install package: <code>python setup.py install</code></p>
 <h2 id="tools">Tools</h2>
 <h3 id="import-data">Import data</h3>
-<p><code>pipenv run python -m DINO2.tools.imp ../dino 9</code></p>
+<p><code>pipenv run python -m DINO2.tools.imp "sqlite:///./DINO2.db" ../dino 9</code></p>
 <h3 id="create-graph-from-db-and-model">Create graph from db and model</h3>
-<p><code>pipenv run python -m DINO2.tools.graph ./docs/DINO2/model</code></p>
+<p><code>pipenv run python -m DINO2.tools.graph "sqlite:///./DINO2.db" ./docs/DINO2/model</code></p>
 <h3 id="generate-documentation">Generate documentation</h3>
 <p>(use <code>pipenv install --dev</code>)</p>
 <p><code>pipenv run pdoc3 -c show_type_annotations=True -c sort_identifiers=False --html DINO2 -o ./docs --force</code></p>

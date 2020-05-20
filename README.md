@@ -10,10 +10,10 @@ Install package: `python setup.py install`
 ## Tools
 
 ### Import data
-`pipenv run python -m DINO2.tools.imp ../dino 9`
+`pipenv run python -m DINO2.tools.imp "sqlite:///./DINO2.db" ../dino 9`
 
 ### Create graph from db and model
-`pipenv run python -m DINO2.tools.graph ./docs/DINO2/model`
+`pipenv run python -m DINO2.tools.graph "sqlite:///./DINO2.db" ./docs/DINO2/model`
 
 ### Generate documentation
 (use `pipenv install --dev`)

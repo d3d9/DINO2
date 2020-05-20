@@ -29,18 +29,21 @@
 # -*- coding: utf-8 -*-
 &#34;&#34;&#34;Create graphs using `DINO2.model` and using database `MetaData`&#34;&#34;&#34;
 
+from __future__ import annotations
+
 from ._sqlalchemy_schemadisplay import create_uml_graph, create_schema_graph
 from sqlalchemy.orm import class_mapper
 from sqlalchemy import MetaData
 from sys import argv
+from typing import Collection
 
 from .. import Database
 from ..model import Base, Version, calendar, fares, location, operational, network, schedule
 
-def schema_graph(path: str, noversion: bool):
+def schema_graph(dburl: str, path: str, noversion: bool):
     # https://github.com/sqlalchemy/sqlalchemy/wiki/SchemaDisplay
     # create the pydot graph object by autoloading all tables via a bound metadata object
-    graph = create_schema_graph(metadata=MetaData(&#39;sqlite:///./dino2.1.db&#39;),
+    graph = create_schema_graph(metadata=MetaData(dburl),
        show_datatypes=True, # The image would get nasty big if we&#39;d show the datatypes
        show_indexes=False, # ditto for indexes
        rankdir=&#39;LR&#39;, # From left to right (instead of top to bottom)
@@ -76,17 +79,17 @@ def schema_graph(path: str, noversion: bool):
     )
     graph.write_png(f&#39;{path}/schema_model.png&#39;) # write out the file
 
-def main():
-    db = Database()
+def main(argv: Collection[str]):
+    db = Database(argv[1])
     Base.metadata.create_all(db.engine)
-    path = argv[1]
+    path = argv[2]
     noversion = True
-    if len(argv) &gt; 2:
-        noversion = bool(int(argv[2])) if argv[2].isdigit() else (argv[2].lower() == &#34;true&#34;)
-    schema_graph(path, noversion)
+    if len(argv) &gt; 3:
+        noversion = bool(int(argv[3])) if argv[3].isdigit() else (argv[3].lower() == &#34;true&#34;)
+    schema_graph(db.url, path, noversion)
 
 if __name__ == &#34;__main__&#34;:
-    main()</code></pre>
+    main(argv)</code></pre>
 </details>
 </section>
 <section>
@@ -97,7 +100,7 @@ if __name__ == &#34;__main__&#34;:
 <h2 class="section-title" id="header-functions">Functions</h2>
 <dl>
 <dt id="DINO2.tools.graph.schema_graph"><code class="name flex">
-<span>def <span class="ident">schema_graph</span></span>(<span>path: str, noversion: bool)</span>
+<span>def <span class="ident">schema_graph</span></span>(<span>dburl: str, path: str, noversion: bool)</span>
 </code></dt>
 <dd>
 <div class="desc"></div>
@@ -105,10 +108,10 @@ if __name__ == &#34;__main__&#34;:
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python">def schema_graph(path: str, noversion: bool):
+<pre><code class="python">def schema_graph(dburl: str, path: str, noversion: bool):
     # https://github.com/sqlalchemy/sqlalchemy/wiki/SchemaDisplay
     # create the pydot graph object by autoloading all tables via a bound metadata object
-    graph = create_schema_graph(metadata=MetaData(&#39;sqlite:///./dino2.1.db&#39;),
+    graph = create_schema_graph(metadata=MetaData(dburl),
        show_datatypes=True, # The image would get nasty big if we&#39;d show the datatypes
        show_indexes=False, # ditto for indexes
        rankdir=&#39;LR&#39;, # From left to right (instead of top to bottom)
@@ -146,7 +149,7 @@ if __name__ == &#34;__main__&#34;:
 </details>
 </dd>
 <dt id="DINO2.tools.graph.main"><code class="name flex">
-<span>def <span class="ident">main</span></span>(<span>)</span>
+<span>def <span class="ident">main</span></span>(<span>argv: Collection[str])</span>
 </code></dt>
 <dd>
 <div class="desc"></div>
@@ -154,14 +157,14 @@ if __name__ == &#34;__main__&#34;:
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python">def main():
-    db = Database()
+<pre><code class="python">def main(argv: Collection[str]):
+    db = Database(argv[1])
     Base.metadata.create_all(db.engine)
-    path = argv[1]
+    path = argv[2]
     noversion = True
-    if len(argv) &gt; 2:
-        noversion = bool(int(argv[2])) if argv[2].isdigit() else (argv[2].lower() == &#34;true&#34;)
-    schema_graph(path, noversion)</code></pre>
+    if len(argv) &gt; 3:
+        noversion = bool(int(argv[3])) if argv[3].isdigit() else (argv[3].lower() == &#34;true&#34;)
+    schema_graph(db.url, path, noversion)</code></pre>
 </details>
 </dd>
 </dl>

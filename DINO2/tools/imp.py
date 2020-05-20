@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 """Import DINO 2.1 data using the `DINO2.model`"""
 
+from __future__ import annotations
+
 from collections import namedtuple
 from pandas import read_csv, Int64Dtype, isna, NA, Period, concat, to_datetime, DataFrame, Series
 from sqlalchemy.orm.session import Session
@@ -95,19 +97,19 @@ def imp(dinodir: str, classes: Collection[Type[Base]], session: Session, version
 
 def main(argv: Collection[str]):
     """Parse `argv` and call `imp`"""
-    if len(argv) != 3 or not (argv[2] in {"c", "a"} or all((c.isdigit() or c == ',') for c in argv[2])):
-        raise ValueError("2 arguments (data directory and ('c' (clear), 'a' (all), or ','-separated versionids)) required")
+    if len(argv) != 4 or not (argv[3] in {"c", "a"} or all((c.isdigit() or c == ',') for c in argv[3])):
+        raise ValueError("3 arguments (database url like `sqlite:///./DINO2.db`, data directory, and ('c' (clear), 'a' (all), or ','-separated versionids)) required")
 
-    db = Database()
+    db = Database(argv[1])
     Base.metadata.create_all(db.engine)
 
-    if argv[2] == "c":
+    if argv[3] == "c":
         Base.metadata.drop_all(db.engine)
         Base.metadata.create_all(db.engine)
     else:
         session = db.Session()
         try:
-            version_ids = set(int(v) for v in argv[2].split(',')) if argv[2] != "a" else None
+            version_ids = set(int(v) for v in argv[3].split(',')) if argv[3] != "a" else None
             classes = [Version]
             for module in (calendar, fares, location, operational, network, schedule):
                 for attr in dir(module):
@@ -120,7 +122,7 @@ def main(argv: Collection[str]):
                         or attr[0] == '_'
                         ): continue
                     classes.append(cls)
-            imp(argv[1], classes, session, version_ids)
+            imp(argv[2], classes, session, version_ids)
             session.commit()
         except Exception as e:
             session.rollback()

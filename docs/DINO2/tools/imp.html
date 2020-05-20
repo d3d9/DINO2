@@ -29,6 +29,8 @@
 # -*- coding: utf-8 -*-
 &#34;&#34;&#34;Import DINO 2.1 data using the `DINO2.model`&#34;&#34;&#34;
 
+from __future__ import annotations
+
 from collections import namedtuple
 from pandas import read_csv, Int64Dtype, isna, NA, Period, concat, to_datetime, DataFrame, Series
 from sqlalchemy.orm.session import Session
@@ -122,19 +124,19 @@ def imp(dinodir: str, classes: Collection[Type[Base]], session: Session, version
 
 def main(argv: Collection[str]):
     &#34;&#34;&#34;Parse `argv` and call `imp`&#34;&#34;&#34;
-    if len(argv) != 3 or not (argv[2] in {&#34;c&#34;, &#34;a&#34;} or all((c.isdigit() or c == &#39;,&#39;) for c in argv[2])):
-        raise ValueError(&#34;2 arguments (data directory and (&#39;c&#39; (clear), &#39;a&#39; (all), or &#39;,&#39;-separated versionids)) required&#34;)
+    if len(argv) != 4 or not (argv[3] in {&#34;c&#34;, &#34;a&#34;} or all((c.isdigit() or c == &#39;,&#39;) for c in argv[3])):
+        raise ValueError(&#34;3 arguments (database url like `sqlite:///./DINO2.db`, data directory, and (&#39;c&#39; (clear), &#39;a&#39; (all), or &#39;,&#39;-separated versionids)) required&#34;)
 
-    db = Database()
+    db = Database(argv[1])
     Base.metadata.create_all(db.engine)
 
-    if argv[2] == &#34;c&#34;:
+    if argv[3] == &#34;c&#34;:
         Base.metadata.drop_all(db.engine)
         Base.metadata.create_all(db.engine)
     else:
         session = db.Session()
         try:
-            version_ids = set(int(v) for v in argv[2].split(&#39;,&#39;)) if argv[2] != &#34;a&#34; else None
+            version_ids = set(int(v) for v in argv[3].split(&#39;,&#39;)) if argv[3] != &#34;a&#34; else None
             classes = [Version]
             for module in (calendar, fares, location, operational, network, schedule):
                 for attr in dir(module):
@@ -147,7 +149,7 @@ def main(argv: Collection[str]):
                         or attr[0] == &#39;_&#39;
                         ): continue
                     classes.append(cls)
-            imp(argv[1], classes, session, version_ids)
+            imp(argv[2], classes, session, version_ids)
             session.commit()
         except Exception as e:
             session.rollback()
@@ -168,7 +170,7 @@ if __name__ == &#34;__main__&#34;:
 <h2 class="section-title" id="header-functions">Functions</h2>
 <dl>
 <dt id="DINO2.tools.imp.imp"><code class="name flex">
-<span>def <span class="ident">imp</span></span>(<span>dinodir: str, classes: Collection[Type[sqlalchemy.ext.declarative.api.Base]], session: sqlalchemy.orm.session.Session, version_ids: Union[Collection[int], NoneType] = None) -> NoneType</span>
+<span>def <span class="ident">imp</span></span>(<span>dinodir: str, classes: Collection[Type[Base]], session: Session, version_ids: Optional[Collection[int]] = None) -> NoneType</span>
 </code></dt>
 <dd>
 <div class="desc"><p>Import given tables for a version id (or all versions) of a DINO 2.1 dataset</p></div>
@@ -262,19 +264,19 @@ if __name__ == &#34;__main__&#34;:
 </summary>
 <pre><code class="python">def main(argv: Collection[str]):
     &#34;&#34;&#34;Parse `argv` and call `imp`&#34;&#34;&#34;
-    if len(argv) != 3 or not (argv[2] in {&#34;c&#34;, &#34;a&#34;} or all((c.isdigit() or c == &#39;,&#39;) for c in argv[2])):
-        raise ValueError(&#34;2 arguments (data directory and (&#39;c&#39; (clear), &#39;a&#39; (all), or &#39;,&#39;-separated versionids)) required&#34;)
+    if len(argv) != 4 or not (argv[3] in {&#34;c&#34;, &#34;a&#34;} or all((c.isdigit() or c == &#39;,&#39;) for c in argv[3])):
+        raise ValueError(&#34;3 arguments (database url like `sqlite:///./DINO2.db`, data directory, and (&#39;c&#39; (clear), &#39;a&#39; (all), or &#39;,&#39;-separated versionids)) required&#34;)
 
-    db = Database()
+    db = Database(argv[1])
     Base.metadata.create_all(db.engine)
 
-    if argv[2] == &#34;c&#34;:
+    if argv[3] == &#34;c&#34;:
         Base.metadata.drop_all(db.engine)
         Base.metadata.create_all(db.engine)
     else:
         session = db.Session()
         try:
-            version_ids = set(int(v) for v in argv[2].split(&#39;,&#39;)) if argv[2] != &#34;a&#34; else None
+            version_ids = set(int(v) for v in argv[3].split(&#39;,&#39;)) if argv[3] != &#34;a&#34; else None
             classes = [Version]
             for module in (calendar, fares, location, operational, network, schedule):
                 for attr in dir(module):
@@ -287,7 +289,7 @@ if __name__ == &#34;__main__&#34;:
                         or attr[0] == &#39;_&#39;
                         ): continue
                     classes.append(cls)
-            imp(argv[1], classes, session, version_ids)
+            imp(argv[2], classes, session, version_ids)
             session.commit()
         except Exception as e:
             session.rollback()
