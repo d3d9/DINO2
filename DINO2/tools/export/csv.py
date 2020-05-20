@@ -42,7 +42,7 @@ def stops(session: Session, fname: str, version_id: Optional[int] = None) -> Non
 
 
 def courses(session: Session, path: str, line_ids: Optional[Set[int]] = None, export_full_name: bool = False, version_id: Optional[int] = None) -> None:
-    """Export csv files of all course stops per trip"""
+    """Export csv files of all course stops per course"""
     q = session.query(network.Course).options(joinedload('stops').joinedload('stop'), joinedload('stops').joinedload('stop_point'))
     if version_id is not None:
         q = q.filter_by(version_id=version_id)

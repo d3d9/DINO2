@@ -69,7 +69,7 @@ def stops(session: Session, fname: str, version_id: Optional[int] = None) -&gt; 
 
 
 def courses(session: Session, path: str, line_ids: Optional[Set[int]] = None, export_full_name: bool = False, version_id: Optional[int] = None) -&gt; None:
-    &#34;&#34;&#34;Export csv files of all course stops per trip&#34;&#34;&#34;
+    &#34;&#34;&#34;Export csv files of all course stops per course&#34;&#34;&#34;
     q = session.query(network.Course).options(joinedload(&#39;stops&#39;).joinedload(&#39;stop&#39;), joinedload(&#39;stops&#39;).joinedload(&#39;stop_point&#39;))
     if version_id is not None:
         q = q.filter_by(version_id=version_id)
@@ -271,13 +271,13 @@ def departures(stop: location.Stop, day: date, fname: str, days: int = 1) -&gt; 
 <span>def <span class="ident">courses</span></span>(<span>session: Session, path: str, line_ids: Optional[Set[int]] = None, export_full_name: bool = False, version_id: Optional[int] = None) -> NoneType</span>
 </code></dt>
 <dd>
-<div class="desc"><p>Export csv files of all course stops per trip</p></div>
+<div class="desc"><p>Export csv files of all course stops per course</p></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
 <pre><code class="python">def courses(session: Session, path: str, line_ids: Optional[Set[int]] = None, export_full_name: bool = False, version_id: Optional[int] = None) -&gt; None:
-    &#34;&#34;&#34;Export csv files of all course stops per trip&#34;&#34;&#34;
+    &#34;&#34;&#34;Export csv files of all course stops per course&#34;&#34;&#34;
     q = session.query(network.Course).options(joinedload(&#39;stops&#39;).joinedload(&#39;stop&#39;), joinedload(&#39;stops&#39;).joinedload(&#39;stop_point&#39;))
     if version_id is not None:
         q = q.filter_by(version_id=version_id)
