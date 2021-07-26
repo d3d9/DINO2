@@ -16,6 +16,8 @@ class DinoDate(TypeDecorator):
     """Column type for date strings in yyyymmdd format, converted to `datetime.date` objects"""
     impl = String(length=8)
 
+    cache_ok = True
+
     def coerce_compared_value(self, op, value):
         if isinstance(value, str):
             return self.impl

@@ -46,6 +46,8 @@ class FareZone(Base):
     def __repr__(self) -> str:
         return f"<FareZone(version_id={self.version_id}, id={self.id}, name={self.name}, neutral={self.neutral}, color={self.color})>"
 
+    __abstract__ = False
+
 
 class NeighbourFareZone(Base):
     """
@@ -78,3 +80,5 @@ class NeighbourFareZone(Base):
 
     def __repr__(self) -> str:
         return f"<NeighbourFareZone(version_id={self.version_id}, farezone_id={self.farezone_id}, neighbour_id={self.neighbour_id})>"
+
+    __abstract__ = False

@@ -46,6 +46,8 @@ class DayType(Base):
     def __repr__(self) -> str:
         return f"<DayType(version_id={self.version_id}, id={self.id}, text={self.text}, abbr={self.abbr})>"
 
+    __abstract__ = False
+
 
 class DayAttribute(Base):
     """
@@ -84,6 +86,8 @@ class DayAttribute(Base):
     def __repr__(self) -> str:
         return f"<DayAttribute(version_id={self.version_id}, id={self.id}, text={self.text}, abbr={self.abbr})>"
 
+    __abstract__ = False
+
 
 class DayGrouping(Base):
     """
@@ -112,6 +116,8 @@ class DayGrouping(Base):
 
     def __repr__(self) -> str:
         return f"<DayGrouping(version_id={self.version_id}, daytype_id={self.daytype_id}, dayattr_id={self.dayattr_id})>"
+
+    __abstract__ = False
 
 
 class CalendarDay(Base):
@@ -144,6 +150,8 @@ class CalendarDay(Base):
 
     def __repr__(self) -> str:
         return f"<CalendarDay(version_id={self.version_id}, day={self.day}, daytype={self.daytype}, text={self.text})>"
+
+    __abstract__ = False
 
 
 class RestrictionText(UserString):
@@ -275,3 +283,5 @@ class Restriction(Base):
             text += " " if currdate < self.date_from else ("1" if currdate in self.dates else "0")
             currdate += timedelta(days=1)
         return text
+
+    __abstract__ = False

@@ -72,6 +72,8 @@ class Notice(Base):
     def __repr__(self) -> str:
         return f"<Notice(version_id={self.version_id}, id={self.id}, line={self.line}, text={self.text})>"
 
+    __abstract__ = False
+
 
 @dataclass(frozen=True)
 class TripStop:
@@ -310,6 +312,8 @@ class Trip(Base):
     def __repr__(self) -> str:
         return f"<Trip(version_id={self.version_id}, line={self.line}, id={self.id}, departure_time={self.departure_time}, day_attribute={self.day_attribute}, restriction_id={self.restriction_id})>"
 
+    __abstract__ = False
+
 
 class StopConstraintType(Enum):
     only_alighting = 'A'
@@ -376,6 +380,8 @@ class StopConstraint(Base):
     def __repr__(self) -> str:
         return f"<StopConstraint(version_id={self.version_id}, line={self.line}, trip_id={self.trip_id}, consec_stop_nr={self.consec_stop_nr}, constraint={self.constraint})>"
 
+    __abstract__ = False
+
 
 class TripVDT(Base):
     """
@@ -433,3 +439,5 @@ class TripVDT(Base):
 
     def __repr__(self) -> str:
         return f"<TripVDT(version_id={self.version_id}, line={self.line}, trip_id={self.trip_id}, consec_stop_nr={self.consec_stop_nr}, vdt={self.vdt})>"
+
+    __abstract__ = False

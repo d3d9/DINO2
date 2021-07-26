@@ -48,6 +48,8 @@ class Branch(Base):
     def __repr__(self) -> str:
         return f"<Branch(version_id={self.version_id}, id={self.id}, abbr={self.abbr}, name={self.name})>"
 
+    __abstract__ = False
+
 
 class Operator(Base):
     """
@@ -93,6 +95,8 @@ class Operator(Base):
     def __repr__(self) -> str:
         return f"<Operator(version_id={self.version_id}, id={self.id}, abbr={self.abbr}, name={self.name})>"
 
+    __abstract__ = False
+
 
 class OperatorBranchOffice(Base):
     """
@@ -137,6 +141,8 @@ class OperatorBranchOffice(Base):
 
     def __repr__(self) -> str:
         return f"<OperatorBranchOffice(version_id={self.version_id}, id={self.id})>"
+
+    __abstract__ = False
 
 
 class TransferMOT(Enum):
@@ -186,6 +192,8 @@ class MeansOfTransportDesc(Base):
     def __repr__(self) -> str:
         return f"<MeansOfTransportDesc(version_id={self.version_id}, id={self.id}, name={self.name}, tmot={self.tmot})>"
 
+    __abstract__ = False
+
 
 class AccessibilityEquipment(Enum):
     no_lift = 0
@@ -234,6 +242,8 @@ class VehicleType(Base):
 
     def __repr__(self) -> str:
         return f"<VehicleType(version_id={self.version_id}, id={self.id}, desc={self.desc}, abbr={self.abbr})>"
+
+    __abstract__ = False
 
 
 class VehicleDestinationText(Base):
@@ -302,3 +312,5 @@ class VehicleDestinationText(Base):
 
     def __repr__(self) -> str:
         return f"<VehicleDestinationText(version_id={self.version_id}, branch_id={self.branch_id}, id={self.id}, name={self.name}, short_name={self.short_name})>"
+
+    __abstract__ = False

@@ -147,6 +147,8 @@ class Stop(Base):
     def __repr__(self) -> str:
         return f"<Stop(version_id={self.version_id}, id={self.id}, name={self.name}, type={self.type}, ifopt={self.ifopt})>"
 
+    __abstract__ = False
+
 
 class StopAliasPlacename(Base):
     """
@@ -180,6 +182,8 @@ class StopAliasPlacename(Base):
     def __repr__(self) -> str:
         return f"<StopAliasPlacename(version_id={self.version_id}, stop={self.stop}, alias_place={self.alias_place}, alias_occ={self.alias_occ})>"
 
+    __abstract__ = False
+
 
 class StopAdditionalName(Base):
     """
@@ -212,6 +216,8 @@ class StopAdditionalName(Base):
 
     def __repr__(self) -> str:
         return f"<StopAdditionalName(version_id={self.version_id}, stop={self.stop}, name={self.name}, name_noloc={self.name_noloc})>"
+
+    __abstract__ = False
 
 
 class StopAreaType(Enum):
@@ -292,6 +298,8 @@ class StopArea(Base):
 
     def __repr__(self) -> str:
         return f"<StopArea(version_id={self.version_id}, stop_id={self.stop_id} ({self.stop.name}), id={self.id}, name={self.name}, type={self.type}, ifopt={self.ifopt})>"
+
+    __abstract__ = False
 
 
 class StreetAccess(Enum):
@@ -392,6 +400,8 @@ class StopPoint(Base):
     def __repr__(self) -> str:
         return f"<StopPoint(version_id={self.version_id}, stop={self.stop}, area={self.area}, id={self.id}, name={self.name}, ifopt={self.ifopt})>"
 
+    __abstract__ = False
+
 
 class Link(Base):
     """
@@ -483,6 +493,8 @@ class Link(Base):
 
     def __repr__(self) -> str:
         return f"<Link(version_id={self.version_id}, id={self.id}, from_stop_id={self.from_stop_id}, from_area_id={self.from_area_id}, from_point_id={self.from_point_id}, to_stop_id={self.to_stop_id}, to_area_id={self.to_area_id}, to_point_id={self.to_point_id})>"
+
+    __abstract__ = False
 
 
 class LinkPoint(Base):

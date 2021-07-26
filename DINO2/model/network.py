@@ -186,10 +186,10 @@ class Course(Base):
     @date_valid.expression
     def date_valid(cls, date_obj: date) -> ClauseElement:
         d_from = case(
-            [(cls.valid_from == None, select([Version.date_from]).where(Version.id == cls.version_id).as_scalar())],
+            [(cls.valid_from == None, select([Version.date_from]).where(Version.id == cls.version_id).scalar_subquery())],
             else_=cls.valid_from)
         d_to = case(
-            [(cls.valid_to == None, select([Version.date_to]).where(Version.id == cls.version_id).as_scalar())],
+            [(cls.valid_to == None, select([Version.date_to]).where(Version.id == cls.version_id).scalar_subquery())],
             else_=cls.valid_to)
         return and_(
             case([(d_from == None, True)], else_=date_obj >= d_from),
@@ -204,6 +204,8 @@ class Course(Base):
 
     def __repr__(self) -> str:
         return f"<Course(version_id={self.version_id}, branch_id={self.branch_id}, id={self.id}, name={self.name})>"
+
+    __abstract__ = False
 
 
 class StopPointType(Enum):
@@ -274,6 +276,8 @@ class CourseStop(Base):
     def __repr__(self) -> str:
         return f"<CourseStop(version_id={self.version_id}, course={self.course}, consec_stop_nr={self.consec_stop_nr}, stop_point={self.stop_point})>"
 
+    __abstract__ = False
+
 
 class CourseStopTiming(Base):
     """
@@ -323,3 +327,5 @@ class CourseStopTiming(Base):
 
     def __repr__(self) -> str:
         return f"<CourseStopTiming(version_id={self.version_id}, course_stop={self.course_stop}, time_to_stop={self.time_to_stop}, stopping_time={self.stopping_time})>"
+
+    __abstract__ = False
