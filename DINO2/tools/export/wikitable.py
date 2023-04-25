@@ -94,7 +94,8 @@ def fahrplanarray(session: Session, courses: Collection[network.Course]):
         assert all(lc.name == line_courses[0].name for lc in line_courses)
         a_l = [[f"'''{line_courses[0].name}'''"], []]
         for lc in sorted(line_courses, key=lambda _lc: (_lc.line_dir, stopclean(_lc.stops[0].stop.name, placelist), -len(_lc.stops), -_lc.length)):
-            a_c = [[f"'''{stopclean(lc.stops[0].stop.name, placelist)}'''&nbsp;→ '''{stopclean(lc.stops[-1].stop.name, placelist)}'''", len(lc.stops), str(round(lc.length/1000, 1)).replace(".", ",").rstrip("0").rstrip(",") + " km"], []]
+            stopcontent = f"<span style=\"text-decoration: underline dotted;\" title=\"{'-'.join(s.stop.abbr for s in lc.stops)}\">{len(lc.stops)}</span>"
+            a_c = [[f"'''{stopclean(lc.stops[0].stop.name, placelist)}'''&nbsp;→ '''{stopclean(lc.stops[-1].stop.name, placelist)}'''", stopcontent, str(round(lc.length/1000, 1)).replace(".", ",").rstrip("0").rstrip(",") + " km"], []]
             fahrzeiten = {}
             for timing_group_nr in set(_st.timing_group for _st in lc.stop_timings):
                 fahrzeit = f"{mins(lc.duration(timing_group_nr))} min"
